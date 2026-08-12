@@ -39,8 +39,8 @@ const BY_CONTINENT = {
     "Peru", "Suriname", "Uruguay", "Venezuela", "Falkland Is.",
   ],
   Oceania: [
-    "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Is.", "Vanuatu",
-    "New Caledonia",
+    "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Is.", "Solomon Islands",
+    "Vanuatu", "New Caledonia", "Samoa", "Tonga",
   ],
 };
 
