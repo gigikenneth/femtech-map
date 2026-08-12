@@ -79,7 +79,7 @@ const state = {
   cats: new Set(Object.keys(CATS)),
   podcastOnly: false,
   query: "",
-  continent: null,
+  country: null,
 };
 
 // ---------- map setup ----------
@@ -102,13 +102,12 @@ const countriesSel = g
   .style("cursor", "pointer")
   .on("click", (e, d) => {
     const name = NAME_ALIAS[d.properties.name] || d.properties.name;
-    const cont = CONTINENT_OF[name];
-    if (cont) openContinentList(cont);
+    openCountryList(name);
   });
 countriesSel.append("title").text((d) => {
   const name = NAME_ALIAS[d.properties.name] || d.properties.name;
-  const cont = CONTINENT_OF[name];
-  return cont ? `${name} · click to explore ${cont}` : name;
+  const n = countByCountry.get(name) || 0;
+  return n ? `${name} · ${n} initiative${n > 1 ? "s" : ""}` : name;
 });
 
 // pins layer
@@ -228,14 +227,13 @@ function openPanel(d) {
   panel.classList.add("open");
   panel.setAttribute("aria-hidden", "false");
 }
-// Clicking a country lists every initiative on its continent, so people can
-// explore beyond Africa (e.g. what's happening in Europe or Asia).
-function openContinentList(cont) {
-  state.continent = cont;
+// Clicking a country lists every initiative in that country.
+function openCountryList(country) {
+  state.country = country;
   apply();
   const items = initiatives
     .filter(visible)
-    .sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name));
+    .sort((a, b) => a.name.localeCompare(b.name));
   const rows = items
     .map((d) => {
       const c = CATS[d.category] || { color: "#ccc" };
@@ -243,16 +241,16 @@ function openContinentList(cont) {
         <span class="lr-dot" style="background:${c.color}"></span>
         <span class="lr-text">
           <span class="lr-name">${d.name}${d.isPodcast ? ' <span class="lr-mic">🎙</span>' : ""}</span>
-          <span class="lr-loc">${d.city}, ${d.country}</span>
+          <span class="lr-loc">${d.city} · ${CATS[d.category]?.label || d.category}</span>
         </span>
       </button>`;
     })
     .join("");
   document.getElementById("panel-body").innerHTML = `
-    <span class="p-cat" style="background:#ece8f6;color:var(--ink)">Continent</span>
-    <h2 class="p-name">${cont}</h2>
-    <p class="p-loc">${items.length} initiative${items.length !== 1 ? "s" : ""} on the map</p>
-    ${items.length ? `<div class="list">${rows}</div>` : `<p class="p-desc">Nothing mapped here yet. This map is community-sourced, so add one.</p>`}
+    <span class="p-cat" style="background:#ece8f6;color:var(--ink)">Country</span>
+    <h2 class="p-name">${country}</h2>
+    <p class="p-loc">${items.length} initiative${items.length !== 1 ? "s" : ""} mapped here</p>
+    ${items.length ? `<div class="list">${rows}</div>` : `<p class="p-desc">Nothing mapped in ${country} yet. This map is community-sourced, so add one.</p>`}
   `;
   panel.querySelectorAll(".list-row").forEach((btn) => {
     btn.onclick = () => {
@@ -267,7 +265,7 @@ function openContinentList(cont) {
 function closePanel() {
   panel.classList.remove("open");
   panel.setAttribute("aria-hidden", "true");
-  if (state.continent) { state.continent = null; apply(); }
+  if (state.country) { state.country = null; apply(); }
 }
 document.addEventListener("keydown", (e) => e.key === "Escape" && closePanel());
 
@@ -304,7 +302,7 @@ document.getElementById("search").addEventListener("input", (e) => {
 // ---------- apply filters ----------
 function visible(d) {
   if (!state.cats.has(d.category)) return false;
-  if (state.continent && d.continent !== state.continent) return false;
+  if (state.country && d.country !== state.country) return false;
   if (state.podcastOnly && !d.isPodcast) return false;
   if (state.query) {
     const hay = `${d.name} ${d.country} ${d.city} ${CATS[d.category]?.label}`.toLowerCase();
@@ -327,8 +325,8 @@ function apply() {
 const countsEl = document.getElementById("counts");
 function updateCounts(shown, countryCount) {
   const founders = initiatives.filter((d) => d.isPodcast && visible(d)).length;
-  const third = state.continent
-    ? { num: founders, label: state.continent + " founders" }
+  const third = state.country
+    ? { num: founders, label: state.country + " founders" }
     : { num: founders, label: "Podcast founders" };
   countsEl.innerHTML = `
     <div class="count-card"><div class="count-num">${shown}</div><div class="count-label">Initiatives</div></div>
