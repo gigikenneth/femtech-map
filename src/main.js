@@ -326,14 +326,9 @@ function apply() {
 // ---------- counts ----------
 const countsEl = document.getElementById("counts");
 function updateCounts(shown, countryCount) {
-  const founders = initiatives.filter((d) => d.isPodcast && visible(d)).length;
-  const third = state.country
-    ? { num: founders, label: state.country + " founders" }
-    : { num: founders, label: "Podcast founders" };
   countsEl.innerHTML = `
     <div class="count-card"><div class="count-num">${shown}</div><div class="count-label">Initiatives</div></div>
-    <div class="count-card"><div class="count-num">${countryCount}</div><div class="count-label">Countries</div></div>
-    <div class="count-card accent"><div class="count-num">${third.num}</div><div class="count-label">${third.label}</div></div>
+    <div class="count-card accent"><div class="count-num">${countryCount}</div><div class="count-label">Countries</div></div>
   `;
 }
 
