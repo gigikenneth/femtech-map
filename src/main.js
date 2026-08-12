@@ -7,6 +7,7 @@ import worldTopo from "world-atlas/countries-110m.json";
 import seed from "./data/initiatives.json";
 import more from "./data/more.json";
 import podcast from "./data/podcast.json";
+import communities from "./data/communities.json";
 import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
 
@@ -14,7 +15,7 @@ import { meta } from "./data/meta.js";
 const seen = new Set();
 const initiatives = [];
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-for (const d of [...seed, ...more, ...podcast]) {
+for (const d of [...seed, ...more, ...podcast, ...communities]) {
   const k = norm(d.name);
   if (seen.has(k)) continue;
   seen.add(k);
