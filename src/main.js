@@ -104,20 +104,24 @@ const state = {
 
 // ---------- map setup ----------
 const mapEl = document.getElementById("map");
-const svg = select(mapEl).append("svg").attr("viewBox", "0 0 960 500").attr("preserveAspectRatio", "xMidYMid meet");
+const svg = select(mapEl).append("svg").attr("preserveAspectRatio", "xMidYMid meet");
 const g = svg.append("g");
-const projection = geoNaturalEarth1().scale(175).translate([480, 250]);
+const projection = geoNaturalEarth1();
 const path = geoPath(projection);
 const land = feature(worldTopo, worldTopo.objects.countries);
+// Fit the map to inhabited land (excluding Antarctica) so it fills the container.
+const fitTarget = {
+  type: "FeatureCollection",
+  features: land.features.filter((f) => f.properties.name !== "Antarctica"),
+};
 
-g.append("path").datum(geoGraticule10()).attr("class", "graticule").attr("d", path);
+g.append("path").datum(geoGraticule10()).attr("class", "graticule");
 
 const countriesSel = g
   .selectAll("path.country")
   .data(land.features)
   .join("path")
   .attr("class", "country")
-  .attr("d", path)
   .attr("fill", (d) => shade(countByCountry.get(NAME_ALIAS[d.properties.name] || d.properties.name) || 0))
   .style("cursor", "pointer")
   .on("click", (e, d) => {
@@ -135,25 +139,41 @@ const pinsG = g.append("g").attr("class", "pins");
 const tooltip = document.getElementById("tooltip");
 const BASE_R = 4.5;
 
-// Project each initiative, then spiral-spread any that share a city so zooming
-// apart reveals every dot instead of a single stacked one.
-const clusters = new Map();
-initiatives.forEach((d) => {
-  const p = projection([d.lng, d.lat]) || [-99, -99];
-  const key = p[0].toFixed(1) + "," + p[1].toFixed(1);
-  if (!clusters.has(key)) clusters.set(key, []);
-  clusters.get(key).push({ d, p });
-});
-clusters.forEach((members) => {
-  const [cx, cy] = members[0].p;
-  if (members.length === 1) { members[0].d._x = cx; members[0].d._y = cy; return; }
-  members.forEach(({ d }, i) => {
-    const ang = i * 2.399963; // golden angle
-    const rad = 4 + 2.4 * Math.sqrt(i);
-    d._x = cx + Math.cos(ang) * rad;
-    d._y = cy + Math.sin(ang) * rad;
+// Project each initiative and spiral-spread any that share a city, so zooming
+// apart reveals every dot instead of one stacked pin.
+function positionPins() {
+  const clusters = new Map();
+  initiatives.forEach((d) => {
+    const p = projection([d.lng, d.lat]) || [-99, -99];
+    d._p = p;
+    const key = p[0].toFixed(1) + "," + p[1].toFixed(1);
+    if (!clusters.has(key)) clusters.set(key, []);
+    clusters.get(key).push(d);
   });
-});
+  clusters.forEach((members) => {
+    const [cx, cy] = members[0]._p;
+    if (members.length === 1) { members[0]._x = cx; members[0]._y = cy; return; }
+    members.forEach((d, i) => {
+      const ang = i * 2.399963; // golden angle
+      const rad = 4 + 2.4 * Math.sqrt(i);
+      d._x = cx + Math.cos(ang) * rad;
+      d._y = cy + Math.sin(ang) * rad;
+    });
+  });
+  pins.attr("transform", (d) => `translate(${d._x},${d._y})`);
+}
+
+// Size the projection to the container and redraw; called on load and on resize.
+function layout() {
+  const w = Math.max(320, Math.floor(mapEl.clientWidth));
+  const h = Math.max(320, Math.floor(mapEl.clientHeight));
+  svg.attr("viewBox", `0 0 ${w} ${h}`);
+  projection.fitExtent([[14, 14], [w - 14, h - 14]], fitTarget);
+  g.select("path.graticule").attr("d", path);
+  countriesSel.attr("d", path);
+  positionPins();
+  rescale(curK);
+}
 
 const pins = pinsG
   .selectAll("g.pin")
@@ -199,6 +219,14 @@ const zoomer = zoom().scaleExtent([1, 16]).on("zoom", (e) => {
 svg.call(zoomer);
 document.getElementById("reset").onclick = () =>
   svg.transition().duration(500).call(zoomer.transform, zoomIdentity);
+
+// Initial fit + refit whenever the map container resizes.
+layout();
+if (window.ResizeObserver) {
+  new ResizeObserver(() => layout()).observe(mapEl);
+} else {
+  window.addEventListener("resize", layout);
+}
 
 // ---------- tooltip ----------
 function showTip(e, d) {
