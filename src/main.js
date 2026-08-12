@@ -12,11 +12,29 @@ import programs from "./data/programs.json";
 import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
 
+// Live community submissions: approved rows served as JSON by an Apps Script web app.
+// Set VITE_SUBMISSIONS_URL (Vercel env var / .env) to the web-app URL to enable.
+let submissions = [];
+const SUBMISSIONS_URL = import.meta.env.VITE_SUBMISSIONS_URL;
+if (SUBMISSIONS_URL) {
+  try {
+    const res = await Promise.race([
+      fetch(SUBMISSIONS_URL).then((r) => r.json()),
+      new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 4000)),
+    ]);
+    if (Array.isArray(res)) {
+      submissions = res.filter((d) => d && d.name && typeof d.lat === "number" && typeof d.lng === "number");
+    }
+  } catch (e) {
+    console.warn("Community submissions feed unavailable, showing built-in data only:", e.message);
+  }
+}
+
 // Merge datasets and drop duplicates by normalized name (seed wins, it carries podcast tags).
 const seen = new Set();
 const initiatives = [];
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-for (const d of [...seed, ...more, ...podcast, ...communities, ...programs]) {
+for (const d of [...seed, ...more, ...podcast, ...communities, ...programs, ...submissions]) {
   const k = norm(d.name);
   if (seen.has(k)) continue;
   seen.add(k);
@@ -347,5 +365,13 @@ document.getElementById("hero-stats").innerHTML = heroStats
   .join("");
 const hero = document.getElementById("hero");
 document.getElementById("hero-cta").onclick = () => hero.classList.add("hidden");
+
+// "Suggest an initiative" link points to the Google Form (VITE_SUBMIT_URL).
+const submitUrl = import.meta.env.VITE_SUBMIT_URL;
+const submitLink = document.getElementById("submit-link");
+if (submitUrl && submitLink) {
+  submitLink.href = submitUrl;
+  submitLink.hidden = false;
+}
 
 apply();

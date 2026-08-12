@@ -40,7 +40,10 @@ npm run preview  # preview the production build
 
 ## Contributing
 
-**This map is community-sourced and open to contributions.** Spotted a missing initiative, a wrong location, or a broken link? Please open a pull request — the map is only as inclusive as the people who build it.
+**This map is community-sourced and open to contributions.** Spotted a missing initiative, a wrong location, or a broken link? There are two ways in:
+
+- **Submit via the form** (no GitHub needed) — use the **"Suggest an initiative"** button on the map. Submissions land in a Google Sheet, and once approved they appear on the map live. Maintainer setup: [`docs/submissions-setup.md`](docs/submissions-setup.md).
+- **Open a pull request** — edit the JSON directly (below). The map is only as inclusive as the people who build it.
 
 ### Add or fix an initiative
 
