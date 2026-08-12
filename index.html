@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom — the global femtech map</title>
+    <meta name="description" content="A living map of women's health innovation worldwide — and proof that Africa is not blank." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <header class="brand">
+          <div class="mark">✿</div>
+          <div>
+            <h1>Bloom</h1>
+            <p class="tagline">The global femtech map</p>
+          </div>
+        </header>
+
+        <div class="thesis">
+          <p class="thesis-lead">Someone mapped women's health innovation worldwide and left an entire continent blank.</p>
+          <p class="thesis-body">This one doesn't. Every pin is a real initiative building women's health — with the density Africa was denied.</p>
+        </div>
+
+        <div class="counts" id="counts"></div>
+
+        <div class="controls">
+          <input id="search" type="search" placeholder="Search initiatives, countries…" aria-label="Search initiatives" autocomplete="off" />
+          <div class="toggles">
+            <button class="toggle" data-toggle="africa" aria-pressed="false">Africa only</button>
+            <button class="toggle" data-toggle="podcast" aria-pressed="false">🎙 Blush &amp; Bloom</button>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+        </div>
+
+        <div class="legend">
+          <p class="legend-title">Country femtech maturity</p>
+          <div class="ramp" id="ramp"></div>
+          <div class="ramp-labels"><span>Nascent</span><span>Pioneering</span></div>
+        </div>
+
+        <footer class="credit">
+          <p>Built by Gigi Kenneth · host of <a href="https://www.asele.tech/blush-and-bloom-podcast" target="_blank" rel="noopener">Blush &amp; Bloom</a></p>
+          <p class="disclaimer" id="disclaimer"></p>
+        </footer>
+      </aside>
+
+      <main id="map-wrap">
+        <div id="map"></div>
+        <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+        <button id="reset" class="reset" title="Reset view" aria-label="Reset map view">⤢</button>
+      </main>
+
+      <section id="panel" class="panel" aria-hidden="true">
+        <button id="panel-close" class="panel-close" aria-label="Close details">×</button>
+        <div id="panel-body"></div>
+      </section>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
