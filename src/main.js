@@ -4,19 +4,31 @@ import { select, pointer } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
 import { feature } from "topojson-client";
 import worldTopo from "world-atlas/countries-110m.json";
-import initiatives from "./data/initiatives.json";
-import countryData from "./data/countries.json";
+import seed from "./data/initiatives.json";
+import more from "./data/more.json";
+import podcast from "./data/podcast.json";
 import { meta } from "./data/meta.js";
 
+// Merge datasets and drop duplicates by normalized name (seed wins, it carries podcast tags).
+const seen = new Set();
+const initiatives = [];
+const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+for (const d of [...seed, ...more, ...podcast]) {
+  const k = norm(d.name);
+  if (seen.has(k)) continue;
+  seen.add(k);
+  initiatives.push(d);
+}
+
 const CATS = {
-  menstrual: { label: "Menstrual & cycle", color: "#f5a3be" },
-  maternal: { label: "Maternal & fertility", color: "#f6b98a" },
-  srh: { label: "Sexual & reproductive", color: "#c3aee6" },
-  diagnostics: { label: "Diagnostics & devices", color: "#9fd5be" },
-  telehealth: { label: "Telehealth", color: "#a6c9e8" },
-  funding: { label: "Funding & community", color: "#f2d888" },
+  menstrual: { label: "Menstrual & cycle", color: "#ec6aa0" },
+  maternal: { label: "Maternal & fertility", color: "#f0913f" },
+  srh: { label: "Sexual & reproductive", color: "#b45cc4" },
+  diagnostics: { label: "Diagnostics & devices", color: "#2fb39a" },
+  telehealth: { label: "Telehealth", color: "#4f93d9" },
+  funding: { label: "Funding & community", color: "#e0a92e" },
 };
-const TIER = ["#efe3e8", "#f7dfe6", "#f0bcd0", "#e592b7", "#c76a9f", "#8f4576"]; // index 0 = no data
+const TIER = ["#e8e5f0", "#e4e0f7", "#c3b8ee", "#9d89e0", "#7259cf", "#4c33a6"]; // index 0 = no data
 
 // Reconcile world-atlas country names with our data names.
 const NAME_ALIAS = {
@@ -35,13 +47,30 @@ const NAME_ALIAS = {
   "eSwatini": "Eswatini",
 };
 
-const tierByCountry = new Map(countryData.map((c) => [c.country, c.tier]));
-const noteByCountry = new Map(countryData.map((c) => [c.country, c.note]));
+// Shade countries by how many initiatives they hold, density, not a maturity ranking.
+const countByCountry = new Map();
+initiatives.forEach((d) => countByCountry.set(d.country, (countByCountry.get(d.country) || 0) + 1));
 
-const AFRICA = new Set(
-  countryData.filter((c) => c.continent === "Africa").map((c) => c.country)
-);
-// also treat any initiative whose country is African-tagged
+const AFRICA = new Set([
+  "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cameroon",
+  "Cape Verde", "Central African Republic", "Chad", "Comoros", "Congo-Brazzaville",
+  "Côte d'Ivoire", "DRC", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea",
+  "Eswatini", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau",
+  "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali",
+  "Mauritania", "Mauritius", "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria",
+  "Rwanda", "Senegal", "Sierra Leone", "Somalia", "South Africa", "South Sudan",
+  "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe",
+]);
+
+function shade(n) {
+  if (!n) return TIER[0];
+  if (n >= 8) return TIER[5];
+  if (n >= 5) return TIER[4];
+  if (n >= 3) return TIER[3];
+  if (n >= 2) return TIER[2];
+  return TIER[1];
+}
+
 initiatives.forEach((d) => {
   d.isAfrica = AFRICA.has(d.country);
   d.isPodcast = !!d.podcast;
@@ -50,7 +79,6 @@ initiatives.forEach((d) => {
 // ---------- state ----------
 const state = {
   cats: new Set(Object.keys(CATS)),
-  africaOnly: false,
   podcastOnly: false,
   query: "",
 };
@@ -72,29 +100,46 @@ g.selectAll("path.country")
   .attr("d", path)
   .attr("fill", (d) => {
     const name = NAME_ALIAS[d.properties.name] || d.properties.name;
-    const t = tierByCountry.get(name);
-    return t ? TIER[t] : TIER[0];
+    return shade(countByCountry.get(name) || 0);
   })
   .append("title")
   .text((d) => {
     const name = NAME_ALIAS[d.properties.name] || d.properties.name;
-    const note = noteByCountry.get(name);
-    return note ? `${name} — ${note}` : name;
+    const n = countByCountry.get(name) || 0;
+    return n ? `${name}, ${n} initiative${n > 1 ? "s" : ""}` : name;
   });
 
 // pins layer
 const pinsG = g.append("g").attr("class", "pins");
 const tooltip = document.getElementById("tooltip");
+const BASE_R = 4.5;
+
+// Project each initiative, then spiral-spread any that share a city so zooming
+// apart reveals every dot instead of a single stacked one.
+const clusters = new Map();
+initiatives.forEach((d) => {
+  const p = projection([d.lng, d.lat]) || [-99, -99];
+  const key = p[0].toFixed(1) + "," + p[1].toFixed(1);
+  if (!clusters.has(key)) clusters.set(key, []);
+  clusters.get(key).push({ d, p });
+});
+clusters.forEach((members) => {
+  const [cx, cy] = members[0].p;
+  if (members.length === 1) { members[0].d._x = cx; members[0].d._y = cy; return; }
+  members.forEach(({ d }, i) => {
+    const ang = i * 2.399963; // golden angle
+    const rad = 4 + 2.4 * Math.sqrt(i);
+    d._x = cx + Math.cos(ang) * rad;
+    d._y = cy + Math.sin(ang) * rad;
+  });
+});
 
 const pins = pinsG
   .selectAll("g.pin")
   .data(initiatives)
   .join("g")
   .attr("class", (d) => "pin" + (d.isPodcast ? " podcast" : ""))
-  .attr("transform", (d) => {
-    const p = projection([d.lng, d.lat]);
-    return p ? `translate(${p[0]},${p[1]})` : "translate(-99,-99)";
-  })
+  .attr("transform", (d) => `translate(${d._x},${d._y})`)
   .on("mouseenter", showTip)
   .on("mousemove", moveTip)
   .on("mouseleave", hideTip)
@@ -111,17 +156,25 @@ pins
 // bloom-in animation (staggered) unless reduced motion
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 pins.select("circle.core").each(function (d, i) {
-  const c = select(this);
-  if (reduce) { c.attr("r", 4.5); return; }
-  setTimeout(() => c.transition ? c.attr("r", 4.5) : null, 0);
-  // simple CSS-free stagger via setTimeout scaling
-  const node = this;
-  node.style.transition = "r 0.5s cubic-bezier(.22,1,.36,1)";
-  setTimeout(() => node.setAttribute("r", 4.5), 250 + i * 12);
+  if (reduce) { this.setAttribute("r", BASE_R); return; }
+  this.style.transition = "r 0.5s cubic-bezier(.22,1,.36,1)";
+  setTimeout(() => this.setAttribute("r", BASE_R), 250 + i * 10);
 });
 
-// ---------- zoom ----------
-const zoomer = zoom().scaleExtent([1, 9]).on("zoom", (e) => g.attr("transform", e.transform));
+// ---------- zoom: keep pins small and strokes crisp as you zoom in ----------
+let curK = 1;
+function rescale(k) {
+  const s = 1 / k;
+  pinsG.selectAll("circle.core").attr("r", BASE_R * s).attr("stroke-width", 1.1 * s);
+  pinsG.selectAll("circle.halo").attr("r", 9 * s);
+  pinsG.selectAll("circle.ring").attr("r", 8 * s).attr("stroke-width", 1.6 * s);
+  g.selectAll("path.country").attr("stroke-width", 0.4 * s);
+  g.select("path.graticule").attr("stroke-width", 0.3 * s);
+}
+const zoomer = zoom().scaleExtent([1, 16]).on("zoom", (e) => {
+  g.attr("transform", e.transform);
+  if (e.transform.k !== curK) { curK = e.transform.k; rescale(curK); }
+});
 svg.call(zoomer);
 document.getElementById("reset").onclick = () =>
   svg.transition().duration(500).call(zoomer.transform, zoomIdentity);
@@ -162,7 +215,7 @@ function openPanel(d) {
     <p class="p-desc">${d.description}</p>
     ${pod}
     <div class="p-meta">
-      <div class="row"><span>Type</span><span>${d.org_type || "—"}</span></div>
+      <div class="row"><span>Type</span><span>${d.org_type || ", "}</span></div>
       <div class="row"><span>Country</span><span>${d.country}</span></div>
       <div class="row"><span>Category</span><span>${cat.label}</span></div>
     </div>
@@ -185,8 +238,8 @@ Object.entries(CATS).forEach(([key, { label, color }]) => {
   const b = document.createElement("button");
   b.className = "chip";
   b.setAttribute("aria-pressed", "true");
-  b.style.background = color + "26";
-  b.innerHTML = `<span class="dot" style="background:${color}"></span>${label}`;
+  b.style.setProperty("--chip", color);
+  b.innerHTML = `<span class="dot"></span>${label}`;
   b.onclick = () => {
     if (state.cats.has(key)) state.cats.delete(key);
     else state.cats.add(key);
@@ -198,9 +251,8 @@ Object.entries(CATS).forEach(([key, { label, color }]) => {
 
 document.querySelectorAll(".toggle").forEach((btn) => {
   btn.onclick = () => {
-    const k = btn.dataset.toggle === "africa" ? "africaOnly" : "podcastOnly";
-    state[k] = !state[k];
-    btn.setAttribute("aria-pressed", state[k]);
+    state.podcastOnly = !state.podcastOnly;
+    btn.setAttribute("aria-pressed", state.podcastOnly);
     apply();
   };
 });
@@ -213,7 +265,6 @@ document.getElementById("search").addEventListener("input", (e) => {
 // ---------- apply filters ----------
 function visible(d) {
   if (!state.cats.has(d.category)) return false;
-  if (state.africaOnly && !d.isAfrica) return false;
   if (state.podcastOnly && !d.isPodcast) return false;
   if (state.query) {
     const hay = `${d.name} ${d.country} ${d.city} ${CATS[d.category]?.label}`.toLowerCase();

@@ -1,8 +1,8 @@
-# Bloom — the global femtech map
+# Global Femtech Map
 
-A living map of women's health innovation worldwide — built because [an existing map](https://boro.fi/blog/map) left an entire continent blank, showing only Kenya for all of Africa.
+A map of femtech and women's health innovation around the world: the startups, apps, clinics, NGOs and funds building menstrual, maternal, reproductive, diagnostic, telehealth and community solutions — with deep, inclusive coverage of African initiatives that most maps overlook.
 
-This one pins **real femtech initiatives** across the world, with the density Africa was denied: startups, apps, clinics, NGOs and funds building menstrual, maternal, reproductive, diagnostic, telehealth and community solutions. Founders featured on the [Blush & Bloom podcast](https://www.asele.tech/blush-and-bloom-podcast) (hosted by Gigi Kenneth, founder of [Asele](https://www.asele.tech)) carry a 🎙 badge linking their episode.
+Founders featured on the [Blush & Bloom podcast](https://www.asele.tech/blush-and-bloom-podcast) (hosted by Gigi Kenneth, founder of [Asele](https://www.asele.tech)) carry a 🎙 badge linking their episode.
 
 ## Stack
 

@@ -3,26 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bloom — the global femtech map</title>
-    <meta name="description" content="A living map of women's health innovation worldwide — and proof that Africa is not blank." />
+    <title>Global Femtech Map, women's health innovation worldwide</title>
+    <meta name="description" content="A map of femtech and women's health innovation around the world, startups, clinics and communities building better care for women, everywhere." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="app">
       <aside id="sidebar">
         <header class="brand">
-          <div class="mark">✿</div>
+          <div class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.5S5.5 15.8 5.5 10.5A6.5 6.5 0 0 1 12 4a6.5 6.5 0 0 1 6.5 6.5c0 5.3-6.5 11-6.5 11Z" />
+              <circle cx="12" cy="10.4" r="2.4" />
+            </svg>
+          </div>
           <div>
-            <h1>Bloom</h1>
-            <p class="tagline">The global femtech map</p>
+            <h1>Global Femtech Map</h1>
+            <p class="tagline">Women's health innovation worldwide</p>
           </div>
         </header>
 
         <div class="thesis">
-          <p class="thesis-lead">Someone mapped women's health innovation worldwide and left an entire continent blank.</p>
-          <p class="thesis-body">This one doesn't. Every pin is a real initiative building women's health — with the density Africa was denied.</p>
+          <p class="thesis-body">A map of femtech and women's health innovation around the world, the startups, clinics and communities building better care for women, everywhere.</p>
         </div>
 
         <div class="counts" id="counts"></div>
@@ -30,16 +34,15 @@
         <div class="controls">
           <input id="search" type="search" placeholder="Search initiatives, countries…" aria-label="Search initiatives" autocomplete="off" />
           <div class="toggles">
-            <button class="toggle" data-toggle="africa" aria-pressed="false">Africa only</button>
-            <button class="toggle" data-toggle="podcast" aria-pressed="false">🎙 Blush &amp; Bloom</button>
+            <button class="toggle" data-toggle="podcast" aria-pressed="false">🎙 Blush &amp; Bloom founders</button>
           </div>
           <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
         </div>
 
         <div class="legend">
-          <p class="legend-title">Country femtech maturity</p>
+          <p class="legend-title">Initiatives mapped per country</p>
           <div class="ramp" id="ramp"></div>
-          <div class="ramp-labels"><span>Nascent</span><span>Pioneering</span></div>
+          <div class="ramp-labels"><span>1</span><span>8+</span></div>
         </div>
 
         <footer class="credit">
