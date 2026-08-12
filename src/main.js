@@ -79,6 +79,7 @@ const state = {
   cats: new Set(Object.keys(CATS)),
   podcastOnly: false,
   query: "",
+  continent: null,
 };
 
 // ---------- map setup ----------
@@ -230,8 +231,10 @@ function openPanel(d) {
 // Clicking a country lists every initiative on its continent, so people can
 // explore beyond Africa (e.g. what's happening in Europe or Asia).
 function openContinentList(cont) {
+  state.continent = cont;
+  apply();
   const items = initiatives
-    .filter((d) => d.continent === cont && visible(d))
+    .filter(visible)
     .sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name));
   const rows = items
     .map((d) => {
@@ -264,6 +267,7 @@ function openContinentList(cont) {
 function closePanel() {
   panel.classList.remove("open");
   panel.setAttribute("aria-hidden", "true");
+  if (state.continent) { state.continent = null; apply(); }
 }
 document.addEventListener("keydown", (e) => e.key === "Escape" && closePanel());
 
@@ -300,6 +304,7 @@ document.getElementById("search").addEventListener("input", (e) => {
 // ---------- apply filters ----------
 function visible(d) {
   if (!state.cats.has(d.category)) return false;
+  if (state.continent && d.continent !== state.continent) return false;
   if (state.podcastOnly && !d.isPodcast) return false;
   if (state.query) {
     const hay = `${d.name} ${d.country} ${d.city} ${CATS[d.category]?.label}`.toLowerCase();
@@ -321,11 +326,14 @@ function apply() {
 // ---------- counts ----------
 const countsEl = document.getElementById("counts");
 function updateCounts(shown, countryCount) {
-  const africaShown = initiatives.filter((d) => d.isAfrica && visible(d)).length;
+  const founders = initiatives.filter((d) => d.isPodcast && visible(d)).length;
+  const third = state.continent
+    ? { num: founders, label: state.continent + " founders" }
+    : { num: founders, label: "Podcast founders" };
   countsEl.innerHTML = `
     <div class="count-card"><div class="count-num">${shown}</div><div class="count-label">Initiatives</div></div>
     <div class="count-card"><div class="count-num">${countryCount}</div><div class="count-label">Countries</div></div>
-    <div class="count-card accent"><div class="count-num">${africaShown}</div><div class="count-label">In Africa</div></div>
+    <div class="count-card accent"><div class="count-num">${third.num}</div><div class="count-label">${third.label}</div></div>
   `;
 }
 

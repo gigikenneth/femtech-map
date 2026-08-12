@@ -84,7 +84,7 @@ a { color: var(--accent); }
 }
 .tagline { margin: 3px 0 0; font-size: 13.5px; color: var(--ink-soft); }
 
-.thesis { border-left: 3px solid var(--c-menstrual); padding-left: 15px; }
+.thesis { }
 .thesis-body { margin: 0; font-size: 15px; color: var(--ink); line-height: 1.55; }
 
 /* counts */
