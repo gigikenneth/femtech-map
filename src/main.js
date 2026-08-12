@@ -1,5 +1,5 @@
 import "./style.css";
-import { geoNaturalEarth1, geoPath, geoGraticule10 } from "d3-geo";
+import { geoEquirectangular, geoPath, geoGraticule10 } from "d3-geo";
 import { select, pointer } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
 import { feature } from "topojson-client";
@@ -106,7 +106,7 @@ const state = {
 const mapEl = document.getElementById("map");
 const svg = select(mapEl).append("svg").attr("preserveAspectRatio", "xMidYMid meet");
 const g = svg.append("g");
-const projection = geoNaturalEarth1();
+const projection = geoEquirectangular();
 const path = geoPath(projection);
 const land = feature(worldTopo, worldTopo.objects.countries);
 // Fit the map to inhabited land (excluding Antarctica) so it fills the container.
