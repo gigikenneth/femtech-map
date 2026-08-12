@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <div id="hero" aria-label="Introduction">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">A living atlas of women's health</p>
+        <h1 class="hero-title">Women's health,<br />built everywhere.</h1>
+        <p class="hero-sub">The founders, clinics and communities building better care for women, worldwide, and especially where other maps leave blank.</p>
+        <div class="hero-stats" id="hero-stats"></div>
+        <button id="hero-cta" class="hero-cta">Explore the map →</button>
+        <p class="hero-credit">By Gigi Kenneth · host of the <a href="https://www.asele.tech/blush-and-bloom-podcast" target="_blank" rel="noopener">Blush &amp; Bloom</a> podcast</p>
+      </div>
+    </div>
     <div id="app">
       <aside id="sidebar">
         <header class="brand">
@@ -36,10 +46,11 @@
           <div class="toggles">
             <button class="toggle" data-toggle="podcast" aria-pressed="false">🎙 Blush &amp; Bloom founders</button>
           </div>
+          <p class="eyebrow">Filter by category</p>
           <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
         </div>
 
-        <p class="hint">Tip: click a country to explore every initiative on its continent.</p>
+        <p class="hint">Tip: tap a country to explore every initiative on its continent.</p>
 
         <footer class="credit">
           <p>Built by Gigi Kenneth · host of <a href="https://www.asele.tech/blush-and-bloom-podcast" target="_blank" rel="noopener">Blush &amp; Bloom</a></p>

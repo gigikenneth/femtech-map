@@ -340,4 +340,17 @@ function updateCounts(shown, countryCount) {
 // disclaimer / meta
 document.getElementById("disclaimer").textContent = meta.disclaimer;
 
+// ---------- hero ----------
+const heroStats = [
+  [initiatives.length, "Initiatives"],
+  [new Set(initiatives.map((d) => d.country)).size, "Countries"],
+  [new Set(initiatives.map((d) => d.continent).filter(Boolean)).size, "Continents"],
+  [initiatives.filter((d) => d.isPodcast).length, "Founders"],
+];
+document.getElementById("hero-stats").innerHTML = heroStats
+  .map(([n, l]) => `<div class="hero-stat"><div class="hs-num">${n}</div><div class="hs-label">${l}</div></div>`)
+  .join("");
+const hero = document.getElementById("hero");
+document.getElementById("hero-cta").onclick = () => hero.classList.add("hidden");
+
 apply();
