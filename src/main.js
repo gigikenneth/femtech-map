@@ -8,6 +8,7 @@ import seed from "./data/initiatives.json";
 import more from "./data/more.json";
 import podcast from "./data/podcast.json";
 import communities from "./data/communities.json";
+import programs from "./data/programs.json";
 import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
 
@@ -15,7 +16,7 @@ import { meta } from "./data/meta.js";
 const seen = new Set();
 const initiatives = [];
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-for (const d of [...seed, ...more, ...podcast, ...communities]) {
+for (const d of [...seed, ...more, ...podcast, ...communities, ...programs]) {
   const k = norm(d.name);
   if (seen.has(k)) continue;
   seen.add(k);
