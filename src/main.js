@@ -7,6 +7,7 @@ import worldTopo from "world-atlas/countries-110m.json";
 import seed from "./data/initiatives.json";
 import more from "./data/more.json";
 import podcast from "./data/podcast.json";
+import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
 
 // Merge datasets and drop duplicates by normalized name (seed wins, it carries podcast tags).
@@ -62,18 +63,15 @@ const AFRICA = new Set([
   "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe",
 ]);
 
+// Countries with any initiative get one soft highlight; the rest stay neutral.
 function shade(n) {
-  if (!n) return TIER[0];
-  if (n >= 8) return TIER[5];
-  if (n >= 5) return TIER[4];
-  if (n >= 3) return TIER[3];
-  if (n >= 2) return TIER[2];
-  return TIER[1];
+  return n ? TIER[2] : TIER[0];
 }
 
 initiatives.forEach((d) => {
   d.isAfrica = AFRICA.has(d.country);
   d.isPodcast = !!d.podcast;
+  d.continent = CONTINENT_OF[d.country] || null;
 });
 
 // ---------- state ----------
@@ -93,21 +91,24 @@ const land = feature(worldTopo, worldTopo.objects.countries);
 
 g.append("path").datum(geoGraticule10()).attr("class", "graticule").attr("d", path);
 
-g.selectAll("path.country")
+const countriesSel = g
+  .selectAll("path.country")
   .data(land.features)
   .join("path")
   .attr("class", "country")
   .attr("d", path)
-  .attr("fill", (d) => {
+  .attr("fill", (d) => shade(countByCountry.get(NAME_ALIAS[d.properties.name] || d.properties.name) || 0))
+  .style("cursor", "pointer")
+  .on("click", (e, d) => {
     const name = NAME_ALIAS[d.properties.name] || d.properties.name;
-    return shade(countByCountry.get(name) || 0);
-  })
-  .append("title")
-  .text((d) => {
-    const name = NAME_ALIAS[d.properties.name] || d.properties.name;
-    const n = countByCountry.get(name) || 0;
-    return n ? `${name}, ${n} initiative${n > 1 ? "s" : ""}` : name;
+    const cont = CONTINENT_OF[name];
+    if (cont) openContinentList(cont);
   });
+countriesSel.append("title").text((d) => {
+  const name = NAME_ALIAS[d.properties.name] || d.properties.name;
+  const cont = CONTINENT_OF[name];
+  return cont ? `${name} · click to explore ${cont}` : name;
+});
 
 // pins layer
 const pinsG = g.append("g").attr("class", "pins");
@@ -215,13 +216,47 @@ function openPanel(d) {
     <p class="p-desc">${d.description}</p>
     ${pod}
     <div class="p-meta">
-      <div class="row"><span>Type</span><span>${d.org_type || ", "}</span></div>
+      <div class="row"><span>Type</span><span>${d.org_type || "Organization"}</span></div>
       <div class="row"><span>Country</span><span>${d.country}</span></div>
       <div class="row"><span>Category</span><span>${cat.label}</span></div>
     </div>
     ${d.url ? `<a class="p-visit" href="${d.url}" target="_blank" rel="noopener">Visit ${d.name} →</a>` : ""}
     ${d.source ? `<span class="p-source">Source: <a href="${d.source}" target="_blank" rel="noopener">${new URL(d.source).hostname}</a></span>` : ""}
   `;
+  hideTip();
+  panel.classList.add("open");
+  panel.setAttribute("aria-hidden", "false");
+}
+// Clicking a country lists every initiative on its continent, so people can
+// explore beyond Africa (e.g. what's happening in Europe or Asia).
+function openContinentList(cont) {
+  const items = initiatives
+    .filter((d) => d.continent === cont && visible(d))
+    .sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name));
+  const rows = items
+    .map((d) => {
+      const c = CATS[d.category] || { color: "#ccc" };
+      return `<button class="list-row" data-name="${encodeURIComponent(d.name)}">
+        <span class="lr-dot" style="background:${c.color}"></span>
+        <span class="lr-text">
+          <span class="lr-name">${d.name}${d.isPodcast ? ' <span class="lr-mic">🎙</span>' : ""}</span>
+          <span class="lr-loc">${d.city}, ${d.country}</span>
+        </span>
+      </button>`;
+    })
+    .join("");
+  document.getElementById("panel-body").innerHTML = `
+    <span class="p-cat" style="background:#ece8f6;color:var(--ink)">Continent</span>
+    <h2 class="p-name">${cont}</h2>
+    <p class="p-loc">${items.length} initiative${items.length !== 1 ? "s" : ""} on the map</p>
+    ${items.length ? `<div class="list">${rows}</div>` : `<p class="p-desc">Nothing mapped here yet. This map is community-sourced, so add one.</p>`}
+  `;
+  panel.querySelectorAll(".list-row").forEach((btn) => {
+    btn.onclick = () => {
+      const d = initiatives.find((x) => x.name === decodeURIComponent(btn.dataset.name));
+      if (d) openPanel(d);
+    };
+  });
   hideTip();
   panel.classList.add("open");
   panel.setAttribute("aria-hidden", "false");
