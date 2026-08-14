@@ -213,7 +213,6 @@ a { color: var(--accent); }
 .idx-sub { font-size: clamp(17px, 2vw, 20px); color: var(--ink-soft); margin: 0; line-height: 1.5; }
 .idx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 16px; }
 .idx-card { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); text-decoration: none; color: var(--ink); transition: transform 0.15s, box-shadow 0.15s; overflow: hidden; }
-.idx-card::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
 .idx-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .idx-card .flag { font-size: 34px; line-height: 1; }
 .idx-card .cn { font-family: var(--display); font-weight: 800; font-size: 24px; letter-spacing: -0.02em; line-height: 1; }
@@ -222,7 +221,6 @@ a { color: var(--accent); }
 .idx-tag { font-size: 11.5px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 3px 9px; border-radius: 999px; }
 .idx-cta { font-size: 13.5px; font-weight: 700; color: var(--accent); }
 .idx-card.idx-soon { opacity: 0.6; pointer-events: none; }
-.idx-card.idx-soon::after { background: var(--line); }
 .idx-empty { grid-column: 1 / -1; padding: 40px; text-align: center; color: var(--mute); }
 
 /* ---------- responsive ---------- */
