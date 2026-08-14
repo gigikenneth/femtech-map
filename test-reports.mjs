@@ -5,7 +5,6 @@ import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), "src", "data", "reports");
-const TIERS = ["nascent", "emerging", "growing", "scaling", "pioneering"];
 const KINDS = ["timeline", "funding", "players", "investors", "list"];
 let failures = 0;
 const bad = (f, msg) => { console.error(`✗ ${f}: ${msg}`); failures++; };
@@ -22,11 +21,9 @@ for (const f of files) {
   const m = d.meta || {};
   if (!m.country || !m.slug || !m.flag) bad(f, "meta missing country/slug/flag");
   if (f !== `${m.slug}.json`) bad(f, `filename must match slug (${m.slug}.json)`);
-  if (!TIERS.includes(m.tier)) bad(f, `bad tier: ${m.tier}`);
-  if (!(m.score >= 0 && m.score <= 10)) bad(f, `score out of range: ${m.score}`);
-  for (const k of ["ecosystem", "investment", "policy", "strategy"])
-    if (typeof m.subScores?.[k] !== "number") bad(f, `subScores.${k} missing`);
   if (!d.overview) bad(f, "missing overview");
+  // hero stats, when present, must be sourced
+  for (const s of m.stats || []) if (!isUrl(s.source)) bad(f, `stat without valid source: ${s.value}`);
 
   for (const s of d.sections || []) {
     if (!s.id || !s.heading) bad(f, "section missing id/heading");

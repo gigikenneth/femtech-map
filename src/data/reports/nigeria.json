@@ -4,10 +4,13 @@
     "slug": "nigeria",
     "flag": "🇳🇬",
     "lastUpdated": "2026-08",
-    "tier": "scaling",
-    "score": 8,
-    "subScores": { "ecosystem": 2, "investment": 2, "policy": 3, "strategy": 1 },
-    "scoreBasis": "femtech ventures per capita, dedicated investors, national strategy, clinical guidelines & real-world adoption"
+    "focusAreas": ["Maternal health", "Sexual & reproductive health", "Menstrual health", "Telehealth"],
+    "stats": [
+      { "value": "29%", "label": "of Africa's top healthtech innovators are Nigerian", "source": "https://www.cnbcafrica.com/media/6360036630112/salient-advisory-29-of-africas-top-healthtech-innovators-based-in-nigeria/" },
+      { "value": "128", "label": "active healthtech firms by 2026, up 65 since COVID-19", "source": "https://techcabal.com/2026/05/29/nigeria-added-65-healthtech-startups-after-covid-19-says-report/" },
+      { "value": "30k+", "label": "users on Whispa Health's reproductive-health platform", "source": "https://empowerafrica.com/whispa-health-the-nigerian-healthtech-startup-breaking-the-stigma-around-sexual-and-reproductive-health/" },
+      { "value": "~20%", "label": "of global maternal and child deaths occur in Nigeria", "source": "https://www.channelstv.com/2025/06/09/nigeria-to-reduce-maternal-mortality-rate-by-20-in-2027-fg/" }
+    ]
   },
   "overview": "Nigeria is one of Africa's densest femtech and women's-health-tech ecosystems, home to roughly 29% of the continent's top healthtech innovators and a heavy concentration of women-led ventures spanning maternal health, sexual and reproductive health, and menstrual care. The sector added dozens of startups since COVID-19 (128 active healthtech firms by 2026) and benefits from real policy momentum, including a national Safe Motherhood Strategy (2024-2028) and six clinical guidelines launched in 2025. However, dedicated venture capital remains thin: healthtech funding collapsed to only a few million dollars in 2025, leaving women founders heavily reliant on grants and gender-lens vehicles like Aruwa Capital, FirstCheck Africa, IFC's She Wins Africa, and UNICEF Femtech Ventures.",
   "sections": [
