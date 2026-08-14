@@ -4,7 +4,7 @@ import index from "./data/reports/_index.json";
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 // Ecosystem countries we plan to cover next, shown dimmed until published.
-const PLANNED = ["Kenya", "South Africa", "Ghana", "Uganda", "Rwanda", "Tanzania", "Senegal", "Egypt"];
+const PLANNED = ["Ethiopia", "Morocco", "Cote d'Ivoire", "Zambia", "Zimbabwe", "Malawi"];
 
 const root = document.getElementById("reports-index");
 const published = new Set(index.map((r) => r.name));

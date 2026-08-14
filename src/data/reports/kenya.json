@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "country": "Kenya",
+    "slug": "kenya",
+    "flag": "🇰🇪",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & newborn health", "Sexual & reproductive health", "Menstrual health", "Telehealth", "Diagnostics"],
+    "stats": [
+      { "value": "355", "label": "maternal deaths per 100,000 live births (2019), about 367 estimated in 2022", "source": "https://www.globalfinancingfacility.org/resource/kenya-reproductive-maternal-child-adolescent-health-and-investment-case-202526" },
+      { "value": "57%", "label": "modern contraceptive prevalence among married women (KDHS 2022)", "source": "https://dhsprogram.com/pubs/pdf/PR143/PR143.pdf" },
+      { "value": "USD 52M", "label": "raised by women-led African healthtech in 2023, Kasha-led, 31% of the total", "source": "https://www.forbesafrica.com/health/2024/02/14/women-led-african-healthtech-firms-secure-52m-in-funding-marking-over-2000-increase" },
+      { "value": "2.9M", "label": "mothers reached by Jacaranda Health's PROMPTS SMS service", "source": "https://jacarandahealth.org/program/prompts/" }
+    ]
+  },
+  "overview": "Kenya is one of Africa's deepest women's health innovation ecosystems, anchored in Nairobi and spanning maternal and newborn health, sexual and reproductive health, menstrual health, telehealth and diagnostics. Kasha, a Kenya-based women's health e-commerce platform, raised the largest round ever by a woman-led African health startup, and Jacaranda Health's PROMPTS has reached nearly three million mothers by SMS. In 2025 Nairobi cemented its role as a continental hub, with UNFPA launching its global WomenX Collective Nairobi Hub and Sweden's DAYA venture studio opening an East Africa femtech accelerator there.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Latest major news",
+      "narrative": "Recent activity centres on Nairobi becoming a hub for women's health innovation plus continued AI-driven maternal health scaling.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-06", "text": "UNFPA, Government of Kenya, Africa CDC and Aga Khan University launch the global WomenX Collective Nairobi Hub, aiming to mobilise USD 100M in catalytic investment by 2030.", "source": "https://www.unfpa.org/updates/womenx-collective-nairobi-launch" },
+          { "date": "2025-06", "text": "Sweden's DAYA venture studio opens its first East Africa hub in Nairobi, launching the region's first femtech accelerator for women-led ventures.", "source": "https://femtechinsider.com/from-sweden-to-kenya-how-daya-venture-studio-is-building-a-new-framework-for-womens-health-innovation-in-east-africa/" },
+          { "date": "2026-04", "text": "UNICEF Femtech Ventures announces its first cohort of 11 startups (from 1,100+ applications), including Kenya's SafeRide by Esheria, each receiving up to USD 100k equity-free.", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+          { "date": "2025-01", "text": "Jacaranda Health and IDRC launch a partnership to scale responsible AI (a Swahili LLM in PROMPTS) for new and expecting mothers; PROMPTS has reached about 2.9M women.", "source": "https://idrc-crdi.ca/en/news/jacaranda-health-and-idrc-launch-new-partnership-scale-use-responsible-ai-assist-new-and" },
+          { "date": "2025-06", "text": "The m-mama community emergency transport system (Vodafone Foundation, M-Pesa Foundation, USAID, government) becomes fully operational, benefiting 1.5M+ mothers.", "source": "https://ethicalbusiness.africa/2026/01/08/innovation-is-improving-maternal-health-in-kenya/" }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy & strategy",
+      "narrative": "Kenya has built a layered policy stack for reproductive health and digital health, including binding digital health legislation.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2022-01", "text": "National Reproductive Health Policy 2022-2032 adopted, setting a decade-long framework for reproductive health services.", "source": "https://repository.kippra.or.ke/items/551684ca-2a88-413f-a789-e83831b2768b/full" },
+          { "date": "2023-10", "text": "Digital Health Act 2023 enacted, establishing the Digital Health Agency and a Comprehensive Integrated Digital Health Information System.", "source": "https://www.health.go.ke/kenya-takes-major-step-towards-digital-health-transformation-new-regulations" },
+          { "date": "2025-10", "text": "Kenya RMNCAH-N Investment Case 2025/26-2029/30 published, mapping universal access to reproductive, maternal, newborn and adolescent health with nutrition.", "source": "https://www.globalfinancingfacility.org/resource/kenya-reproductive-maternal-child-adolescent-health-and-investment-case-202526" },
+          { "date": "2025-01", "text": "National Family Planning Guidelines 7th Edition (2025) signed by the Ministry of Health.", "source": "https://www.health.go.ke/sites/default/files/2026-02/Signed%20National%20Family%20Planning%20Guidelines%207th%20Edition%202025%20(1).pdf" }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Latest ecosystem moves",
+      "narrative": "Accelerators, hubs and outcome-based finance are concentrating in Nairobi.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "WomenX Collective Nairobi Hub extends UNFPA's global network (after Berlin 2024), targeting 10.4M averted unintended pregnancies and 21,000 maternal lives saved by 2030.", "source": "https://www.unfpa.org/updates/womenx-collective-nairobi-launch" },
+          { "text": "DAYA Hub Africa launches East Africa's first femtech accelerator, with 100+ founder and partner registrations at launch.", "source": "https://femtechinsider.com/from-sweden-to-kenya-how-daya-venture-studio-is-building-a-new-framework-for-womens-health-innovation-in-east-africa/" },
+          { "text": "A Grand Challenges grant supports advancing Kenya's women's health through policy and fem-tech capacity building.", "source": "https://gcgh.grandchallenges.org/grant/advancing-kenyas-womens-health-through-policy-and-fem-tech-capacity-building" },
+          { "text": "Villgro Africa's African Women Innovating in Healthcare (AWIIH) 2025 cohort backs women-led health ventures across the region.", "source": "https://villgroafrica.org/funding_calls/african-women-innovating-in-healthcare/" },
+          { "text": "Tiko (Triggerise) runs a USD 10.1M Adolescent SRH Development Impact Bond, an outcome-based finance model reaching hundreds of thousands of adolescent girls.", "source": "https://kenya.unfpa.org/en/news/groundbreaking-101-million-adolescent-sexual-and-reproductive-health-development-impact-bond" }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Notable funding rounds",
+      "narrative": "Rounds span women's health e-commerce, telemedicine, diagnostics and maternal health, mixing equity, grants and impact bonds.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          { "company": "Kasha", "amount": "USD 21M", "amountUsd": 21000000, "stage": "Series B", "date": "2023-07", "investor": "Knife Capital", "purpose": "Scale women's health e-commerce across Africa; largest round by a woman-led African health startup", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "company": "Kasha", "amount": "USD 3.6M", "amountUsd": 3600000, "stage": "Series A", "date": "2021-01", "investor": "Finnfund", "purpose": "Expand operations (Finnfund, Swedfund, DFC, Mastercard)", "source": "https://femtechinsider.com/kasha-series-b/" },
+          { "company": "Ilara Health", "amount": "USD 4.2M", "amountUsd": 4200000, "stage": "Pre-Series A", "date": "2024-02", "investor": "DOB Equity", "purpose": "Expand primary care clinics and AI-powered diagnostics across Kenya (equity plus debt)", "source": "https://disruptafrica.com/2024/02/23/kenyan-e-health-startup-ilara-health-raises-4-2m-pre-series-a-funding-round/" },
+          { "company": "Ilara Health", "amount": "USD 1.1M", "amountUsd": 1100000, "stage": "Grant", "date": "2020-10", "investor": "Gates Foundation", "purpose": "Improve maternal health outcomes via diagnostics", "source": "https://tracxn.com/d/companies/ilara-health/__95gGxX-7SNf26cowJenEaORo05rBxWYaRaxs4xbVTQU" },
+          { "company": "Zuri Health", "amount": "undisclosed", "amountUsd": null, "stage": "Strategic / gender-lens", "date": "2023-07", "investor": "Five35 Ventures", "purpose": "Scale woman-led telemedicine virtual hospital across Africa", "source": "https://impactalpha.com/five35-ventures-backs-zuri-health-to-expand-mobile-healthcare-in-africa/" },
+          { "company": "Tiko (Triggerise)", "amount": "USD 10.1M", "amountUsd": 10100000, "stage": "Impact bond", "date": "2023-12", "investor": "Bridges Outcomes Partnerships", "purpose": "Adolescent SRH and HIV Development Impact Bond reaching 300,000+ girls across 10 counties", "source": "https://www.jointsdgfund.org/article/kenya-launches-groundbreaking-us-101-million-development-impact-bond" },
+          { "company": "Access Afya", "amount": "USD 1M", "amountUsd": 1000000, "stage": "Seed", "date": "2018-07", "investor": "Undisclosed", "purpose": "Scale mini-clinic primary care model in Greater Nairobi", "source": "https://www.crunchbase.com/organization/access-afya" },
+          { "company": "SafeRide by Esheria", "amount": "up to USD 100k", "amountUsd": 100000, "stage": "Grant (equity-free)", "date": "2026-04", "investor": "UNICEF Femtech Ventures", "purpose": "Offline-first women's safety reporting in public transport", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Key players & hubs",
+      "narrative": "Kenya's ecosystem mixes venture-backed startups, nonprofits, government bodies and multilateral hubs.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          { "name": "Kasha", "type": "startup", "note": "Women's health e-commerce platform; largest woman-led African health round", "source": "https://femtechinsider.com/kasha-series-b/" },
+          { "name": "Jacaranda Health", "type": "ngo", "note": "PROMPTS AI/SMS maternal health tool reaching about 2.9M mothers, with a Swahili LLM", "source": "https://jacarandahealth.org/program/prompts/" },
+          { "name": "Zuri Health", "type": "startup", "note": "Woman-led telemedicine virtual hospital; Bayer contraception partner, 9 African markets", "source": "https://impactalpha.com/five35-ventures-backs-zuri-health-to-expand-mobile-healthcare-in-africa/" },
+          { "name": "Ilara Health", "type": "startup", "note": "AI-powered diagnostics and primary care clinics; maternal health focus", "source": "https://www.crunchbase.com/organization/ilara-health" },
+          { "name": "Access Afya", "type": "startup", "note": "Chain of 15 mini-clinics in Greater Nairobi, 240,000+ patients served", "source": "https://www.accessafya.com/home" },
+          { "name": "Tiko (Triggerise)", "type": "startup", "note": "Mobile platform connecting adolescents to SRH services via outcome-based finance", "source": "https://tiko.org/2023/12/20/why-tiko-invests-in-the-promise-of-sexual-reproductive-health/" },
+          { "name": "ZanaAfrica", "type": "ngo", "note": "Menstrual health: Safi/Nia sanitary pads plus rights-based education, 100,000+ girls", "source": "https://zanaafrica.org/menstrual-health-management" },
+          { "name": "Lily Health", "type": "startup", "note": "Nairobi-based mobile messaging for reproductive health advice and cycle tracking", "source": "https://tracxn.com/d/companies/lilyhealth/__ZhrEuyvjSIbGt00-VKZPxtSdX6m5WUE-5Rh1MOZCdBs" },
+          { "name": "Malaica", "type": "startup", "note": "Connects 200,000+ mothers to a pregnancy community via a hybrid care model", "source": "https://impacc.org/en/venture/14294/" },
+          { "name": "Totohealth", "type": "startup", "note": "SMS-based pregnancy and child health information for mothers and under-fives", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+          { "name": "WomenX Collective Nairobi Hub", "type": "hub", "note": "UNFPA/Kenya/Africa CDC/Aga Khan University hub; USD 100M catalytic target by 2030", "source": "https://www.unfpa.org/updates/womenx-collective-nairobi-launch" },
+          { "name": "DAYA Hub Africa", "type": "hub", "note": "Sweden-founded venture studio running East Africa's first femtech accelerator in Nairobi", "source": "https://www.dayahub.africa/" },
+          { "name": "Kenya Ministry of Health", "type": "govt", "note": "Owns Digital Health Act 2023, RMNCAH-N Investment Case and family planning guidelines", "source": "https://www.health.go.ke/kenya-takes-major-step-towards-digital-health-transformation-new-regulations" },
+          { "name": "Villgro Africa", "type": "investor", "note": "Health incubator running the African Women Innovating in Healthcare (AWIIH) cohort", "source": "https://villgroafrica.org/funding_calls/african-women-innovating-in-healthcare/" }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "heading": "Active investors",
+      "narrative": "A mix of gender-lens VCs, DFIs, foundations and outcome funders back Kenyan women's health.",
+      "visual": {
+        "kind": "investors",
+        "items": [
+          { "name": "Five35 Ventures", "hq": "Global", "role": "Gender-lens VC; backed Zuri Health and joined Kasha's Series B", "source": "https://impactalpha.com/five35-ventures-backs-zuri-health-to-expand-mobile-healthcare-in-africa/" },
+          { "name": "Knife Capital", "hq": "South Africa", "role": "Led Kasha's USD 21M Series B", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "name": "Finnfund", "hq": "Finland", "role": "DFI backing Kasha across Series A and B", "source": "https://www.finnfund.fi/en/hankkeet/kasha-2/" },
+          { "name": "U.S. DFC", "hq": "USA", "role": "USD 1M equity in Kasha supporting women's health in East Africa", "source": "https://www.dfc.gov/media/press-releases/1-million-dfc-equity-investment-kasha-global-inc-supports-womens-health-east" },
+          { "name": "DOB Equity", "hq": "Netherlands", "role": "Led Ilara Health's USD 4.2M pre-Series A", "source": "https://disruptafrica.com/2024/02/23/kenyan-e-health-startup-ilara-health-raises-4-2m-pre-series-a-funding-round/" },
+          { "name": "Gates Foundation", "hq": "USA", "role": "USD 1.1M grant to Ilara Health for maternal health", "source": "https://tracxn.com/d/companies/ilara-health/__95gGxX-7SNf26cowJenEaORo05rBxWYaRaxs4xbVTQU" },
+          { "name": "UNICEF Femtech Ventures", "hq": "Global", "role": "Equity-free platform backing Kenyan startups including SafeRide by Esheria", "source": "https://www.unicef.org/innovation/press-releases/african-and-asian-frontier-tech-founders-suppported-by-sweden-and-unicef-close-womens" },
+          { "name": "UNFPA", "hq": "Global", "role": "Co-founder of WomenX Collective Nairobi Hub; adolescent SRH impact bond funder", "source": "https://www.unfpa.org/womenx-collective" },
+          { "name": "Bridges Outcomes Partnerships", "hq": "UK", "role": "Upfront funder of Tiko's USD 10.1M adolescent SRH Development Impact Bond", "source": "https://www.jointsdgfund.org/article/kenya-launches-groundbreaking-us-101-million-development-impact-bond" },
+          { "name": "Philips Foundation", "hq": "Netherlands", "role": "Co-investor in Ilara Health's pre-Series A", "source": "https://disruptafrica.com/2024/02/23/kenyan-e-health-startup-ilara-health-raises-4-2m-pre-series-a-funding-round/" }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "White papers & reports",
+      "narrative": "Key reports frame Kenya's women's health funding and policy landscape.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Salient Advisory / Forbes Africa: Women-Led African Healthtech Firms Secure USD 52M, a 2,000%+ increase (2023 roundup)", "source": "https://www.forbesafrica.com/health/2024/02/14/women-led-african-healthtech-firms-secure-52m-in-funding-marking-over-2000-increase" },
+          { "text": "Kenya RMNCAH-N Investment Case 2025/26-2029/30, Global Financing Facility", "source": "https://www.globalfinancingfacility.org/resource/kenya-reproductive-maternal-child-adolescent-health-and-investment-case-202526" },
+          { "text": "Sectoral Brief: Gender and Health in Kenya, UN Women (2025)", "source": "https://africa.unwomen.org/sites/default/files/2025-01/sectoral_brief-gender_and_health_in_kenya_2.pdf" },
+          { "text": "Kenya Demographic and Health Survey 2022 Key Indicators Report, DHS Program", "source": "https://dhsprogram.com/pubs/pdf/PR143/PR143.pdf" }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    { "label": "Femtech Insider, Kasha Series B", "url": "https://femtechinsider.com/kasha-series-b/" },
+    { "label": "TechCrunch, Kasha USD 21M", "url": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+    { "label": "UNFPA, WomenX Nairobi Hub launch", "url": "https://www.unfpa.org/updates/womenx-collective-nairobi-launch" },
+    { "label": "Femtech Insider, DAYA East Africa", "url": "https://femtechinsider.com/from-sweden-to-kenya-how-daya-venture-studio-is-building-a-new-framework-for-womens-health-innovation-in-east-africa/" },
+    { "label": "Femtech Insider, UNICEF Femtech Ventures cohort", "url": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+    { "label": "Jacaranda Health, PROMPTS", "url": "https://jacarandahealth.org/program/prompts/" },
+    { "label": "IDRC, Jacaranda and IDRC AI partnership", "url": "https://idrc-crdi.ca/en/news/jacaranda-health-and-idrc-launch-new-partnership-scale-use-responsible-ai-assist-new-and" },
+    { "label": "ImpactAlpha, Five35 backs Zuri Health", "url": "https://impactalpha.com/five35-ventures-backs-zuri-health-to-expand-mobile-healthcare-in-africa/" },
+    { "label": "Disrupt Africa, Ilara Health USD 4.2M", "url": "https://disruptafrica.com/2024/02/23/kenyan-e-health-startup-ilara-health-raises-4-2m-pre-series-a-funding-round/" },
+    { "label": "Joint SDG Fund, Tiko impact bond", "url": "https://www.jointsdgfund.org/article/kenya-launches-groundbreaking-us-101-million-development-impact-bond" },
+    { "label": "MoH Kenya, Digital Health transformation", "url": "https://www.health.go.ke/kenya-takes-major-step-towards-digital-health-transformation-new-regulations" },
+    { "label": "GFF, Kenya RMNCAH-N Investment Case", "url": "https://www.globalfinancingfacility.org/resource/kenya-reproductive-maternal-child-adolescent-health-and-investment-case-202526" },
+    { "label": "Forbes Africa / Salient, USD 52M women-led", "url": "https://www.forbesafrica.com/health/2024/02/14/women-led-african-healthtech-firms-secure-52m-in-funding-marking-over-2000-increase" },
+    { "label": "DHS Program, KDHS 2022", "url": "https://dhsprogram.com/pubs/pdf/PR143/PR143.pdf" },
+    { "label": "ZanaAfrica, Menstrual Health", "url": "https://zanaafrica.org/menstrual-health-management" }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "country": "Senegal",
+    "slug": "senegal",
+    "flag": "🇸🇳",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & reproductive health", "Cervical cancer screening", "Digital health records", "Telemedicine", "Family planning"],
+    "stats": [
+      { "value": "153 / 100,000", "label": "Maternal mortality ratio (2023), down from 236 in 2017", "source": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00616-6/abstract" },
+      { "value": "USD 43.8M", "label": "World Bank grant backing Senegal's health-system digitalisation programme (PDSS)", "source": "https://www.ecofinagency.com/telecom/2401-46358-senegal-prepares-to-regulate-e-health-in-push-to-modernize-healthcare" },
+      { "value": "80+ centres", "label": "Health centres and labs in Askcare's cervical-cancer screening network in Senegal", "source": "https://www.taraforwomen.org/blog/askcare-femtech-democratizing-womens-health-in-africa" },
+      { "value": "USD 20M", "label": "WIC Capital fund for women-led businesses in Senegal & Cote d'Ivoire", "source": "https://fsdafrica.org/investment/wic-capital/" }
+    ]
+  },
+  "overview": "Senegal's women's health innovation ecosystem is anchored in maternal, reproductive and cervical-cancer care, supported by a fast-maturing digital-health push led by the government. Homegrown startups such as Njureel (teleconsultation and reproductive-health education) and Askcare (low-cost cervical-cancer screening) operate alongside a national e-health strategy validated in 2025 and a sovereign-backed fund, Oyass Capital, financing healthtech infrastructure. Gender-lens capital is unusually visible for the region, led by Dakar-based WIC Capital and Janngo Capital. The state has cut maternal mortality sharply since 2017 while pushing a Shared Single Patient Record and pending e-health legislation.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Latest major news",
+      "narrative": "Recent activity clusters around digital-health funding and cervical-cancer innovation.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-07", "text": "Eyone Medical raises USD 3M from FONSIS-backed Oyass Capital to digitise health records across Francophone West Africa.", "source": "https://launchbaseafrica.com/2025/07/24/senegals-sovereign-wealth-fund-backs-eyone-medical-with-3m-in-first-deployment-from-89m-oyass-capital-fund/" },
+          { "date": "2026-03", "text": "Eyone Medical secures a further CFA 1bn (USD 1.7M) from Oyass Capital to roll out Senegal's Shared Single Patient Record (DPUP).", "source": "https://disruptafrica.com/2026/03/12/senegalese-e-health-startup-eyone-raises-1-7m-funding/" },
+          { "date": "2025-01", "text": "Ministry of Health's Digital Health Unit announces a bill to regulate e-health services in Senegal.", "source": "https://www.ecofinagency.com/telecom/2401-46358-senegal-prepares-to-regulate-e-health-in-push-to-modernize-healthcare" },
+          { "date": "2025-08", "text": "Senegal launches the CAAP initiative to advance women's, children's and adolescents' health.", "source": "https://pmnch.who.int/news-and-events/news/item/14-08-2025-senegal-launches-caap-initiative-with-unified-commitment-to-advance-women-s-children-s-and-adolescents-health" }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy & strategy",
+      "narrative": "A national digital-health framework and reproductive-health strategy set the direction.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-04", "text": "Senegal validates its National Digital Health Strategy (Strategie Nationale de Sante Numerique) with roughly USD 50M in World Bank support.", "source": "https://www.ecofinagency.com/telecom/2401-46358-senegal-prepares-to-regulate-e-health-in-push-to-modernize-healthcare" },
+          { "date": "2024-01", "text": "SRMNIA-N Strategic Plan 2024-2028 commits to accelerating reductions in maternal, neonatal and adolescent mortality, with action plans for family planning and adolescent reproductive health.", "source": "https://pmnch.who.int/news-and-events/news/item/14-08-2025-senegal-launches-caap-initiative-with-unified-commitment-to-advance-women-s-children-s-and-adolescents-health" },
+          { "date": "2012-01", "text": "National Family Planning Action Plan launched, built on the '3 Ds' (democratise, demedicalise, decentralise) in response to the Ouagadougou Call to Action.", "source": "https://www.exemplars.health/topics/neonatal-and-maternal-mortality/senegal/what-did-senegal-do" }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Latest ecosystem moves",
+      "narrative": "Startups and hubs are building reproductive-health and digital-care services.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Njureel scales its Sama Bajene reproductive-health programme, reporting 60+ trained community health workers, 500+ consultations and 800+ women reached.", "source": "https://www.wearetech.africa/en/fils/solutions/senegal-njureel-eases-healthcare-access" },
+          { "text": "Askcare expands its '3T' cervical-cancer model (HPV test, AI colposcope, thermo-ablation) across a network of 80+ centres in Senegal, plus Rwanda and Nigeria.", "source": "https://www.taraforwomen.org/blog/askcare-femtech-democratizing-womens-health-in-africa" },
+          { "text": "Eyone Medical's Shared Patient Record platform now runs in 60+ healthcare institutions across Senegal, Mali, Cote d'Ivoire, Cameroon, Gabon and France.", "source": "https://nextbillion.net/news/senegals-eyone-medical-raises-3-million-to-digitise-west-africas-health-records/" },
+          { "text": "Lafiya Innovators runs a health-tech incubation Starter Track in Dakar for early-stage health startups.", "source": "https://dakar.impacthub.net/lafiya-innovators/" }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Notable funding rounds",
+      "narrative": "Government-backed and gender-lens capital dominate recent deals.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          { "company": "Eyone Medical", "amount": "USD 3M", "amountUsd": 3000000, "stage": "Growth equity", "date": "2025-07", "investor": "Oyass Capital (FONSIS)", "purpose": "Digitise health records across Francophone West Africa", "source": "https://launchbaseafrica.com/2025/07/24/senegals-sovereign-wealth-fund-backs-eyone-medical-with-3m-in-first-deployment-from-89m-oyass-capital-fund/" },
+          { "company": "Eyone Medical", "amount": "USD 1.7M", "amountUsd": 1700000, "stage": "Follow-on equity", "date": "2026-03", "investor": "Oyass Capital (FONSIS)", "purpose": "Roll out Senegal's Shared Single Patient Record (DPUP)", "source": "https://disruptafrica.com/2026/03/12/senegalese-e-health-startup-eyone-raises-1-7m-funding/" }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Key players & hubs",
+      "narrative": "A mix of women's-health startups, digital-health firms, incubators and government bodies.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          { "name": "Askcare Femtech", "type": "startup", "note": "Low-cost, AI-assisted cervical-cancer screening & treatment; founded by Aissatou Diallo.", "source": "https://www.taraforwomen.org/blog/askcare-femtech-democratizing-womens-health-in-africa" },
+          { "name": "Njureel", "type": "startup", "note": "Teleconsultation & reproductive-health platform; runs the Sama Bajene women's-health education programme.", "source": "https://www.wearetech.africa/en/fils/solutions/senegal-njureel-eases-healthcare-access" },
+          { "name": "Sama Bajene", "type": "startup", "note": "Helps health facilities manage services/appointments to reduce maternal mortality; supports women victims of violence.", "source": "https://aps.sn/les-startups-senegalaises-en-plein-dans-la-revolution-de-la-medecine/" },
+          { "name": "Eyone Medical", "type": "startup", "note": "Interoperable digital-health records; powers Senegal's Shared Single Patient Record. Founded 2015.", "source": "https://nextbillion.net/news/senegals-eyone-medical-raises-3-million-to-digitise-west-africas-health-records/" },
+          { "name": "CTIC Dakar", "type": "hub", "note": "First ICT startup incubator/accelerator in Francophone Sub-Saharan Africa (est. 2011).", "source": "https://www.wearetech.africa/en/fils-uk/tech-stars/ctic-dakar-a-catalyst-for-technological-and-entrepreneurial-innovation-in-senegal" },
+          { "name": "Lafiya Innovators (Impact Hub Dakar)", "type": "hub", "note": "Health-tech incubation programme with a Dakar-based Starter Track.", "source": "https://dakar.impacthub.net/lafiya-innovators/" },
+          { "name": "Ministry of Health & Social Action, Digital Health Unit", "type": "govt", "note": "Drives the National Digital Health Strategy and pending e-health regulation.", "source": "https://www.ecofinagency.com/telecom/2401-46358-senegal-prepares-to-regulate-e-health-in-push-to-modernize-healthcare" },
+          { "name": "Association Sante Mobile (Dakar)", "type": "ngo", "note": "Addresses menstrual hygiene and reproductive health for girls and women.", "source": "https://aps.sn/les-startups-senegalaises-en-plein-dans-la-revolution-de-la-medecine/" }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "heading": "Active investors",
+      "narrative": "Senegal has notable sovereign-backed and gender-lens capital for health and women-led ventures.",
+      "visual": {
+        "kind": "investors",
+        "items": [
+          { "name": "Oyass Capital", "hq": "Senegal", "role": "FONSIS-backed fund; USD 3M+ into healthtech Eyone Medical for digital health infrastructure.", "source": "https://launchbaseafrica.com/2025/07/24/senegals-sovereign-wealth-fund-backs-eyone-medical-with-3m-in-first-deployment-from-89m-oyass-capital-fund/" },
+          { "name": "WIC Capital", "hq": "Senegal", "role": "First Francophone West Africa fund dedicated to women-led businesses; USD 20M, equity & quasi-equity.", "source": "https://fsdafrica.org/investment/wic-capital/" },
+          { "name": "Janngo Capital", "hq": "Cote d'Ivoire", "role": "Pan-African, gender-balanced VC led by Fatoumata Ba; healthcare among target sectors; EUR 73M fund II.", "source": "https://launchbaseafrica.com/2025/10/15/meet-30-leading-africa-focused-vc-firms-led-by-female-managers/" },
+          { "name": "FONSIS (Senegal sovereign wealth fund)", "hq": "Senegal", "role": "Parent of Oyass Capital, financing high-impact SMEs including health.", "source": "https://disruptafrica.com/2026/03/12/senegalese-e-health-startup-eyone-raises-1-7m-funding/" },
+          { "name": "UNICEF Femtech Ventures", "hq": "Global", "role": "Five-year (2025-2030) platform giving equity-free capital up to USD 100k to women's-health startups; over half of 1,100+ applicants from Africa.", "source": "https://www.unicef.org/innovation/femtech-cohort-1" }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "White papers & reports",
+      "narrative": "Evidence base on Senegal's maternal-health and family-planning progress.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Strengthening health systems and accountability: Senegal's path to success in reproductive, maternal, newborn and child health (The Lancet, 2025).", "source": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00616-6/abstract" },
+          { "text": "Neonatal and Maternal Mortality: Senegal (Exemplars in Global Health).", "source": "https://www.exemplars.health/topics/neonatal-and-maternal-mortality/senegal/what-did-senegal-do" },
+          { "text": "Menstrual Hygiene Management: behaviour and practices in the Louga region, Senegal (UN Women / WSSCC).", "source": "https://africa.unwomen.org/en/digital-library/publications/2015/06/menstrual-hygiene-management----behaviour-and-practices-in-the-louga-region-senegal" }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    { "label": "Tara for Women, Askcare Femtech", "url": "https://www.taraforwomen.org/blog/askcare-femtech-democratizing-womens-health-in-africa" },
+    { "label": "We are Tech, Njureel", "url": "https://www.wearetech.africa/en/fils/solutions/senegal-njureel-eases-healthcare-access" },
+    { "label": "APS, Senegalese health startups", "url": "https://aps.sn/les-startups-senegalaises-en-plein-dans-la-revolution-de-la-medecine/" },
+    { "label": "Disrupt Africa, Eyone USD 1.7M", "url": "https://disruptafrica.com/2026/03/12/senegalese-e-health-startup-eyone-raises-1-7m-funding/" },
+    { "label": "LaunchBase Africa, Eyone USD 3M", "url": "https://launchbaseafrica.com/2025/07/24/senegals-sovereign-wealth-fund-backs-eyone-medical-with-3m-in-first-deployment-from-89m-oyass-capital-fund/" },
+    { "label": "NextBillion, Eyone Medical", "url": "https://nextbillion.net/news/senegals-eyone-medical-raises-3-million-to-digitise-west-africas-health-records/" },
+    { "label": "Ecofin, Senegal e-health regulation", "url": "https://www.ecofinagency.com/telecom/2401-46358-senegal-prepares-to-regulate-e-health-in-push-to-modernize-healthcare" },
+    { "label": "The Lancet, Senegal RMNCH", "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)00616-6/abstract" },
+    { "label": "PMNCH/WHO, Senegal CAAP", "url": "https://pmnch.who.int/news-and-events/news/item/14-08-2025-senegal-launches-caap-initiative-with-unified-commitment-to-advance-women-s-children-s-and-adolescents-health" },
+    { "label": "Exemplars, Senegal maternal mortality", "url": "https://www.exemplars.health/topics/neonatal-and-maternal-mortality/senegal/what-did-senegal-do" },
+    { "label": "FSD Africa, WIC Capital", "url": "https://fsdafrica.org/investment/wic-capital/" },
+    { "label": "LaunchBase Africa, female fund managers", "url": "https://launchbaseafrica.com/2025/10/15/meet-30-leading-africa-focused-vc-firms-led-by-female-managers/" },
+    { "label": "CTIC Dakar, We are Tech", "url": "https://www.wearetech.africa/en/fils-uk/tech-stars/ctic-dakar-a-catalyst-for-technological-and-entrepreneurial-innovation-in-senegal" },
+    { "label": "Lafiya Innovators, Impact Hub Dakar", "url": "https://dakar.impacthub.net/lafiya-innovators/" },
+    { "label": "UNICEF Femtech Ventures", "url": "https://www.unicef.org/innovation/femtech-cohort-1" }
+  ]
+}

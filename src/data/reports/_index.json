@@ -1,10 +1,11 @@
 [
-  {
-    "slug": "nigeria",
-    "name": "Nigeria",
-    "flag": "🇳🇬",
-    "lastUpdated": "2026-08",
-    "focus": ["Maternal", "SRH", "Menstrual"],
-    "hook": "Africa's densest women's-health-tech ecosystem: strong on policy, starved of dedicated venture capital."
-  }
+  { "slug": "nigeria", "name": "Nigeria", "flag": "🇳🇬", "lastUpdated": "2026-08", "focus": ["Maternal", "SRH", "Menstrual"], "hook": "Africa's densest women's-health-tech ecosystem: strong on policy, starved of dedicated venture capital." },
+  { "slug": "kenya", "name": "Kenya", "flag": "🇰🇪", "lastUpdated": "2026-08", "focus": ["Maternal", "SRH", "Telehealth"], "hook": "One of the continent's deepest ecosystems, home to Kasha and Jacaranda Health's 2.9M-mother PROMPTS." },
+  { "slug": "south-africa", "name": "South Africa", "flag": "🇿🇦", "lastUpdated": "2026-08", "focus": ["Maternal", "SRH", "HIV"], "hook": "Mature health-tech and SRH market anchored by MomConnect, with a small but fast-growing femtech scene." },
+  { "slug": "rwanda", "name": "Rwanda", "flag": "🇷🇼", "lastUpdated": "2026-08", "focus": ["Maternal", "E-commerce", "Cervical"], "hook": "State-built infrastructure, Kasha, Zipline blood drones and HPV elimination, makes it a standout hub." },
+  { "slug": "ghana", "name": "Ghana", "flag": "🇬🇭", "lastUpdated": "2026-08", "focus": ["Maternal", "Menstrual", "Cervical"], "hook": "Government-led menstrual and maternal health push, with dedicated femtech funding still thin." },
+  { "slug": "uganda", "name": "Uganda", "flag": "🇺🇬", "lastUpdated": "2026-08", "focus": ["Maternal", "SRH", "Cancer screening"], "hook": "Maternal and reproductive health innovation around Kampala, largely grant-funded." },
+  { "slug": "tanzania", "name": "Tanzania", "flag": "🇹🇿", "lastUpdated": "2026-08", "focus": ["Maternal", "Menstrual", "Insurance"], "hook": "National maternal transport and menstrual health enterprises lead a mostly grant-driven ecosystem." },
+  { "slug": "senegal", "name": "Senegal", "flag": "🇸🇳", "lastUpdated": "2026-08", "focus": ["Maternal", "Cervical", "Digital health"], "hook": "Francophone West Africa's digital-health leader, with unusually visible gender-lens capital." },
+  { "slug": "egypt", "name": "Egypt", "flag": "🇪🇬", "lastUpdated": "2026-08", "focus": ["SRH", "Maternal", "Fertility"], "hook": "Small but distinctive Arabic-language femtech, led by MotherBeing and menstrual health apps." }
 ]

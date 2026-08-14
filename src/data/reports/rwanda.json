@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "country": "Rwanda",
+    "slug": "rwanda",
+    "flag": "🇷🇼",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Women's health e-commerce & last-mile access", "Maternal health & drone-delivered blood", "Digital community health workers", "Reproductive rights & cervical cancer", "Femtech funding & founders"],
+    "stats": [
+      { "value": "105", "label": "Maternal deaths per 100,000 live births (2023), down from 210 in 2014/15", "source": "https://rwanda.unfpa.org/en/topics/maternal-health" },
+      { "value": "64%", "label": "Modern contraceptive prevalence among married women (2020), up from 14% in 2000", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9758849/" },
+      { "value": "51%", "label": "Reduction in in-hospital maternal deaths from postpartum hemorrhage at facilities served by Zipline drones", "source": "https://www.thinkglobalhealth.org/article/drones-deliver-humanitarian-aid-africa" },
+      { "value": "1.63M", "label": "Women screened for cervical cancer with HPV DNA tests (30% of eligible, by Oct 2025)", "source": "https://www.afro.who.int/photo-story/rwanda-steps-progress-towards-elimination-cervical-cancer" }
+    ]
+  },
+  "overview": "Rwanda is one of Africa's clearest femtech and women's health innovation hubs, anchored by Kasha, the continent's first femtech e-commerce platform and the largest-ever funding round for a woman-founded African healthtech firm. The state has paired this with world-leading public infrastructure: Zipline drone delivery of blood and oxytocin that has sharply cut postpartum-hemorrhage deaths, nationwide digital tools for community health workers, and a first-in-Africa HPV programme now driving toward cervical cancer elimination by 2027. A 2024 landmark law expanded adolescent access to reproductive services without parental consent. Kigali's Norrsken House and HealthTech Hub Africa give the ecosystem a startup engine.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Latest major news",
+      "narrative": "Recent developments span funding, policy and public-health milestones.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-10", "text": "Rwanda hosts the Africa HealthTech Summit 2025 in Kigali and champions Digital Public Infrastructure for connected, inclusive health systems.", "source": "https://www.risa.gov.rw/news-detail/rwanda-champions-digital-public-infrastructure-dpi-to-transform-health-at-africa-healthtech-summit-2025" },
+          { "date": "2025-10", "text": "By October 2025, roughly 1.63 million women (30% of those eligible) had been screened for cervical cancer using HPV DNA tests.", "source": "https://www.afro.who.int/photo-story/rwanda-steps-progress-towards-elimination-cervical-cancer" },
+          { "date": "2025-02", "text": "Rwanda's Ministry of Health launches Mission 2027, the Accelerated Plan for Elimination of Cervical Cancer, targeting elimination three years ahead of the WHO goal.", "source": "https://www.moh.gov.rw/news-detail/rwanda-launches-national-strategy-for-cervical-cancer-elimination-by-2027" },
+          { "date": "2025-02", "text": "Kasha launches Operation SHE (Sustainable Health Equitably) Africa, a private-sector collective to keep HIV, malaria and reproductive-health supplies flowing after the USAID Stop Work Order.", "source": "https://www.einpresswire.com/article/786048802/kasha-launches-operation-she-africa-to-bridge-urgent-medicine-access-gap-following-usaid-stop-work-order" },
+          { "date": "2024-09", "text": "French pharma group Sanofi's Global Health Unit makes a strategic equity investment in Kasha to expand delivery of chronic-disease and women's-health products across Africa.", "source": "https://disruptafrica.com/2024/09/10/rwandan-digital-health-access-startup-kasha-raises-further-funding-for-expansion/" },
+          { "date": "2024-10", "text": "Rwanda's Parliament passes a landmark health law giving adolescents aged 15+ access to contraception and reproductive services without parental consent.", "source": "https://reproductiverights.org/news/center-drives-landmark-law-expanding-adolescent-health-care-access-rwanda/" }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy & strategy",
+      "narrative": "Government policy underpins the country's women's health gains.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-02", "text": "Accelerated Plan for Elimination of Cervical Cancer 2024-2027 (Mission 2027) commits to surpass WHO 90-70-90 targets, building on a first-in-Africa HPV vaccination programme launched in 2011.", "source": "https://www.moh.gov.rw/news-detail/rwanda-launches-national-strategy-for-cervical-cancer-elimination-by-2027" },
+          { "date": "2024-10", "text": "New health law lets adolescents 15+ access contraception, HIV prevention and reproductive services without parental consent, and sets a framework for assisted reproductive technologies.", "source": "https://www.newtimes.co.rw/article/31193/news/featured/what-rwandas-new-health-law-means-for-access-to-sexual-reproductive-services/amp" },
+          { "date": "2024-06", "text": "The CEDAW Committee recommends Rwanda remove parental-consent barriers for 16-17 year-olds, following a shadow report by the Center for Reproductive Rights, HDI and GLIHD.", "source": "https://reproductiverights.org/news/center-drives-landmark-law-expanding-adolescent-health-care-access-rwanda/" },
+          { "date": "2021-01", "text": "FP2030 commitment: raise modern contraceptive prevalence among married women toward 64% and integrate rights-based reproductive, maternal, newborn, child and adolescent health strategy.", "source": "https://www.fp2030.org/commitment-maker/rwanda/" }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Latest ecosystem moves",
+      "narrative": "Kigali's hubs and platforms are scaling women's and maternal health tools.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "HealthTech Hub Africa, at Norrsken House Kigali, hosts up to 30 sub-Saharan health startups with funding, masterclasses and mentorship; its 2025 cohort was opened for applications.", "source": "https://www.techinafrica.com/healthtech-hub-africa-opens-2025-program-for-african-health-startups/" },
+          { "text": "TIP Global Health's E-Heza Data Solutions, a point-of-care app for frontline health workers, has improved care for over 112,000 mothers and children and was selected for HealthTech Hub Africa.", "source": "https://tipglobalhealth.org/e-heza-data-solutions-selected-for-healthtech-hub-africa/" },
+          { "text": "Rwanda's community health workers moved from paper registers to a digital community electronic medical record, scaling toward 58,567 CHWs across 30 districts by end-2026 with UNICEF support.", "source": "https://www.unicef.org/rwanda/stories/piles-registers-digital-care-community-health-workers-rwanda-adopt-digital-health-rec" },
+          { "text": "Kasha expanded operations beyond Rwanda and Kenya into South Africa, DRC, Burundi, Tanzania, Uganda and West Africa, reaching customers via 200+ trained women agents.", "source": "https://femtechinsider.com/boehringer-ingelheim-invests-in-kasha-global-to-expand-womens-health-access-in-africa/" },
+          { "text": "Babyl, a digital telemedicine provider partnered with the government, delivers remote consultations reaching women nationwide.", "source": "https://businessfightspoverty.org/a-transformative-journey-kashas-mission-to-provide-equal-health-access-to-all-women/" }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Notable funding rounds",
+      "narrative": "Kasha dominates the country's femtech capital, drawing global health and gender-lens investors.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          { "company": "Kasha", "amount": "USD 21M", "amountUsd": 21000000, "stage": "Series B", "date": "2023-07", "investor": "Knife Capital", "purpose": "Expand women's health access platform across Africa; largest-ever round for a woman-founded African healthtech firm", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "company": "Kasha", "amount": "undisclosed", "amountUsd": null, "stage": "Strategic equity", "date": "2024-09", "investor": "Sanofi Global Health Unit Impact Fund", "purpose": "Expand delivery of chronic-disease and women's-health medications into more African markets", "source": "https://disruptafrica.com/2024/09/10/rwandan-digital-health-access-startup-kasha-raises-further-funding-for-expansion/" },
+          { "company": "Kasha", "amount": "undisclosed", "amountUsd": null, "stage": "Strategic equity", "date": "2024-01", "investor": "Boehringer Ingelheim Social Engagement Fund", "purpose": "Improve last-mile access to pharmaceuticals and health products with a focus on women's health", "source": "https://femtechinsider.com/boehringer-ingelheim-invests-in-kasha-global-to-expand-womens-health-access-in-africa/" },
+          { "company": "Kasha", "amount": "USD 1M", "amountUsd": 1000000, "stage": "Early-stage / equity", "date": "2020-11", "investor": "Swedfund", "purpose": "Scale femtech e-commerce and women's health access in East Africa", "source": "https://www.newtimes.co.rw/article/181506/News/rwandan-femtech-start-up-scoops-1-million-financing" }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Key players & hubs",
+      "narrative": "A mix of startups, government programmes, hubs and NGOs drive Rwanda's women's health tech.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          { "name": "Kasha", "type": "startup", "note": "Africa's first femtech e-commerce and last-mile platform for women's health, founded 2016 by Joanna Bichsel; HQ Kigali", "source": "https://techcabal.com/2020/08/12/my-life-in-tech-joanna-bichsel/" },
+          { "name": "Zipline", "type": "startup", "note": "Drone delivery of blood and maternal medicines (oxytocin, tranexamic acid); delivered 28,754 blood units in 2023, mostly to women in childbirth", "source": "https://ethicalbusiness.africa/2025/07/19/how-rwanda-built-the-worlds-first-drone-powered-health-system/" },
+          { "name": "Babyl Rwanda", "type": "startup", "note": "Government-partnered digital telemedicine provider offering remote consultations, including to women nationwide", "source": "https://businessfightspoverty.org/a-transformative-journey-kashas-mission-to-provide-equal-health-access-to-all-women/" },
+          { "name": "TIP Global Health / E-Heza", "type": "ngo", "note": "Point-of-care digital data app for frontline maternal and child health workers; 112,000+ mothers and children served", "source": "https://tipglobalhealth.org/empowering-community-health-workers-through-digital-tools/" },
+          { "name": "HealthTech Hub Africa", "type": "hub", "note": "Novartis Foundation-backed accelerator at Norrsken House Kigali hosting up to 30 health startups", "source": "https://www.novartisfoundation.org/news/media-release/new-healthtech-hub-aims-help-entrepreneurs-develop-revolutionary-tech-africas-growing-health-challenges" },
+          { "name": "Norrsken House Kigali", "type": "hub", "note": "Entrepreneurship hub and home to HealthTech Hub Africa, combining grant capital and structured financing", "source": "https://www.uni2study.com/articles/rwanda-global-health-tech-startups-hub" },
+          { "name": "Rwanda Ministry of Health (MoH)", "type": "govt", "note": "Drives Mission 2027 cervical cancer elimination, HPV vaccination and reproductive-health policy", "source": "https://www.moh.gov.rw/news-detail/rwanda-launches-national-strategy-for-cervical-cancer-elimination-by-2027" },
+          { "name": "RISA (Rwanda Information Society Authority)", "type": "govt", "note": "Leads Digital Public Infrastructure for health, showcased at Africa HealthTech Summit 2025", "source": "https://www.risa.gov.rw/news-detail/rwanda-champions-digital-public-infrastructure-dpi-to-transform-health-at-africa-healthtech-summit-2025" },
+          { "name": "UNICEF Rwanda", "type": "ngo", "note": "Supports digitising community health workers' maternal and child health records nationwide", "source": "https://www.unicef.org/rwanda/stories/piles-registers-digital-care-community-health-workers-rwanda-adopt-digital-health-rec" },
+          { "name": "UNFPA Rwanda", "type": "ngo", "note": "Supports family planning and maternal health, tracking MMR and contraceptive coverage", "source": "https://rwanda.unfpa.org/en/topics/maternal-health" },
+          { "name": "Center for Reproductive Rights", "type": "ngo", "note": "Drove advocacy behind Rwanda's 2024 adolescent reproductive health law, with HDI and GLIHD", "source": "https://reproductiverights.org/news/center-drives-landmark-law-expanding-adolescent-health-care-access-rwanda/" },
+          { "name": "RapidSMS-MCH", "type": "govt", "note": "SMS-based pregnancy monitoring and alert system for community health workers, scaled nationwide from 2013", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3542808/" }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "heading": "Active investors",
+      "narrative": "Gender-lens funds, DFIs and pharma impact funds back Rwanda's women's health leaders.",
+      "visual": {
+        "kind": "investors",
+        "items": [
+          { "name": "Knife Capital", "hq": "South Africa", "role": "Led Kasha's USD 21M Series B", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "name": "Five35 Ventures", "hq": "Mauritius", "role": "Female-focused VC; participated in Kasha's Series B", "source": "https://impactalpha.com/five35-ventures-backs-zuri-health-to-expand-mobile-healthcare-in-africa/" },
+          { "name": "Beyond Capital Ventures", "hq": "USA", "role": "Impact investor; participated in Kasha's Series B", "source": "https://technext24.com/2023/07/21/rwandas-kasha-raises-21-million/" },
+          { "name": "Finnfund", "hq": "Finland", "role": "DFI investor in Kasha; women's health impact case", "source": "https://www.finnfund.fi/en/impact/impact-results/impact-stories/case-kasha-improves-womens-life-quality-and-health-africa/" },
+          { "name": "U.S. DFC", "hq": "USA", "role": "Investor in Kasha's Series B", "source": "https://technext24.com/2023/07/21/rwandas-kasha-raises-21-million/" },
+          { "name": "Swedfund", "hq": "Sweden", "role": "Early USD 1M investment in Kasha femtech e-commerce", "source": "https://africabusinesscommunities.com/health-industry/swedfund-invests-in-femtech-e-commerce-startup-kasha-global-to-support-womens-health-in-east-africa/" },
+          { "name": "Sanofi Global Health Unit Impact Fund", "hq": "France", "role": "Strategic equity investor in Kasha (2024)", "source": "https://impactalpha.com/french-pharmaceutical-giant-makes-strategic-investment-in-rwandan-health-e-commerce-company-kasha/" },
+          { "name": "Boehringer Ingelheim Social Engagement Fund", "hq": "Germany", "role": "Strategic investor in Kasha for last-mile women's health access", "source": "https://femtechinsider.com/boehringer-ingelheim-invests-in-kasha-global-to-expand-womens-health-access-in-africa/" },
+          { "name": "Bamboo Capital (BLOC Smart Africa Fund)", "hq": "Luxembourg", "role": "Participated in Kasha's Series B", "source": "https://empowerafrica.com/kasha-a-rwandan-based-e-commerce-platform-that-provides-access-to-womens-health-and-personal-care-products-has-raised-21-million-in-a-series-b-funding-round/" },
+          { "name": "Novartis Foundation", "hq": "Switzerland", "role": "Backs HealthTech Hub Africa accelerator in Kigali", "source": "https://www.novartisfoundation.org/news/media-release/new-healthtech-hub-aims-help-entrepreneurs-develop-revolutionary-tech-africas-growing-health-challenges" }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "White papers & reports",
+      "narrative": "Key evidence and strategy documents on Rwanda's women's health tech.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Accelerated Plan for Elimination of Cervical Cancer in Rwanda 2024-2027 (Ministry of Health)", "source": "https://www.moh.gov.rw/news-detail/rwanda-launches-national-strategy-for-cervical-cancer-elimination-by-2027" },
+          { "text": "Demographic and Health Survey 2025, Key Indicators (National Institute of Statistics of Rwanda)", "source": "https://www.statistics.gov.rw/publication/2050" },
+          { "text": "Effectiveness of Zipline's drone delivery in improving postpartum hemorrhage management and reducing mortality in Rwanda (retrospective cross-sectional survey)", "source": "https://www.researchsquare.com/article/rs-8454583/v1" },
+          { "text": "Maternal Newborn and Child Health Strategic Plan 2018-2024 (Republic of Rwanda, Ministry of Health)", "source": "https://www.moh.gov.rw/index.php?eID=dumpFile&t=f&f=13701&token=6b3b1b0e7c" }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    { "label": "TechCrunch, Kasha Series B", "url": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+    { "label": "Disrupt Africa, Kasha Sanofi", "url": "https://disruptafrica.com/2024/09/10/rwandan-digital-health-access-startup-kasha-raises-further-funding-for-expansion/" },
+    { "label": "Femtech Insider, Boehringer Ingelheim / Kasha", "url": "https://femtechinsider.com/boehringer-ingelheim-invests-in-kasha-global-to-expand-womens-health-access-in-africa/" },
+    { "label": "The New Times, Kasha $1M", "url": "https://www.newtimes.co.rw/article/181506/News/rwandan-femtech-start-up-scoops-1-million-financing" },
+    { "label": "Center for Reproductive Rights, adolescent law", "url": "https://reproductiverights.org/news/center-drives-landmark-law-expanding-adolescent-health-care-access-rwanda/" },
+    { "label": "MoH Rwanda, Mission 2027 cervical cancer", "url": "https://www.moh.gov.rw/news-detail/rwanda-launches-national-strategy-for-cervical-cancer-elimination-by-2027" },
+    { "label": "WHO Afro, cervical cancer screening", "url": "https://www.afro.who.int/photo-story/rwanda-steps-progress-towards-elimination-cervical-cancer" },
+    { "label": "UNFPA Rwanda, maternal health", "url": "https://rwanda.unfpa.org/en/topics/maternal-health" },
+    { "label": "Think Global Health, Zipline drones", "url": "https://www.thinkglobalhealth.org/article/drones-deliver-humanitarian-aid-africa" },
+    { "label": "Ethical Business, Rwanda drone health system", "url": "https://ethicalbusiness.africa/2025/07/19/how-rwanda-built-the-worlds-first-drone-powered-health-system/" },
+    { "label": "TIP Global Health, E-Heza", "url": "https://tipglobalhealth.org/e-heza-data-solutions-selected-for-healthtech-hub-africa/" },
+    { "label": "UNICEF Rwanda, CHW digital records", "url": "https://www.unicef.org/rwanda/stories/piles-registers-digital-care-community-health-workers-rwanda-adopt-digital-health-rec" },
+    { "label": "Novartis Foundation, HealthTech Hub Africa", "url": "https://www.novartisfoundation.org/news/media-release/new-healthtech-hub-aims-help-entrepreneurs-develop-revolutionary-tech-africas-growing-health-challenges" },
+    { "label": "RISA, Africa HealthTech Summit 2025", "url": "https://www.risa.gov.rw/news-detail/rwanda-champions-digital-public-infrastructure-dpi-to-transform-health-at-africa-healthtech-summit-2025" },
+    { "label": "EIN Presswire, Kasha Operation SHE Africa", "url": "https://www.einpresswire.com/article/786048802/kasha-launches-operation-she-africa-to-bridge-urgent-medicine-access-gap-following-usaid-stop-work-order" }
+  ]
+}

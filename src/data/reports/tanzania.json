@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "country": "Tanzania",
+    "slug": "tanzania",
+    "flag": "🇹🇿",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal health and emergency transport", "Menstrual health and hygiene", "Reproductive health and family planning", "Micro health insurance", "Cervical cancer screening"],
+    "stats": [
+      { "value": "38%", "label": "Reduction in maternal mortality where m-mama emergency transport is rolled out", "source": "https://www.vodafone.com/news/vodafone-foundation/m-mama-expands-nationally-in-tanzania" },
+      { "value": "150,000+", "label": "m-mama emergency maternal transport journeys in Tanzania since 2016", "source": "https://www.vodafone.com/news/vodafone-foundation/vodafone-foundation-s-m-mama-maternal-health-programme-conducts-the-150-000th-emergency-journey-in-tanzania" },
+      { "value": "42% by 2025", "label": "Target modern contraceptive prevalence rate for all women (One Plan III)", "source": "https://www.fp2030.org/commitment-maker/tanzania/" },
+      { "value": "80%+", "label": "Women and girls with no choice but to use cloth rags to manage menstruation", "source": "https://dukeunicef.org/period-tracking-app-made-for-girls-by-girls-scales-to-tanzania/" }
+    ]
+  },
+  "overview": "Tanzania's femtech and women's health innovation ecosystem is anchored by maternal health, where the government-backed m-mama emergency transport system has gone national and cut maternal mortality by 38% in served areas. A cluster of menstrual health social enterprises (WomenChoice, Kasole Secrets, Femme International) and homegrown medical devices such as Afya Lead's Mkanda Salama address period poverty and postpartum hemorrhage. Digital health infrastructure (DHIS2, Afya-Tek) and a maturing startup policy environment, plus a national startup policy completed in 2025, are broadening the base, though dedicated femtech venture funding remains thin and largely grant-driven.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Latest major news",
+      "narrative": "Maternal health milestones and menstrual health scale-ups dominate recent headlines.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-06", "text": "m-mama conducts its 150,000th emergency maternal transport journey in Tanzania, having saved more than 6,300 lives.", "source": "https://www.vodafone.com/news/vodafone-foundation/vodafone-foundation-s-m-mama-maternal-health-programme-conducts-the-150-000th-emergency-journey-in-tanzania" },
+          { "date": "2025-10", "text": "Uppsala University reports AI-supported cervical cancer screening tested in rural Kenya and Tanzania, screening 3,000 women.", "source": "https://www.uu.se/en/press/press-releases/2025/2025-10-10-ai-supported-cervical-cancer-screening-tested-in-kenya-and-tanzania" },
+          { "date": "2024-03", "text": "Tanzania launches the 115 national emergency number for mothers and babies at the first International Primary Health Care Conference.", "source": "https://foundation.vodafone.com/news/vodafone-foundation/tanzania-launches-emergency-number-for-mothers-and-babies-in-health-emergencies" },
+          { "date": "2024-07", "text": "Dar-based health-tech startup Dawa Mkononi secures EUR 200,000 non-dilutive capital from DEG Impulse's develoPPP Ventures for R&D and expansion.", "source": "https://anbpost.substack.com/p/tanzanian-tech-roundup-jul-28-aug" },
+          { "date": "2022-04", "text": "President Samia Suluhu Hassan launches nationwide rollout of the m-mama maternal transport system, backed by a combined USD 15M from USAID and Vodacom.", "source": "https://tz.usembassy.gov/united-states-vodafone-partnership-strengthens-tanzania-maternal-health/" }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy & strategy",
+      "narrative": "Reproductive health sits inside national health plans, while a new startup policy aims to formalize the innovation sector.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-06", "text": "Tanzania completes its national Startup Policy to formalize the sector and provide legal, regulatory and incentive frameworks for innovators.", "source": "https://www.thecitizen.co.tz/tanzania/news/national/tanzania-start-up-week-opens-with-strong-calls-for-policy-reform-investment-readiness-and-innovation-leadership-5283188" },
+          { "date": "2024-07", "text": "Tanzania Digital Economy Strategic Framework 2024-2034 launched, linking digital transformation and health digitalization to Vision 2050.", "source": "https://ictc.go.tz/storage/44/01J5TJNDHDVTA3AHVQN9CR6BV7.pdf" },
+          { "date": "2021-01", "text": "One Plan III (2021-2025) sets a target to raise modern contraceptive prevalence from 27% to 42% and adolescent modern contraceptive use to 20% by 2025.", "source": "https://www.fp2030.org/commitment-maker/tanzania/" },
+          { "date": "2021-06", "text": "Health Sector Strategic Plan V (HSSP V 2021-2026) embeds maternal, reproductive and adolescent health priorities into national health delivery.", "source": "https://mitu.or.tz/wp-content/uploads/2021/07/Tanzania-Health-Sector-Strategic-Plan-V-17-06-2021-Final-signed.pdf" }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Latest ecosystem moves",
+      "narrative": "Hubs, accelerators and cross-border platforms are widening access to women's health innovation.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Tanzania Ventures Lab announced, jointly managed by COSTECH, DTBi, Buni Innovation Hub and Sahara Ventures to boost startup development.", "source": "https://www.therespondents.co.tz/2026/03/tanzania-to-llunch-tanzania-ventures.html" },
+          { "text": "Oky, a period-tracking app built for girls by girls, scaled into Tanzania via a partnership of LVCT, Tai Tanzania and UNICEF.", "source": "https://dukeunicef.org/period-tracking-app-made-for-girls-by-girls-scales-to-tanzania/" },
+          { "text": "Afya-Tek program, led by Dar-based Apotheker Health Access Initiative, launches an open-source digital referral system linking public and private primary healthcare actors for maternal and child health.", "source": "https://link.springer.com/article/10.1186/s12913-024-11302-7" },
+          { "text": "Kasha, the woman-led women's health e-commerce platform, operates in Tanzania alongside Kenya, Uganda, DRC and Burundi.", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "text": "Sahara Ventures runs the PesaTech accelerator (with EU and SIDA support) providing investment-readiness for post-MVP Tanzanian startups including health innovators.", "source": "https://medium.com/@jumannerajabumtambalike/what-you-need-to-know-about-tanzania-innovation-ecosystem-why-we-are-the-fastest-12ebfc7c32ef" }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Notable funding rounds",
+      "narrative": "Funding is largely grant and impact-capital driven; large venture rounds are regional rather than Tanzania-only.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          { "company": "m-mama (Vodacom Tanzania Foundation)", "amount": "USD 10M", "amountUsd": 10000000, "stage": "Grant / program investment", "date": "2022-04", "investor": "Vodafone Foundation (plus USD 5M USAID)", "purpose": "National scale-up of emergency maternal transport", "source": "https://www.healthtechdigital.com/mobile-maternity-transport-service-m-mama-set-to-expand-across-tanzania-as-new-10m-investment-launched-by-vodacom-tanzania-foundation/" },
+          { "company": "Kasha (operates in Tanzania)", "amount": "USD 21M", "amountUsd": 21000000, "stage": "Series B", "date": "2023-07", "investor": "Knife Capital", "purpose": "Expand women's health and personal care e-commerce access across Africa", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "company": "WomenChoice Industries", "amount": "USD 200,000", "amountUsd": 200000, "stage": "Grant / investment", "date": "2020-03", "investor": "Gray Matters Capital coLABS", "purpose": "Scale reusable Salama menstrual pad manufacturing and distribution", "source": "https://pmldaily.com/features/celebrity/2020/03/tanzanias-menstrual-hygiene-management-enterprise-womenchoice-industries-secures-200000-funding-from-gray-matters-capitals-colabs.html" },
+          { "company": "Kasole Secrets", "amount": "USD 50,000", "amountUsd": 50000, "stage": "Accelerator investment / grant", "date": "2020-02", "investor": "Duke-UNICEF Innovation Accelerator", "purpose": "Scale bamboo-fiber sanitary pads for schoolgirls (plus Grand Challenges Canada grant)", "source": "https://www.resonanceglobal.com/blog/tanzanian-entrepreneur-safe-menstruation-for-women-and-girls" },
+          { "company": "Dawa Mkononi", "amount": "EUR 200,000", "amountUsd": null, "stage": "Non-dilutive grant", "date": "2024-07", "investor": "DEG Impulse (develoPPP Ventures)", "purpose": "R&D and expansion of medicine delivery health-tech platform", "source": "https://anbpost.substack.com/p/tanzanian-tech-roundup-jul-28-aug" },
+          { "company": "Femme International (Tanzania menstrual health study)", "amount": "undisclosed 3-year grant", "amountUsd": null, "stage": "Research grant", "date": "2020-01", "investor": "with MITU and LSHTM", "purpose": "Implement and evaluate a school-based menstrual health intervention", "source": "https://femmeinternational.org/our-research/twaweza-program/" }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Key players & hubs",
+      "narrative": "A mix of maternal health programs, menstrual health enterprises, device makers and innovation hubs.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          { "name": "m-mama (Vodacom Tanzania Foundation)", "type": "ngo", "note": "National emergency maternal and newborn transport system co-created with the government; 150,000+ journeys, 38% maternal mortality reduction.", "source": "https://www.vodafone.com/news/vodafone-foundation/m-mama-expands-nationally-in-tanzania" },
+          { "name": "Jamii (Jamii Africa)", "type": "startup", "note": "Mobile micro health-insurance via USSD from ~USD 1/month; founded by Lilian Makoi; won Seedstars Dar es Salaam.", "source": "https://techcabal.com/2016/09/26/health-insurance-startup-jamii-is-the-winner-of-seedstars-dar-es-salaam/" },
+          { "name": "WomenChoice Industries", "type": "startup", "note": "Social enterprise making reusable Salama menstrual pads; 1M+ pads distributed to 20,000+ schoolgirls; led by Lucy Achieng' Odiwa.", "source": "https://graymatterscap.com/portfolio/womenchoice-industries/" },
+          { "name": "Kasole Secrets", "type": "startup", "note": "Dar-based maker of bamboo-fiber Glory sanitary pads for schoolgirls; founded by Hyasintha Ntuyeko; 100,000+ pads sold.", "source": "https://vc4a.com/ventures/kasole-secrets/" },
+          { "name": "Afya Lead", "type": "startup", "note": "Maker of Mkanda Salama, a locally made device to arrest postpartum hemorrhage; recognized at the Mkapa Legacy Summit.", "source": "https://afyalead.co.tz/blog-single%20mkanda%20salama.html" },
+          { "name": "Anuflo Industries (Hedhi Cup)", "type": "startup", "note": "Founded by Flora Njelekela; Hedhi Cup was the first menstrual cup licensed in Tanzania (October 2018).", "source": "https://www.thecitizen.co.tz/tanzania/magazines/woman/top-tanzanian-women-techpreneurs-to-watch-2613542" },
+          { "name": "Femme International", "type": "ngo", "note": "Runs the Twaweza menstrual and reproductive health program in Tanzania; distributes reusable products and education kits.", "source": "https://femmeinternational.org/our-research/twaweza-program/" },
+          { "name": "Iwinga Smart Solutions", "type": "startup", "note": "Uses AI to analyze samples for early detection of cervical cancer cells.", "source": "https://www.verivafrica.com/insights/womens-health-tech-an-untapped-market-in-africa" },
+          { "name": "Apotheker Health Access Initiative (Afya-Tek)", "type": "ngo", "note": "Dar-based lead of Afya-Tek, the first Tanzanian digital health program linking public and private primary care for maternal and child health.", "source": "https://link.springer.com/article/10.1186/s12913-024-11302-7" },
+          { "name": "Tai Tanzania", "type": "ngo", "note": "Deployed the Oky period-tracking app and runs the Jali Project using animation to shift menstruation attitudes.", "source": "https://dukeunicef.org/period-tracking-app-made-for-girls-by-girls-scales-to-tanzania/" },
+          { "name": "Buni Innovation Hub", "type": "hub", "note": "First innovation space in Tanzania under COSTECH; supports 10,000+ youth and 20+ innovation spaces.", "source": "https://bunihub.or.tz/" },
+          { "name": "Sahara Ventures", "type": "hub", "note": "Innovation ecosystem builder and accelerator supporting health, fintech and agritech startups in Tanzania.", "source": "https://medium.com/@jumannerajabumtambalike/what-you-need-to-know-about-tanzania-innovation-ecosystem-why-we-are-the-fastest-12ebfc7c32ef" },
+          { "name": "COSTECH", "type": "govt", "note": "Tanzania Commission for Science and Technology; coordinates the national innovation ecosystem and the planned Tanzania Ventures Lab.", "source": "https://www.therespondents.co.tz/2026/03/tanzania-to-llunch-tanzania-ventures.html" }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "heading": "Active investors",
+      "narrative": "Impact funds, DFIs and philanthropic accelerators supply most women's health capital touching Tanzania.",
+      "visual": {
+        "kind": "investors",
+        "items": [
+          { "name": "Vodafone Foundation", "hq": "UK", "role": "Primary funder and co-creator of the m-mama maternal transport system", "source": "https://www.vodafone.com/news/vodafone-foundation/m-mama-expands-nationally-in-tanzania" },
+          { "name": "USAID", "hq": "USA", "role": "USD 5M co-funding for m-mama national scale-up; business development support for Kasole Secrets", "source": "https://tz.usembassy.gov/united-states-vodafone-partnership-strengthens-tanzania-maternal-health/" },
+          { "name": "Gray Matters Capital (coLABS)", "hq": "USA", "role": "USD 200,000 into WomenChoice Industries menstrual health enterprise", "source": "https://graymatterscap.com/portfolio/womenchoice-industries/" },
+          { "name": "Duke-UNICEF Innovation Accelerator", "hq": "USA", "role": "USD 50,000 investment into Kasole Secrets; menstrual health solution acceleration", "source": "https://www.resonanceglobal.com/blog/tanzanian-entrepreneur-safe-menstruation-for-women-and-girls" },
+          { "name": "Grand Challenges Canada", "hq": "Canada", "role": "Grant to Kasole Secrets for menstrual health scale-up", "source": "https://www.resonanceglobal.com/blog/tanzanian-entrepreneur-safe-menstruation-for-women-and-girls" },
+          { "name": "DEG Impulse (develoPPP Ventures)", "hq": "Germany", "role": "EUR 200,000 non-dilutive capital into Dar-based health-tech Dawa Mkononi", "source": "https://anbpost.substack.com/p/tanzanian-tech-roundup-jul-28-aug" },
+          { "name": "Knife Capital", "hq": "South Africa", "role": "Led Kasha's USD 21M Series B (Kasha operates in Tanzania)", "source": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+          { "name": "Finnfund", "hq": "Finland", "role": "Earlier and follow-on investor in Kasha's women's health platform", "source": "https://www.finnfund.fi/en/impact/impact-results/impact-stories/case-kasha-improves-womens-life-quality-and-health-africa/" },
+          { "name": "US DFC", "hq": "USA", "role": "Participated in Kasha's Series B", "source": "https://disruptafrica.com/2023/07/25/rwandan-digital-health-access-startup-kasha-raises-21m-series-b-to-expand-across-africa/" }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "White papers & reports",
+      "narrative": "Peer-reviewed studies and strategy documents underpin the ecosystem.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Using digital technology to strengthen the continuum of care for maternal, child and adolescent health in Tanzania: the Afya-Tek program (BMC Health Services Research, 2024)", "source": "https://link.springer.com/article/10.1186/s12913-024-11302-7" },
+          { "text": "Tanzania Digital Economy Strategic Framework 2024-2034 (ICT Commission)", "source": "https://ictc.go.tz/storage/44/01J5TJNDHDVTA3AHVQN9CR6BV7.pdf" },
+          { "text": "Tanzania Health Sector Strategic Plan V 2021-2026 (Ministry of Health)", "source": "https://mitu.or.tz/wp-content/uploads/2021/07/Tanzania-Health-Sector-Strategic-Plan-V-17-06-2021-Final-signed.pdf" },
+          { "text": "Clinical benefit of the Mkanda Salama Kit in postpartum hemorrhage: a prospective observational study (East African Journal of Science, Technology and Innovation)", "source": "https://www.eajsti.org/index.php/EAJSTI/article/view/715" }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    { "label": "Vodafone Foundation, m-mama national expansion", "url": "https://www.vodafone.com/news/vodafone-foundation/m-mama-expands-nationally-in-tanzania" },
+    { "label": "Vodafone Foundation, m-mama 150,000th journey", "url": "https://www.vodafone.com/news/vodafone-foundation/vodafone-foundation-s-m-mama-maternal-health-programme-conducts-the-150-000th-emergency-journey-in-tanzania" },
+    { "label": "US Embassy Tanzania, US-Vodafone maternal health partnership", "url": "https://tz.usembassy.gov/united-states-vodafone-partnership-strengthens-tanzania-maternal-health/" },
+    { "label": "Family Planning 2030, Tanzania commitment", "url": "https://www.fp2030.org/commitment-maker/tanzania/" },
+    { "label": "ICT Commission, Tanzania Digital Economy Strategic Framework 2024-2034", "url": "https://ictc.go.tz/storage/44/01J5TJNDHDVTA3AHVQN9CR6BV7.pdf" },
+    { "label": "The Citizen, Tanzania Start-up Week and Startup Policy", "url": "https://www.thecitizen.co.tz/tanzania/news/national/tanzania-start-up-week-opens-with-strong-calls-for-policy-reform-investment-readiness-and-innovation-leadership-5283188" },
+    { "label": "TechCabal, Jamii wins Seedstars Dar es Salaam", "url": "https://techcabal.com/2016/09/26/health-insurance-startup-jamii-is-the-winner-of-seedstars-dar-es-salaam/" },
+    { "label": "Gray Matters Capital, WomenChoice Industries", "url": "https://graymatterscap.com/portfolio/womenchoice-industries/" },
+    { "label": "Resonance Global, Kasole Secrets menstrual health", "url": "https://www.resonanceglobal.com/blog/tanzanian-entrepreneur-safe-menstruation-for-women-and-girls" },
+    { "label": "Afya Lead, Mkanda Salama", "url": "https://afyalead.co.tz/blog-single%20mkanda%20salama.html" },
+    { "label": "Duke-UNICEF, Oky period app scales to Tanzania", "url": "https://dukeunicef.org/period-tracking-app-made-for-girls-by-girls-scales-to-tanzania/" },
+    { "label": "Femme International, Twaweza program", "url": "https://femmeinternational.org/our-research/twaweza-program/" },
+    { "label": "TechCrunch, Kasha USD 21M Series B", "url": "https://techcrunch.com/2023/07/20/kasha-raises-21m-series-b-led-by-knife-capital-to-expand-health-access-platform-across-africa/" },
+    { "label": "BMC Health Services Research, Afya-Tek program", "url": "https://link.springer.com/article/10.1186/s12913-024-11302-7" },
+    { "label": "Uppsala University, AI cervical cancer screening Kenya and Tanzania", "url": "https://www.uu.se/en/press/press-releases/2025/2025-10-10-ai-supported-cervical-cancer-screening-tested-in-kenya-and-tanzania" }
+  ]
+}
