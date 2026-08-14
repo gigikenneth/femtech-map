@@ -187,7 +187,7 @@ function renderVisual(section) {
 
 /* ---------- page render ---------- */
 
-const SITE = "https://femtech-map.vercel.app";
+const SITE = "https://femtech.asele.tech";
 
 function applySEO(d) {
   const m = d.meta;

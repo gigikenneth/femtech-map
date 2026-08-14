@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://femtech-map.vercel.app/sitemap.xml
+Sitemap: https://femtech.asele.tech/sitemap.xml
