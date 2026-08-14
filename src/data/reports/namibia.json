@@ -1,0 +1,71 @@
+{
+  "meta": { "country": "Namibia", "slug": "namibia", "flag": "🇳🇦", "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & reproductive health", "HIV prevention for adolescent girls", "Cervical cancer & HPV", "Menstrual health equity", "Early-stage startup ecosystem"],
+    "stats": [
+      { "value": "139 per 100,000", "label": "Maternal mortality ratio (2025), down from 400 in 2000", "source": "https://namibiatoday.com/namibia-launches-national-strategy-to-strengthen-maternal-and-child-health/" },
+      { "value": "97.5%", "label": "Pregnant women in Oshana willing to receive maternal health info via mobile apps", "source": "https://www.ajrh.info/index.php/ajrh/article/view/7164" },
+      { "value": "19%", "label": "National teenage pregnancy rate (women 15-19 who have begun childbearing)", "source": "https://namibia.unfpa.org/en/topics/adolescents-sexual-reproductive-health" },
+      { "value": "232,000 girls", "label": "Target of the 2025 national HPV vaccination campaign (ages 9-14)", "source": "https://www.afro.who.int/countries/namibia/news/namibia-rolls-out-human-papillomavirus-vaccination-help-end-cervical-cancer" }
+    ] },
+  "overview": "Namibia has almost no dedicated femtech startup sector, so its women's health innovation runs mostly through government policy and UN/NGO reproductive-health programs. Momentum in 2025 was driven from the top: Dr Esperance Luvindao, appointed at 34 as Africa's youngest health minister and herself the founder of a women's-health foundation, launched a Universal Health Coverage Policy and a new Reproductive, Maternal, Newborn, Adolescent Health and Nutrition strategy, alongside a national HPV vaccination rollout. A nascent but real startup ecosystem is forming around the Basecamp incubator and the new USD 10M Ndjaba Seed Fund, which includes healthtech in its scope though not a specific gender lens.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "The biggest 2025 developments were policy launches and vaccination drives led by a reform-minded health ministry.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-03", "text": "Dr Esperance Luvindao, 34, founder of the Osaat Africa Health Foundation, sworn in as Minister of Health and Social Services, becoming Africa's youngest health minister.", "source": "https://en.wikipedia.org/wiki/Esperance_Luvindao" },
+      { "date": "2025-08", "text": "National HPV vaccination campaign launched targeting 232,000 girls aged 9-14 across all 14 regions; about 65,000 vaccinated in the first two weeks.", "source": "https://www.afro.who.int/countries/namibia/news/namibia-rolls-out-human-papillomavirus-vaccination-help-end-cervical-cancer" },
+      { "date": "2025-10", "text": "Ministry of Health launches the Universal Health Coverage Policy and 2025/26-2029/30 Strategic Plan in Windhoek.", "source": "https://www.afro.who.int/countries/namibia/news/namibia-launches-mohss-strategic-plan-and-universal-health-coverage-policy" },
+      { "date": "2025-11", "text": "New York Times profiles Minister Luvindao and her efforts to reimagine Namibian health care.", "source": "https://dnyuz.com/2025/11/24/in-namibia-a-trailblazing-minister-is-reimagining-health-care/" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "Namibia has moved on both reproductive-health strategy and menstrual-product affordability.", "visual": { "kind": "timeline", "items": [
+      { "date": "2023-01", "text": "VAT Amendment Act reclassifies sanitary pads as zero-rated, removing the 15% tax to ease period poverty (championed by Deputy Minister Emma Theofelus).", "source": "https://ghrp.biomedcentral.com/articles/10.1186/s41256-024-00358-x" },
+      { "date": "2025-10", "text": "National Reproductive, Maternal, Newborn, Adolescent Health and Nutrition Strategy 2025/26-2029/30 launched in Windhoek with WHO support.", "source": "https://namibiatoday.com/namibia-launches-national-strategy-to-strengthen-maternal-and-child-health/" },
+      { "date": "2025-10", "text": "Universal Health Coverage Policy launched to guarantee essential services without financial hardship.", "source": "https://english.news.cn/20251013/9c85290263bf4d668bb987111f4f9cd9/c.html" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "The broader startup ecosystem is early-stage; health-specific femtech activity is thin and mostly foundation-led.", "visual": { "kind": "list", "items": [
+      { "text": "Osaat Africa Health Foundation (founded 2019) runs Menga, a digital platform for medication access in informal settlements, and published Emily's Health, a women's-health book in eight local languages.", "source": "https://en.wikipedia.org/wiki/Esperance_Luvindao" },
+      { "text": "BOOSTUP 2025/26 early-stage support programme launched with NCRST, NIPDB and Basecamp; 20 startups selected from 30 applicants.", "source": "https://sgciafrica.org/namibia-launches-boostup-programme-to-bridge-innovation-gaps/" },
+      { "text": "UNFPA supports mobile clinics extending sexual and reproductive health services to adolescents and youth in underserved areas.", "source": "https://namibia.unfpa.org/en/news/increasing-access-sexual-and-reproductive-health-services-adolescents-and-youth-through-mobile" },
+      { "text": "Start-Up Namibia (GIZ-supported) works to strengthen the country's overall startup ecosystem.", "source": "https://www.giz.de/en/worldwide/77863.html" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "There are no disclosed femtech-specific rounds; the relevant capital is a new generalist seed fund with healthtech scope and program grants.", "visual": { "kind": "funding", "items": [
+      { "company": "Ndjaba Seed Fund (Bellatrix Investment Managers)", "amount": "USD 10M", "amountUsd": 10000000, "stage": "Fund (VC vehicle)", "date": "2026-05", "investor": "Bellatrix Investment Managers", "purpose": "Backing 35-50 early-stage Southern African startups incl. healthtech; tickets USD 25K-350K over a 10-year horizon.", "source": "https://techcabal.com/2026/05/06/ndjaba-seed-fund-launches-for-southern-africa-startups/" },
+      { "company": "Namibia DREAMS program (HIV prevention for AGYW)", "amount": "undisclosed", "amountUsd": null, "stage": "Grant (PEPFAR/USAID)", "date": "2018-01", "investor": "PEPFAR / USAID (via Project HOPE Namibia consortium)", "purpose": "PrEP and HIV-prevention services for adolescent girls and young women in Khomas, Oshikoto, Zambezi and Oshana (2018-2024).", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12452773/" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The ecosystem is anchored by the health ministry, UN agencies, one women's-health foundation and a small set of incubators/funds.", "visual": { "kind": "players", "items": [
+      { "name": "Ministry of Health and Social Services (MoHSS)", "type": "govt", "note": "Leads UHC, RMNCAH, HPV and family-planning programs under Minister Esperance Luvindao.", "source": "https://www.afro.who.int/countries/namibia/news/namibia-launches-mohss-strategic-plan-and-universal-health-coverage-policy" },
+      { "name": "Osaat Africa Health Foundation", "type": "ngo", "note": "Women's-health education, contraceptive access and digital health (Menga platform); founded by the current health minister.", "source": "https://en.wikipedia.org/wiki/Esperance_Luvindao" },
+      { "name": "UNFPA Namibia", "type": "ngo", "note": "Comprehensive sexuality education, contraceptive access, mobile SRH clinics and menstrual-health awareness.", "source": "https://namibia.unfpa.org/en/topics/adolescents-sexual-reproductive-health" },
+      { "name": "WHO Namibia", "type": "ngo", "note": "Technical partner on maternal health, HPV/cervical cancer and UHC frameworks.", "source": "https://www.afro.who.int/countries/namibia/news/bringing-quality-reproductive-maternal-newborn-and-child-health-care-closer-community" },
+      { "name": "Project HOPE Namibia", "type": "ngo", "note": "Lead implementer of the PEPFAR-funded DREAMS HIV-prevention program for adolescent girls and young women.", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12452773/" },
+      { "name": "Basecamp Business Incubator", "type": "hub", "note": "Windhoek incubator (est. 2023) running BOOSTUP and supplying pipeline for the Ndjaba Seed Fund.", "source": "https://www.basecamphub.com/about/" },
+      { "name": "Namibia Investment Promotion and Development Board (NIPDB)", "type": "govt", "note": "Co-runs the BOOSTUP early-stage startup support programme.", "source": "https://sgciafrica.org/namibia-launches-boostup-programme-to-bridge-innovation-gaps/" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Capital for women's health is program-based (UN/PEPFAR) plus one local generalist fund; gender-lens VCs active in Southern Africa are regional rather than Namibia-specific.", "visual": { "kind": "investors", "items": [
+      { "name": "Bellatrix Investment Managers (Ndjaba Seed Fund)", "hq": "Namibia", "role": "USD 10M seed fund covering healthtech among target sectors for Southern African startups.", "source": "https://disruptafrica.com/2026/05/11/namibian-investment-firm-launches-10m-vc-fund-for-early-stage-startups-in-southern-africa/" },
+      { "name": "PEPFAR / USAID", "hq": "USA", "role": "Funds the DREAMS HIV-prevention program for adolescent girls and young women.", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12452773/" },
+      { "name": "UNFPA", "hq": "Global", "role": "Funds and supports adolescent SRH, family planning and menstrual-health work in Namibia.", "source": "https://namibia.unfpa.org/en/topics/adolescents-sexual-reproductive-health" },
+      { "name": "Afrishela", "hq": "Kenya", "role": "Gender-lens fund providing impact-linked loans to women-owned businesses across East and Southern Africa.", "source": "https://impactalpha.com/from-south-africa-afrishela-models-how-to-underwrite-credit-with-a-gender-lens-video/" },
+      { "name": "UNICEF Femtech Ventures", "hq": "Global", "role": "Five-year (2025-2030) platform funding women's-health startups; over half of applicants from Africa.", "source": "https://www.unicef.org/innovation/femtech-cohort-1" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Peer-reviewed and policy literature covers Namibia's mHealth readiness and cervical-cancer program constraints.", "visual": { "kind": "list", "items": [
+      { "text": "Mobile phone accessibility and willingness to receive maternal health info via mobile apps among pregnant women, Oshana Region (African Journal of Reproductive Health)", "source": "https://www.ajrh.info/index.php/ajrh/article/view/7164" },
+      { "text": "Health system constraints in cervical cancer prevention in rural Namibia: a qualitative study (PMC)", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12421780/" },
+      { "text": "Transforming adolescent menstrual health through policy: VAT exemptions and access to sanitary products (Global Health Research and Policy)", "source": "https://ghrp.biomedcentral.com/articles/10.1186/s41256-024-00358-x" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "Wikipedia, Esperance Luvindao", "url": "https://en.wikipedia.org/wiki/Esperance_Luvindao" },
+    { "label": "WHO Africa, HPV rollout Namibia", "url": "https://www.afro.who.int/countries/namibia/news/namibia-rolls-out-human-papillomavirus-vaccination-help-end-cervical-cancer" },
+    { "label": "WHO Africa, MoHSS Strategic Plan and UHC Policy", "url": "https://www.afro.who.int/countries/namibia/news/namibia-launches-mohss-strategic-plan-and-universal-health-coverage-policy" },
+    { "label": "Namibia Today, RMNCAH Strategy", "url": "https://namibiatoday.com/namibia-launches-national-strategy-to-strengthen-maternal-and-child-health/" },
+    { "label": "AJRH, Mobile maternal health, Oshana", "url": "https://www.ajrh.info/index.php/ajrh/article/view/7164" },
+    { "label": "UNFPA Namibia, Adolescents and SRH", "url": "https://namibia.unfpa.org/en/topics/adolescents-sexual-reproductive-health" },
+    { "label": "UNFPA Namibia, Mobile SRH clinics", "url": "https://namibia.unfpa.org/en/news/increasing-access-sexual-and-reproductive-health-services-adolescents-and-youth-through-mobile" },
+    { "label": "PMC, Namibia DREAMS PrEP retention", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12452773/" },
+    { "label": "Global Health Research and Policy, Menstrual VAT", "url": "https://ghrp.biomedcentral.com/articles/10.1186/s41256-024-00358-x" },
+    { "label": "PMC, Cervical cancer prevention rural Namibia", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12421780/" },
+    { "label": "TechCabal, Ndjaba Seed Fund", "url": "https://techcabal.com/2026/05/06/ndjaba-seed-fund-launches-for-southern-africa-startups/" },
+    { "label": "SGCI Africa, BOOSTUP programme", "url": "https://sgciafrica.org/namibia-launches-boostup-programme-to-bridge-innovation-gaps/" },
+    { "label": "Basecamp Hub, About", "url": "https://www.basecamphub.com/about/" },
+    { "label": "UNICEF, Femtech Ventures cohort 1", "url": "https://www.unicef.org/innovation/femtech-cohort-1" }
+  ]
+}

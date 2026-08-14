@@ -1,0 +1,72 @@
+{
+  "meta": { "country": "Mozambique", "slug": "mozambique", "flag": "🇲🇿", "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & newborn health", "Community mHealth", "Family planning & reproductive health", "Menstrual health", "HIV prevention for women"],
+    "stats": [
+      { "value": "223 per 100,000", "label": "Maternal mortality ratio, 2023 (over 50% down since 2000)", "source": "https://www.afro.who.int/countries/mozambique/news/mozambique-driving-down-maternal-mortality" },
+      { "value": "34% to 43%", "label": "Modern contraceptive prevalence target, 2020 to 2030 goal", "source": "https://www.fp2030.org/commitment-maker/mozambique/" },
+      { "value": "USD 40M", "label": "World Bank financing secured for health digitalization (63 units)", "source": "https://aimnews.org/2026/04/15/mocambique-garante-40-milhoes-de-dolares-para-digitalizacao-da-saude/" },
+      { "value": "2025-2034", "label": "Span of Mozambique's first national Digital Health Strategy", "source": "https://sisma.misau.gov.mz/docs/Estrat%C3%A9gia%20de%20Sa%C3%BAde%20Digital.pdf" }
+    ] },
+  "overview": "Mozambique's women's health innovation landscape is driven less by venture-backed startups than by government, donor, and NGO digital-health programs targeting one of the world's highest maternal mortality and cervical cancer burdens. Community health worker platforms such as upSCALE (Malaria Consortium, UNICEF, Ministry of Health) deliver antenatal, family planning, and child-health services by smartphone, while UNFPA, UNICEF, and PEPFAR anchor family planning, menstrual health, and HIV prevention. A new national Digital Health Strategy (2025-2034) and roughly USD 40M in World Bank financing signal a policy push toward telemedicine, AI, and hospital digitalization. The domestic femtech startup and gender-lens investment scene remains nascent compared with regional peers.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent developments center on national digital-health financing, family planning expansion, and menstrual health campaigns.", "visual": { "kind": "timeline", "items": [
+      { "date": "2026-04", "text": "Mozambique secures about USD 40M from the World Bank to digitalize 63 health units, including a pilot first Digital Hospital at Mavalane General Hospital.", "source": "https://aimnews.org/2026/04/15/mocambique-garante-40-milhoes-de-dolares-para-digitalizacao-da-saude/" },
+      { "date": "2026-04", "text": "MISAU reaffirms digital transformation in health as a strategic priority, integrating AI and telemedicine to widen access.", "source": "https://aimnews.org/2026/04/18/misau-reafirma-transformacao-digital-na-saude-como-prioridade-estrategica/" },
+      { "date": "2025-05", "text": "For World Menstrual Hygiene Day, UNICEF with IOM, UNFPA, Helvetas and BeGirl ran school and community activities in Pemba to break menstruation taboos.", "source": "https://www.unicef.org/mozambique/en/stories/young-people-commit-demystifying-taboos-around-menstrual-hygiene" },
+      { "date": "2025-01", "text": "US directive pauses PEPFAR funding for oral PrEP except for pregnant and breastfeeding women, affecting HIV prevention for women in Mozambique.", "source": "https://mz.usembassy.gov/pepfar-us-presidents-emergency-plan-for-aids-relief/" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "Mozambique's first dedicated digital-health strategy sits alongside long-standing family planning and HIV prevention frameworks.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-01", "text": "National Digital Health Strategy (ESD-MZ) 2025-2034 adopted, first planning cycle to 2029, targeting telemedicine, AI, and integrated health information systems.", "source": "https://sisma.misau.gov.mz/docs/Estrat%C3%A9gia%20de%20Sa%C3%BAde%20Digital.pdf" },
+      { "date": "2025-01", "text": "Ministry of Health issues 2025 Guidelines for Combined Biomedical Prevention of HIV, STIs and Viral Hepatitis, adding long-acting PrEP options (injectable lenacapavir, cabotegravir, dapivirine vaginal ring).", "source": "https://www.prepwatch.org/resources/mozambique-guidelines-for-combined-biomedical-prevention-of-hiv-stis-and-viral-hepatitis-2025/" },
+      { "date": "2023-01", "text": "Cervical Cancer Elimination Strategy developed with UNFPA support, building on the national cervical and breast cancer program (VIA screening, HPV testing via GeneXpert).", "source": "https://ascopubs.org/doi/10.1200/GO.23.00139" },
+      { "date": "2020-01", "text": "National Family Planning Strategy sets goal of raising modern contraceptive prevalence from 34.3% (2020) to 43.4% by 2030 and cutting adolescent pregnancy.", "source": "https://www.fp2030.org/commitment-maker/mozambique/" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Momentum comes chiefly from donor-backed community digital-health platforms and an emerging national startup incubator.", "visual": { "kind": "list", "items": [
+      { "text": "upSCALE community digital-health platform (built on Dimagi's CommCare) scaled nationally, equipping community health workers (APEs) with smartphone job aides for family planning, antenatal, and postnatal care plus integrated child case management.", "source": "https://dp.malariaconsortium.org/upscale-learning-paper/" },
+      { "text": "INCM (national communications regulator) launched ThinkLab, a technology incubator in Maputo to nurture startup innovation and digital transformation.", "source": "https://techafricanews.com/2025/09/22/mozambiques-incm-launches-thinklab-to-drive-startup-innovation-and-digital-transformation/" },
+      { "text": "Ministry of Health partnered with C-Saude to develop an integrated Health Information System, strengthening data infrastructure for maternal and community health.", "source": "https://csaude.org.mz/2025/07/29/ministry-of-health-and-c-saude-partner-towards-the-development-of-an-integrated-health-information-system-in-mozambique/" },
+      { "text": "UNICEF-BeGirl menstrual hygiene initiative reached over 3,000 girls with education and 1,300 with reusable-product MHM kits, promoting local production and school retention.", "source": "https://knowledge.unicef.org/resource/field-note-lessons-mozambique-unicef-and-begirls-initiative-enhanced-menstrual-hygiene" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "Financing is donor and multilateral, not venture capital; grants target family planning, digitalization, and community health delivery.", "visual": { "kind": "funding", "items": [
+      { "company": "Government of Mozambique (health digitalization)", "amount": "USD 40M", "amountUsd": 40000000, "stage": "Grant/Loan", "date": "2026-04", "investor": "World Bank", "purpose": "Digitalize 63 health units, pilot first Digital Hospital at Mavalane", "source": "https://aimnews.org/2026/04/15/mocambique-garante-40-milhoes-de-dolares-para-digitalizacao-da-saude/" },
+      { "company": "UNFPA Mozambique family planning project", "amount": "EUR 6M", "amountUsd": null, "stage": "Grant", "date": "2025-01", "investor": "Embassy of Ireland", "purpose": "Access and Choice project: contraceptive procurement and digital supply-chain tools across Niassa, Nampula, Sofala, Inhambane", "source": "https://mozambique.unfpa.org/en/news/unfpa-and-embassy-ireland-launch-new-project-expand-access-family-planning-mozambique" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The active organizations are ministries, UN agencies, and implementing NGOs delivering women's and maternal health at scale.", "visual": { "kind": "players", "items": [
+      { "name": "Ministry of Health (MISAU)", "type": "govt", "note": "Owns the Digital Health Strategy 2025-2034, family planning, HIV prevention, and cervical cancer programs", "source": "https://sisma.misau.gov.mz/docs/Estrat%C3%A9gia%20de%20Sa%C3%BAde%20Digital.pdf" },
+      { "name": "Malaria Consortium", "type": "ngo", "note": "Lead developer of the upSCALE community digital-health platform with MISAU and UNICEF", "source": "https://dp.malariaconsortium.org/upscale-learning-paper/" },
+      { "name": "Dimagi", "type": "startup", "note": "Provides CommCare, the platform underpinning upSCALE's CHW maternal and child health apps", "source": "https://exchange.dial.global/projects/mozambique-upscale-ape-app" },
+      { "name": "UNFPA Mozambique", "type": "ngo", "note": "Leads family planning, menstrual health, and cervical cancer elimination support", "source": "https://mozambique.unfpa.org/en/news/unfpa-and-embassy-ireland-launch-new-project-expand-access-family-planning-mozambique" },
+      { "name": "UNICEF Mozambique", "type": "ngo", "note": "Co-developed upSCALE and runs the BeGirl menstrual hygiene management program", "source": "https://knowledge.unicef.org/resource/field-note-lessons-mozambique-unicef-and-begirls-initiative-enhanced-menstrual-hygiene" },
+      { "name": "BeGirl", "type": "startup", "note": "Menstrual product and education partner in UNICEF's MHM initiative, promoting reusable products", "source": "https://knowledge.unicef.org/resource/field-note-lessons-mozambique-unicef-and-begirls-initiative-enhanced-menstrual-hygiene" },
+      { "name": "C-Saude", "type": "ngo", "note": "Partnering with MISAU on an integrated national Health Information System", "source": "https://csaude.org.mz/2025/07/29/ministry-of-health-and-c-saude-partner-towards-the-development-of-an-integrated-health-information-system-in-mozambique/" },
+      { "name": "ThinkLab (INCM)", "type": "hub", "note": "National technology incubator launched 2025 in Maputo for startup innovation", "source": "https://techafricanews.com/2025/09/22/mozambiques-incm-launches-thinklab-to-drive-startup-innovation-and-digital-transformation/" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Capital for women's health comes overwhelmingly from bilateral donors and multilaterals rather than private funds.", "visual": { "kind": "investors", "items": [
+      { "name": "World Bank", "hq": "USA", "role": "USD 40M for health-system digitalization including hospital pilots", "source": "https://aimnews.org/2026/04/15/mocambique-garante-40-milhoes-de-dolares-para-digitalizacao-da-saude/" },
+      { "name": "Embassy of Ireland / Irish Aid", "hq": "Ireland", "role": "EUR 6M for UNFPA family planning and reproductive health project", "source": "https://mozambique.unfpa.org/en/news/unfpa-and-embassy-ireland-launch-new-project-expand-access-family-planning-mozambique" },
+      { "name": "PEPFAR (US Government)", "hq": "USA", "role": "Funds HIV prevention, PrEP scale-up, and PMTCT for women and pregnant mothers", "source": "https://mz.usembassy.gov/pepfar-us-presidents-emergency-plan-for-aids-relief/" },
+      { "name": "UK Aid via UNICEF", "hq": "UK", "role": "Financed expansion and scale-up of the upSCALE community digital-health platform", "source": "https://dp.malariaconsortium.org/upscale-learning-paper/" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Evidence on Mozambique's women's health tech comes from implementation studies and strategy documents.", "visual": { "kind": "list", "items": [
+      { "text": "Implementing a large-scale community digital health platform in Mozambique (upSCALE learning paper), Malaria Consortium", "source": "https://dp.malariaconsortium.org/upscale-learning-paper/" },
+      { "text": "Estrategia de Saude Digital de Mocambique 2025-2034, Ministry of Health (MISAU)", "source": "https://sisma.misau.gov.mz/docs/Estrat%C3%A9gia%20de%20Sa%C3%BAde%20Digital.pdf" },
+      { "text": "Field Note: Lessons from Mozambique on UNICEF and BeGirl's Enhanced Menstrual Hygiene Management Initiative, UNICEF", "source": "https://knowledge.unicef.org/resource/field-note-lessons-mozambique-unicef-and-begirls-initiative-enhanced-menstrual-hygiene" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "WHO Afro: Mozambique maternal mortality", "url": "https://www.afro.who.int/countries/mozambique/news/mozambique-driving-down-maternal-mortality" },
+    { "label": "FP2030: Mozambique commitment", "url": "https://www.fp2030.org/commitment-maker/mozambique/" },
+    { "label": "AIM News: USD 40M health digitalization", "url": "https://aimnews.org/2026/04/15/mocambique-garante-40-milhoes-de-dolares-para-digitalizacao-da-saude/" },
+    { "label": "MISAU Digital Health Strategy 2025-2034", "url": "https://sisma.misau.gov.mz/docs/Estrat%C3%A9gia%20de%20Sa%C3%BAde%20Digital.pdf" },
+    { "label": "UNFPA-Ireland family planning project", "url": "https://mozambique.unfpa.org/en/news/unfpa-and-embassy-ireland-launch-new-project-expand-access-family-planning-mozambique" },
+    { "label": "Malaria Consortium: upSCALE learning paper", "url": "https://dp.malariaconsortium.org/upscale-learning-paper/" },
+    { "label": "DIAL: Mozambique upSCALE APE app", "url": "https://exchange.dial.global/projects/mozambique-upscale-ape-app" },
+    { "label": "UNICEF-BeGirl MHM field note", "url": "https://knowledge.unicef.org/resource/field-note-lessons-mozambique-unicef-and-begirls-initiative-enhanced-menstrual-hygiene" },
+    { "label": "UNICEF Mozambique: menstrual hygiene story", "url": "https://www.unicef.org/mozambique/en/stories/young-people-commit-demystifying-taboos-around-menstrual-hygiene" },
+    { "label": "PrEPWatch: 2025 biomedical prevention guidelines", "url": "https://www.prepwatch.org/resources/mozambique-guidelines-for-combined-biomedical-prevention-of-hiv-stis-and-viral-hepatitis-2025/" },
+    { "label": "US Embassy Mozambique: PEPFAR", "url": "https://mz.usembassy.gov/pepfar-us-presidents-emergency-plan-for-aids-relief/" },
+    { "label": "TechAfrica News: INCM ThinkLab incubator", "url": "https://techafricanews.com/2025/09/22/mozambiques-incm-launches-thinklab-to-drive-startup-innovation-and-digital-transformation/" },
+    { "label": "C-Saude: integrated Health Information System", "url": "https://csaude.org.mz/2025/07/29/ministry-of-health-and-c-saude-partner-towards-the-development-of-an-integrated-health-information-system-in-mozambique/" },
+    { "label": "AIM News: MISAU digital transformation priority", "url": "https://aimnews.org/2026/04/18/misau-reafirma-transformacao-digital-na-saude-como-prioridade-estrategica/" }
+  ]
+}

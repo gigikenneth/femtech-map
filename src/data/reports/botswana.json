@@ -1,0 +1,68 @@
+{
+  "meta": { "country": "Botswana", "slug": "botswana", "flag": "🇧🇼", "lastUpdated": "2026-08",
+    "focusAreas": ["Cervical cancer & HPV", "Maternal & PMTCT", "HIV prevention (PrEP)", "Menstrual health", "Digital & telemedicine"],
+    "stats": [
+      { "value": "155 per 100,000", "label": "Maternal mortality ratio (2023)", "source": "https://www.macrotrends.net/global-metrics/countries/bwa/botswana/maternal-mortality-rate" },
+      { "value": "Gold tier", "label": "Path to eliminating mother-to-child HIV transmission (2025)", "source": "https://www.who.int/news/item/20-05-2025-botswana-advances-to-gold-tier-on-the-path-to-elimination-of-mother-to-child-transmission-of-hiv" },
+      { "value": "#1 cancer", "label": "Cervical cancer, leading cause of cancer death in women", "source": "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/ijgo.71089?af=R" },
+      { "value": "67%", "label": "Women reporting partner or non-partner violence", "source": "https://botswana.unfpa.org/en/publications/2025-unfpa-botswana-annual-report" }
+    ] },
+  "overview": "Botswana's femtech scene is thin and largely research and public-health led rather than startup driven. Its real strength is women's public health: a strong HPV and cervical cancer program, a gold-tier record on eliminating mother-to-child HIV transmission, universal free sanitary pads in schools since 2017, and active PrEP research for pregnant and breastfeeding women. Emerging maternal and telemedicine ventures exist but early-stage founder activity is mostly channeled through the Standard Chartered Women in Tech accelerator in Gaborone.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent milestones concentrate on HIV, maternal health and women-led enterprise support.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-05", "text": "Botswana advances to gold tier on the path to eliminating mother-to-child transmission of HIV, reaching WHO paediatric-infection and service-coverage targets.", "source": "https://www.who.int/news/item/20-05-2025-botswana-advances-to-gold-tier-on-the-path-to-elimination-of-mother-to-child-transmission-of-hiv" },
+      { "date": "2025-06", "text": "BSRHI presents PrEP Choice study findings and the upcoming STEP-UP study at the Ministry of Health PrEP Technical Working Group.", "source": "https://bhp.org.bw/index.php/bsrhi-ramps-public-engagement-sexual-and-reproductive-health" },
+      { "date": "2025-11", "text": "Standard Chartered Botswana awards over P700,000 in equity-free seed funding to six women-led enterprises at the second Women in Tech graduation.", "source": "https://www.bwtechzone.com/2025/11/standard-chartered-awards-over-p700000.html" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "Government action centers on menstrual dignity, digital health and HIV prevention.", "visual": { "kind": "timeline", "items": [
+      { "date": "2017-08", "text": "Parliament makes all school-aged girls eligible for free sanitary pads in public and private schools.", "source": "https://borgenproject.org/period-poverty-in-botswana/" },
+      { "date": "2020-03", "text": "National eHealth Strategy 2020-2024 approved, committing the Ministry of Health to ICT for health.", "source": "https://extranet.who.int/countryplanningcycles/planning-cycle-files/botswana-ehealth-strategy-2020-2024" },
+      { "date": "2023-11", "text": "Botswana HIV Prevention Road Map 2023-2025 prioritizes at-risk young women and ARV-based prevention including PrEP.", "source": "https://hivpreventioncoalition.unaids.org/sites/default/files/attachments/botswana_hiv_prevention_road_map_nov_2023.pdf" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Activity clusters around accelerators, telemedicine pilots and university research outreach.", "visual": { "kind": "list", "items": [
+      { "text": "Women in Tech Botswana (Standard Chartered plus Dream Factory Foundation) runs five-month cohorts backing women-led health and tech ventures in Gaborone since 2024.", "source": "https://en.wikipedia.org/wiki/Women_in_Tech_Accelerator_Program" },
+      { "text": "Telemedicine startups extend maternal and pediatric care to rural Botswana, partnering with government, NGOs and local clinics despite connectivity gaps.", "source": "https://trendsnafrica.com/telemedicine-startups-revolutionize-rural-healthcare-in-botswana/" },
+      { "text": "Ministry of Health hosts a digital health implementation workshop pushing Electronic Medical Records across the public sector.", "source": "https://www.botswanayouth.com/botswana-strengthens-public-healthcare-through-digital-health-implementation-workshop/" },
+      { "text": "BSRHI intensifies community outreach on contraception, STIs and HIV prevention through school talks and a youth leadership symposium in 2025.", "source": "https://bhp.org.bw/index.php/bsrhi-ramps-public-engagement-sexual-and-reproductive-health" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "Femtech-specific funding is scarce; grants flow mainly through the women-in-tech accelerator.", "visual": { "kind": "funding", "items": [
+      { "company": "Women in Tech Botswana cohort 2 (6 women-led enterprises)", "amount": "BWP 700,000+", "amountUsd": 50000, "stage": "Grant", "date": "2025-11", "investor": "Standard Chartered Botswana", "purpose": "Equity-free seed funding for women-led tech and health ventures", "source": "https://www.bwtechzone.com/2025/11/standard-chartered-awards-over-p700000.html" },
+      { "company": "Women in Tech Botswana cohort 1 (part of 21 startups)", "amount": "part of USD 550,000", "amountUsd": null, "stage": "Grant", "date": "2024-01", "investor": "Standard Chartered Foundation", "purpose": "Seed grants distributed across women-led startups in first year", "source": "https://en.wikipedia.org/wiki/Women_in_Tech_Accelerator_Program" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The landscape is dominated by research institutions, public-health bodies and one accelerator, with a few early startups.", "visual": { "kind": "players", "items": [
+      { "name": "Botswana Sexual and Reproductive Health Initiative (BSRHI)", "type": "ngo", "note": "Research programme on contraception, STIs, maternal health, women's cancers and HIV; established 2014", "source": "https://www.bsrhi.org/" },
+      { "name": "Botswana Harvard Health Partnership (BHP)", "type": "ngo", "note": "Hosts BSRHI and maternal health / pregnancy outcome research", "source": "https://bhp.org.bw/pregnancy-outcomematernal-health" },
+      { "name": "Ministry of Health & Wellness", "type": "govt", "note": "Leads eHealth strategy, EMR rollout, HPV vaccination and PrEP programs", "source": "https://www.moh.gov.bw/news_events/health_informatics.html" },
+      { "name": "Women in Tech Botswana (Standard Chartered + Dream Factory Foundation)", "type": "hub", "note": "Accelerator funding women-led tech and health ventures", "source": "https://en.wikipedia.org/wiki/Women_in_Tech_Accelerator_Program" },
+      { "name": "Heavenly Mum Care Packages (HMCP)", "type": "startup", "note": "Early maternal health startup co-founded by Thabang Olebogeng", "source": "https://www.techinafrica.com/top-10-digital-health-record-startups-in-africa/" },
+      { "name": "UNFPA Botswana", "type": "ngo", "note": "Advances reproductive health, midwifery and gender-based-violence prevention", "source": "https://botswana.unfpa.org/en/publications/2025-unfpa-botswana-annual-report" },
+      { "name": "University of Botswana", "type": "ngo", "note": "BSRHI collaborator on SRH research and training", "source": "https://www.bsrhi.org/" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Capital is grant and development-partner driven rather than venture; no dedicated gender-lens VC identified locally.", "visual": { "kind": "investors", "items": [
+      { "name": "Standard Chartered Foundation / Standard Chartered Botswana", "hq": "UK / Botswana", "role": "Equity-free seed grants to women-led tech and health startups via Women in Tech", "source": "https://www.bwtechzone.com/2025/11/standard-chartered-awards-over-p700000.html" },
+      { "name": "Dream Factory Foundation", "hq": "Botswana", "role": "Co-runs the Women in Tech accelerator and mentorship", "source": "https://en.wikipedia.org/wiki/Women_in_Tech_Accelerator_Program" },
+      { "name": "UNFPA", "hq": "Global", "role": "Funds reproductive health, midwifery and menstrual dignity programming", "source": "https://botswana.unfpa.org/en/publications/2025-unfpa-botswana-annual-report" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Reference material is public-health and gender oriented.", "visual": { "kind": "list", "items": [
+      { "text": "Botswana Gender Monograph and Insight Report, UN Women (2026)", "source": "https://africa.unwomen.org/en/digital-library/publications/2026/02/botswana-gender-monograph-and-insight-report" },
+      { "text": "2025 UNFPA Botswana Annual Report (SRH, gender, youth)", "source": "https://botswana.unfpa.org/en/publications/2025-unfpa-botswana-annual-report" },
+      { "text": "Botswana Cervical Cancer Country Profile, WHO (2021)", "source": "https://cdn.who.int/media/docs/default-source/country-profiles/cervical-cancer/cervical-cancer-bwa-2021-country-profile-en.pdf" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "WHO: Botswana gold tier PMTCT", "url": "https://www.who.int/news/item/20-05-2025-botswana-advances-to-gold-tier-on-the-path-to-elimination-of-mother-to-child-transmission-of-hiv" },
+    { "label": "Macrotrends: maternal mortality", "url": "https://www.macrotrends.net/global-metrics/countries/bwa/botswana/maternal-mortality-rate" },
+    { "label": "Wiley IJGO: cervical screening barriers", "url": "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/ijgo.71089?af=R" },
+    { "label": "BSRHI outreach and PrEP", "url": "https://bhp.org.bw/index.php/bsrhi-ramps-public-engagement-sexual-and-reproductive-health" },
+    { "label": "BWTechZone: Women in Tech awards", "url": "https://www.bwtechzone.com/2025/11/standard-chartered-awards-over-p700000.html" },
+    { "label": "Women in Tech Accelerator (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Women_in_Tech_Accelerator_Program" },
+    { "label": "Borgen: free sanitary pads Botswana", "url": "https://borgenproject.org/period-poverty-in-botswana/" },
+    { "label": "WHO: Botswana eHealth Strategy 2020-2024", "url": "https://extranet.who.int/countryplanningcycles/planning-cycle-files/botswana-ehealth-strategy-2020-2024" },
+    { "label": "UNAIDS: HIV Prevention Road Map 2023-2025", "url": "https://hivpreventioncoalition.unaids.org/sites/default/files/attachments/botswana_hiv_prevention_road_map_nov_2023.pdf" },
+    { "label": "TrendsNafrica: telemedicine Botswana", "url": "https://trendsnafrica.com/telemedicine-startups-revolutionize-rural-healthcare-in-botswana/" },
+    { "label": "Botswana Youth: digital health workshop", "url": "https://www.botswanayouth.com/botswana-strengthens-public-healthcare-through-digital-health-implementation-workshop/" },
+    { "label": "BSRHI home", "url": "https://www.bsrhi.org/" },
+    { "label": "UNFPA Botswana 2025 Annual Report", "url": "https://botswana.unfpa.org/en/publications/2025-unfpa-botswana-annual-report" },
+    { "label": "UN Women: Botswana Gender Monograph", "url": "https://africa.unwomen.org/en/digital-library/publications/2026/02/botswana-gender-monograph-and-insight-report" }
+  ]
+}

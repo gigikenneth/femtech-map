@@ -1,0 +1,86 @@
+{
+  "meta": { "country": "Cameroon", "slug": "cameroon", "flag": "🇨🇲", "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & neonatal health", "Cervical & breast cancer screening", "Menstrual health", "Telemedicine & digital health", "Family planning access"],
+    "stats": [
+      { "value": "438 per 100,000", "label": "Maternal mortality ratio (2023, modeled estimate)", "source": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=CM" },
+      { "value": "~19%", "label": "Modern contraceptive prevalence rate, married women", "source": "https://www.nature.com/articles/s41598-025-85998-w" },
+      { "value": "36%", "label": "HPV vaccine coverage of target population (2024, WUENIC)", "source": "https://www.uicc.org/news-and-updates/news/26-m3-cameroons-people-centred-hpv-vaccination-campaign-builds-trust-through" },
+      { "value": "28%", "label": "Cameroon's share of Francophone Africa healthtech innovators (largest)", "source": "https://www.salientadvisory.com/reports/leading-innovations-enabling-health-product-access-in-africa-2024-ecosystem-report/" }
+    ] },
+  "overview": "Cameroon is the strongest health-tech node in Francophone Africa, hosting the largest share of the region's healthtech innovators. Its women's health story runs from GiftedMom, the pioneering maternal-health SMS platform, through GICMED's smartphone-based cervical and breast cancer screening, to a cluster of made-in-Cameroon menstrual health social enterprises. Live 2024-2026 activity centers on accelerator and competition programs and on landmark public health rollouts, notably the nationwide extension of the Cheque Sante maternal health voucher, rather than large femtech equity rounds.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent momentum sits in public health rollouts, competitions, and women-entrepreneurship programs more than in venture rounds.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-09", "text": "Cheque Sante maternal health voucher completes rollout to all ten regions of Cameroon, covering pregnancy and newborn care.", "source": "https://www.minsante.cm/site/?q=en%2Fnode%2F5284" },
+      { "date": "2025-03", "text": "40 women entrepreneurs from Wonder Cameroun cohorts 2-3 graduate in Douala after AfDB/AFAWA-backed acceleration.", "source": "https://www.agenceecofin.com/actualites/0304-127231-40-femmes-formees-en-acceleration-d-entreprises-via-le-programme-wonder-cameroun" },
+      { "date": "2025-02", "text": "Cameroon's Leevlong wins third place in the Orange Summer Challenge with a real-time vital-signs monitoring device.", "source": "https://disruptafrica.com/2025/02/28/3-startups-named-winners-of-latest-orange-summer-challenge/" },
+      { "date": "2024-08", "text": "Cheque Sante maternal health voucher officially launches in the North-West and South-West regions.", "source": "https://minsante.cm/site/?q=en/node/4958" },
+      { "date": "2023-11", "text": "Waspito closes a USD 2.5M seed extension led by DP World, bringing total funding to USD 5.2M.", "source": "https://techcrunch.com/2023/11/22/waspito-gets-seed-extension/" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "National strategy combines a digital health plan with major maternal-health financing and cervical cancer prevention.", "visual": { "kind": "timeline", "items": [
+      { "date": "2020-01", "text": "Cameroon adopts its National Digital Health Strategic Plan 2020-2024, led by MINSANTE, to advance universal health coverage through digital tools.", "source": "https://minsante.cm/site/?q=en%2Fcontent%2F2020-2024-national-digital-health-strategic-plan" },
+      { "date": "2020-01", "text": "HPV vaccine introduced into the national Expanded Programme on Immunization to prevent cervical cancer.", "source": "https://gco.iarc.who.int/media/elimination_tool/factsheets/120-CMR-cameroon.pdf" },
+      { "date": "2024-08", "text": "Cheque Sante health voucher scheme extended to conflict-affected North-West and South-West regions.", "source": "https://minsante.cm/site/?q=en/node/4958" },
+      { "date": "2025-09", "text": "Cheque Sante maternal and neonatal voucher scheme reaches nationwide coverage across all ten regions.", "source": "https://www.minsante.cm/site/?q=en%2Fnode%2F5284" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Women-focused activity clusters in accelerators, competitions, and entrepreneurship programs.", "visual": { "kind": "list", "items": [
+      { "text": "US Embassy Cameroon runs the Academy for Women Entrepreneurs (AWE) 2025 implementation competition.", "source": "https://cm.usembassy.gov/fr/academie-pour-les-femmes-entrepreneures-awe-2025/" },
+      { "text": "AfDB/AFAWA Wonder Cameroun (WEEP) program accelerates 500+ Cameroonian women entrepreneurs, run by E4Impact.", "source": "https://www.afdb.org/fr/news-and-events/au-cameroun-laudace-feminine-reinvente-lentrepreneuriat-grace-au-programme-wonder-82422" },
+      { "text": "Villgro Africa opens women-led African healthtech calls (2024 cohort with J&J Foundation and Boehringer Ingelheim), open to Cameroon.", "source": "https://disruptafrica.com/2024/03/07/villgro-africa-seeks-female-founded-health-innovations-for-venture-support/" },
+      { "text": "Disrupt Africa Diversity Dividend reports Cameroon among countries where the share of startups with a female co-founder or CEO decreased over the last two years.", "source": "https://disruptafrica.com/2026/07/27/small-steps-taken-towards-greater-gender-diversity-in-african-startup-ecosystem-in-last-2-years-says-new-report/" },
+      { "text": "GICMED / GIC Space secures USD 30,000 from HealthTech Hub Africa to scale smartphone-based cervical and breast cancer screening.", "source": "https://thehealthtech.org/funded-projects/" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "Women's health funding in Cameroon is mostly grants and awards; the largest e-health equity rounds sit in adjacent general telemedicine.", "visual": { "kind": "funding", "items": [
+      { "company": "Healthlane (GiftedMom successor)", "amount": "USD 2.4M", "amountUsd": 2400000, "stage": "Seed", "date": "2020-09", "investor": "Digital Horizon", "purpose": "Preventive/precision health platform across Africa; also YC W2020 and Sequoia/SVB/CRE Africa co-investors", "source": "https://disrupt-africa.com/2020/09/cameroonian-e-health-startup-healthlane-raises-2-4m-funding/" },
+      { "company": "GICMED / GIC Space", "amount": "USD 30,000", "amountUsd": 30000, "stage": "Grant", "date": "2022-01", "investor": "HealthTech Hub Africa", "purpose": "Scale smartphone microscope and telemedicine platform for cervical and breast cancer screening", "source": "https://thehealthtech.org/funded-projects/" },
+      { "company": "GICMED / GIC Space", "amount": "First prize (USD 75,000 pool)", "amountUsd": null, "stage": "Award", "date": "2021-01", "investor": "IFPMA & Speak Up Africa (Africa Young Innovators for Health Award)", "purpose": "Recognition and funding for cervical and breast cancer screening innovation", "source": "https://www.speakupafrica.org/rfi-interviews-conrad-tankou-winner-of-the-africa-young-innovators-for-health-award/" },
+      { "company": "GiftedMom", "amount": "USD 25,000", "amountUsd": 25000, "stage": "Prize", "date": "2014-01", "investor": "Anzisha Prize", "purpose": "Grow maternal-health SMS platform", "source": "https://anzisha.org/fellows/nteff-alain/" },
+      { "company": "Waspito (general e-health, adjacent)", "amount": "USD 2.5M", "amountUsd": 2500000, "stage": "Seed extension", "date": "2023-11", "investor": "DP World", "purpose": "Reach offline patients; total funding reached USD 5.2M", "source": "https://techcrunch.com/2023/11/22/waspito-gets-seed-extension/" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The ecosystem spans women's health startups, menstrual-health social enterprises, general telemedicine, and Buea's Silicon Mountain hubs.", "visual": { "kind": "players", "items": [
+      { "name": "GICMED / GIC Space", "type": "startup", "note": "Dr Conrad Tankou's smartphone microscope, smart speculum and telemedicine suite for cervical and breast cancer screening; 15,000+ women screened", "source": "https://healthpolicy-watch.news/96484-2/" },
+      { "name": "GiftedMom", "type": "startup", "note": "Pioneering maternal-health SMS/mobile platform (founded 2013, Yaounde) reaching 500,000+ mothers; later pivoted into Healthlane", "source": "https://tracxn.com/d/companies/giftedmom/__TlCjslSX4UDpvByxo1iv34e6UsonjWjDB6j42UN2cEw" },
+      { "name": "Healthlane", "type": "startup", "note": "GiftedMom pivot into preventive/precision health app and clinics; YC W2020, reportedly struggling since 2022", "source": "https://techcabal.com/2022/11/19/healthlane-hospitals-obsolete-startup-battling-business/" },
+      { "name": "Kmerpad", "type": "ngo", "note": "Olivia Mvondo's social enterprise making reusable washable pads and running menstrual-hygiene education; 300,000+ pads distributed since 2012", "source": "https://www.aa.com.tr/en/africa/ecological-sanitary-napkins-saving-lives-in-africa/2256844" },
+      { "name": "KujaEcoPads", "type": "ngo", "note": "Marie-Claire Kuja's biodegradable banana-fiber sanitary pads and One Million Girls anti-period-poverty campaign", "source": "https://borgenproject.org/kujaecopads-period-poverty-in-cameroon/" },
+      { "name": "PridePads Africa", "type": "ngo", "note": "Biodegradable menstrual pad manufacturing in Ngaoundere plus menstrual education, founded 2019", "source": "https://pridepads.org/" },
+      { "name": "Waspito", "type": "startup", "note": "All-in-one telemedicine platform (video consults, labs, medication delivery); general e-health, adjacent to femtech", "source": "https://forbesafrique.com/e-sante-la-start-up-camerounaise-waspito-leve-27-millions-de-dollars/" },
+      { "name": "ActivSpaces", "type": "hub", "note": "Tech hub and startup incubator (Buea, Douala, Bangangte), anchor of Buea's Silicon Mountain, founded 2010", "source": "https://vc4a.com/activspaces/" },
+      { "name": "Silicon Mountain (Buea)", "type": "hub", "note": "Anglophone tech cluster community around Buea hosting many startups", "source": "https://en.wikipedia.org/wiki/Silicon_Mountain" },
+      { "name": "Jokkolabs Douala", "type": "hub", "note": "Coworking and innovation hub, part of the pan-African Jokkolabs network and AfriLabs member", "source": "https://www.afrilabs.com/hub/jokkolabs-cameroon/" },
+      { "name": "Orange Digital Center Cameroon / Orange Fab", "type": "hub", "note": "Accelerator with coding school, FabLab, Orange Fab and Orange Ventures for high-potential startups", "source": "https://engageforchange.orange.com/en/programs/1d880de4-88ae-4ceb-ac8c-1953cc27165e" },
+      { "name": "MINSANTE (Ministry of Public Health)", "type": "govt", "note": "Runs the National Digital Health Strategic Plan, HPV vaccination, and the Cheque Sante maternal voucher scheme", "source": "https://minsante.cm/site/?q=en%2Fcontent%2F2020-2024-national-digital-health-strategic-plan" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Backers of Cameroon women's-health and adjacent e-health ventures span accelerators, impact funds, and telecom-linked investors.", "visual": { "kind": "investors", "items": [
+      { "name": "Y Combinator", "hq": "USA", "role": "Accelerated GiftedMom/Healthlane (W2020, ~USD 150K for 7%)", "source": "https://www.howwemadeitinafrica.com/cameroons-alain-nteff-on-meeting-the-queen-and-helping-5-million-moms/50082/" },
+      { "name": "GSMA (Ecosystem Accelerator / Innovation Fund)", "hq": "UK", "role": "Grant to GiftedMom for remote maternal-healthcare mobile solution; portfolio case study", "source": "https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/blog/meet-our-portfolio-start-ups-giftedmom-cameroon/" },
+      { "name": "Digital Horizon", "hq": "UK", "role": "Led Healthlane's USD 2.4M round", "source": "https://digitalhorizon.com/article/digital-horizon-invests-healthlane" },
+      { "name": "HealthTech Hub Africa", "hq": "Rwanda", "role": "Funded GICMED with USD 30,000 for cancer-screening scale-up", "source": "https://thehealthtech.org/funded-projects/" },
+      { "name": "Villgro Africa", "hq": "Kenya", "role": "Healthcare incubator/impact investor running women-led African healthtech calls open to Cameroon", "source": "https://disruptafrica.com/2024/03/07/villgro-africa-seeks-female-founded-health-innovations-for-venture-support/" },
+      { "name": "African Development Bank (AFAWA)", "hq": "Cote d'Ivoire", "role": "Backed Wonder Cameroun women's entrepreneurship acceleration", "source": "https://www.afdb.org/fr/news-and-events/au-cameroun-laudace-feminine-reinvente-lentrepreneuriat-grace-au-programme-wonder-82422" },
+      { "name": "Orange Ventures / Orange Digital Ventures Africa", "hq": "France", "role": "Backed Waspito seed round and Orange Fab Cameroon startups", "source": "https://itweb.africa/content/RgeVDMPY6p1qKJN3" },
+      { "name": "Launch Africa Ventures", "hq": "Mauritius", "role": "Co-invested in Waspito's USD 2.7M seed round", "source": "https://techmoran.com/2022/03/28/cameroonian-e-health-startup-waspito-raises-2-7m-seed-funding-round-for-expansion/" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Salient Advisory's Francophone Africa work is the richest source of Cameroon healthtech and women-led data.", "visual": { "kind": "list", "items": [
+      { "text": "What's happening in Francophone Africa healthtech? Salient Advisory (2024), landscaping 74 innovators with Cameroon the largest share at 28%", "source": "https://www.salientadvisory.com/insights/que-se-passe-t-il-dans-le-domaine-des-technologies-de-la-sante-en-afrique-francophone/" },
+      { "text": "2023 Roundup: Investments in African Healthtech, Salient Advisory (Feb 2024), women-led healthtech raised USD 52M in 2023", "source": "https://www.salientadvisory.com/wp-content/uploads/2024/02/2023-Roundup-Investments-in-African-Healthtech.pdf" },
+      { "text": "Leading Innovations Enabling Health Product Access in Africa, 2024 Ecosystem Report, Salient Advisory (43% women-led, 20% Francophone-led ventures)", "source": "https://www.salientadvisory.com/reports/leading-innovations-enabling-health-product-access-in-africa-2024-ecosystem-report/" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "World Bank, Maternal mortality (Cameroon)", "url": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=CM" },
+    { "label": "UICC, Cameroon HPV vaccination campaign", "url": "https://www.uicc.org/news-and-updates/news/26-m3-cameroons-people-centred-hpv-vaccination-campaign-builds-trust-through" },
+    { "label": "MINSANTE, National Digital Health Strategic Plan", "url": "https://minsante.cm/site/?q=en%2Fcontent%2F2020-2024-national-digital-health-strategic-plan" },
+    { "label": "MINSANTE, Cheque Sante nationwide coverage", "url": "https://www.minsante.cm/site/?q=en%2Fnode%2F5284" },
+    { "label": "IARC/WHO, Cameroon cervical cancer factsheet", "url": "https://gco.iarc.who.int/media/elimination_tool/factsheets/120-CMR-cameroon.pdf" },
+    { "label": "Health Policy Watch, GICMED cancer screening", "url": "https://healthpolicy-watch.news/96484-2/" },
+    { "label": "Speak Up Africa, Conrad Tankou award", "url": "https://www.speakupafrica.org/rfi-interviews-conrad-tankou-winner-of-the-africa-young-innovators-for-health-award/" },
+    { "label": "HealthTech Hub Africa, Funded projects", "url": "https://thehealthtech.org/funded-projects/" },
+    { "label": "Tracxn, GiftedMom profile", "url": "https://tracxn.com/d/companies/giftedmom/__TlCjslSX4UDpvByxo1iv34e6UsonjWjDB6j42UN2cEw" },
+    { "label": "Disrupt Africa, Healthlane USD 2.4M", "url": "https://disrupt-africa.com/2020/09/cameroonian-e-health-startup-healthlane-raises-2-4m-funding/" },
+    { "label": "AA, Kmerpad reusable pads", "url": "https://www.aa.com.tr/en/africa/ecological-sanitary-napkins-saving-lives-in-africa/2256844" },
+    { "label": "Borgen Project, KujaEcoPads", "url": "https://borgenproject.org/kujaecopads-period-poverty-in-cameroon/" },
+    { "label": "TechCrunch, Waspito seed extension", "url": "https://techcrunch.com/2023/11/22/waspito-gets-seed-extension/" },
+    { "label": "Salient Advisory, Francophone Africa healthtech", "url": "https://www.salientadvisory.com/insights/que-se-passe-t-il-dans-le-domaine-des-technologies-de-la-sante-en-afrique-francophone/" },
+    { "label": "AfDB, Wonder Cameroun women entrepreneurs", "url": "https://www.afdb.org/fr/news-and-events/au-cameroun-laudace-feminine-reinvente-lentrepreneuriat-grace-au-programme-wonder-82422" }
+  ]
+}
