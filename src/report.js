@@ -254,6 +254,18 @@ function wireScrolly(n) {
   const stepEls = [...document.querySelectorAll(".step")];
   const panelEls = [...document.querySelectorAll(".console-panel")];
   const dotEls = [...document.querySelectorAll(".rail-dot")];
+
+  // Mobile: no sticky pin. Move each chart panel inline, right under its own
+  // narrative step, so graphics get full width and height instead of a cramped box.
+  if (window.matchMedia("(max-width: 920px)").matches) {
+    stepEls.forEach((step, i) => {
+      const panel = panelEls[i];
+      if (panel) { panel.classList.add("inline"); step.after(panel); }
+    });
+    document.querySelector(".rpt-console-col")?.remove();
+    return;
+  }
+
   let active = -1;
 
   const setActive = (i) => {

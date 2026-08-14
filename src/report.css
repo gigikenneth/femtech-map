@@ -227,15 +227,22 @@ a { color: var(--accent); }
 @media (max-width: 920px) {
   .rpt-stats { grid-template-columns: repeat(2, 1fr); }
   .rpt-scrolly { display: block; }
-  .rpt-console-col { position: sticky; top: 54px; height: auto; display: block; z-index: 30; padding: 10px 0 6px; background: linear-gradient(var(--bg) 80%, transparent); }
-  .rpt-console { height: 46vh; }
-  .rpt-narrative { padding: 6px 0 30vh; }
-  .step { min-height: 52vh; padding: 18px 0; }
+  .rpt-console-col { display: none; }
+  .rpt-narrative { padding: 8px 0 40px; }
+  .step { min-height: 0; padding: 26px 0 4px; }
   .rpt-rail { display: none; }
+  /* each chart panel sits inline under its step, as its own full-width card */
+  .console-panel.inline {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    pointer-events: auto; height: auto; overflow: visible;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 22px; margin: 6px 0 30px; box-shadow: var(--shadow-sm);
+  }
 }
 @media (max-width: 560px) {
   .rpt-stats { grid-template-columns: 1fr; }
   .players { grid-template-columns: 1fr; }
+  .donut-wrap { flex-direction: column; align-items: flex-start; gap: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
