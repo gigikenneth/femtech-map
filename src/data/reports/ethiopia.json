@@ -1,0 +1,85 @@
+{
+  "meta": { "country": "Ethiopia", "slug": "ethiopia", "flag": "🇪🇹", "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & reproductive health", "Menstrual health", "Community health digitization", "Femtech / SRH platforms", "Family planning"],
+    "stats": [
+      { "value": "367", "label": "Maternal deaths per 100,000 live births (pooled 2015-2025 estimate)", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12888282/" },
+      { "value": "35%+", "label": "Modern contraceptive prevalence among married women (up from 6.2% in 2000)", "source": "https://www.medrxiv.org/content/10.1101/2025.11.23.25340840v1.full" },
+      { "value": "8,000", "label": "Health posts running the electronic community health information system (eCHIS) by 2024", "source": "https://www.technet-21.org/en/resources/case-study/ethiopia-s-electronic-community-health-information-system-a-tool-to-achieve-universal-health-coverage" },
+      { "value": "350k+", "label": "Women and girls reached with menstrual products by Mela for Her", "source": "https://www.dandc.eu/en/article/menstrual-health-ethiopia-mela-for-her" }
+    ] },
+  "overview": "Ethiopia's women's health innovation ecosystem sits at the intersection of a large public-health apparatus and a nascent private startup layer. The state anchors most progress through the electronic community health information system (eCHIS), which puts maternal and reproductive health tools in the hands of tablet-equipped health extension workers across roughly 8,000 health posts. Alongside it, a thin but growing femtech scene has emerged, led by YeneHealth, the country's first femtech startup, and a cluster of menstrual health social enterprises such as Mela for Her, Adey Pads and Mariam Seba. Startup activity remains early-stage relative to Ethiopia's population, but the 2025 Startup Proclamation and rising pan-African femtech funding signal a strengthening environment.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent milestones center on YeneHealth's fundraising, national maternal-health gains from digitization, and new pitch platforms for women-led health startups.", "visual": { "kind": "timeline", "items": [
+      { "date": "2024-04", "text": "YeneHealth, Ethiopia's first femtech startup, secures a pre-seed investment from Swedish women's health fund The Case for Her to expand sexual and reproductive health services.", "source": "https://thecaseforher.com/blog/the-case-for-her-invests-in-african-femtech-platform-yenehealth/" },
+      { "date": "2024-04", "text": "YeneHealth raises pre-seed funding to bridge the healthcare gap for African women, per Empower Africa coverage.", "source": "https://empowerafrica.com/ethiopian-health-tech-yenehealth-raises-pre-seed-funding-to-bridge-the-healthcare-gap-in-africa/" },
+      { "date": "2025-08", "text": "Ethiopia's digital health system credited with driving major gains in maternal and primary healthcare access.", "source": "https://news.fundsforngos.org/2025/08/07/ethiopias-digital-health-system-drives-major-gains-in-maternal-and-healthcare/" },
+      { "date": "2026-01", "text": "TechCabal analysis frames Africa's femtech boom and its gaps, noting about 81% of funded femtech startups focus on pregnancy and fertility.", "source": "https://techcabal.com/2026/01/24/africas-femtech-boom-is-real-its-biggest-gaps-say-even-more/" },
+      { "date": "2026-01", "text": "FemSTEM Pitch Competition 2026, run by the Africa Health Collaborative at Addis Ababa University with the Mastercard Foundation, offers up to USD 3,000 for women-led health startups.", "source": "https://shega.co/opportunities/fem-stem-pitch-competition-2026-up-to-3-000-for-women-led-health-startups" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "National strategy pairs reproductive health plans with an aggressive push to digitize community health, backed by a new startup law with explicit inclusion goals.", "visual": { "kind": "timeline", "items": [
+      { "date": "2021-01", "text": "Reproductive Health Strategic Plan 2021-2025 sets priorities on maternal service utilization, family planning integration and adolescent SRH.", "source": "https://platform.who.int/docs/default-source/mca-documents/srh-policy-documents/eth-reproductive_health_strategic_plan_2021-2025.pdf" },
+      { "date": "2022-01", "text": "National Reproductive Health Commodity Security Strategy 2022-2026 targets reliable supply of family planning and RH commodities.", "source": "https://www.moh.gov.et/sites/default/files/2024-04/National%20Reproductive%20Health%20Commodity%20Security%20Strategy%202022-%202026.pdf" },
+      { "date": "2024-01", "text": "eCHIS, a Ministry of Health flagship, scales to nearly 8,000 health posts, digitizing RMNCH workflows for health extension workers.", "source": "https://www.moh.gov.et/index.php/projects-3-col/echis" },
+      { "date": "2025-06", "text": "Ethiopia enacts its landmark Startup Proclamation (No. 1396/2025), creating a Startup Innovation Fund and explicitly aiming to empower women-led startups and health tech.", "source": "https://addisinsight.net/2025/06/05/ethiopia-enacts-landmark-startup-proclamation-to-boost-innovation-and-youth-led-enterprises/" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Activity clusters around one flagship femtech platform, a resilient menstrual health manufacturing base, and accelerators beginning to court women-led health ventures.", "visual": { "kind": "list", "items": [
+      { "text": "YeneHealth expands its women-centered platform: period and pregnancy tracking, discreet e-pharmacy with delivery, telemedicine and culturally responsive SRH content, using AI and data analytics.", "source": "https://yenehealth.com/read/The-Case-for-Her-invests-in-African-Femtech-platform-YeneHea/clwkff7wc0005w4yzm2t573ke" },
+      { "text": "Mela for Her grows from startup to a 42-employee social enterprise (85%+ female), supplying reusable pads and menstrual underwear to 350,000+ women and girls via 179 female sales agents.", "source": "https://www.dandc.eu/en/article/menstrual-health-ethiopia-mela-for-her" },
+      { "text": "Mariam Seba Sanitary Products Factory, founded by Freweini Mebrahtu, produces about 750,000 pads a year, benefiting close to 800,000 girls and women.", "source": "https://mariamseba.com/" },
+      { "text": "Adey Pads, founded 2019 by Mikal Mamo, manufactures affordable 100% cotton reusable pads to fight period poverty in urban and rural Ethiopia.", "source": "https://adeypad.com/about/" },
+      { "text": "Haftey, a Tigray-based social enterprise by and for women, combines menstrual health education, employment and reusable products.", "source": "https://haftey.org/" },
+      { "text": "FemSTEM Pitch Competition (Addis Ababa University Africa Health Collaborative + Mastercard Foundation) launches to fund women-led health startups.", "source": "https://shega.co/opportunities/fem-stem-pitch-competition-2026-up-to-3-000-for-women-led-health-startups" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "Deal flow is thin and early-stage, dominated by grants and pre-seed capital into YeneHealth plus development finance into menstrual health enterprises.", "visual": { "kind": "funding", "items": [
+      { "company": "YeneHealth", "amount": "USD 50,000", "amountUsd": 50000, "stage": "Grant", "date": "2024-01", "investor": "HealthTech Hub Africa (Novartis Foundation)", "purpose": "Implement YeneHealth FemTech project for adolescent SRH and family planning access", "source": "https://thehealthtech.org/company/yenehealth/" },
+      { "company": "YeneHealth", "amount": "undisclosed", "amountUsd": null, "stage": "Pre-Seed", "date": "2024-04", "investor": "The Case for Her", "purpose": "Advance sexual and reproductive health services for African women", "source": "https://shega.co/news/ethiopian-femtech-startup-yenehealth-secures-pre-seed-funding-from-the-case-for-her" },
+      { "company": "Mela for Her", "amount": "undisclosed", "amountUsd": null, "stage": "Grant / development finance", "date": "2022-06", "investor": "Invest for Jobs (GIZ)", "purpose": "Scale production of reusable menstrual pads (project ran to April 2024)", "source": "https://invest-for-jobs.com/en/projects/mela-for-her" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The landscape mixes one femtech pioneer, several menstrual health manufacturers, the Ministry of Health's digital backbone, and general-purpose innovation hubs.", "visual": { "kind": "players", "items": [
+      { "name": "YeneHealth", "type": "startup", "note": "Ethiopia's first femtech startup; SRH platform, e-pharmacy, telemedicine and tracking, founded by Kidist Tesfaye, HQ Addis Ababa.", "source": "https://thehealthtech.org/company/yenehealth/" },
+      { "name": "Mela for Her", "type": "startup", "note": "Women-led social enterprise (founded 2020) making reusable pads and menstrual underwear, 350k+ reached.", "source": "https://melaforher.com/" },
+      { "name": "Adey Pads", "type": "startup", "note": "Reusable 100% cotton sanitary pad manufacturer founded 2019 fighting period poverty.", "source": "https://adeypad.com/about/" },
+      { "name": "Mariam Seba Sanitary Products Factory", "type": "startup", "note": "Freweini Mebrahtu's pad factory producing ~750k pads/year.", "source": "https://mariamseba.com/" },
+      { "name": "Haftey", "type": "ngo", "note": "Tigray women-led social enterprise combining menstrual education, jobs and reusable products.", "source": "https://haftey.org/" },
+      { "name": "Ethiopia Ministry of Health (eCHIS)", "type": "govt", "note": "Runs the electronic community health information system with RMNCH modules across ~8,000 health posts.", "source": "https://www.moh.gov.et/index.php/projects-3-col/echis" },
+      { "name": "Africa Health Collaborative, Addis Ababa University", "type": "hub", "note": "Runs FemSTEM pitch competition for women-led health startups with the Mastercard Foundation.", "source": "https://shega.co/opportunities/fem-stem-pitch-competition-2026-up-to-3-000-for-women-led-health-startups" },
+      { "name": "HealthTech Hub Africa", "type": "hub", "note": "Pan-African health-tech accelerator (Kigali) that funded YeneHealth's femtech project.", "source": "https://thehealthtech.org/funded-projects/" },
+      { "name": "iceaddis", "type": "hub", "note": "Ethiopia's first innovation hub and startup incubator (est. 2011), coaching and investment-prep for high-potential ventures.", "source": "https://www.xyzlab.com/post/startup-accelerators-incubators-in-ethiopia" },
+      { "name": "blueMoon", "type": "hub", "note": "Ethiopia's first youth agribusiness incubator providing mentorship, training and seed funding.", "source": "https://www.xyzlab.com/post/startup-accelerators-incubators-in-ethiopia" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Capital into Ethiopian femtech has come mainly from mission-driven foreign funds and accelerators, with pan-African gender-lens investors forming the broader backdrop.", "visual": { "kind": "investors", "items": [
+      { "name": "The Case for Her", "hq": "Sweden", "role": "Pre-seed investor in YeneHealth", "source": "https://thecaseforher.com/blog/the-case-for-her-invests-in-african-femtech-platform-yenehealth/" },
+      { "name": "HealthTech Hub Africa", "hq": "Rwanda", "role": "USD 50,000 grant to YeneHealth (funded by Novartis Foundation)", "source": "https://thehealthtech.org/company/yenehealth/" },
+      { "name": "Novartis Foundation", "hq": "Switzerland", "role": "Funder behind HealthTech Hub Africa grant to YeneHealth", "source": "https://thehealthtech.org/company/yenehealth/" },
+      { "name": "Jaza Rift Ventures", "hq": "Kenya", "role": "Listed among YeneHealth's investors/backers", "source": "https://www.healthtechalpha.com/venture/yenehealth" },
+      { "name": "Google for Startups Accelerator", "hq": "USA", "role": "Accelerator backer of YeneHealth", "source": "https://www.healthtechalpha.com/venture/yenehealth" },
+      { "name": "Invest for Jobs (GIZ)", "hq": "Germany", "role": "Development finance to scale Mela for Her pad production", "source": "https://invest-for-jobs.com/en/projects/mela-for-her" },
+      { "name": "Mastercard Foundation", "hq": "Canada", "role": "Backs FemSTEM pitch competition for women-led health startups via Addis Ababa University", "source": "https://shega.co/opportunities/fem-stem-pitch-competition-2026-up-to-3-000-for-women-led-health-startups" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Peer-reviewed and sector research documents both Ethiopia's digital community-health impact and the broader African femtech market context.", "visual": { "kind": "list", "items": [
+      { "text": "Digitalizing the community health information system improved women's retention on the maternal continuum of care pathway in northwest Ethiopia (PLOS One, 2025 quasi-experimental study).", "source": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0312965" },
+      { "text": "Maternal mortality in Ethiopia (2015-2025): a systematic review of recent evidence and determinants (PMC).", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12888282/" },
+      { "text": "From Rapid Gains to Stalling: Two Decades of Modern Contraceptive Prevalence Rate in Ethiopia (medRxiv, 2025).", "source": "https://www.medrxiv.org/content/10.1101/2025.11.23.25340840v1.full" },
+      { "text": "Africa's femtech boom is real. Its biggest gaps say even more (TechCabal market analysis, 2026).", "source": "https://techcabal.com/2026/01/24/africas-femtech-boom-is-real-its-biggest-gaps-say-even-more/" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "Shega, YeneHealth pre-seed", "url": "https://shega.co/news/ethiopian-femtech-startup-yenehealth-secures-pre-seed-funding-from-the-case-for-her" },
+    { "label": "The Case for Her, YeneHealth investment", "url": "https://thecaseforher.com/blog/the-case-for-her-invests-in-african-femtech-platform-yenehealth/" },
+    { "label": "HealthTech Hub Africa, YeneHealth", "url": "https://thehealthtech.org/company/yenehealth/" },
+    { "label": "Empower Africa, YeneHealth", "url": "https://empowerafrica.com/ethiopian-health-tech-yenehealth-raises-pre-seed-funding-to-bridge-the-healthcare-gap-in-africa/" },
+    { "label": "Ministry of Health, eCHIS", "url": "https://www.moh.gov.et/index.php/projects-3-col/echis" },
+    { "label": "TechNet-21, eCHIS case study", "url": "https://www.technet-21.org/en/resources/case-study/ethiopia-s-electronic-community-health-information-system-a-tool-to-achieve-universal-health-coverage" },
+    { "label": "PLOS One, eCHIS maternal care study", "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0312965" },
+    { "label": "Reproductive Health Strategic Plan 2021-2025 (WHO)", "url": "https://platform.who.int/docs/default-source/mca-documents/srh-policy-documents/eth-reproductive_health_strategic_plan_2021-2025.pdf" },
+    { "label": "Startup Proclamation 2025 (Addis Insight)", "url": "https://addisinsight.net/2025/06/05/ethiopia-enacts-landmark-startup-proclamation-to-boost-innovation-and-youth-led-enterprises/" },
+    { "label": "Mela for Her (D+C)", "url": "https://www.dandc.eu/en/article/menstrual-health-ethiopia-mela-for-her" },
+    { "label": "Invest for Jobs, Mela for Her", "url": "https://invest-for-jobs.com/en/projects/mela-for-her" },
+    { "label": "Mariam Seba factory", "url": "https://mariamseba.com/" },
+    { "label": "Adey Pads", "url": "https://adeypad.com/about/" },
+    { "label": "FemSTEM pitch competition (Shega)", "url": "https://shega.co/opportunities/fem-stem-pitch-competition-2026-up-to-3-000-for-women-led-health-startups" },
+    { "label": "TechCabal, Africa femtech gaps", "url": "https://techcabal.com/2026/01/24/africas-femtech-boom-is-real-its-biggest-gaps-say-even-more/" },
+    { "label": "Maternal mortality review 2015-2025 (PMC)", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12888282/" },
+    { "label": "mCPR trends Ethiopia (medRxiv)", "url": "https://www.medrxiv.org/content/10.1101/2025.11.23.25340840v1.full" }
+  ]
+}

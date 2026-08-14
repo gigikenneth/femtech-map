@@ -1,0 +1,80 @@
+{
+  "meta": { "country": "Zambia", "slug": "zambia", "flag": "🇿🇲", "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & child health tech", "Menstrual health & SRHR", "Cervical cancer prevention", "Community health workers", "Reproductive health commodities"],
+    "stats": [
+      { "value": "252 per 100,000", "label": "Maternal mortality ratio (2018, down from 398 in 2013/14)", "source": "https://zambia.unfpa.org/en/topics/towards-ending-preventable-maternal-deaths" },
+      { "value": "65.5 per 100,000", "label": "Cervical cancer incidence, among the world's highest (2020)", "source": "https://www.afro.who.int/countries/zambia/news/zambia-steps-cervical-cancer-screening-hpv-testing" },
+      { "value": "USD 11.4M+", "label": "Government funds disbursed for reproductive health commodities, incl. USD 4.3M in 2025", "source": "https://zambia.unfpa.org/en/news/compact-kept-zambias-commitment-reproductive-health" },
+      { "value": "800+ mothers", "label": "Enrolled on Dawa Health's DawaMom maternal platform with 60+ community health workers", "source": "https://www.digitaltimes.africa/zambian-healthtech-startup-develops-dawamom-to-empower-rural-mothers/" }
+    ] },
+  "overview": "Zambia's femtech ecosystem is anchored by Dawa Health, whose AI-enabled DawaMom platform for maternal, postnatal and cervical cancer prevention care grew out of the Lusaka accelerator BongoHive and in 2025 was selected for UNICEF Femtech Ventures. Alongside it sits a strong civil-society layer led by Copper Rose Zambia on menstrual health and SRHR, plus government commitments on reproductive health commodities, free sanitary pads in schools, and nationwide HPV screening. The market is thin on venture capital but supported by gender-lens funds active across Southern Africa and by donor-backed accelerator grants.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent activity clusters around Dawa Health's international recognition and expanding women's health programs.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-08", "text": "DawaMom by Dawa Health (Zambia) named among 11 startups in the first UNICEF Femtech Ventures cohort, from 1,100+ applications across 85 countries.", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+      { "date": "2025-06", "text": "BongoHive's Women in Tech Zambia accelerator (with a HealthTech focus area) ran its cohort, awarding USD 10,000 equity-free grants to five women-led startups.", "source": "https://opportunitydesk.org/2025/05/01/women-in-tech-zambia-accelerator-programme-2025" },
+      { "date": "2025-11", "text": "Zambia's Ministry of Education received sanitary pads and school books to support the free sanitary pad policy for female learners.", "source": "https://www.lusakatimes.com/2025/11/21/ministry-of-education-receives-sanitary-pads-and-school-books/" },
+      { "date": "2025-11", "text": "Preliminary 2024 Zambia Demographic and Health Survey results released, covering contraceptive use, maternal health and gender-based violence.", "source": "https://www.zamstats.gov.zm/wp-content/uploads/2025/11/Zambia-Demographic-and-Health-Survey-2024.pdf" },
+      { "date": "2024-01", "text": "Dawa Health's use of AI to analyze ultrasound scans and flag high-risk pregnancies in Zambia profiled by Forbes.", "source": "https://www.forbes.com/sites/andrewwight/2024/01/28/how-could-artificial-intelligence--help-pregnant-women-in-zambia/" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "National strategy links digital health, reproductive health financing and menstrual equity.", "visual": { "kind": "timeline", "items": [
+      { "date": "2022-01", "text": "Zambia's Digital Health Strategy 2022-2026 prioritizes electronic health records, telemedicine and data analytics toward Universal Health Coverage.", "source": "https://dig.watch/resource/zambias-digital-health-strategy-2022-2026" },
+      { "date": "2023-02", "text": "Government signed a Compact of Commitment with UNFPA to boost domestic funding for family planning and maternal health supplies, since disbursing over USD 11.4M.", "source": "https://zambia.unfpa.org/en/news/compact-kept-zambias-commitment-reproductive-health" },
+      { "date": "2024-09", "text": "HPV vaccination moved to a routine single-dose schedule as Zambia scales cervical cancer prevention toward WHO 2030 elimination targets.", "source": "https://www.afro.who.int/countries/zambia/news/zambia-steps-cervical-cancer-screening-hpv-testing" },
+      { "date": "2025-01", "text": "Government free sanitary pad policy for public schools advanced, with pads supplied and improved female sanitation facilities to keep girls in class.", "source": "https://zambia.unfpa.org/en/news/menstrual-health-human-rights-issue-not-just-health-one" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Accelerators, donor programs and NGOs form the backbone of women's health innovation.", "visual": { "kind": "list", "items": [
+      { "text": "Dawa Health originated at BongoHive, the Lusaka startup accelerator, and now runs DawaMom via web, mobile, SMS and multilingual chatbot with community health workers.", "source": "https://www.forbes.com/sites/andrewwight/2024/01/28/how-could-artificial-intelligence--help-pregnant-women-in-zambia/" },
+      { "text": "BongoHive's Women in Tech Zambia accelerator supports women-led tech businesses with a dedicated HealthTech challenge and equity-free grants.", "source": "https://vc4a.com/bongohive/zambia-women-in-tech-programme/" },
+      { "text": "Copper Rose Zambia runs grassroots menstrual health and SRHR programs, having educated over 5,000 adolescents through its Candid Pride and Woman4Her campaigns.", "source": "https://copperrosezambia.org/about-us/our-team/" },
+      { "text": "UNFPA Zambia, with the Ministry of Health and Lifeline/Childline, distributes sanitary pads via mobile health clinics across Eastern, Southern and Western Provinces.", "source": "https://zambia.unfpa.org/en/news/menstrual-health-human-rights-issue-not-just-health-one" },
+      { "text": "World Vision Zambia distributed menstrual hygiene management packs to 750 girls across 16 schools in Manyinga and Mufumbwe districts.", "source": "https://www.wvi.org/stories/zambia/empowering-girls-through-menstrual-hygiene-packs-750-school-girls-receive-packs" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "Capital into Zambian femtech is early-stage and grant-led rather than venture-scale.", "visual": { "kind": "funding", "items": [
+      { "company": "Dawa Health (DawaMom)", "amount": "up to USD 100,000", "amountUsd": 100000, "stage": "Grant / equity-free", "date": "2025-08", "investor": "UNICEF Femtech Ventures (Sweden & Temasek Foundation)", "purpose": "Test and scale AI-enabled maternal, postnatal and cervical cancer prevention services", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+      { "company": "Dawa Health", "amount": "USD 158K", "amountUsd": 158000, "stage": "Seed / early", "date": "2021-09", "investor": "MIT Solve, Johnson & Johnson, Patrick J. McGovern Foundation, Startupbootcamp", "purpose": "Build DawaMom maternal health platform and plan regional expansion", "source": "https://disruptafrica.com/2021/09/01/zambian-startup-dawa-health-plans-regional-expansion-for-maternal-health-focused-digital-platform/" },
+      { "company": "Women in Tech Zambia startups (5)", "amount": "USD 10,000 each", "amountUsd": 10000, "stage": "Grant / equity-free", "date": "2025-06", "investor": "BongoHive Innovations", "purpose": "Accelerate women-led tech and tech-enabled businesses including HealthTech", "source": "https://www.globalsouthopportunities.com/2025/05/09/women-10/" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "A mix of one flagship startup, an accelerator, government agencies and health NGOs.", "visual": { "kind": "players", "items": [
+      { "name": "Dawa Health / DawaMom", "type": "startup", "note": "Lusaka-based AI maternal, postnatal and cervical cancer prevention platform; founder Tafadzwa Kalisto Munzwa", "source": "https://www.digitaltimes.africa/zambian-healthtech-startup-develops-dawamom-to-empower-rural-mothers/" },
+      { "name": "Copper Rose Zambia", "type": "ngo", "note": "Youth-led SRHR and menstrual health organization; co-founded 2015 by Dr Natasha Salifyanji Kaoma", "source": "https://copperrosezambia.org/about-us/our-team/" },
+      { "name": "BongoHive", "type": "hub", "note": "Lusaka startup accelerator; runs Women in Tech Zambia and the Launch accelerator", "source": "https://bongohive.co.zm/programmes/" },
+      { "name": "UNFPA Zambia", "type": "ngo", "note": "UN agency backing reproductive health commodities, family planning and menstrual health distribution", "source": "https://zambia.unfpa.org/en/news/compact-kept-zambias-commitment-reproductive-health" },
+      { "name": "Ministry of Health (Zambia)", "type": "govt", "note": "Owns Digital Health Strategy 2022-2026 and cervical cancer / HPV screening scale-up", "source": "https://www.afro.who.int/countries/zambia/news/zambia-steps-cervical-cancer-screening-hpv-testing" },
+      { "name": "Zambia Medicines and Medical Supplies Agency (ZAMMSA)", "type": "govt", "note": "Procures and distributes reproductive health commodities under the UNFPA compact", "source": "https://zambia.unfpa.org/en/news/compact-kept-zambias-commitment-reproductive-health" },
+      { "name": "World Vision Zambia", "type": "ngo", "note": "Distributes menstrual hygiene management packs to schoolgirls in rural districts", "source": "https://www.wvi.org/stories/zambia/empowering-girls-through-menstrual-hygiene-packs-750-school-girls-receive-packs" },
+      { "name": "Zambia Statistics Agency (ZamStats)", "type": "govt", "note": "Publishes the Demographic and Health Survey (2024) on maternal health, contraception and GBV", "source": "https://www.zamstats.gov.zm/wp-content/uploads/2025/11/Zambia-Demographic-and-Health-Survey-2024.pdf" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Funding comes from donor programs and Southern Africa gender-lens and impact funds rather than local VC.", "visual": { "kind": "investors", "items": [
+      { "name": "UNICEF Femtech Ventures", "hq": "Global", "role": "Equity-free capital and technical assistance to DawaMom", "source": "https://www.unicef.org/innovation/press-releases/african-and-asian-frontier-tech-founders-suppported-by-sweden-and-unicef-close-womens" },
+      { "name": "Government of Sweden", "hq": "Sweden", "role": "Founding partner of UNICEF Femtech Ventures", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+      { "name": "Temasek Foundation", "hq": "Singapore", "role": "Founding partner of UNICEF Femtech Ventures", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+      { "name": "MIT Solve", "hq": "USA", "role": "Backed Dawa Health, recognized DawaMom in its Caring Economy category", "source": "https://solve.mit.edu/solutions/18899" },
+      { "name": "Patrick J. McGovern Foundation", "hq": "USA", "role": "Investor in Dawa Health", "source": "https://www.crunchbase.com/organization/dawa-health" },
+      { "name": "Alitheia IDF", "hq": "Nigeria / South Africa", "role": "Gender-lens private equity fund investing in women-led growth companies incl. Zambia", "source": "https://furtherafrica.com/2025/11/11/financing-her-future-gender-lens-investing-is-transforming-africas-capital-markets/" },
+      { "name": "Afrishela Investment Fund (Graca Machel Trust)", "hq": "Pan-African", "role": "USD 30M gender and climate lens fund targeting women-owned businesses in East and Southern Africa incl. Zambia", "source": "https://gracamacheltrust.org/uncategorized/afrishela-investment-fund/" },
+      { "name": "BongoHive Innovations", "hq": "Zambia", "role": "Provides equity-free grants to women-led and HealthTech startups", "source": "https://vc4a.com/bongohive/zambia-women-in-tech-programme/" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Data and evidence come from national surveys and peer-reviewed studies.", "visual": { "kind": "list", "items": [
+      { "text": "Zambia Demographic and Health Survey 2024, Key Indicators Report (ZamStats / DHS Program)", "source": "https://www.dhsprogram.com/pubs/pdf/PR159/PR159.pdf" },
+      { "text": "A comparative study of menstrual poverty among urban and rural female learners in government schools of Zambia (BMC Women's Health)", "source": "https://bmcwomenshealth.biomedcentral.com/articles/10.1186/s12905-024-03542-w" },
+      { "text": "Challenges of AI in Maternal Healthcare: Lessons from Zambia (Mozilla Foundation)", "source": "https://www.mozillafoundation.org/en/blog/challenges-of-ai-in-maternal-healthcare-lessons-from-zambia/" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "UNICEF Femtech Ventures press release", "url": "https://www.unicef.org/innovation/press-releases/african-and-asian-frontier-tech-founders-suppported-by-sweden-and-unicef-close-womens" },
+    { "label": "Femtech Insider, UNICEF cohort", "url": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+    { "label": "Digital Times, DawaMom", "url": "https://www.digitaltimes.africa/zambian-healthtech-startup-develops-dawamom-to-empower-rural-mothers/" },
+    { "label": "Forbes, AI for pregnant women in Zambia", "url": "https://www.forbes.com/sites/andrewwight/2024/01/28/how-could-artificial-intelligence--help-pregnant-women-in-zambia/" },
+    { "label": "Disrupt Africa, Dawa Health expansion", "url": "https://disruptafrica.com/2021/09/01/zambian-startup-dawa-health-plans-regional-expansion-for-maternal-health-focused-digital-platform/" },
+    { "label": "MIT Solve, Dawa Health", "url": "https://solve.mit.edu/solutions/18899" },
+    { "label": "Zambia Digital Health Strategy 2022-2026", "url": "https://dig.watch/resource/zambias-digital-health-strategy-2022-2026" },
+    { "label": "UNFPA, Zambia reproductive health compact", "url": "https://zambia.unfpa.org/en/news/compact-kept-zambias-commitment-reproductive-health" },
+    { "label": "UNFPA, Menstrual health human rights", "url": "https://zambia.unfpa.org/en/news/menstrual-health-human-rights-issue-not-just-health-one" },
+    { "label": "WHO Afro, HPV cervical cancer screening", "url": "https://www.afro.who.int/countries/zambia/news/zambia-steps-cervical-cancer-screening-hpv-testing" },
+    { "label": "Copper Rose Zambia, team", "url": "https://copperrosezambia.org/about-us/our-team/" },
+    { "label": "BongoHive Women in Tech Zambia", "url": "https://vc4a.com/bongohive/zambia-women-in-tech-programme/" },
+    { "label": "World Vision Zambia, MHM packs", "url": "https://www.wvi.org/stories/zambia/empowering-girls-through-menstrual-hygiene-packs-750-school-girls-receive-packs" },
+    { "label": "Zambia DHS 2024 (ZamStats)", "url": "https://www.zamstats.gov.zm/wp-content/uploads/2025/11/Zambia-Demographic-and-Health-Survey-2024.pdf" },
+    { "label": "FurtherAfrica, gender-lens investing", "url": "https://furtherafrica.com/2025/11/11/financing-her-future-gender-lens-investing-is-transforming-africas-capital-markets/" }
+  ]
+}
