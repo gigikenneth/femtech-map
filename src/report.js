@@ -1,5 +1,6 @@
 import "./report.css";
-import { renderReportBody, reportMeta, renderNotFound } from "./report-render.js";
+import { renderReportBody, reportMeta, renderNotFound, relatedCountries } from "./report-render.js";
+import index from "./data/reports/_index.json";
 
 const app = document.getElementById("report");
 
@@ -48,7 +49,7 @@ function applyHeadMeta(d) {
 
   // Prerendered pages already carry the full HTML + head meta; just hydrate.
   if (!prerendered) {
-    app.innerHTML = renderReportBody(data);
+    app.innerHTML = renderReportBody(data, relatedCountries(index, data.meta.slug));
     applyHeadMeta(data);
   }
 

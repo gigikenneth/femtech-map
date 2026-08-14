@@ -163,7 +163,7 @@ function renderVisual(section) {
 
 /* ---------- full report body + head metadata ---------- */
 
-export function renderReportBody(d) {
+export function renderReportBody(d, related = []) {
   const m = d.meta;
   const steps = d.sections;
 
@@ -216,6 +216,7 @@ export function renderReportBody(d) {
       <p class="sub">Every figure and claim above links back to a public source. ${(d.sources || []).length} references, updated ${esc(m.lastUpdated)}.</p>
       <div class="src-grid">${sourcesHTML}</div>
     </section>
+    ${renderRelatedStrip(related)}
     <footer class="rpt-foot">
       Researched and compiled for the <a href="/">Global Femtech Map</a> by Gigi Kenneth. Figures reflect public reporting as of ${esc(m.lastUpdated)}. Corrections welcome.
     </footer>`;
@@ -236,6 +237,89 @@ export function reportMeta(d) {
     keywords: ["femtech", `${m.country} women's health`, "maternal health", "reproductive health", "digital health"].concat(m.focusAreas || []),
   };
   return { title, description, canonical, jsonld };
+}
+
+/* ---------- related countries (internal linking, shared client + prerender) ---------- */
+
+// Pick n other countries sharing the most focus areas; ties fall back to list order.
+export function relatedCountries(index, slug, n = 4) {
+  const cur = index.find((r) => r.slug === slug);
+  const focus = new Set((cur?.focus || []).map((f) => f.toLowerCase()));
+  return index
+    .filter((r) => r.slug !== slug)
+    .map((r) => ({ r, overlap: (r.focus || []).filter((f) => focus.has(f.toLowerCase())).length }))
+    .sort((a, b) => b.overlap - a.overlap)
+    .slice(0, n)
+    .map((s) => s.r);
+}
+
+export function renderRelatedStrip(related) {
+  if (!related || !related.length) return "";
+  return `
+    <section class="rpt-related" aria-label="Related countries">
+      <h2>Related country reports</h2>
+      <div class="rpt-related-grid">
+        ${related
+          .map((r) => `
+          <a class="rpt-related-card" href="/reports/${encodeURIComponent(r.slug)}/">
+            <span class="rc-flag" aria-hidden="true">${r.flag || ""}</span>
+            <span class="rc-name">${esc(r.name)}</span>
+            <span class="rc-hook">${esc(r.hook || "")}</span>
+          </a>`)
+          .join("")}
+      </div>
+    </section>`;
+}
+
+/* ---------- reports index (shared client + prerender) ---------- */
+
+// Countries we plan to cover next as the map goes global. Shown as "coming soon".
+export const PLANNED = ["India", "Brazil", "Indonesia", "Pakistan", "Mexico", "Philippines"];
+
+const IDX_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+export const fmtUpdated = (ym) => {
+  const [y, m] = String(ym || "").split("-");
+  return m ? `Updated ${IDX_MONTHS[+m - 1]} ${y}` : "";
+};
+
+const indexCard = (r) => `
+  <a class="idx-card" data-name="${esc(r.name.toLowerCase())}" data-focus="${esc((r.focus || []).join(" ").toLowerCase())}" href="/reports/${encodeURIComponent(r.slug)}/">
+    <span class="flag">${r.flag || ""}</span>
+    <span class="cn">${esc(r.name)}</span>
+    <p class="hook">${esc(r.hook)}</p>
+    ${(r.focus || []).length ? `<div class="idx-tags">${r.focus.map((f) => `<span class="idx-tag">${esc(f)}</span>`).join("")}</div>` : ""}
+    <span class="idx-foot"><span class="idx-cta">Read report &rarr;</span><span class="idx-updated">${esc(fmtUpdated(r.lastUpdated))}</span></span>
+  </a>`;
+
+// Full index body innerHTML, identical output for prerender and client hydrate.
+export function renderIndexBody(index, planned = []) {
+  const published = new Set(index.map((r) => r.name));
+  const soon = planned
+    .filter((n) => !published.has(n))
+    .map((n) => `
+  <div class="idx-card idx-soon" data-name="${esc(n.toLowerCase())}" data-focus="">
+    <span class="cn">${esc(n)}</span>
+    <p class="hook">Report in research.</p>
+    <span class="idx-foot"><span class="idx-cta">Coming soon</span></span>
+  </div>`)
+    .join("");
+  return `
+  <div class="idx-wrap">
+    <div class="idx-head">
+      <h1 class="idx-title">Femtech ecosystem reports</h1>
+      <p class="idx-sub">Researched, cited country reports on women's health innovation worldwide: the funding, the policy, the founders and the hubs. Deep coverage across Africa first, expanding globally.</p>
+      <div class="idx-search">
+        <input id="idx-search-input" type="search" placeholder="Search a country…" aria-label="Search countries" autocomplete="off" />
+        <span class="idx-count" id="idx-count"></span>
+      </div>
+    </div>
+    <div class="idx-grid" id="idx-grid">
+      ${index.map(indexCard).join("")}
+      ${soon}
+    </div>
+    <p class="idx-empty" id="idx-empty" hidden>No country matches that search.</p>
+    <p class="rpt-foot" style="padding:40px 0 0">Back to the <a href="/">Global Femtech Map</a>.</p>
+  </div>`;
 }
 
 export function renderNotFound(slug) {

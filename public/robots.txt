@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# AI crawlers, allowed so the reports can be cited in AI answers (GEO).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://femtech.asele.tech/sitemap.xml
