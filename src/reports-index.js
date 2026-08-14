@@ -16,7 +16,7 @@ const root = document.getElementById("reports-index");
 const published = new Set(index.map((r) => r.name));
 
 const card = (r) => `
-  <a class="idx-card" data-name="${esc(r.name.toLowerCase())}" data-focus="${esc((r.focus || []).join(" ").toLowerCase())}" href="/report.html?country=${encodeURIComponent(r.slug)}">
+  <a class="idx-card" data-name="${esc(r.name.toLowerCase())}" data-focus="${esc((r.focus || []).join(" ").toLowerCase())}" href="/reports/${encodeURIComponent(r.slug)}/">
     <span class="flag">${r.flag || ""}</span>
     <span class="cn">${esc(r.name)}</span>
     <p class="hook">${esc(r.hook)}</p>
