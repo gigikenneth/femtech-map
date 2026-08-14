@@ -187,9 +187,41 @@ function renderVisual(section) {
 
 /* ---------- page render ---------- */
 
+const SITE = "https://femtech-map.vercel.app";
+
+function applySEO(d) {
+  const m = d.meta;
+  const url = `${SITE}/report.html?country=${m.slug}`;
+  const title = `${m.country}: femtech and women's health innovation report`;
+  const desc = String(d.overview || "").replace(/\s+/g, " ").slice(0, 155).trim();
+  document.title = title;
+  const upsert = (sel, tag, attrs) => {
+    let el = document.head.querySelector(sel);
+    if (!el) { el = document.createElement(tag); document.head.appendChild(el); }
+    for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  };
+  upsert('meta[name="description"]', "meta", { name: "description", content: desc });
+  upsert('link[rel="canonical"]', "link", { rel: "canonical", href: url });
+  for (const [p, c] of [["og:type", "article"], ["og:site_name", "Global Femtech Map"], ["og:title", title], ["og:description", desc], ["og:url", url]])
+    upsert(`meta[property="${p}"]`, "meta", { property: p, content: c });
+  upsert('meta[name="twitter:card"]', "meta", { name: "twitter:card", content: "summary_large_image" });
+  const ld = {
+    "@context": "https://schema.org", "@type": "Article", headline: title, description: desc, inLanguage: "en",
+    about: { "@type": "Country", name: m.country },
+    datePublished: `${m.lastUpdated}-01`, dateModified: `${m.lastUpdated}-01`,
+    author: { "@type": "Person", name: "Gigi Kenneth" },
+    publisher: { "@type": "Organization", name: "Global Femtech Map" },
+    mainEntityOfPage: url,
+    keywords: ["femtech", `${m.country} women's health`, "maternal health", "reproductive health", "digital health"].concat(m.focusAreas || []),
+  };
+  let s = document.getElementById("rpt-jsonld");
+  if (!s) { s = document.createElement("script"); s.id = "rpt-jsonld"; s.type = "application/ld+json"; document.head.appendChild(s); }
+  s.textContent = JSON.stringify(ld);
+}
+
 function render(d) {
   const m = d.meta;
-  document.title = `${m.country}, femtech report`;
+  applySEO(d);
 
   const steps = d.sections;
 

@@ -1,0 +1,78 @@
+{
+  "meta": { "country": "Angola", "slug": "angola", "flag": "🇦🇴", "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & newborn health", "Reproductive health & family planning", "Cervical cancer & HPV", "Menstrual health", "Digital health access"],
+    "stats": [
+      { "value": "170 per 100,000", "label": "Maternal mortality ratio, down from 239 (2023-24)", "source": "https://angola.unfpa.org/en/news/unfpa-and-norway-support-angola-become-first-country-implement-whos-new-guideline-postpartum" },
+      { "value": "62%", "label": "Births in health facilities in 2024, up from 46% in 2015-16 (Census/IIMS)", "source": "https://dhsprogram.com/pubs/pdf/PR162/PR162.pdf" },
+      { "value": "2M+ girls", "label": "Target of Angola's first national HPV/cervical cancer vaccination campaign", "source": "https://www.gavi.org/vaccineswork/angola-launches-historic-hpv-vaccination-effort-aiming-protect-22-million-girls" },
+      { "value": "1 in 5 girls", "label": "Reported missing school due to menstruation in the past year", "source": "https://www.unicef.org/angola/en/stories/menstrual-dignity-inspiring-look-initiative-promotes-change-feminine-hygiene" }
+    ] },
+  "overview": "Angola's women's health innovation is driven mainly by government, UN agencies and donors rather than a dense startup market, with progress against high maternal mortality as the central theme. Digital tools such as the SMS-based Monami pregnancy programme and the Safe Delivery App are being layered onto public maternity services, while 2025 brought Angola's first national HPV vaccination campaign and continued menstrual health pilots. A young startup ecosystem, newly supported by a Startup Law and incubation programmes, includes the health-access platform Appy Saude, though dedicated femtech and gender-lens capital remains thin.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent milestones center on cervical cancer prevention, postpartum haemorrhage care and falling maternal mortality.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-10", "text": "Angola launched its first national cervical cancer (HPV) vaccination campaign, aiming to protect more than two million girls aged 9-12, with a school and health-centre phase from 27 October to 7 November 2025.", "source": "https://www.gavi.org/vaccineswork/angola-launches-historic-hpv-vaccination-effort-aiming-protect-22-million-girls" },
+      { "date": "2025-11", "text": "Thirty-four health professionals completed a Training of Trainers on postpartum haemorrhage; Angola became the first country to implement WHO's new PPH guideline, with UNFPA and Norway support.", "source": "https://angola.unfpa.org/en/news/unfpa-and-norway-support-angola-become-first-country-implement-whos-new-guideline-postpartum" },
+      { "date": "2025-09", "text": "Angola reported a decline in maternal and child mortality, with the maternal mortality ratio falling from 239 to around 160-170 per 100,000 live births per INE survey and WHO 2025 data.", "source": "https://www.giranoticias.com/sociedade/2025/09/25397-angola-regista-reducao-no-indice-de-mortalidade-materno-infantil.html" },
+      { "date": "2025-07", "text": "CNN profiled Appy Saude, Angola's largest online pharmacy network, reporting roughly 95% year-on-year growth and expansion beyond Angola.", "source": "https://www.cnn.com/2025/07/28/world/video/marketplace-africa-angola-appy-saude-medical-healthcare-spc" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "National strategies and UN country programmes frame the maternal, reproductive and startup agenda.", "visual": { "kind": "timeline", "items": [
+      { "date": "2023-01", "text": "Angola's National Maternal and Neonatal Health Strategy 2023-2027 aims to expand quality obstetric care and strengthen antenatal and postpartum services.", "source": "https://mep.gov.ao/noticia/569/angola-reduz-taxa-de-mortalidade-materno-infantil" },
+      { "date": "2024-01", "text": "UNFPA is implementing its 9th Country Programme (2024-2028) in Angola, targeting zero preventable maternal deaths, zero gender-based violence and zero unmet need for family planning.", "source": "https://angola.unfpa.org/en/topics/maternal-health-24" },
+      { "date": "2025-10", "text": "Angola aligned its cervical cancer effort with WHO's global elimination strategy targets (90% of girls vaccinated, 70% screened, 90% treated by 2030).", "source": "https://www.afro.who.int/countries/angola/news/angola-takes-historic-step-introduction-cervical-cancer-vaccine" },
+      { "date": "2026-03", "text": "Angola's National Assembly unanimously approved a Startup Law creating a legal framework, a startup seal, pre-seed/seed/Series A incentives and a National Startup Council.", "source": "https://www.ecofinagency.com/news-digital/2003-53952-angola-passes-startup-law-to-spur-digital-economy-growth" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Most women's-health innovation is delivered through donor-backed digital tools and incubation programmes.", "visual": { "kind": "list", "items": [
+      { "text": "The Monami programme (Lucrecia Paim and Manuel Pedro Azancot de Menezes maternity hospitals) sends weekly pregnancy SMS; about 30,000 pregnant women registered in its first year, with 95%+ reporting they learned something new.", "source": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+      { "text": "UNFPA and MINSA rolled out the Safe Delivery App, training 240 health workers across drought-hit Huila, Cunene, Namibe and Cuando Cubango; it is expected to support tens of thousands of births.", "source": "https://angola.unfpa.org/en/news/how-technology-improving-quality-maternal-health-care-drought-affected-regions-angola" },
+      { "text": "Government, UNFPA and BeGirl Inc. ran a Menstrual Health Management pilot, equipping 1,000 girls aged 10-16 with menstrual panties and giving tracking tools to 1,000 girls and 1,000 boys.", "source": "https://angola.unfpa.org/en/publications/menstrual-management-angola-impact-study" },
+      { "text": "INAPEM and INFOSI signed an MoU (March 2025) to run the DIGITAL.AO incubation programme, offering startups incubation space, training, mentorship and investor access.", "source": "https://www.ecofinagency.com/news-digital/2003-53952-angola-passes-startup-law-to-spur-digital-economy-growth" },
+      { "text": "Appy Saude expanded internationally, launching operations in Rwanda with Kenya targeted, exporting its health-information and online pharmacy model.", "source": "https://www.cnn.com/2025/07/28/world/video/marketplace-africa-angola-appy-saude-medical-healthcare-spc" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "Dedicated femtech venture funding is scarce; most capital flows through donors, DFIs and health programmes rather than equity rounds.", "visual": { "kind": "funding", "items": [
+      { "company": "Monami (Appy People / maternity hospitals)", "amount": "undisclosed", "amountUsd": null, "stage": "Grant", "date": "2022-01", "investor": "Calouste Gulbenkian Foundation & Unitel", "purpose": "SMS-based maternal health education programme", "source": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+      { "company": "Response to SRH Project (MINSA)", "amount": "undisclosed", "amountUsd": null, "stage": "Development finance", "date": "2024-01", "investor": "World Bank & UNFPA", "purpose": "Sexual and reproductive health services in drought-affected provinces, ~350,000 women targeted", "source": "https://angola.unfpa.org/en/news/unfpa-and-world-bank-support-angolan-ministry-health-implementing-response-sexual-and" },
+      { "company": "Youth entrepreneurship project", "amount": "USD 125M", "amountUsd": 125000000, "stage": "Development finance", "date": "2025-10", "investor": "African Development Bank", "purpose": "Youth entrepreneurship and job creation across Angola's economy", "source": "https://www.startupblink.com/startup-ecosystem/angola" },
+      { "company": "Appy Saude", "amount": "undisclosed", "amountUsd": null, "stage": "Seed", "date": "2021-01", "investor": "undisclosed", "purpose": "Health-information platform and online pharmacy network", "source": "https://magnitt.com/startups/appy-saude-59674" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The landscape mixes public maternity institutions, UN agencies, a leading health-tech startup and startup-support bodies.", "visual": { "kind": "players", "items": [
+      { "name": "Appy Saude", "type": "startup", "note": "Leading Angolan e-health platform; health info, appointments and online pharmacy across 18,000+ products", "source": "https://www.itu.int/hub/2021/02/appy-saude-the-angolan-e-health-start-up-unlocking-accessible-healthcare/" },
+      { "name": "Appy People", "type": "startup", "note": "Tech firm that built the Monami maternal-health SMS programme", "source": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+      { "name": "Maternidade Lucrecia Paim", "type": "govt", "note": "Luanda maternity hospital co-leading the Monami pregnancy programme", "source": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+      { "name": "Ministry of Health (MINSA)", "type": "govt", "note": "Runs national maternal/neonatal strategy, HPV campaign and Safe Delivery App rollout", "source": "https://angola.unfpa.org/en/news/how-technology-improving-quality-maternal-health-care-drought-affected-regions-angola" },
+      { "name": "UNFPA Angola", "type": "ngo", "note": "Lead UN partner on maternal health, family planning, PPH and menstrual health programmes", "source": "https://angola.unfpa.org/en" },
+      { "name": "UNICEF Angola", "type": "ngo", "note": "Supports maternal and child health and menstrual dignity initiatives for adolescent girls", "source": "https://www.unicef.org/angola/en/stories/menstrual-dignity-inspiring-look-initiative-promotes-change-feminine-hygiene" },
+      { "name": "BeGirl Inc.", "type": "ngo", "note": "Partner on Angola's menstrual health management pilot providing menstrual products and tracking tools", "source": "https://angola.unfpa.org/en/publications/menstrual-management-angola-impact-study" },
+      { "name": "INAPEM", "type": "govt", "note": "SME agency co-running the DIGITAL.AO incubation programme for startups", "source": "https://www.ecofinagency.com/news-digital/2003-53952-angola-passes-startup-law-to-spur-digital-economy-growth" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Funding for women's health is dominated by philanthropic and development finance actors; dedicated gender-lens venture capital is not yet visible in Angola.", "visual": { "kind": "investors", "items": [
+      { "name": "Calouste Gulbenkian Foundation", "hq": "Portugal", "role": "Funded the Monami maternal-health SMS programme", "source": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+      { "name": "Unitel", "hq": "Angola", "role": "Co-funded/enabled the Monami SMS programme (telecom partner)", "source": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+      { "name": "UNFPA", "hq": "Global", "role": "Core funder of maternal health, PPH, SRH and menstrual health programmes", "source": "https://angola.unfpa.org/en/topics/maternal-health-24" },
+      { "name": "World Bank", "hq": "USA", "role": "Co-financed the SRH response project in drought-affected provinces", "source": "https://angola.unfpa.org/en/news/unfpa-and-world-bank-support-angolan-ministry-health-implementing-response-sexual-and" },
+      { "name": "Government of Norway", "hq": "Norway", "role": "Financed PPH guideline implementation and training", "source": "https://angola.unfpa.org/en/news/unfpa-and-norway-support-angola-become-first-country-implement-whos-new-guideline-postpartum" },
+      { "name": "Gavi, the Vaccine Alliance", "hq": "Switzerland", "role": "Supported Angola's HPV/cervical cancer vaccine introduction", "source": "https://www.gavi.org/vaccineswork/angola-launches-historic-hpv-vaccination-effort-aiming-protect-22-million-girls" },
+      { "name": "African Development Bank", "hq": "Cote d'Ivoire", "role": "USD 125M youth entrepreneurship and jobs project", "source": "https://www.startupblink.com/startup-ecosystem/angola" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Key evidence comes from national surveys and UN publications.", "visual": { "kind": "list", "items": [
+      { "text": "Angola Multiple Indicator and Health Survey (IIMS) 2023-2024, INE / DHS Program", "source": "https://dhsprogram.com/pubs/pdf/PR162/PR162.pdf" },
+      { "text": "Menstrual Management in Angola: Impact Study, UNFPA Angola", "source": "https://angola.unfpa.org/en/publications/menstrual-management-angola-impact-study" },
+      { "text": "Angola Startup Ecosystem Mapping Report, UNDP", "source": "https://www.undp.org/angola/publications/angola-startup-ecosystem-mapping-report" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "Gulbenkian - Monami maternal health", "url": "https://gulbenkian.pt/en/news/technology-at-the-service-of-maternal-health-in-angola/" },
+    { "label": "UNFPA Angola - PPH guideline first", "url": "https://angola.unfpa.org/en/news/unfpa-and-norway-support-angola-become-first-country-implement-whos-new-guideline-postpartum" },
+    { "label": "Gavi - Angola HPV campaign", "url": "https://www.gavi.org/vaccineswork/angola-launches-historic-hpv-vaccination-effort-aiming-protect-22-million-girls" },
+    { "label": "WHO Afro - Angola HPV vaccine", "url": "https://www.afro.who.int/countries/angola/news/angola-takes-historic-step-introduction-cervical-cancer-vaccine" },
+    { "label": "UNFPA Angola - Safe Delivery App / drought", "url": "https://angola.unfpa.org/en/news/how-technology-improving-quality-maternal-health-care-drought-affected-regions-angola" },
+    { "label": "UNFPA Angola - World Bank SRH project", "url": "https://angola.unfpa.org/en/news/unfpa-and-world-bank-support-angolan-ministry-health-implementing-response-sexual-and" },
+    { "label": "UNFPA Angola - Menstrual management study", "url": "https://angola.unfpa.org/en/publications/menstrual-management-angola-impact-study" },
+    { "label": "UNICEF Angola - Menstrual dignity", "url": "https://www.unicef.org/angola/en/stories/menstrual-dignity-inspiring-look-initiative-promotes-change-feminine-hygiene" },
+    { "label": "DHS Program - IIMS 2023-2024", "url": "https://dhsprogram.com/pubs/pdf/PR162/PR162.pdf" },
+    { "label": "Ecofin - Angola Startup Law", "url": "https://www.ecofinagency.com/news-digital/2003-53952-angola-passes-startup-law-to-spur-digital-economy-growth" },
+    { "label": "StartupBlink - Angola ecosystem", "url": "https://www.startupblink.com/startup-ecosystem/angola" },
+    { "label": "CNN - Appy Saude", "url": "https://www.cnn.com/2025/07/28/world/video/marketplace-africa-angola-appy-saude-medical-healthcare-spc" },
+    { "label": "ITU - Appy Saude e-health", "url": "https://www.itu.int/hub/2021/02/appy-saude-the-angolan-e-health-start-up-unlocking-accessible-healthcare/" },
+    { "label": "UNDP - Angola startup mapping report", "url": "https://www.undp.org/angola/publications/angola-startup-ecosystem-mapping-report" }
+  ]
+}

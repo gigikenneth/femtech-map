@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://femtech-map.vercel.app/sitemap.xml

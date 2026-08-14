@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "country": "Burkina Faso",
+    "slug": "burkina-faso",
+    "flag": "🇧🇫",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal & newborn health", "Family planning & contraception", "Menstrual health", "Reproductive health information", "Digital health / self-care"],
+    "stats": [
+      { "value": "198 per 100,000", "label": "Maternal mortality ratio (2024, down from 316 in 2022)", "source": "https://www.afro.who.int/countries/burkina-faso/news/improving-access-maternal-health-care-burkina-faso" },
+      { "value": "32%", "label": "Modern contraceptive prevalence rate (2024, up from 22% in 2018)", "source": "https://www.afro.who.int/countries/burkina-faso/news/self-injectable-contraception-successes" },
+      { "value": "580,000", "label": "Pregnancies prevented via contraception in 2022 under free family planning policy", "source": "https://equipop.org/en/gratuite-de-la-planification-familiale-une-realite-au-burkina-faso/" },
+      { "value": "75%+", "label": "Share of health districts covered by self-injectable DMPA-SC contraception program", "source": "https://www.afro.who.int/countries/burkina-faso/news/self-injectable-contraception-successes" }
+    ]
+  },
+  "overview": "Burkina Faso's women's health landscape is driven mostly by government fee-exemption policy and donor and NGO programs rather than by a dense private femtech startup scene. Since 2016 the state has provided free maternal and child care, and in 2019-2020 it became one of the first Sub-Saharan countries to make family planning free, alongside a large self-injectable contraception (DMPA-SC) self-care rollout. A small but real innovation thread exists: UNFPA's IMMI menstrual-tracking watch pilot and the Ouagadougou startup Kairos, whose YouthShield tool was selected for UNICEF Femtech Ventures in 2026. Progress is fragile amid a humanitarian crisis that has displaced over 2 million people, most of them women and children, and disrupted roughly 40% of health facilities.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent activity centers on international femtech backing for a local startup, WHO-supported gains in contraception, and ongoing scrutiny of the free-care policy.", "visual": { "kind": "timeline", "items": [
+      { "date": "2026-05", "text": "Ouagadougou-based Kairos and its YouthShield reproductive-health misinformation tool selected among 11 startups for the first UNICEF Femtech Ventures cohort, backed by Sweden and Temasek Foundation.", "source": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+      { "date": "2026-07", "text": "Gender-responsive budgeting forum in Ouagadougou reviews the free-care policy for pregnant women and children under five as a central fiscal-equity issue.", "source": "https://www.fasoamazone.net/2026/07/17/budgetisation-sensible-au-genre-la-gratuite-des-soins-pour-les-femmes-enceintes-et-les-enfants-de-moins-de-5-ans-au-coeur-des-echanges-a-ouagadougou/" },
+      { "date": "2025-06", "text": "Parliamentary monitoring mission across seven regions finds free maternal and child care remains globally effective in public facilities despite persistent stockout and reimbursement challenges.", "source": "https://voxsahel.com/?p=2095" },
+      { "date": "2024-09", "text": "National reporting credits the free family planning policy with a rising contraceptive uptake rate.", "source": "https://fr.allafrica.com/stories/202409260547.html" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "Burkina Faso's core lever for women's health is user-fee abolition, layered with a national family planning plan and a self-care contraception strategy.", "visual": { "kind": "timeline", "items": [
+      { "date": "2016-04", "text": "Nationwide free healthcare (gratuite) launched for pregnant and lactating women and children under five, covering deliveries, cesareans, postnatal care and cervical/breast cancer screening.", "source": "https://healtheconomicsreview.biomedcentral.com/articles/10.1186/s13561-023-00443-w" },
+      { "date": "2018-01", "text": "WHO-supported pilot to promote self-injectable DMPA-SC contraception begins in four health districts, later scaling to more than 75% of districts.", "source": "https://www.afro.who.int/countries/burkina-faso/news/self-injectable-contraception-successes" },
+      { "date": "2019-01", "text": "Burkina Faso becomes one of the first Sub-Saharan African countries to adopt a free family planning policy, expanded to the national user-fee exemption in 2020.", "source": "https://equipop.org/en/gratuite-de-la-planification-familiale-une-realite-au-burkina-faso/" },
+      { "date": "2021-01", "text": "Ministry of Health launches the national budgeted family planning plan 2021-2025.", "source": "https://sante.gov.bf/" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "The femtech-adjacent ecosystem is thin and largely donor- and incubator-driven, anchored by menstrual-health pilots, reproductive-health information tools and a social-enterprise incubator.", "visual": { "kind": "list", "items": [
+      { "text": "UNFPA and UK femtech IMMI ran a menstrual-tracking watch pilot with ~300 adolescent girls in Burkina Faso and Moldova (June-November 2022); knowledge of period timing rose from 47% to 82%.", "source": "https://www.unfpa.org/updates/unfpa-trials-innovative-new-menstrual-watch-immi" },
+      { "text": "Kairos (Ouagadougou) develops YouthShield, a social-media monitoring tool that flags harmful reproductive-health misinformation for women and girls.", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+      { "text": "La Fabrique, West Africa's first social-enterprise incubator (founded 2014, Ouagadougou), supports impact startups including health-focused ventures.", "source": "https://www.lafabrique-bf.com/" },
+      { "text": "WHO documents women's self-care gains via self-injected contraception, expanding access where providers are scarce.", "source": "https://www.who.int/countries/country-presence/reports/2025/case-studies/burkina-faso" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding rounds", "narrative": "There are no disclosed private venture rounds for Burkina Faso women's health startups; funding is catalytic and grant-based, led by UNICEF's equity-free program.", "visual": { "kind": "funding", "items": [
+      { "company": "Kairos (YouthShield)", "amount": "up to USD 100,000", "amountUsd": 100000, "stage": "Grant / equity-free catalytic capital", "date": "2026-05", "investor": "UNICEF Femtech Ventures (Sweden & Temasek Foundation)", "purpose": "Scale a reproductive-health misinformation-detection tool for women and girls, plus a year of technical assistance.", "source": "https://www.unicef.org/innovation/press-releases/african-and-asian-frontier-tech-founders-suppported-by-sweden-and-unicef-close-womens" },
+      { "company": "IMMI menstrual watch (Burkina Faso pilot)", "amount": "undisclosed", "amountUsd": null, "stage": "Program / donor-funded pilot", "date": "2022-06", "investor": "UNFPA", "purpose": "Deploy app-free period-tracking watches to adolescent girls for menstrual-health education.", "source": "https://wcaro.unfpa.org/en/news/immi-watch-transforming-menstrual-health-education-west-and-central-africa" }
+    ] } },
+    { "id": "players", "heading": "Key players & hubs", "narrative": "The field is dominated by the health ministry, UN agencies and NGOs, with a couple of local startups and an incubator on the innovation side.", "visual": { "kind": "players", "items": [
+      { "name": "Ministry of Health & Public Hygiene", "type": "govt", "note": "Runs free maternal-child care and free family planning policies and the national FP plan.", "source": "https://sante.gov.bf/" },
+      { "name": "UNFPA Burkina Faso", "type": "ngo", "note": "Leads family planning access and the IMMI menstrual-health watch pilot.", "source": "https://burkinafaso.unfpa.org/fr/topics/planification-familiale" },
+      { "name": "Kairos", "type": "startup", "note": "Ouagadougou startup behind YouthShield reproductive-health information tool; UNICEF Femtech Ventures 2026 cohort.", "source": "https://businessday.ng/technology/article/unicef-femtech-ventures-backs-11-startups/" },
+      { "name": "La Fabrique", "type": "hub", "note": "West Africa's first social-enterprise incubator (Ouagadougou, 2014).", "source": "https://www.lafabrique-bf.com/" },
+      { "name": "WHO Burkina Faso", "type": "ngo", "note": "Technical support for maternal health and self-injectable contraception scale-up.", "source": "https://www.afro.who.int/countries/burkina-faso/news/self-injectable-contraception-successes" },
+      { "name": "Marie Stopes Burkina Faso", "type": "ngo", "note": "Family planning and contraception service provider.", "source": "https://www.mariestopes.bf/services/planification-familiale/" },
+      { "name": "Equipop", "type": "ngo", "note": "Advocacy and evidence partner on free family planning implementation.", "source": "https://equipop.org/en/gratuite-de-la-planification-familiale-une-realite-au-burkina-faso/" }
+    ] } },
+    { "id": "investors", "heading": "Active investors", "narrative": "Capital reaching Burkina Faso women's health is donor and development finance, not domestic VC; regional gender-lens funds are active in West Africa but not documented in-country here.", "visual": { "kind": "investors", "items": [
+      { "name": "UNICEF Femtech Ventures", "hq": "Global", "role": "Equity-free catalytic capital and technical assistance to Kairos (YouthShield).", "source": "https://www.unicef.org/innovation/femtech-cohort-1" },
+      { "name": "Government of Sweden", "hq": "Sweden", "role": "Founding funder of UNICEF Femtech Ventures backing the cohort with the Burkinabe startup.", "source": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+      { "name": "Temasek Foundation", "hq": "Singapore", "role": "Founding partner of UNICEF Femtech Ventures.", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+      { "name": "UNFPA", "hq": "Global", "role": "Funded the IMMI menstrual-watch pilot and family planning programming.", "source": "https://www.unfpa.org/news/unfpa-embraces-femtech-boost-period-awareness-burkina-faso-and-republic-moldova" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Peer-reviewed and institutional evaluations dominate the evidence base for policy impact.", "visual": { "kind": "list", "items": [
+      { "text": "Effects of the free healthcare policy on maternal and child health in Burkina Faso: nationwide interrupted time-series analysis (Health Economics Review, 2023).", "source": "https://healtheconomicsreview.biomedcentral.com/articles/10.1186/s13561-023-00443-w" },
+      { "text": "Free but declining: the paradox of contraceptive uptake in Burkina Faso (Frontiers in Reproductive Health, 2026).", "source": "https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2026.1819570/full" },
+      { "text": "Determinants of DMPA-SC self-injectable contraceptive uptake in Burkina Faso, from the 2021 DHS (Frontiers in Global Women's Health, 2024).", "source": "https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2024.1385446/full" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "WHO AFRO - maternal health access", "url": "https://www.afro.who.int/countries/burkina-faso/news/improving-access-maternal-health-care-burkina-faso" },
+    { "label": "WHO AFRO - self-injectable contraception", "url": "https://www.afro.who.int/countries/burkina-faso/news/self-injectable-contraception-successes" },
+    { "label": "Equipop - free family planning", "url": "https://equipop.org/en/gratuite-de-la-planification-familiale-une-realite-au-burkina-faso/" },
+    { "label": "Health Economics Review - free care evaluation", "url": "https://healtheconomicsreview.biomedcentral.com/articles/10.1186/s13561-023-00443-w" },
+    { "label": "UNFPA - IMMI menstrual watch", "url": "https://www.unfpa.org/updates/unfpa-trials-innovative-new-menstrual-watch-immi" },
+    { "label": "UNFPA WCARO - IMMI Watch West Africa", "url": "https://wcaro.unfpa.org/en/news/immi-watch-transforming-menstrual-health-education-west-and-central-africa" },
+    { "label": "UNICEF - Femtech Ventures cohort 1", "url": "https://www.unicef.org/innovation/femtech-cohort-1" },
+    { "label": "UNICEF - Femtech Ventures press release", "url": "https://www.unicef.org/innovation/press-releases/african-and-asian-frontier-tech-founders-suppported-by-sweden-and-unicef-close-womens" },
+    { "label": "Disrupt Africa - UNICEF/Sweden femtech", "url": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+    { "label": "Femtech Insider - cohort of 11 startups", "url": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+    { "label": "La Fabrique incubator", "url": "https://www.lafabrique-bf.com/" },
+    { "label": "Frontiers - contraceptive uptake paradox", "url": "https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2026.1819570/full" },
+    { "label": "Frontiers - DMPA-SC self-care determinants", "url": "https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2024.1385446/full" },
+    { "label": "FasoAmazone - gender budgeting forum", "url": "https://www.fasoamazone.net/2026/07/17/budgetisation-sensible-au-genre-la-gratuite-des-soins-pour-les-femmes-enceintes-et-les-enfants-de-moins-de-5-ans-au-coeur-des-echanges-a-ouagadougou/" }
+  ]
+}
