@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "country": "Nigeria",
+    "slug": "nigeria",
+    "flag": "🇳🇬",
+    "lastUpdated": "2026-08",
+    "tier": "scaling",
+    "score": 8,
+    "subScores": { "ecosystem": 2, "investment": 2, "policy": 3, "strategy": 1 },
+    "scoreBasis": "femtech ventures per capita, dedicated investors, national strategy, clinical guidelines & real-world adoption"
+  },
+  "overview": "Nigeria is one of Africa's densest femtech and women's-health-tech ecosystems, home to roughly 29% of the continent's top healthtech innovators and a heavy concentration of women-led ventures spanning maternal health, sexual and reproductive health, and menstrual care. The sector added dozens of startups since COVID-19 (128 active healthtech firms by 2026) and benefits from real policy momentum, including a national Safe Motherhood Strategy (2024-2028) and six clinical guidelines launched in 2025. However, dedicated venture capital remains thin: healthtech funding collapsed to only a few million dollars in 2025, leaving women founders heavily reliant on grants and gender-lens vehicles like Aruwa Capital, FirstCheck Africa, IFC's She Wins Africa, and UNICEF Femtech Ventures.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Latest major news",
+      "narrative": "The last 18 months saw new global and pan-African femtech programs reach Nigerian founders, alongside sobering funding-decline data.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2026-06", "text": "TechCabal Insights' State of Healthtech in Nigeria 2026 report finds Nigeria added 65 healthtech startups after COVID-19 (128 active total), many in maternal and reproductive care.", "source": "https://techcabal.com/2026/05/29/nigeria-added-65-healthtech-startups-after-covid-19-says-report/" },
+          { "date": "2026-06", "text": "Technext profiles 8 Nigerian women's healthtech startups and founders reshaping maternal and reproductive care.", "source": "https://technext24.com/2026/06/26/8-healthtech-apps-and-the-founders/" },
+          { "date": "2026-06", "text": "Nigerian maternal-health startup HelpMum selected among 18 grantees for ICONIQ Impact's $100M Child Survival portfolio.", "source": "https://technext24.com/2026/06/29/helpmum-secures-spot-in-iconiq-impacts/" },
+          { "date": "2026-05", "text": "UNICEF Femtech Ventures backs 11 startups across Africa and Asia (incl. Nigeria's Natal Cares and Whispa) with up to $100k equity-free each; cohort activated in Pretoria.", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+          { "date": "2026-02", "text": "IFC and ASR Africa expand She Wins Africa from 100 to 1,000 women entrepreneurs after pilot mobilised over $4M in startup financing.", "source": "https://www.ifc.org/en/pressroom/2026/ifc-and-asr-africa-expand-she-wins-africa-to-reach-1-000-women-entrepreneurs-follo" },
+          { "date": "2025-01", "text": "Big Family 360 Foundation launches HerPride, a cycle-tracking and sanitary-product access app for Nigerian women.", "source": "https://thenextafrica.com/top-10-femtech-startups-transforming-womens-health-in-africa/" }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy & strategy",
+      "narrative": "Nigeria carries roughly 20% of global maternal and child deaths, and in 2025 the federal government launched an unusually deep set of maternal and reproductive health policies.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          { "date": "2025-06", "text": "Federal Government commits to cutting maternal mortality by 20% by 2027 under the Health Sector Renewal Initiative.", "source": "https://www.channelstv.com/2025/06/09/nigeria-to-reduce-maternal-mortality-rate-by-20-in-2027-fg/" },
+          { "date": "2025-04", "text": "Health Minister Muhammad Pate unveils six national policy documents on Safe Motherhood Day, including the Safe Motherhood Strategy (2024-2028) and clinical guidelines for postpartum haemorrhage and hypertensive disorders.", "source": "https://www.premiumtimesng.com/health/health-news/788605-nigeria-launches-national-guidelines-to-reduce-maternal-deaths.html" },
+          { "date": "2025-04", "text": "Nigeria launches Strategic Directions for Nursing and Midwifery 2025-2030 to expand maternal-care workforce capacity.", "source": "https://fmino.gov.ng/fg-strategies-initiatives-to-enhance-midwifery-maternal-and-new-born-healthcare/" },
+          { "date": "2020-01", "text": "National Guidelines on Self-Care for Sexual, Reproductive and Maternal Health target 30% uptake of self-care interventions (foundational SRH policy).", "source": "https://platform.who.int/docs/default-source/mca-documents/srh-policy-documents/nga-national_guidelines_on_self-care_for_sexual-reproductive_and_maternal_health_2020.pdf" }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Latest ecosystem moves",
+      "narrative": "Nigeria concentrates a large share of Africa's women-led healthtech, with activity clustered in maternal, sexual/reproductive, and menstrual health.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "Nigeria hosts ~29% of Africa's top healthtech innovators; 76% of solely women-founded health-supply-chain companies are based in Nigeria and South Africa.", "source": "https://www.cnbcafrica.com/media/6360036630112/salient-advisory-29-of-africas-top-healthtech-innovators-based-in-nigeria/" },
+          { "text": "Whispa Health reaches 30,000+ users with anonymous SRH teleconsultations, STI test kits and contraceptive delivery.", "source": "https://empowerafrica.com/whispa-health-the-nigerian-healthtech-startup-breaking-the-stigma-around-sexual-and-reproductive-health/" },
+          { "text": "HelpMum scales AI-driven maternal and infant health / vaccine-delivery interventions across Nigerian communities.", "source": "https://helpmum.org/empowerment" },
+          { "text": "Nigeria's telemedicine sector is growing again as digital pharmacies, diagnostics and maternal care expand.", "source": "https://techcabal.com/2026/07/09/why-nigerias-telemedicine-sector-is-growing-again/" },
+          { "text": "19-year-old Nigerian innovator launches Period Padi, a menstrual-health nonprofit with cycle tracking and school wellness booths, funded by ~$38k in grants ahead of a 2026 rollout.", "source": "https://face2faceafrica.com/article/this-19-year-old-nigerian-is-behind-the-biodegradable-menstrual-pad-using-ai-to-track-womens-health" }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Notable funding rounds",
+      "narrative": "Dedicated venture money is scarce, so Nigerian women's-health founders lean on grants, accelerators and gender-lens funds rather than priced equity rounds.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          { "company": "Clafiya", "amount": "USD 610K", "amountUsd": 610000, "stage": "Pre-seed", "date": "2023-07", "investor": "Norrsken Accelerator / angels", "purpose": "Primary-care and maternal/child health access expansion", "source": "https://techpoint.africa/news/clafiya-raises-preseed-funding/" },
+          { "company": "HelpMum", "amount": "USD 225K", "amountUsd": 225000, "stage": "Grant", "date": "2024-02", "investor": "Africa Visionary Fund", "purpose": "Scale maternal and infant health interventions", "source": "https://technext24.com/2024/02/01/helpmum-get-225000-africa-visionary-fund/" },
+          { "company": "HelpMum", "amount": "USD 250K", "amountUsd": 250000, "stage": "Grant", "date": "2022-09", "investor": "Patrick J. McGovern Foundation", "purpose": "Deploy ADVISER AI vaccine-intervention optimiser", "source": "https://technext24.com/2024/02/01/helpmum-get-225000-africa-visionary-fund/" },
+          { "company": "Whispa Health", "amount": "undisclosed (share of $2M fund)", "amountUsd": null, "stage": "Grant/accelerator", "date": "2021-03", "investor": "Jua Kickstarter Fund", "purpose": "Anonymous sexual & reproductive health access", "source": "https://empowerafrica.com/whispa-health-the-nigerian-healthtech-startup-breaking-the-stigma-around-sexual-and-reproductive-health/" },
+          { "company": "Natal Cares / Whispa (UNICEF cohort)", "amount": "up to USD 100K each", "amountUsd": 100000, "stage": "Grant (equity-free)", "date": "2026-05", "investor": "UNICEF Femtech Ventures (Sweden, Temasek Foundation)", "purpose": "AI/data for maternal, reproductive care and GBV response", "source": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+          { "company": "HelpMum", "amount": "undisclosed (portfolio grant)", "amountUsd": null, "stage": "Grant", "date": "2026-06", "investor": "ICONIQ Impact Child Survival portfolio ($100M fund)", "purpose": "Child survival and maternal health scale-up", "source": "https://technext24.com/2026/06/29/helpmum-secures-spot-in-iconiq-impacts/" }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Key players & hubs",
+      "narrative": "The ecosystem blends women-led startups, government bodies driving maternal policy, and pan-African support programs.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          { "name": "Whispa Health", "type": "startup", "note": "Anonymous SRH consultations, STI kits, contraceptives; 30,000+ users (founder Morenike Fajemisin)", "source": "https://empowerafrica.com/whispa-health-the-nigerian-healthtech-startup-breaking-the-stigma-around-sexual-and-reproductive-health/" },
+          { "name": "HelpMum", "type": "startup", "note": "AI maternal & infant health, vaccine delivery (founder Abiodun Adereni)", "source": "https://technext24.com/2026/06/29/helpmum-secures-spot-in-iconiq-impacts/" },
+          { "name": "Clafiya", "type": "startup", "note": "Primary and maternal/child care access; raised $610k pre-seed", "source": "https://techpoint.africa/news/clafiya-raises-preseed-funding/" },
+          { "name": "Natal Cares", "type": "startup", "note": "Maternal-care startup selected into UNICEF Femtech Ventures cohort", "source": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+          { "name": "HerPride (Big Family 360 Foundation)", "type": "ngo", "note": "Cycle-tracking and sanitary-product access app launched 2025", "source": "https://thenextafrica.com/top-10-femtech-startups-transforming-womens-health-in-africa/" },
+          { "name": "Period Padi", "type": "ngo", "note": "Menstrual-health nonprofit, school wellness booths, 2026 app launch", "source": "https://face2faceafrica.com/article/this-19-year-old-nigerian-is-behind-the-biodegradable-menstrual-pad-using-ai-to-track-womens-health" },
+          { "name": "Federal Ministry of Health & Social Welfare", "type": "govt", "note": "Launched Safe Motherhood Strategy 2024-2028 and 2025 maternal clinical guidelines", "source": "https://www.premiumtimesng.com/health/health-news/788605-nigeria-launches-national-guidelines-to-reduce-maternal-deaths.html" },
+          { "name": "NPHCDA", "type": "govt", "note": "Primary healthcare agency partnering with healthtech innovators on supply chains", "source": "https://techbuild.africa/innovators-governments-health-supply-chains/" },
+          { "name": "She Wins Africa (IFC + ASR Africa)", "type": "ngo", "note": "Investment-readiness program scaling to 1,000 women founders", "source": "https://www.ifc.org/en/pressroom/2026/ifc-and-asr-africa-expand-she-wins-africa-to-reach-1-000-women-entrepreneurs-follo" },
+          { "name": "UNICEF Femtech Ventures", "type": "ngo", "note": "Equity-free femtech accelerator backing Nigerian women's-health startups", "source": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+          { "name": "Digital Health Nigeria", "type": "hub", "note": "Co-curator of the State of Healthtech in Nigeria 2026 report", "source": "https://techcabal.com/2026/05/29/nigeria-added-65-healthtech-startups-after-covid-19-says-report/" },
+          { "name": "Salient Advisory", "type": "ngo", "note": "Research firm tracking women-led African healthtech and supply-chain innovators", "source": "https://www.salientadvisory.com/innovator-directory/whispa-health/" }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "heading": "Active investors",
+      "narrative": "Gender-lens and impact capital dominate; almost no dedicated femtech venture fund exists locally, so grants and pan-African vehicles fill the gap.",
+      "visual": {
+        "kind": "investors",
+        "items": [
+          { "name": "Aruwa Capital Management", "hq": "Nigeria", "role": "Gender-lens fund (healthcare, consumer) that raised $35M for its second fund targeting $50M", "source": "https://empowerafrica.com/aruwa-capital-raises-35-million-for-second-fund-aiming-to-boost-women-led-businesses/" },
+          { "name": "FirstCheck Africa", "hq": "Nigeria", "role": "Early-stage VC backing women-founded startups incl. healthcare", "source": "https://www.firstcheck.africa/team" },
+          { "name": "IFC (She Wins Africa)", "hq": "USA", "role": "Investment-readiness and catalytic financing for women-led startups", "source": "https://www.ifc.org/en/pressroom/2026/ifc-and-asr-africa-expand-she-wins-africa-to-reach-1-000-women-entrepreneurs-follo" },
+          { "name": "ASR Africa (Abdul Samad Rabiu Initiative)", "hq": "Nigeria", "role": "Co-funder scaling She Wins Africa to 1,000 women entrepreneurs", "source": "https://asrafrica.org/ifc-and-asr-africa-expand-she-wins-africa-to-reach-1000-women-entrepreneurs-following-strong-early-results-and-4-million-mobilized-in-startup-financing/" },
+          { "name": "UNICEF Femtech Ventures (Sweden, Temasek Foundation)", "hq": "Global", "role": "Equity-free grants to Nigerian women's-health startups (Natal Cares, Whispa)", "source": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+          { "name": "Africa Visionary Fund", "hq": "USA/Africa", "role": "$225k grant to HelpMum", "source": "https://technext24.com/2024/02/01/helpmum-get-225000-africa-visionary-fund/" },
+          { "name": "Patrick J. McGovern Foundation", "hq": "USA", "role": "$250k grant for HelpMum's AI vaccine optimiser", "source": "https://technext24.com/2024/02/01/helpmum-get-225000-africa-visionary-fund/" },
+          { "name": "ICONIQ Impact", "hq": "USA", "role": "Child Survival portfolio ($100M) grantee HelpMum", "source": "https://technext24.com/2026/06/29/helpmum-secures-spot-in-iconiq-impacts/" }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "White papers & reports",
+      "narrative": "Recent research quantifies Nigeria's ecosystem density and the funding constraints facing women founders.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          { "text": "State of Healthtech in Nigeria 2026 - TechCabal Insights, Digital Health Nigeria & Clinton Health Access Initiative", "source": "https://techcabal.com/2026/05/29/nigeria-added-65-healthtech-startups-after-covid-19-says-report/" },
+          { "text": "Women Founders Innovating in Health Care Supply Chains: A Case Study across Africa - Salient Advisory", "source": "https://www.salientadvisory.com/2023/12/13/report-women-founders-innovating-in-health-care-supply-chains-a-case-study-across-africa/" },
+          { "text": "Beyond seed funding: why Nigerian digital health startups struggle to grow - Health Economics Review (Springer)", "source": "https://link.springer.com/article/10.1186/s13561-025-00708-6" },
+          { "text": "Women's Health Tech: An Untapped Market in Africa - Veriv Africa", "source": "https://www.verivafrica.com/insights/womens-health-tech-an-untapped-market-in-africa" }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    { "label": "TechCabal - State of Healthtech Nigeria 2026", "url": "https://techcabal.com/2026/05/29/nigeria-added-65-healthtech-startups-after-covid-19-says-report/" },
+    { "label": "Technext - 8 women healthtech startups", "url": "https://technext24.com/2026/06/26/8-healthtech-apps-and-the-founders/" },
+    { "label": "Premium Times - maternal death guidelines", "url": "https://www.premiumtimesng.com/health/health-news/788605-nigeria-launches-national-guidelines-to-reduce-maternal-deaths.html" },
+    { "label": "Channels TV - 20% maternal mortality cut by 2027", "url": "https://www.channelstv.com/2025/06/09/nigeria-to-reduce-maternal-mortality-rate-by-20-in-2027-fg/" },
+    { "label": "Femtech Insider - UNICEF Femtech Ventures cohort", "url": "https://femtechinsider.com/unicef-launches-femtech-ventures-with-first-cohort-of-11-startups-across-africa-and-asia/" },
+    { "label": "Disrupt Africa - UNICEF/Sweden femtech backing", "url": "https://disruptafrica.com/2026/05/04/african-asian-frontier-tech-founders-gain-sweden-unicef-backing-to-close-womens-health-gaps/" },
+    { "label": "IFC - She Wins Africa expansion", "url": "https://www.ifc.org/en/pressroom/2026/ifc-and-asr-africa-expand-she-wins-africa-to-reach-1-000-women-entrepreneurs-follo" },
+    { "label": "Empower Africa - Whispa Health", "url": "https://empowerafrica.com/whispa-health-the-nigerian-healthtech-startup-breaking-the-stigma-around-sexual-and-reproductive-health/" },
+    { "label": "Technext - HelpMum ICONIQ Impact", "url": "https://technext24.com/2026/06/29/helpmum-secures-spot-in-iconiq-impacts/" },
+    { "label": "Technext - HelpMum Africa Visionary Fund", "url": "https://technext24.com/2024/02/01/helpmum-get-225000-africa-visionary-fund/" },
+    { "label": "Techpoint - Clafiya pre-seed", "url": "https://techpoint.africa/news/clafiya-raises-preseed-funding/" },
+    { "label": "Empower Africa - Aruwa Capital $35M fund", "url": "https://empowerafrica.com/aruwa-capital-raises-35-million-for-second-fund-aiming-to-boost-women-led-businesses/" },
+    { "label": "CNBC Africa - Salient Advisory 29% Nigeria", "url": "https://www.cnbcafrica.com/media/6360036630112/salient-advisory-29-of-africas-top-healthtech-innovators-based-in-nigeria/" },
+    { "label": "Face2Face Africa - Period Padi", "url": "https://face2faceafrica.com/article/this-19-year-old-nigerian-is-behind-the-biodegradable-menstrual-pad-using-ai-to-track-womens-health" },
+    { "label": "Springer - why Nigerian digital health startups struggle", "url": "https://link.springer.com/article/10.1186/s13561-025-00708-6" }
+  ]
+}
