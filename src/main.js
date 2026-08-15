@@ -1,5 +1,8 @@
 import "./style.css";
+import { inject } from "@vercel/analytics";
 import { geoEquirectangular, geoPath, geoGraticule10 } from "d3-geo";
+
+inject();
 import { select, pointer } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
 import { feature } from "topojson-client";

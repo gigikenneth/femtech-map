@@ -1,6 +1,9 @@
 import "./report.css";
+import { inject } from "@vercel/analytics";
 import { renderReportBody, reportMeta, renderNotFound, relatedCountries } from "./report-render.js";
 import index from "./data/reports/_index.json";
+
+inject();
 
 const app = document.getElementById("report");
 
