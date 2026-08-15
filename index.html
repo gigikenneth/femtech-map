@@ -78,10 +78,15 @@
         </footer>
       </aside>
 
+      <button id="sidebar-toggle" class="sidebar-toggle" type="button" title="Hide panel" aria-label="Hide panel">«</button>
+
       <main id="map-wrap">
         <div id="map"></div>
         <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
-        <button id="reset" class="reset" title="Reset view" aria-label="Reset map view">⤢</button>
+        <div class="map-tools">
+          <button id="reset" class="map-btn" type="button" title="Reset view" aria-label="Reset map view">⟲</button>
+          <button id="fullscreen" class="map-btn" type="button" title="Fullscreen" aria-label="Toggle fullscreen">⤢</button>
+        </div>
       </main>
 
       <section id="panel" class="panel" aria-hidden="true">

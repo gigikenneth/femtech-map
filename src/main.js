@@ -239,6 +239,28 @@ svg.call(zoomer);
 document.getElementById("reset").onclick = () =>
   svg.transition().duration(500).call(zoomer.transform, zoomIdentity);
 
+// Fullscreen the whole map experience; icon flips to a collapse glyph when active.
+const fsBtn = document.getElementById("fullscreen");
+const fsTarget = document.getElementById("app");
+fsBtn.onclick = () => {
+  if (document.fullscreenElement) document.exitFullscreen?.();
+  else fsTarget.requestFullscreen?.();
+};
+document.addEventListener("fullscreenchange", () => {
+  const on = !!document.fullscreenElement;
+  fsBtn.textContent = on ? "⤡" : "⤢";
+  fsBtn.title = on ? "Exit fullscreen" : "Fullscreen";
+});
+
+// Collapse the sidebar to see just the map.
+const stBtn = document.getElementById("sidebar-toggle");
+stBtn.onclick = () => {
+  const hidden = document.getElementById("app").classList.toggle("sidebar-hidden");
+  stBtn.textContent = hidden ? "»" : "«";
+  stBtn.title = hidden ? "Show panel" : "Hide panel";
+  stBtn.setAttribute("aria-label", stBtn.title);
+};
+
 // Initial fit + refit whenever the map container resizes.
 layout();
 if (window.ResizeObserver) {

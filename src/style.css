@@ -51,7 +51,7 @@ a { color: var(--accent); }
   overflow: hidden;
 }
 
-/* ---------- sidebar (floats over the full-bleed map) ---------- */
+/* ---------- sidebar (floats over the full-bleed map, collapsible) ---------- */
 #sidebar {
   position: absolute;
   top: 0;
@@ -59,6 +59,7 @@ a { color: var(--accent); }
   width: 392px;
   height: 100vh;
   z-index: 10;
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--paper);
   border-right: 1px solid var(--line);
   box-shadow: 0 0 40px rgba(28, 22, 51, 0.09);
@@ -246,9 +247,28 @@ a { color: var(--accent); }
 .tooltip .tt-meta { opacity: 0.82; font-size: 12px; margin-top: 2px; }
 .tooltip .tt-pod { color: #ffbcda; font-size: 12px; margin-top: 3px; font-weight: 700; }
 
-.reset {
-  position: absolute; top: 16px; right: 16px;
+/* collapse the floating sidebar to see just the map */
+#app.sidebar-hidden #sidebar { transform: translateX(-100%); }
+.sidebar-toggle {
+  position: absolute; top: 16px; left: 408px; z-index: 20;
+  width: 34px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 12px; border: 1.5px solid var(--line);
+  background: var(--paper); color: var(--ink);
+  font-size: 18px; cursor: pointer; box-shadow: var(--shadow-sm);
+  transition: left 0.32s cubic-bezier(0.4, 0, 0.2, 1), background 0.15s, border-color 0.15s;
+}
+.sidebar-toggle:hover { background: #fff; border-color: var(--accent); color: var(--accent); }
+.sidebar-toggle:focus-visible { outline: 3px solid var(--c-srh); outline-offset: 2px; }
+#app.sidebar-hidden .sidebar-toggle { left: 16px; }
+
+.map-tools {
+  position: absolute; top: 16px; right: 16px; z-index: 5;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.map-btn {
   width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
   border-radius: 12px;
   border: 1.5px solid var(--line);
   background: var(--paper);
@@ -257,8 +277,8 @@ a { color: var(--accent); }
   cursor: pointer;
   box-shadow: var(--shadow-sm);
 }
-.reset:hover { background: #fff; border-color: var(--accent); }
-.reset:focus-visible { outline: 3px solid var(--c-srh); outline-offset: 2px; }
+.map-btn:hover { background: #fff; border-color: var(--accent); color: var(--accent); }
+.map-btn:focus-visible { outline: 3px solid var(--c-srh); outline-offset: 2px; }
 
 /* ---------- detail panel ---------- */
 .panel {
@@ -379,6 +399,7 @@ a { color: var(--accent); }
   #app { display: flex; flex-direction: column; }
   #sidebar { position: static; width: auto; height: auto; max-height: 50vh; box-shadow: none; border-right: none; border-bottom: 1px solid var(--line); gap: 18px; padding: 20px 20px 16px; }
   #map-wrap { position: static; flex: 1 1 auto; min-height: 50vh; }
+  .sidebar-toggle { display: none; }
   .counts { gap: 8px; }
   .count-num { font-size: 23px; }
   /* detail + continent panel becomes a bottom sheet */
