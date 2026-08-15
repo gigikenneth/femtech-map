@@ -1,12 +1,14 @@
 import "./report.css";
 import { inject } from "@vercel/analytics";
 import { ping, trackReportClicks } from "./ping.js";
+import { initContribute } from "./contribute.js";
 import index from "./data/reports/_index.json";
 import { renderIndexBody, PLANNED } from "./report-render.js";
 
 inject();
 ping();
 trackReportClicks();
+initContribute();
 
 const root = document.getElementById("reports-index");
 

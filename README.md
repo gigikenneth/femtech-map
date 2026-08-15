@@ -65,9 +65,9 @@ Live at [femtech.asele.tech](https://femtech.asele.tech) (Vercel; canonical poin
 
 ## Contributing
 
-**This map is community-sourced and open to contributions.** Spotted a missing initiative, a wrong location, or a broken link? There are two ways in:
+**This map is community-sourced and open to contributions.** Spotted a missing initiative, a wrong location, a broken link, or an error in a country report? There are two ways in:
 
-- **Submit via the form** (no GitHub needed) — use the **"Suggest an initiative"** button on the map. Submissions land in a Google Sheet, and once approved they appear on the map live. Maintainer setup: [`docs/submissions-setup.md`](docs/submissions-setup.md).
+- **Suggest an edit** (no GitHub needed) — the **"Suggest an edit or addition"** button on the map, and **"Suggest an edit"** on every report, open an in-site form. Submissions land in a review Google Sheet; corrections are applied by hand (nothing publishes automatically). Maintainer setup: [`docs/contributions-setup.md`](docs/contributions-setup.md). (The older approved-to-map-live initiative form still works too: [`docs/submissions-setup.md`](docs/submissions-setup.md).)
 - **Open a pull request** — edit the JSON directly (below). The map is only as inclusive as the people who build it.
 
 ### Add or fix an initiative

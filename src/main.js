@@ -1,11 +1,13 @@
 import "./style.css";
 import { inject } from "@vercel/analytics";
 import { ping, trackReportClicks } from "./ping.js";
+import { initContribute } from "./contribute.js";
 import { geoEquirectangular, geoPath, geoGraticule10 } from "d3-geo";
 
 inject();
 ping();
 trackReportClicks();
+initContribute();
 import { select, pointer } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
 import { feature } from "topojson-client";
@@ -398,13 +400,5 @@ document.getElementById("hero-stats").innerHTML = heroStats
   .join("");
 const hero = document.getElementById("hero");
 document.getElementById("hero-cta").onclick = () => hero.classList.add("hidden");
-
-// "Suggest an initiative" link points to the Google Form (VITE_SUBMIT_URL).
-const submitUrl = import.meta.env.VITE_SUBMIT_URL;
-const submitLink = document.getElementById("submit-link");
-if (submitUrl && submitLink) {
-  submitLink.href = submitUrl;
-  submitLink.hidden = false;
-}
 
 apply();

@@ -1,0 +1,104 @@
+/* Contribute modal. Self-contained tokens so it renders identically on the map
+   (style.css) and the reports (report.css). Femtech palette + the site's
+   Bricolage Grotesque / Hanken Grotesk faces (loaded via each page's <link>). */
+.cb {
+  --cb-accent: #6d4bc9;
+  --cb-accent2: #c9407e;
+  --cb-ink: #1c1633;
+  --cb-soft: #575072;
+  --cb-line: #e7e3f0;
+  --cb-paper: #fff;
+  --cb-tint: #efeafb;
+  --cb-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --cb-body: "Hanken Grotesk", system-ui, sans-serif;
+}
+
+/* trigger buttons hidden until VITE_CONTRIBUTE_URL is set (JS adds .cb-on to body).
+   CSS-based so triggers added later by report hydration reveal too. */
+[data-contribute] { display: none; }
+body.cb-on [data-contribute] { display: inline-flex; vertical-align: baseline; }
+body.cb-on .submit-link[data-contribute] { display: block; } /* map: full-width */
+
+.cb-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+  background: rgba(28, 22, 51, 0.42); backdrop-filter: blur(3px);
+  opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s;
+}
+.cb-overlay.open { opacity: 1; visibility: visible; }
+
+.cb-modal {
+  font-family: var(--cb-body); color: var(--cb-ink);
+  width: 100%; max-width: 500px; max-height: calc(100vh - 40px); overflow-y: auto;
+  background: var(--cb-paper); border-radius: 20px; padding: 30px 30px 26px;
+  box-shadow: 0 24px 60px rgba(28, 22, 51, 0.28);
+  transform: translateY(12px) scale(0.98); transition: transform 0.24s cubic-bezier(0.34, 1.4, 0.5, 1);
+}
+.cb-overlay.open .cb-modal { transform: none; }
+
+.cb-eyebrow {
+  font-family: var(--cb-body); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--cb-accent); margin: 0 0 8px;
+}
+.cb-title {
+  font-family: var(--cb-display); font-weight: 800; font-size: 25px;
+  letter-spacing: -0.02em; line-height: 1.05; margin: 0 0 6px;
+}
+.cb-sub { font-size: 14px; color: var(--cb-soft); line-height: 1.5; margin: 0 0 22px; }
+.cb-sub .cb-ctx { color: var(--cb-accent); font-weight: 700; }
+
+.cb-close {
+  position: absolute; top: 18px; right: 20px; width: 34px; height: 34px;
+  border: none; background: transparent; color: var(--cb-soft); font-size: 24px;
+  line-height: 1; cursor: pointer; border-radius: 9px;
+}
+.cb-close:hover { background: var(--cb-tint); color: var(--cb-ink); }
+
+.cb-field { margin: 0 0 16px; }
+.cb-label { display: block; font-size: 13px; font-weight: 700; color: var(--cb-ink); margin: 0 0 7px; }
+.cb-label .cb-opt { font-weight: 500; color: var(--cb-soft); }
+
+.cb-seg { display: flex; gap: 8px; flex-wrap: wrap; }
+.cb-seg input { position: absolute; opacity: 0; width: 0; height: 0; }
+.cb-seg label {
+  cursor: pointer; font-size: 13px; font-weight: 700; padding: 8px 15px;
+  border: 1px solid var(--cb-line); border-radius: 999px; color: var(--cb-soft);
+  transition: all 0.15s;
+}
+.cb-seg input:checked + label { background: var(--cb-accent); border-color: var(--cb-accent); color: #fff; }
+.cb-seg input:focus-visible + label { outline: 2px solid var(--cb-accent); outline-offset: 2px; }
+
+.cb-input, .cb-textarea {
+  width: 100%; font-family: var(--cb-body); font-size: 15px; color: var(--cb-ink);
+  padding: 11px 14px; border: 1px solid var(--cb-line); border-radius: 12px;
+  background: #faf9ff; box-sizing: border-box; resize: vertical;
+}
+.cb-textarea { min-height: 96px; line-height: 1.5; }
+.cb-input:focus, .cb-textarea:focus { outline: none; border-color: var(--cb-accent); background: #fff; }
+.cb-input::placeholder, .cb-textarea::placeholder { color: #9990b3; }
+
+.cb-submit {
+  width: 100%; margin-top: 4px; font-family: var(--cb-body); font-size: 15px; font-weight: 700;
+  color: #fff; background: var(--cb-accent); border: none; border-radius: 999px;
+  padding: 13px; cursor: pointer; transition: background 0.15s, transform 0.15s;
+}
+.cb-submit:hover { background: #5c3db3; transform: translateY(-1px); }
+.cb-submit:focus-visible { outline: 3px solid var(--cb-ink); outline-offset: 2px; }
+.cb-submit:disabled { opacity: 0.6; cursor: default; transform: none; }
+
+.cb-foot { font-size: 12px; color: var(--cb-soft); margin: 14px 0 0; line-height: 1.5; text-align: center; }
+
+/* success state */
+.cb-done { text-align: center; padding: 20px 0 6px; }
+.cb-done-mark {
+  width: 54px; height: 54px; margin: 0 auto 16px; border-radius: 50%;
+  background: var(--cb-tint); color: var(--cb-accent);
+  display: flex; align-items: center; justify-content: center; font-size: 27px;
+}
+.cb-done-t { font-family: var(--cb-display); font-weight: 800; font-size: 22px; margin: 0 0 8px; }
+.cb-done-s { font-size: 14px; color: var(--cb-soft); line-height: 1.5; margin: 0 0 22px; }
+
+.cb-error { font-size: 13px; color: var(--cb-accent2); margin: 10px 0 0; text-align: center; min-height: 18px; }
+
+@media (max-width: 520px) { .cb-modal { padding: 26px 20px 22px; } .cb-title { font-size: 22px; } }
+@media (prefers-reduced-motion: reduce) { .cb-overlay, .cb-modal, .cb-submit { transition: none; } }

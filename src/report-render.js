@@ -192,6 +192,7 @@ export function renderReportBody(d, related = []) {
     <div class="rpt-topbar">
       <a class="rpt-back" href="/reports/">&larr; All reports</a>
       <span class="rpt-topbar-title">Femtech ecosystem report</span>
+      <button class="rpt-suggest" type="button" data-contribute data-country="${esc(m.country)}">Suggest an edit</button>
       <button class="rpt-share" id="rpt-share">Copy link</button>
     </div>
 
@@ -218,7 +219,7 @@ export function renderReportBody(d, related = []) {
     </section>
     ${renderRelatedStrip(related)}
     <footer class="rpt-foot">
-      Researched and compiled for the <a href="/">Global Femtech Map</a> by Gigi Kenneth. Figures reflect public reporting as of ${esc(m.lastUpdated)}. Corrections welcome.
+      Researched and compiled for the <a href="/">Global Femtech Map</a> by Gigi Kenneth. Figures reflect public reporting as of ${esc(m.lastUpdated)}. Spotted something off? <button class="rpt-foot-link" type="button" data-contribute data-country="${esc(m.country)}">Suggest an edit or correction</button>.
     </footer>`;
 }
 
@@ -318,7 +319,7 @@ export function renderIndexBody(index, planned = []) {
       ${soon}
     </div>
     <p class="idx-empty" id="idx-empty" hidden>No country matches that search.</p>
-    <p class="rpt-foot" style="padding:40px 0 0">Back to the <a href="/">Global Femtech Map</a>.</p>
+    <p class="rpt-foot" style="padding:40px 0 0">Back to the <a href="/">Global Femtech Map</a>. Missing a country or spotted an error? <button class="rpt-foot-link" type="button" data-contribute>Suggest an edit or addition</button>.</p>
   </div>`;
 }
 

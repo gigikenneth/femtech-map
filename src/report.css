@@ -56,7 +56,7 @@ a { color: var(--accent); }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
-.rpt-back, .rpt-share {
+.rpt-back, .rpt-share, .rpt-suggest {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 13.5px; font-weight: 700; color: var(--ink-soft);
   padding: 8px 15px; border: 1px solid var(--line); border-radius: 999px;
@@ -64,6 +64,15 @@ a { color: var(--accent); }
 }
 .rpt-back:hover { border-color: var(--accent); color: var(--accent); }
 .rpt-share:hover { border-color: var(--pink); color: var(--pink); }
+.rpt-suggest:hover { border-color: var(--accent); color: var(--accent); }
+/* inline text-button trigger in the footer / index */
+.rpt-foot-link {
+  font: inherit; font-weight: 700; color: var(--ink-soft);
+  background: none; border: none; padding: 0; cursor: pointer;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.rpt-foot-link:hover { color: var(--accent); }
+body.cb-on .rpt-foot-link[data-contribute] { display: inline; }
 .rpt-topbar-title { font-size: 13.5px; color: var(--mute); font-weight: 700; }
 
 /* ---------- hero ---------- */
