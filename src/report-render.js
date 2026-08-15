@@ -274,8 +274,22 @@ export function renderRelatedStrip(related) {
 
 /* ---------- reports index (shared client + prerender) ---------- */
 
-// Countries we plan to cover next as the map goes global. Shown as "coming soon".
-export const PLANNED = ["India", "Brazil", "Indonesia", "Pakistan", "Mexico", "Philippines"];
+// Countries we plan to cover next as the map goes global. Shown as "coming soon"
+// on the reports index (deduped against published reports at render time).
+// Grouped by region for a spread across underrepresented places; each has real
+// femtech / women's-health-tech or strong maternal/SRH programme activity.
+export const PLANNED = [
+  // Africa (beyond the 27 already published)
+  "Algeria", "Sudan", "Somalia", "Togo", "Guinea", "Mauritius", "Eswatini", "Lesotho",
+  // Asia
+  "India", "Bangladesh", "Indonesia", "Pakistan", "Philippines", "Vietnam", "Nepal", "Sri Lanka", "Thailand", "Kazakhstan",
+  // Middle East
+  "Jordan", "Saudi Arabia", "United Arab Emirates", "Lebanon",
+  // Europe (underrepresented, not the usual hubs)
+  "Poland", "Ukraine", "Turkey", "Romania", "Portugal",
+  // Latin America
+  "Brazil", "Mexico", "Colombia", "Argentina", "Peru",
+];
 
 const IDX_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 export const fmtUpdated = (ym) => {
@@ -306,6 +320,10 @@ export function renderIndexBody(index, planned = []) {
     .join("");
   return `
   <div class="idx-wrap">
+    <div class="idx-topbar">
+      <a class="rpt-back" href="/">&larr; Back to the map</a>
+      <button class="rpt-suggest" type="button" data-contribute>Suggest an edit or addition</button>
+    </div>
     <div class="idx-head">
       <h1 class="idx-title">Femtech ecosystem reports</h1>
       <p class="idx-sub">Researched, cited country reports on women's health innovation worldwide: the funding, the policy, the founders and the hubs. Deep coverage across Africa first, expanding globally.</p>
