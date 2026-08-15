@@ -1,10 +1,11 @@
 import "./style.css";
 import { inject } from "@vercel/analytics";
-import { ping } from "./ping.js";
+import { ping, trackReportClicks } from "./ping.js";
 import { geoEquirectangular, geoPath, geoGraticule10 } from "d3-geo";
 
 inject();
 ping();
+trackReportClicks();
 import { select, pointer } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
 import { feature } from "topojson-client";
