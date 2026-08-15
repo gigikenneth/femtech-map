@@ -1,16 +1,19 @@
 # Femtech Map, handoff and next steps
 
-Snapshot for continuing in a new session. Written 2026-08-15.
+Snapshot for continuing in a new session. Written 2026-08-15, updated 2026-08-15 after the SEO/GEO push.
 
 ## Current state
 
 - **Repo:** `~/femtech-map` (git, branch `main`, clean + deployed).
 - **Live:** https://femtech.asele.tech (canonical custom domain). Also resolves at `femtech-map.vercel.app` (every page's canonical points to the asele.tech domain).
 - **What exists:**
-  - A **map** at `/` (vanilla JS + Vite + d3-geo, global femtech/women's-health pins). Unchanged core product.
-  - **27 country reports** (scrollytelling, cited, no scoring), statically pre-rendered at pretty URLs `/reports/<slug>/`.
-  - A **reports index** at `/reports/` with country search + per-card "last updated" (client-rendered).
+  - A **map** at `/` (vanilla JS + Vite + d3-geo, global femtech/women's-health pins). Unchanged core product. Now also carries a crawlable list of report links in the hero.
+  - **27 country reports** (scrollytelling, cited, no scoring), statically pre-rendered at pretty URLs `/reports/<slug>/`, each with a "related countries" strip.
+  - A **reports index** at `/reports/` with country search + per-card "last updated", now **prerendered** (card grid + `ItemList` JSON-LD baked into the HTML, client hydrates only the search).
+  - **SEO/GEO files:** `sitemap.xml` (29 urls), `robots.txt` (AI crawlers allowed), `llms.txt` (report index for AI engines), all generated at build.
 - **Domain:** asele.tech DNS is at **Wix**. Subdomain added via a Wix DNS record: CNAME `femtech` -> `cname.vercel-dns.com`. Apex asele.tech + the Asele site are untouched.
+- **Search Console:** `femtech.asele.tech` is a **URL-prefix property under the Asele Google account (`aseleinfo@gmail.com`)**, verified via the HTML-tag meta in `index.html` (`google-site-verification` = `Gj9dve3IZLEL3Bb7lCYIsJTiGcqJ1F3xavIxURUvMDM`, do not remove). Sitemap submitted (29 pages, Success). A Domain-property attempt on `femtech.asele.tech` failed and is a dead end: DNS TXT can't sit on the `femtech` host because it's a CNAME. There's a stray apex TXT (`4QgPP3…`) from that attempt, harmless, delete anytime.
+- **Bing:** skipped. Wix used to feed Bing for asele.tech via its own integration; there's no standalone Bing Webmaster account, and Bing's Google-OAuth sign-in kept erroring. Not needed, Bing auto-crawls via the `robots.txt` sitemap directive. Set up later with Microsoft sign-in if the dashboard is wanted.
 
 ## Deploy / commit conventions
 
@@ -25,7 +28,7 @@ Snapshot for continuing in a new session. Written 2026-08-15.
 - **Data:** one JSON per country in `src/data/reports/<slug>.json` + `_index.json` (grid data). Schema: `meta` (country, slug, flag, lastUpdated, focusAreas, stats[]) + `overview` + `sections[]` (news/policy/ecosystem/funding/players/investors/whitepapers, each with a typed `visual`) + `sources[]`. Every factual item carries a `source` URL.
 - **Render logic:** `src/report-render.js` is a PURE module (no browser/Vite deps) shared by client + Node prerender. It exports `renderReportBody`, `reportMeta`, `renderNotFound`, `esc`, `host`, `SITE`.
 - **Client:** `src/report.js` is a thin hydrator, reads embedded `#report-data` JSON on prerendered pages, derives slug from the path, lazy per-country code-split for the `?country=` fallback, wires scrollytelling + share.
-- **Prerender:** `scripts/prerender.mjs` runs in `npm run build` (after `vite build`). For each report JSON it injects body + head meta (title, description, canonical, OG, JSON-LD) into the built `dist/report.html` template and writes `dist/reports/<slug>/index.html` + embeds the JSON + writes `dist/sitemap.xml`.
+- **Prerender:** `scripts/prerender.mjs` runs in `npm run build` (after `vite build`). For each report JSON it injects body + head meta (title, description, canonical, OG, JSON-LD) + a related-countries strip into the built `dist/report.html` template and writes `dist/reports/<slug>/index.html` + embeds the JSON. It also bakes the `/reports/` index grid + `ItemList` JSON-LD into `dist/reports/index.html`, fills the home hero's crawlable report links in `dist/index.html`, and writes `dist/sitemap.xml` + `dist/llms.txt`. Shared render helpers (`renderIndexBody`, `renderRelatedStrip`, `relatedCountries`, `PLANNED`) live in the pure `src/report-render.js` so client and prerender stay in sync.
 - **Vercel:** `vercel.json` sets `buildCommand: npm run build`, `outputDirectory: dist`, `cleanUrls: true`.
 - **Check:** `node test-reports.mjs` validates every report schema + that all claims are sourced. Run before deploy.
 
@@ -43,15 +46,21 @@ Research-agent prompt shape that worked: dispatch 6 parallel `general-purpose` a
 
 ## Open next steps
 
-### SEO / GEO (the current focus)
-1. **Search Console + Bing Webmaster Tools:** add `femtech.asele.tech` as a property, verify, submit `/sitemap.xml`. (User action; needs their Google/Bing login.)
-2. **Prerender the `/reports/` index list** too (currently client-rendered, so its HTML is an empty shell). Add an index prerender step to `scripts/prerender.mjs` that bakes the card grid + an `ItemList` JSON-LD.
-3. **Home / map page** has little crawlable text. Add a short crawlable intro block + link to `/reports/`.
-4. **OG images per report** (social + AI preview cards). Options: generate static PNGs at build, or `@vercel/og`. Then set `og:image` / `twitter:image` per report in `reportMeta` + prerender.
+### SEO / GEO
+
+**Done (2026-08-15 push):**
+- ✅ Search Console: verified under the Asele account + sitemap submitted (see Current state). Bing skipped.
+- ✅ Prerendered the `/reports/` index (card grid + `ItemList` JSON-LD baked in; client hydrates search only).
+- ✅ Crawlable report links in the home hero (`#hero-reports`, filled by prerender).
+- ✅ "Related countries" strip per report (focus-area overlap, in `renderReportBody`).
+- ✅ `llms.txt` generated from `_index.json`; `robots.txt` allows GPTBot / ClaudeBot / PerplexityBot / OAI-SearchBot / Google-Extended.
+
+**Still open:**
+4. **OG images per report** (social + AI preview cards). Options: generate static PNGs at build, or `@vercel/og`. Then set `og:image` / `twitter:image` per report in `reportMeta` + prerender. (Decision needed: static PNG vs `@vercel/og`.)
 5. **Richer structured data:** breadcrumbs (BreadcrumbList), a `Dataset` schema for the funding tables, and an FAQ block per country (great for GEO / AI answers).
-6. **Internal linking:** add a "related countries" strip at the bottom of each report (same region or focus area). Big SEO win + keeps crawlers moving.
-7. **GEO specifics:** add an `llms.txt` (or `/ai.txt`) summarizing the site + report index for AI crawlers; confirm robots policy for GPTBot / ClaudeBot / PerplexityBot (allow if you want citations).
 8. Default `og:image`, `twitter:image`, and a favicon/apple-touch-icon pass.
+
+_Indexing takes days-to-weeks. Track in GSC → Pages (indexed count) and Performance (impressions); first data usually 3-7 days out._
 
 ### Content
 - Next country wave (coming-soon shown on index): **India, Brazil, Indonesia, Pakistan, Mexico, Philippines** (site is going global, not Africa-only). Africa is essentially covered for real ecosystems.
@@ -68,3 +77,4 @@ Research-agent prompt shape that worked: dispatch 6 parallel `general-purpose` a
 - `.idx-card` uses `display:flex`, which overrides the `[hidden]` attribute; search filter needs the explicit `.idx-card[hidden]{display:none}` rule (already in `report.css`).
 - Scoring/tiers were explicitly rejected (Nigeria vs Cape Verde not comparable). Keep reports qualitative.
 - The gradient sidebar "reports" banner on the map (`.reports-link`) is wanted, do not restyle/remove it.
+- `vercel.json` has `cleanUrls: true`, which 308-redirects `/foo.html` -> `/foo`. So Google Search Console's **HTML-file** verification method is unreliable here (the verifier hits the `.html` URL and gets a redirect). Use the **HTML-tag** (meta) method instead, served on the 200 home page. GSC **Domain** properties don't help either: they need the TXT on the `femtech` host, which is a CNAME (can't hold a TXT). URL-prefix + meta tag is the working combo.

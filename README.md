@@ -32,9 +32,34 @@ Plain **Vanilla JS + [Vite](https://vitejs.dev) + [d3-geo](https://github.com/d3
 ```bash
 npm install
 npm run dev      # local dev server
-npm run build    # production build → dist/
+npm run build    # production build → dist/ (also prerenders reports + SEO files)
 npm run preview  # preview the production build
 ```
+
+---
+
+## Country reports
+
+Beyond the map, the site publishes **researched, cited country ecosystem reports** at [`/reports/`](https://femtech.asele.tech/reports/) — scrollytelling deep-dives on femtech and women's-health innovation per country (funding, policy, founders, hubs), each claim linking to a public source. No scoring or tiers; reports are qualitative.
+
+- **Data:** one JSON per country in `src/data/reports/<slug>.json`, plus `_index.json` (the grid + coming-soon list).
+- **Render:** `src/report-render.js` is a pure module (no browser/Vite deps) shared by the client hydrator (`src/report.js`, `src/reports-index.js`) and the Node prerender.
+- **Prerender:** `scripts/prerender.mjs` runs inside `npm run build`. For every report it bakes full HTML + head meta (title, description, canonical, OG, Article JSON-LD) into static pages at pretty URLs `/reports/<slug>/`, plus a "related countries" strip. It also bakes the `/reports/` index grid (with `ItemList` JSON-LD), fills the home page's crawlable report links, and writes `sitemap.xml` + `llms.txt`.
+- **Validate:** `node test-reports.mjs` checks every report's schema and that all claims are sourced. Run before deploy.
+
+To add a country, see the recipe in [`docs/NEXT-STEPS.md`](docs/NEXT-STEPS.md).
+
+## SEO / GEO
+
+Everything crawlers and AI engines need is generated at build time, no server:
+
+- **`sitemap.xml`** — all pages, pretty URLs.
+- **`robots.txt`** — allows general crawlers plus named AI crawlers (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended) so the reports can be cited in AI answers.
+- **`llms.txt`** — a markdown summary + report index for AI crawlers (GEO), auto-generated from `_index.json`.
+- **Structured data** — `Article` per report, `ItemList` on the reports index.
+- **Internal linking** — home links to every report; each report links to related countries.
+
+Live at [femtech.asele.tech](https://femtech.asele.tech) (Vercel; canonical points here). Verified in Google Search Console with the sitemap submitted.
 
 ---
 
