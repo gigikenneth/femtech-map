@@ -59,7 +59,12 @@ Everything crawlers and AI engines need is generated at build time, no server:
 - **Structured data** — `Article` per report, `ItemList` on the reports index.
 - **Internal linking** — home links to every report; each report links to related countries.
 
-Live at [femtech.asele.tech](https://femtech.asele.tech) (Vercel; canonical points here). Verified in Google Search Console with the sitemap submitted.
+Live at [femtech.asele.tech](https://femtech.asele.tech) (Vercel; canonical points here). Verified in Google Search Console with the sitemap submitted — setup + gotchas in [`docs/search-console.md`](docs/search-console.md).
+
+## Analytics & monitoring
+
+- **Vercel Web Analytics** — aggregate pageviews, referrers, countries, top pages. Privacy-friendly, no cookie banner. Wired via `@vercel/analytics` `inject()` in every page entry; view it in the Vercel dashboard.
+- **Live visitor feed** (owner-only) — a real-time `/live?key=<key>` page streaming arrivals, page views, and report-link clicks with coarse location, cookieless. Each page pings `api/ping.js`, which forwards Vercel's geo headers to a secret ntfy topic; `api/live.js` renders the key-gated feed and the ntfy app gives phone push. No database. Setup in [`docs/live-feed-setup.md`](docs/live-feed-setup.md).
 
 ---
 
@@ -135,6 +140,18 @@ The dataset was compiled from public sources and is cited but not exhaustive or 
 ## Categories
 
 Menstrual & cycle · Maternal & fertility · Sexual & reproductive health · Diagnostics & devices · Telehealth · Funding & community
+
+## Docs
+
+Operational setup and handoff notes live in [`docs/`](docs/):
+
+| Doc | Covers |
+|-----|--------|
+| [`NEXT-STEPS.md`](docs/NEXT-STEPS.md) | Full handoff: current state, how the reports system works, the add-a-country recipe, open next steps, gotchas |
+| [`contributions-setup.md`](docs/contributions-setup.md) | The "Suggest an edit" modal → Google Sheet pipeline (Apps Script, deploy, `VITE_CONTRIBUTE_URL`) |
+| [`submissions-setup.md`](docs/submissions-setup.md) | The older approved-to-map-live initiative form (Google Form → Sheet → map JSON) |
+| [`search-console.md`](docs/search-console.md) | Google Search Console verification + sitemap, the verification gotchas, and why Bing is skipped |
+| [`live-feed-setup.md`](docs/live-feed-setup.md) | The owner-only `/live` real-time visitor feed (ntfy topic + env vars) |
 
 ## License
 
