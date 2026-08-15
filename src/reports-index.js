@@ -1,9 +1,11 @@
 import "./report.css";
 import { inject } from "@vercel/analytics";
+import { ping } from "./ping.js";
 import index from "./data/reports/_index.json";
 import { renderIndexBody, PLANNED } from "./report-render.js";
 
 inject();
+ping();
 
 const root = document.getElementById("reports-index");
 
