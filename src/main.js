@@ -118,11 +118,6 @@ const projection = geoEquirectangular();
 const path = geoPath(projection);
 const land = feature(worldTopo, worldTopo.objects.countries);
 // Fit the map to inhabited land (excluding Antarctica) so it fills the container.
-const fitTarget = {
-  type: "FeatureCollection",
-  features: land.features.filter((f) => f.properties.name !== "Antarctica"),
-};
-
 g.append("path").datum(geoGraticule10()).attr("class", "graticule");
 
 const countriesSel = g
@@ -171,12 +166,28 @@ function positionPins() {
   pins.attr("transform", (d) => `translate(${d._x},${d._y})`);
 }
 
+// Cover-fit the sphere so the map fills the container top-to-bottom, trimming
+// only the (ocean) horizontal overflow — no letterbox bands.
+const sphere = { type: "Sphere" };
+function fitCover(w, h) {
+  projection.fitSize([w, h], sphere);
+  const b = path.bounds(sphere);
+  const k = Math.max(w / (b[1][0] - b[0][0]), h / (b[1][1] - b[0][1]));
+  projection.scale(projection.scale() * k);
+  const b2 = path.bounds(sphere);
+  const t = projection.translate();
+  projection.translate([
+    t[0] + (w - (b2[0][0] + b2[1][0])) / 2,
+    t[1] + (h - (b2[0][1] + b2[1][1])) / 2,
+  ]);
+}
+
 // Size the projection to the container and redraw; called on load and on resize.
 function layout() {
   const w = Math.max(320, Math.floor(mapEl.clientWidth));
   const h = Math.max(320, Math.floor(mapEl.clientHeight));
   svg.attr("viewBox", `0 0 ${w} ${h}`);
-  projection.fitExtent([[14, 14], [w - 14, h - 14]], fitTarget);
+  fitCover(w, h);
   g.select("path.graticule").attr("d", path);
   countriesSel.attr("d", path);
   positionPins();
