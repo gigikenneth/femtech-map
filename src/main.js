@@ -78,7 +78,13 @@ const NAME_ALIAS = {
 
 // Shade countries by how many initiatives they hold, density, not a maturity ranking.
 const countByCountry = new Map();
-initiatives.forEach((d) => countByCountry.set(d.country, (countByCountry.get(d.country) || 0) + 1));
+initiatives.forEach((d) => {
+  if (d.region) return; // regional networks (e.g. LatAm) aren't tied to one country
+  countByCountry.set(d.country, (countByCountry.get(d.country) || 0) + 1);
+});
+
+// A regional network spans many countries, so show its region, not a city pin-point.
+const locLabel = (d) => (d.region ? `${d.region} · regional network` : `${d.city}, ${d.country}`);
 
 const AFRICA = new Set([
   "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cameroon",
@@ -99,6 +105,7 @@ function shade(n) {
 initiatives.forEach((d) => {
   d.isAfrica = AFRICA.has(d.country);
   d.isPodcast = !!d.podcast;
+  d.isRegional = !!d.region;
   d.continent = CONTINENT_OF[d.country] || null;
 });
 
@@ -198,12 +205,22 @@ const pins = pinsG
   .selectAll("g.pin")
   .data(initiatives)
   .join("g")
-  .attr("class", (d) => "pin" + (d.isPodcast ? " podcast" : ""))
+  .attr("class", (d) => "pin" + (d.isPodcast ? " podcast" : "") + (d.isRegional ? " regional" : ""))
   .attr("transform", (d) => `translate(${d._x},${d._y})`)
   .on("mouseenter", showTip)
   .on("mousemove", moveTip)
   .on("mouseleave", hideTip)
   .on("click", (e, d) => openPanel(d));
+
+// Regional networks get a dashed halo + a label so they read as a region, not a place.
+const regional = pins.filter((d) => d.isRegional);
+regional.append("circle").attr("class", "region-ring").attr("r", 14);
+regional
+  .append("text")
+  .attr("class", "region-label")
+  .attr("y", -19)
+  .attr("text-anchor", "middle")
+  .text((d) => d.region);
 
 pins.filter((d) => d.isPodcast).append("circle").attr("class", "ring").attr("r", 8);
 pins.append("circle").attr("class", "halo").attr("r", 9).attr("fill", (d) => CATS[d.category]?.color || "#ccc");
@@ -228,6 +245,8 @@ function rescale(k) {
   pinsG.selectAll("circle.core").attr("r", BASE_R * s).attr("stroke-width", 1.1 * s);
   pinsG.selectAll("circle.halo").attr("r", 9 * s);
   pinsG.selectAll("circle.ring").attr("r", 8 * s).attr("stroke-width", 1.6 * s);
+  pinsG.selectAll("circle.region-ring").attr("r", 14 * s).attr("stroke-width", 1.4 * s);
+  pinsG.selectAll("text.region-label").attr("transform", `scale(${s})`);
   g.selectAll("path.country").attr("stroke-width", 0.4 * s);
   g.select("path.graticule").attr("stroke-width", 0.3 * s);
 }
@@ -273,7 +292,7 @@ if (window.ResizeObserver) {
 function showTip(e, d) {
   tooltip.innerHTML =
     `<div class="tt-name">${d.name}</div>` +
-    `<div class="tt-meta">${CATS[d.category]?.label || ""} · ${d.city}, ${d.country}</div>` +
+    `<div class="tt-meta">${CATS[d.category]?.label || ""} · ${locLabel(d)}</div>` +
     (d.isPodcast ? `<div class="tt-pod">🎙 As heard on Blush &amp; Bloom</div>` : "");
   tooltip.classList.add("show");
   moveTip(e);
@@ -301,12 +320,12 @@ function openPanel(d) {
   document.getElementById("panel-body").innerHTML = `
     <span class="p-cat" style="background:${cat.color}33;color:var(--ink)"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:${cat.color}"></span>${cat.label}</span>
     <h2 class="p-name">${d.name}</h2>
-    <p class="p-loc">${d.city}, ${d.country}</p>
+    <p class="p-loc">${locLabel(d)}</p>
     <p class="p-desc">${d.description}</p>
     ${pod}
     <div class="p-meta">
       <div class="row"><span>Type</span><span>${d.org_type || "Organization"}</span></div>
-      <div class="row"><span>Country</span><span>${d.country}</span></div>
+      <div class="row"><span>${d.isRegional ? "Region" : "Country"}</span><span>${d.isRegional ? d.region : d.country}</span></div>
       <div class="row"><span>Category</span><span>${cat.label}</span></div>
     </div>
     ${d.url ? `<a class="p-visit" href="${d.url}" target="_blank" rel="noopener">Visit ${d.name} →</a>` : ""}
