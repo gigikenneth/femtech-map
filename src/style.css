@@ -221,12 +221,14 @@ a { color: var(--accent); }
 .country:hover { fill: #e9cdd9; }
 .graticule { fill: none; stroke: #e3d0d9; stroke-width: 0.35; opacity: 0.55; }
 
-.lang-switch { display: flex; gap: 2px; margin-left: auto; align-self: flex-start; }
+.lang-switch { display: flex; gap: 2px; margin-left: auto; align-self: flex-start; align-items: center; }
 .lang-switch button {
+  display: inline-flex; align-items: center; gap: 4px;
   font: 600 11px/1 "Hanken Grotesk", sans-serif; letter-spacing: 0.03em;
   padding: 4px 7px; border: 1px solid var(--line, #e7e1ef); border-radius: 7px;
   background: transparent; color: var(--ink-soft, #7a6a86); cursor: pointer; transition: all 0.15s ease;
 }
+.lang-switch button .flag { font-size: 12px; line-height: 1; }
 .lang-switch button:hover { color: var(--ink, #3a2b4a); border-color: var(--accent, #b45cc4); }
 .lang-switch button[aria-current="true"] { background: var(--accent, #b45cc4); color: #fff; border-color: var(--accent, #b45cc4); }
 

@@ -27,8 +27,13 @@ import { t, LANG, LANGS, setLang, applyStatic } from "./i18n.js";
 applyStatic();
 const langSwitch = document.getElementById("lang-switch");
 if (langSwitch) {
+  const FLAGS = { en: "🇬🇧", fr: "🇫🇷", es: "🇪🇸" };
+  langSwitch.title = t("lang.label");
   langSwitch.innerHTML = Object.entries(LANGS)
-    .map(([code, label]) => `<button type="button" data-lang="${code}"${code === LANG ? ' aria-current="true"' : ""}>${label}</button>`)
+    .map(
+      ([code, label]) =>
+        `<button type="button" data-lang="${code}"${code === LANG ? ' aria-current="true"' : ""}><span class="flag" aria-hidden="true">${FLAGS[code] || ""}</span>${label}</button>`
+    )
     .join("");
   langSwitch.addEventListener("click", (e) => {
     const l = e.target.closest("[data-lang]")?.dataset.lang;

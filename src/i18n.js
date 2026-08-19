@@ -4,6 +4,7 @@
 // adding its dict below + an entry in LANGS.
 const DICT = {
   en: {
+    "lang.label": "Language",
     "hero.eyebrow": "A living atlas of women's health",
     "hero.title1": "Women's health,",
     "hero.title2": "built everywhere.",
@@ -49,6 +50,7 @@ const DICT = {
     "disclaimer": "A living, community-sourced map. Spotted a missing initiative or an error? It's meant to be edited, open a PR.",
   },
   fr: {
+    "lang.label": "Langue",
     "hero.eyebrow": "Un atlas vivant de la santé des femmes",
     "hero.title1": "La santé des femmes,",
     "hero.title2": "construite partout.",
