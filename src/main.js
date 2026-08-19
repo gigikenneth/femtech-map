@@ -21,6 +21,20 @@ import latam from "./data/latam.json";
 import landscapeGlobal from "./data/landscape-global.json";
 import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
+import { t, LANG, LANGS, setLang, applyStatic } from "./i18n.js";
+
+// Localise static chrome + build the language switcher before anything renders.
+applyStatic();
+const langSwitch = document.getElementById("lang-switch");
+if (langSwitch) {
+  langSwitch.innerHTML = Object.entries(LANGS)
+    .map(([code, label]) => `<button type="button" data-lang="${code}"${code === LANG ? ' aria-current="true"' : ""}>${label}</button>`)
+    .join("");
+  langSwitch.addEventListener("click", (e) => {
+    const l = e.target.closest("[data-lang]")?.dataset.lang;
+    if (l && l !== LANG) setLang(l);
+  });
+}
 
 // Live community submissions: approved rows served as JSON by an Apps Script web app.
 // Set VITE_SUBMISSIONS_URL (Vercel env var / .env) to the web-app URL to enable.
@@ -52,12 +66,12 @@ for (const d of [...seed, ...more, ...podcast, ...communities, ...programs, ...l
 }
 
 const CATS = {
-  menstrual: { label: "Menstrual & cycle", color: "#ec6aa0" },
-  maternal: { label: "Maternal & fertility", color: "#f0913f" },
-  srh: { label: "Sexual & reproductive", color: "#b45cc4" },
-  diagnostics: { label: "Diagnostics & devices", color: "#2fb39a" },
-  telehealth: { label: "Telehealth", color: "#4f93d9" },
-  funding: { label: "Funding & community", color: "#e0a92e" },
+  menstrual: { label: t("cat.menstrual"), color: "#ec6aa0" },
+  maternal: { label: t("cat.maternal"), color: "#f0913f" },
+  srh: { label: t("cat.srh"), color: "#b45cc4" },
+  diagnostics: { label: t("cat.diagnostics"), color: "#2fb39a" },
+  telehealth: { label: t("cat.telehealth"), color: "#4f93d9" },
+  funding: { label: t("cat.funding"), color: "#e0a92e" },
 };
 const TIER = ["#e8e5f0", "#e4e0f7", "#c3b8ee", "#9d89e0", "#7259cf", "#4c33a6"]; // index 0 = no data
 
@@ -86,7 +100,7 @@ initiatives.forEach((d) => {
 });
 
 // A regional network spans many countries, so show its region, not a city pin-point.
-const locLabel = (d) => (d.region ? `${d.region} · regional network` : `${d.city}, ${d.country}`);
+const locLabel = (d) => (d.region ? `${d.region} · ${t("regional")}` : `${d.city}, ${d.country}`);
 
 const AFRICA = new Set([
   "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cameroon",
@@ -278,7 +292,7 @@ const stBtn = document.getElementById("sidebar-toggle");
 stBtn.onclick = () => {
   const hidden = document.getElementById("app").classList.toggle("sidebar-hidden");
   stBtn.textContent = hidden ? "»" : "«";
-  stBtn.title = hidden ? "Show panel" : "Hide panel";
+  stBtn.title = hidden ? t("tool.show") : t("tool.hide");
   stBtn.setAttribute("aria-label", stBtn.title);
 };
 
@@ -295,7 +309,7 @@ function showTip(e, d) {
   tooltip.innerHTML =
     `<div class="tt-name">${d.name}</div>` +
     `<div class="tt-meta">${CATS[d.category]?.label || ""} · ${locLabel(d)}</div>` +
-    (d.isPodcast ? `<div class="tt-pod">🎙 As heard on Blush &amp; Bloom</div>` : "");
+    (d.isPodcast ? `<div class="tt-pod">${t("tt.heard")}</div>` : "");
   tooltip.classList.add("show");
   moveTip(e);
 }
@@ -314,9 +328,9 @@ function openPanel(d) {
   const pod = d.podcast
     ? `<div class="p-podcast">
          <div class="pp-badge">🎙 BLUSH &amp; BLOOM${d.podcast.episode_number ? " · EP " + d.podcast.episode_number : ""}</div>
-         <div class="pp-title">${d.podcast.episode_title || "Featured founder"}</div>
-         ${d.podcast.guest_name ? `<div style="font-size:13px;color:var(--ink-soft)">with ${d.podcast.guest_name}</div>` : ""}
-         ${d.podcast.episode_url ? `<a href="${d.podcast.episode_url}" target="_blank" rel="noopener">Listen to the episode →</a>` : ""}
+         <div class="pp-title">${d.podcast.episode_title || t("pod.featured")}</div>
+         ${d.podcast.guest_name ? `<div style="font-size:13px;color:var(--ink-soft)">${t("pod.with", { name: d.podcast.guest_name })}</div>` : ""}
+         ${d.podcast.episode_url ? `<a href="${d.podcast.episode_url}" target="_blank" rel="noopener">${t("pod.listen")}</a>` : ""}
        </div>`
     : "";
   document.getElementById("panel-body").innerHTML = `
@@ -326,12 +340,12 @@ function openPanel(d) {
     <p class="p-desc">${d.description}</p>
     ${pod}
     <div class="p-meta">
-      <div class="row"><span>Type</span><span>${d.org_type || "Organization"}</span></div>
-      <div class="row"><span>${d.isRegional ? "Region" : "Country"}</span><span>${d.isRegional ? d.region : d.country}</span></div>
-      <div class="row"><span>Category</span><span>${cat.label}</span></div>
+      <div class="row"><span>${t("panel.type")}</span><span>${d.org_type || t("panel.org")}</span></div>
+      <div class="row"><span>${d.isRegional ? t("panel.region") : t("panel.country")}</span><span>${d.isRegional ? d.region : d.country}</span></div>
+      <div class="row"><span>${t("panel.category")}</span><span>${cat.label}</span></div>
     </div>
-    ${d.url ? `<a class="p-visit" href="${d.url}" target="_blank" rel="noopener">Visit ${d.name} →</a>` : ""}
-    ${d.source ? `<span class="p-source">Source: <a href="${d.source}" target="_blank" rel="noopener">${new URL(d.source).hostname}</a></span>` : ""}
+    ${d.url ? `<a class="p-visit" href="${d.url}" target="_blank" rel="noopener">${t("panel.visit", { name: d.name })}</a>` : ""}
+    ${d.source ? `<span class="p-source">${t("panel.source")} <a href="${d.source}" target="_blank" rel="noopener">${new URL(d.source).hostname}</a></span>` : ""}
   `;
   hideTip();
   panel.classList.add("open");
@@ -360,7 +374,7 @@ function openCountryList(country) {
     <span class="p-cat" style="background:#ece8f6;color:var(--ink)">Country</span>
     <h2 class="p-name">${country}</h2>
     <p class="p-loc">${items.length} initiative${items.length !== 1 ? "s" : ""} mapped here</p>
-    ${items.length ? `<div class="list">${rows}</div>` : `<p class="p-desc">Nothing mapped in ${country} yet. This map is community-sourced, so add one.</p>`}
+    ${items.length ? `<div class="list">${rows}</div>` : `<p class="p-desc">${t("empty", { country })}</p>`}
   `;
   panel.querySelectorAll(".list-row").forEach((btn) => {
     btn.onclick = () => {
@@ -435,19 +449,19 @@ function apply() {
 const countsEl = document.getElementById("counts");
 function updateCounts(shown, countryCount) {
   countsEl.innerHTML = `
-    <div class="count-card"><div class="count-num">${shown}</div><div class="count-label">Initiatives</div></div>
-    <div class="count-card accent"><div class="count-num">${countryCount}</div><div class="count-label">Countries</div></div>
+    <div class="count-card"><div class="count-num">${shown}</div><div class="count-label">${t("stat.initiatives")}</div></div>
+    <div class="count-card accent"><div class="count-num">${countryCount}</div><div class="count-label">${t("stat.countries")}</div></div>
   `;
 }
 
 // disclaimer / meta
-document.getElementById("disclaimer").textContent = meta.disclaimer;
+document.getElementById("disclaimer").textContent = t("disclaimer");
 
 // ---------- hero ----------
 const heroStats = [
-  [initiatives.length, "Initiatives"],
-  [new Set(initiatives.map((d) => d.country)).size, "Countries"],
-  [new Set(initiatives.map((d) => d.continent).filter(Boolean)).size, "Continents"],
+  [initiatives.length, t("stat.initiatives")],
+  [new Set(initiatives.map((d) => d.country)).size, t("stat.countries")],
+  [new Set(initiatives.map((d) => d.continent).filter(Boolean)).size, t("stat.continents")],
 ];
 document.getElementById("hero-stats").innerHTML = heroStats
   .map(([n, l]) => `<div class="hero-stat"><div class="hs-num">${n}</div><div class="hs-label">${l}</div></div>`)

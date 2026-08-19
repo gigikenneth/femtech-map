@@ -57,11 +57,11 @@
   <body>
     <div id="hero" aria-label="Introduction">
       <div class="hero-inner">
-        <p class="hero-eyebrow">A living atlas of women's health</p>
-        <h1 class="hero-title">Women's health,<br />built everywhere.</h1>
-        <p class="hero-sub">The founders, clinics and communities building better care for women, everywhere in the world.</p>
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">A living atlas of women's health</p>
+        <h1 class="hero-title"><span data-i18n="hero.title1">Women's health,</span><br /><span data-i18n="hero.title2">built everywhere.</span></h1>
+        <p class="hero-sub" data-i18n="hero.sub">The founders, clinics and communities building better care for women, everywhere in the world.</p>
         <div class="hero-stats" id="hero-stats"></div>
-        <button id="hero-cta" class="hero-cta">Explore the map →</button>
+        <button id="hero-cta" class="hero-cta" data-i18n="hero.cta">Explore the map →</button>
         <p class="hero-credit">By Gigi Kenneth · founder of <a href="https://www.asele.tech" target="_blank" rel="noopener">Asele</a> and host of the <a href="https://www.asele.tech/blush-and-bloom-podcast" target="_blank" rel="noopener">Blush &amp; Bloom</a> podcast</p>
         <nav id="hero-reports" class="hero-reports" aria-label="Country ecosystem reports"></nav>
       </div>
@@ -77,18 +77,19 @@
           </div>
           <div>
             <h1>Global Femtech Map</h1>
-            <p class="tagline">Women's health innovation worldwide</p>
+            <p class="tagline" data-i18n="brand.tagline">Women's health innovation worldwide</p>
           </div>
+          <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
         </header>
 
         <div class="thesis">
-          <p class="thesis-body">A map of femtech and women's health innovation around the world, the startups, clinics and communities building better care for women, everywhere.</p>
+          <p class="thesis-body" data-i18n="thesis">A map of femtech and women's health innovation around the world, the startups, clinics and communities building better care for women, everywhere.</p>
         </div>
 
         <a class="reports-link" href="/reports/">
           <span class="rl-body">
-            <span class="rl-title">Country ecosystem reports</span>
-            <span class="rl-sub">Researched, cited femtech reports. 27 countries live.</span>
+            <span class="rl-title" data-i18n="reports.title">Country ecosystem reports</span>
+            <span class="rl-sub" data-i18n="reports.sub">Researched, cited femtech reports. 27 countries live.</span>
           </span>
           <span class="rl-arrow" aria-hidden="true">→</span>
         </a>
@@ -96,18 +97,18 @@
         <div class="counts" id="counts"></div>
 
         <div class="controls">
-          <input id="search" type="search" placeholder="Search initiatives, countries…" aria-label="Search initiatives" autocomplete="off" />
+          <input id="search" type="search" data-i18n-ph="search.ph" placeholder="Search initiatives, countries…" aria-label="Search initiatives" autocomplete="off" />
           <div class="toggles">
-            <button class="toggle" data-toggle="podcast" aria-pressed="false">🎙 Guests on the Blush &amp; Bloom podcast</button>
+            <button class="toggle" data-toggle="podcast" aria-pressed="false" data-i18n="toggle.podcast">🎙 Guests on the Blush &amp; Bloom podcast</button>
           </div>
-          <p class="eyebrow">Filter by category</p>
+          <p class="eyebrow" data-i18n="filter.eyebrow">Filter by category</p>
           <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
         </div>
 
-        <p class="hint">Tip: tap a country to see every initiative mapped there.</p>
-        <p class="mic-note">🎙 A mic next to a name means Gigi has spoken with that founder on the Blush &amp; Bloom podcast.</p>
+        <p class="hint" data-i18n="hint">Tip: tap a country to see every initiative mapped there.</p>
+        <p class="mic-note" data-i18n="mic.note">🎙 A mic next to a name means Gigi has spoken with that founder on the Blush &amp; Bloom podcast.</p>
 
-        <button id="submit-link" class="submit-link" type="button" data-contribute>+ Suggest an edit or addition</button>
+        <button id="submit-link" class="submit-link" type="button" data-contribute data-i18n="submit.link">+ Suggest an edit or addition</button>
 
         <footer class="credit">
           <p>Built by Gigi Kenneth · founder of <a href="https://www.asele.tech" target="_blank" rel="noopener">Asele</a>, host of <a href="https://www.asele.tech/blush-and-bloom-podcast" target="_blank" rel="noopener">Blush &amp; Bloom</a></p>
@@ -115,19 +116,19 @@
         </footer>
       </aside>
 
-      <button id="sidebar-toggle" class="sidebar-toggle" type="button" title="Hide panel" aria-label="Hide panel">«</button>
+      <button id="sidebar-toggle" class="sidebar-toggle" type="button" data-i18n-title="tool.hide" title="Hide panel" aria-label="Hide panel">«</button>
 
       <main id="map-wrap">
         <div id="map"></div>
         <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
         <div class="map-tools">
-          <button id="reset" class="map-btn" type="button" title="Reset view" aria-label="Reset map view">⟲</button>
-          <button id="fullscreen" class="map-btn" type="button" title="Fullscreen" aria-label="Toggle fullscreen">⤢</button>
+          <button id="reset" class="map-btn" type="button" data-i18n-title="tool.reset" title="Reset view" aria-label="Reset map view">⟲</button>
+          <button id="fullscreen" class="map-btn" type="button" data-i18n-title="tool.fullscreen" title="Fullscreen" aria-label="Toggle fullscreen">⤢</button>
         </div>
       </main>
 
       <section id="panel" class="panel" aria-hidden="true">
-        <button id="panel-close" class="panel-close" aria-label="Close details">×</button>
+        <button id="panel-close" class="panel-close" data-i18n-title="panel.close" aria-label="Close details">×</button>
         <div id="panel-body"></div>
       </section>
     </div>
