@@ -19,6 +19,7 @@ import communities from "./data/communities.json";
 import programs from "./data/programs.json";
 import latam from "./data/latam.json";
 import landscapeGlobal from "./data/landscape-global.json";
+import contributors from "./data/contributors.json";
 import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
 import { t, LANG, LANGS, setLang, applyStatic } from "./i18n.js";
@@ -39,6 +40,21 @@ if (langSwitch) {
     const l = e.target.closest("[data-lang]")?.dataset.lang;
     if (l && l !== LANG) setLang(l);
   });
+}
+
+// Contributor wall: thank people who send feedback, corrections and listings.
+const thanksEl = document.getElementById("thanks");
+if (thanksEl && contributors.length) {
+  thanksEl.innerHTML =
+    `<p class="thanks-title">${t("thanks.title")}</p>` +
+    `<ul class="thanks-list">` +
+    contributors
+      .map((c) => {
+        const name = c.url ? `<a href="${c.url}" target="_blank" rel="noopener">${c.name}</a>` : c.name;
+        return `<li>${name}${c.note ? ` <span class="thanks-note">${c.note}</span>` : ""}</li>`;
+      })
+      .join("") +
+    `</ul>`;
 }
 
 // Live community submissions: approved rows served as JSON by an Apps Script web app.
