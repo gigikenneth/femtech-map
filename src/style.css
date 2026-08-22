@@ -221,13 +221,27 @@ a { color: var(--accent); }
 .country:hover { fill: #e9cdd9; }
 .graticule { fill: none; stroke: #e3d0d9; stroke-width: 0.35; opacity: 0.55; }
 
-.thanks { margin: 14px 0 4px; }
-.thanks-title { font: 700 11px/1 "Hanken Grotesk", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft, #7a6a86); margin: 0 0 6px; }
-.thanks-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
-.thanks-list li { font-size: 12.5px; line-height: 1.35; color: var(--ink, #3a2b4a); }
-.thanks-list a { color: var(--accent, #b45cc4); font-weight: 600; text-decoration: none; }
-.thanks-list a:hover { text-decoration: underline; }
-.thanks-note { color: var(--ink-soft, #7a6a86); }
+.contributors-btn {
+  display: block; text-align: center; margin: 8px 0 2px;
+  font: 600 12.5px/1 "Hanken Grotesk", sans-serif;
+  padding: 8px 10px; border: 1px solid var(--line, #e7e1ef); border-radius: 9px;
+  background: transparent; color: var(--ink-soft, #7a6a86); text-decoration: none; transition: all 0.15s ease;
+}
+.contributors-btn:hover { color: var(--accent, #b45cc4); border-color: var(--accent, #b45cc4); }
+
+/* Contributors page */
+.cw-wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+.cw-back { display: inline-block; margin-bottom: 28px; font: 600 13px/1 "Hanken Grotesk", sans-serif; color: var(--accent, #b45cc4); text-decoration: none; }
+.cw-back:hover { text-decoration: underline; }
+.cw-title { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: clamp(30px, 6vw, 46px); color: var(--ink, #3a2b4a); margin: 0 0 12px; }
+.cw-intro { font-size: 16px; line-height: 1.55; color: var(--ink-soft, #7a6a86); margin: 0 0 36px; max-width: 52ch; }
+.cw-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.cw-list li { padding: 16px 0; border-top: 1px solid var(--line, #e7e1ef); display: flex; flex-direction: column; gap: 3px; }
+.cw-list li:last-child { border-bottom: 1px solid var(--line, #e7e1ef); }
+.cw-name { font-size: 17px; font-weight: 700; color: var(--ink, #3a2b4a); }
+.cw-name a { color: var(--accent, #b45cc4); text-decoration: none; }
+.cw-name a:hover { text-decoration: underline; }
+.cw-note { font-size: 14px; color: var(--ink-soft, #7a6a86); }
 
 .lang-switch { display: flex; gap: 2px; margin-left: auto; align-self: flex-start; align-items: center; }
 .lang-switch button {
