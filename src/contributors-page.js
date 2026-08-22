@@ -8,7 +8,7 @@ const el = document.getElementById("contributors-page");
 const rows = contributors
   .map((c) => {
     const name = c.url ? `<a href="${c.url}" target="_blank" rel="noopener">${c.name}</a>` : c.name;
-    return `<li><span class="cw-name">${name}</span>${c.note ? `<span class="cw-note">${c.note}</span>` : ""}</li>`;
+    return `<li><span class="cw-name">${name}</span></li>`;
   })
   .join("");
 
