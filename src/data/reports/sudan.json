@@ -1,0 +1,294 @@
+{
+ "meta": {
+  "country": "Sudan",
+  "slug": "sudan",
+  "flag": "🇸🇩",
+  "lastUpdated": "2026-08",
+  "focusAreas": [
+   "Maternal health",
+   "Conflict and displacement",
+   "SRH and GBV response",
+   "FGM",
+   "Midwifery",
+   "Digital and mobile health"
+  ],
+  "stats": [
+   {
+    "value": "270",
+    "label": "Maternal deaths per 100,000 live births (2020, pre-war baseline)",
+    "source": "https://www.newsecuritybeat.org/2024/07/a-devastating-toll-sudans-maternal-health-nightmare/"
+   },
+   {
+    "value": "86.6%",
+    "label": "Women and girls aged 15 to 49 who have undergone FGM",
+    "source": "https://www.unicef.org/sudan/reports/female-genital-mutilation-fgm-among-girls-sudan"
+   },
+   {
+    "value": "~80%",
+    "label": "Health facilities non-functional in conflict-affected areas",
+    "source": "https://www.unfpa.org/resources/sudan-situation-report-september-2025"
+   },
+   {
+    "value": "667,000+",
+    "label": "Women and girls reached with UNFPA SRH and protection services, Jan to Sep 2025",
+    "source": "https://www.unfpa.org/resources/sudan-situation-report-october-2025"
+   }
+  ]
+ },
+ "overview": "Sudan does not have a femtech startup ecosystem in any conventional sense. Since war broke out in April 2023 the country has become the world's largest displacement crisis, and women's health work here is overwhelmingly humanitarian: keeping maternity services alive, responding to widespread sexual violence, and reaching displaced women through mobile teams. What digital innovation exists, such as Starlink-equipped telemedicine trucks and re-launched e-platforms, is aimed at restoring basic reproductive care rather than building consumer products. This report treats women's public health, not a venture market.",
+ "sections": [
+  {
+   "id": "news",
+   "heading": "Conflict and the collapse of women's health services",
+   "narrative": "The war has pushed Sudan's health system toward collapse and made pregnancy far more dangerous. Attacks on hospitals, mass displacement, and funding gaps have hit maternity and reproductive care hardest, with survivors of sexual violence among the least served.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "date": "2024-07",
+      "text": "Doctors Without Borders documented 114 maternal deaths in South Darfur in under eight months of 2024, an alarming rate versus prior years, as displaced women lost access to prenatal, emergency obstetric, and postpartum care.",
+      "source": "https://www.newsecuritybeat.org/2024/07/a-devastating-toll-sudans-maternal-health-nightmare/"
+     },
+     {
+      "date": "2025-09",
+      "text": "UNFPA reported more than 80 percent of health facilities in conflict-affected areas non-functional, with sexual violence continuing to be used as a weapon of war.",
+      "source": "https://www.unfpa.org/resources/sudan-situation-report-september-2025"
+     },
+     {
+      "date": "2025-10",
+      "text": "RSF fighters reportedly stormed the Saudi Maternity Hospital in El Fasher, killing hundreds of patients and companions and abducting health workers, among the war's deadliest attacks on a maternity facility.",
+      "source": "https://healthpolicy-watch.news/sudans-catastrophic-civil-war-enters-fourth-year/"
+     },
+     {
+      "date": "2026-04",
+      "text": "WHO reported that after three years of conflict Sudan faces a deeper health crisis, with 37 percent of facilities non-functional nationwide and up to 80 percent non-operational in conflict zones.",
+      "source": "https://www.who.int/news/item/14-04-2026-after-three-years-of-conflict--sudan-faces-a-deeper-health-crisis"
+     }
+    ]
+   }
+  },
+  {
+   "id": "policy",
+   "heading": "Maternal health and the FGM ban",
+   "narrative": "Sudan's most significant women's health policy of recent years is the 2020 criminalisation of FGM, layered on top of one of the world's highest FGM prevalence rates. Enforcement is weak and further complicated by war, but the legal shift and the long-running Saleema social-change campaign remain reference points.",
+   "visual": {
+    "kind": "list",
+    "items": [
+     {
+      "text": "In 2020 Sudan's transitional government criminalised FGM under the Miscellaneous Amendments (Fundamental Rights and Freedoms) Act, carrying a three-year jail sentence for offenders.",
+      "source": "https://news.un.org/en/story/2020/05/1063122"
+     },
+     {
+      "text": "FGM prevalence remains 86.6 percent among women and girls aged 15 to 49, with 27.2 percent of girls under 14 already cut, per government data cited by UNICEF.",
+      "source": "https://www.unicef.org/sudan/reports/female-genital-mutilation-fgm-among-girls-sudan"
+     },
+     {
+      "text": "The Saleema initiative, launched in 2008 by the National Council of Child Welfare and UNICEF, promotes community abandonment of FGM using the idea of girls being kept whole and intact.",
+      "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6413931/"
+     },
+     {
+      "text": "Sudan's pre-war maternal mortality ratio was about 270 deaths per 100,000 live births in 2020, and WHO notes conflict roughly quintuples maternal risk.",
+      "source": "https://www.who.int/news/item/17-02-2026-conflict-and-instability-make-pregnancy-more-dangerous"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecosystem",
+   "heading": "Who delivers women's health care",
+   "narrative": "In the absence of a private femtech sector, women's health provision runs through UN agencies, NGOs, and national associations operating in emergency mode. Mobile teams, humanitarian midwives, and safe spaces substitute for a functioning facility network.",
+   "visual": {
+    "kind": "players",
+    "items": [
+     {
+      "name": "UNFPA Sudan",
+      "type": "ngo",
+      "note": "Lead agency for SRH and GBV response. Between Jan and Sep 2025 reached 667,000+ women and girls, ran 13 mobile health teams and 75 women- and girl-friendly safe spaces.",
+      "source": "https://www.unfpa.org/resources/sudan-situation-report-october-2025"
+     },
+     {
+      "name": "Sudan Family Planning Association (SFPA / IPPF)",
+      "type": "ngo",
+      "note": "Provided 43.4 million services to 12.6 million clients in 2024 via 26 static and 39 mobile clinics and ~1,500 community distributors, and re-launched an e-platform for reproductive health.",
+      "source": "https://www.ippf.org/news/sudan-re-launches-e-platform-providing-essential-reproductive-health-services"
+     },
+     {
+      "name": "UNICEF Sudan",
+      "type": "ngo",
+      "note": "Leads FGM abandonment work and Saleema; also deploying digital solutions to help rebuild health service delivery for displaced families.",
+      "source": "https://www.unicef.org/sudan/stories/rebuilding-sudans-health-system-through-digital-innovations"
+     },
+     {
+      "name": "Humanitarian midwives programme (UNFPA)",
+      "type": "program",
+      "note": "Rapidly trains and deploys midwives to crisis areas, including teams in Blue Nile State and cohorts of 30 each trained in White Nile and North Kordofan with Norwegian support.",
+      "source": "https://www.unfpa.org/news/%E2%80%9Cshe-has-given-us-sense-security%E2%80%9D-humanitarian-midwives-deployed-sudan%E2%80%99s-blue-nile-state"
+     },
+     {
+      "name": "Village and community midwives",
+      "type": "program",
+      "note": "Historic backbone of rural maternity care (training began 1918) but coverage stays below 50 percent, midwives sit outside the formal system, and many are displaced.",
+      "source": "https://sudan.unfpa.org/en/topics/midwifery"
+     }
+    ]
+   }
+  },
+  {
+   "id": "response",
+   "heading": "GBV response and mobile digital care",
+   "narrative": "Two threads define the operational response: managing conflict-related sexual violence, and using mobile and digital channels to reach women cut off from static clinics. Both are underfunded and precarious.",
+   "visual": {
+    "kind": "timeline",
+    "items": [
+     {
+      "date": "2024-12",
+      "text": "UNFPA distributed close to 42,000 dignity kits across Sudan in 2024, alongside supplies for emergency obstetric care and clinical management of rape.",
+      "source": "https://www.unfpa.org/news/%E2%80%9Cthey-are-family%E2%80%9D-mobile-health-workers-care-women-and-girls-uprooted-conflict-sudan"
+     },
+     {
+      "date": "2025-07",
+      "text": "Between Jan and Jul 2025, 270,000 people were reached with GBV prevention and response services through 75 safe spaces and 90 community protection networks.",
+      "source": "https://www.unfpa.org/resources/sudan-situation-report-july-2025"
+     },
+     {
+      "date": "2025-08",
+      "text": "IPPF and partners launched Sudan's first mobile telemedicine clinic, trucks equipped with Starlink internet to bring remote reproductive health consultations to frontline and rural areas.",
+      "source": "https://www.ippf.org/media-center/sudans-first-mobile-telemedicine-clinic-brings-care-frontlines"
+     }
+    ]
+   }
+  },
+  {
+   "id": "funding",
+   "heading": "Funding: humanitarian appeals, not venture capital",
+   "narrative": "There is effectively no femtech investment in Sudan. The money that reaches women's health is donor and appeal funding for emergency SRH and GBV services, and it is chronically short. Entries below are humanitarian grants and appeals, not commercial rounds.",
+   "visual": {
+    "kind": "funding",
+    "items": [
+     {
+      "company": "UNFPA Sudan 2025 appeal",
+      "amount": "US$145.7M appeal, ~35% funded",
+      "amountUsd": null,
+      "stage": "Humanitarian appeal",
+      "date": "2025-09",
+      "investor": "Multiple donors",
+      "purpose": "SRH, GBV, and protection services; roughly US$95.4M gap remaining.",
+      "source": "https://www.unfpa.org/resources/sudan-situation-report-september-2025"
+     },
+     {
+      "company": "UNFPA maternal health and GBV project",
+      "amount": "US$1M",
+      "amountUsd": 1000000,
+      "stage": "Bilateral grant",
+      "date": "2024-01",
+      "investor": "Government of Japan",
+      "purpose": "Address maternal health and GBV needs in conflict-affected areas of Sudan.",
+      "source": "https://sudan.un.org/en/289875-unfpa-and-government-japan-launch-1-million-project-address-maternal-health-and-gbv-needs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "players",
+   "heading": "Donors and funders behind women's health",
+   "narrative": "Sudan's women's health work depends on a small set of governments and UN mechanisms. These are donors and implementing bodies, not equity investors, reflecting the humanitarian nature of the sector.",
+   "visual": {
+    "kind": "investors",
+    "items": [
+     {
+      "name": "Government of Norway",
+      "hq": "Oslo, Norway",
+      "role": "Funds humanitarian midwife training and deployment in White Nile and North Kordofan.",
+      "source": "https://esaro.unfpa.org/en/news/south-sudan-gets-195-million-midwifery-programmes"
+     },
+     {
+      "name": "Government of Japan",
+      "hq": "Tokyo, Japan",
+      "role": "Bilateral donor funding UNFPA maternal health and GBV response in conflict-affected areas.",
+      "source": "https://sudan.un.org/en/289875-unfpa-and-government-japan-launch-1-million-project-address-maternal-health-and-gbv-needs"
+     },
+     {
+      "name": "IPPF",
+      "hq": "London, United Kingdom",
+      "role": "Global federation backing SFPA's clinics, e-platform, and mobile telemedicine.",
+      "source": "https://www.ippf.org/media-center/sudans-first-mobile-telemedicine-clinic-brings-care-frontlines"
+     }
+    ]
+   }
+  }
+ ],
+ "sources": [
+  {
+   "label": "New Security Beat: A Devastating Toll, Sudan's Maternal Health Nightmare (2024)",
+   "url": "https://www.newsecuritybeat.org/2024/07/a-devastating-toll-sudans-maternal-health-nightmare/"
+  },
+  {
+   "label": "UNFPA Sudan Situation Report, October 2025",
+   "url": "https://www.unfpa.org/resources/sudan-situation-report-october-2025"
+  },
+  {
+   "label": "UNFPA Sudan Situation Report, September 2025",
+   "url": "https://www.unfpa.org/resources/sudan-situation-report-september-2025"
+  },
+  {
+   "label": "UNFPA Sudan Situation Report, July 2025",
+   "url": "https://www.unfpa.org/resources/sudan-situation-report-july-2025"
+  },
+  {
+   "label": "UNICEF Sudan: FGM among girls in Sudan",
+   "url": "https://www.unicef.org/sudan/reports/female-genital-mutilation-fgm-among-girls-sudan"
+  },
+  {
+   "label": "UN News: Sudan bans female genital mutilation (2020)",
+   "url": "https://news.un.org/en/story/2020/05/1063122"
+  },
+  {
+   "label": "The Saleema initiative in Sudan: outcomes and dose response (PMC)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6413931/"
+  },
+  {
+   "label": "WHO: Conflict and instability make pregnancy more dangerous (2026)",
+   "url": "https://www.who.int/news/item/17-02-2026-conflict-and-instability-make-pregnancy-more-dangerous"
+  },
+  {
+   "label": "WHO: After three years of conflict, Sudan faces a deeper health crisis (2026)",
+   "url": "https://www.who.int/news/item/14-04-2026-after-three-years-of-conflict--sudan-faces-a-deeper-health-crisis"
+  },
+  {
+   "label": "Health Policy Watch: Sudan's Catastrophic Civil War Enters Fourth Year",
+   "url": "https://healthpolicy-watch.news/sudans-catastrophic-civil-war-enters-fourth-year/"
+  },
+  {
+   "label": "UNFPA: Humanitarian midwives deployed to Sudan's Blue Nile State",
+   "url": "https://www.unfpa.org/news/%E2%80%9Cshe-has-given-us-sense-security%E2%80%9D-humanitarian-midwives-deployed-sudan%E2%80%99s-blue-nile-state"
+  },
+  {
+   "label": "UNFPA Sudan: Midwifery",
+   "url": "https://sudan.unfpa.org/en/topics/midwifery"
+  },
+  {
+   "label": "UNFPA: They are like family, mobile health workers care for women uprooted by conflict in Sudan",
+   "url": "https://www.unfpa.org/news/%E2%80%9Cthey-are-family%E2%80%9D-mobile-health-workers-care-women-and-girls-uprooted-conflict-sudan"
+  },
+  {
+   "label": "IPPF: Sudan's First Mobile Telemedicine Clinic Brings Care to the Frontlines",
+   "url": "https://www.ippf.org/media-center/sudans-first-mobile-telemedicine-clinic-brings-care-frontlines"
+  },
+  {
+   "label": "IPPF: Sudan re-launches e-platform for reproductive health services",
+   "url": "https://www.ippf.org/news/sudan-re-launches-e-platform-providing-essential-reproductive-health-services"
+  },
+  {
+   "label": "UNICEF Sudan: Rebuilding Sudan's health system through digital innovations",
+   "url": "https://www.unicef.org/sudan/stories/rebuilding-sudans-health-system-through-digital-innovations"
+  },
+  {
+   "label": "UN Sudan: UNFPA and Japan launch $1M maternal health and GBV project",
+   "url": "https://sudan.un.org/en/289875-unfpa-and-government-japan-launch-1-million-project-address-maternal-health-and-gbv-needs"
+  },
+  {
+   "label": "UNFPA ESARO: Midwifery programme funding (Norway)",
+   "url": "https://esaro.unfpa.org/en/news/south-sudan-gets-195-million-midwifery-programmes"
+  }
+ ]
+}

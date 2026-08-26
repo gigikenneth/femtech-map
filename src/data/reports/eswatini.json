@@ -1,0 +1,73 @@
+{
+  "meta": { "country": "Eswatini", "slug": "eswatini", "flag": "🇸🇿", "lastUpdated": "2026-08",
+    "focusAreas": ["HIV, PMTCT & PrEP", "Cervical cancer & HPV", "Maternal health", "SRH & adolescent girls", "Digital health"],
+    "stats": [
+      { "value": "35.2%", "label": "HIV prevalence, women 15-49 (2022), the world's highest", "source": "https://www.beintheknow.org/understanding-hiv-epidemic/data/glance-hiv-eswatini" },
+      { "value": "84.5 per 100,000", "label": "Cervical cancer incidence, among the world's highest", "source": "https://www.gavi.org/vaccineswork/eswatini-burdened-doubly-hiv-and-cervical-cancer-targets-safety-next-generation" },
+      { "value": "75 per 100,000", "label": "Institutional maternal mortality (2024), down from 140", "source": "https://www.afro.who.int/countries/eswatini/news/3-eswatini-mothers-deliver-health-facilities-attended-skilled-personnel" },
+      { "value": "20.4%", "label": "Unmet need for family planning, married women (2021-2022)", "source": "https://eswatini.unfpa.org/en/topics/ending-unment-need-family-planning" }
+    ] },
+  "overview": "Eswatini has effectively no femtech startup scene. Women's health here is dominated by the world's highest HIV prevalence among women and one of the highest cervical cancer burdens on earth, so the real activity sits in public health and donor programming: HIV testing, PMTCT and a growing menu of PrEP options, HPV vaccination and screening, maternal care, and adolescent sexual and reproductive health. Digital health is emerging through government and World Bank systems rather than private ventures, and women-in-tech activity is nascent and largely folded into broader regional programmes.",
+  "sections": [
+    { "id": "news", "heading": "Latest major news", "narrative": "Recent milestones cluster around new HIV prevention options, HPV vaccination and maternal mortality gains, amid pressure from global aid cuts.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-06", "text": "The long-acting injectable PrEP cabotegravir (CAB-LA) launches in Eswatini via the Family Life Association of Eswatini, offering women an every-eight-weeks alternative to daily pills amid deep budget cuts.", "source": "https://www.ippf.org/media-center/amid-devastating-budget-cuts-groundbreaking-hiv-prevention-injectable-launches" },
+      { "date": "2024-06", "text": "A second round of the integrated school-based HPV campaign lifts coverage to 69.7% of the targeted 80,000 girls, later expanding routine vaccination to nine-year-olds.", "source": "https://www.gavi.org/vaccineswork/eswatini-burdened-doubly-hiv-and-cervical-cancer-targets-safety-next-generation" },
+      { "date": "2024-01", "text": "Human Rights Watch urges Eswatini to strengthen enforcement against violence toward women, noting persistent gaps despite the 2018 Sexual Offences and Domestic Violence Act.", "source": "https://www.hrw.org/news/2024/01/29/eswatini-address-violence-against-women" }
+    ] } },
+    { "id": "policy", "heading": "Policy & strategy", "narrative": "Government and partners frame women's health through HIV prevention, cervical cancer elimination, family planning and gender policy.", "visual": { "kind": "timeline", "items": [
+      { "date": "2025-01", "text": "The Cervical Cancer Elimination Acceleration Plan 2025-2030 sets national targets for HPV vaccination, screening and treatment against the country's very high cervical cancer burden.", "source": "https://www.iccp-portal.org/sites/default/files/2025-07/Eswatini%20Cervical%20Cancer%20Elimination%20Acceleration%20Plan%202025-2030.pdf" },
+      { "date": "2024-01", "text": "The Ministry of Health and UNFPA launch the 3rd edition of the National Family Planning Guidelines to improve service quality and cut unmet need.", "source": "https://eswatini.unfpa.org/en/news/unfpa-ministry-health-launches-revised-eswatini-national-family-planning-services" },
+      { "date": "2023-01", "text": "Eswatini launches its National Gender Policy and a National Strategy on Ending Violence (2023-2027), covering health, education and employment.", "source": "https://eswatini.un.org/en/261260-eswatini-gender-policy-and-strategy-ending-violence" },
+      { "date": "2023-01", "text": "The NERCHA HIV Prevention 2025 Road Map prioritises adolescent girls and young women and scale-up of ARV-based prevention including PrEP.", "source": "https://hivpreventioncoalition.unaids.org/sites/default/files/attachments/eswatini_hiv_prevention_2025_roadmap.pdf" }
+    ] } },
+    { "id": "ecosystem", "heading": "Latest ecosystem moves", "narrative": "Momentum is in public-health delivery and government digital-health systems rather than private femtech.", "visual": { "kind": "list", "items": [
+      { "text": "The Ministry of Health, with World Bank support, digitises community health services through the electronic Community-Based Health Information System (CBHIS), running offline on handheld devices used by Rural Health Motivators.", "source": "https://www.worldbank.org/en/news/feature/2026/02/23/from-paper-to-pixels-driving-the-digital-transformation-of-community-health-services-in-eswatini" },
+      { "text": "Digital handheld devices help Rural Health Motivators close immunisation gaps and reach women and children in remote areas.", "source": "https://www.gavi.org/vaccineswork/rural-health-monitors-wield-digital-handheld-devices-help-close-eswatinis" },
+      { "text": "MTN Eswatini and the Ministry of ICT roll out digital platforms including the TruMD health service, part of a public-private push into digital service delivery.", "source": "https://techreviewafrica.com/news/5994/eswatini-rolls-out-digital-platforms-to-expand-access-to-health-agriculture-and-creative-economy" },
+      { "text": "UNICEF supports a social-accountability mobile platform for youth-friendly SRH services; in 2024 alone 1,744 young clients submitted 2,875 recommendations.", "source": "https://www.unicef.org/eswatini/stories/youth-voices-improve-access-sexual-and-reproductive-health-services-eswatini" },
+      { "text": "A dapivirine vaginal ring (PrEP ring) study reports early user and provider experiences as Eswatini expands the menu of women-controlled HIV prevention methods.", "source": "https://onlinelibrary.wiley.com/doi/10.1002/jia2.26490" }
+    ] } },
+    { "id": "players", "heading": "Key players & programmes", "narrative": "The landscape is almost entirely government, UN agencies, NGOs and research programmes; there are no notable local femtech startups.", "visual": { "kind": "players", "items": [
+      { "name": "Family Life Association of Eswatini (FLAS)", "type": "ngo", "note": "IPPF member delivering SRH, family planning and PrEP including the new injectable CAB-LA through static clinics", "source": "https://www.ippf.org/media-center/amid-devastating-budget-cuts-groundbreaking-hiv-prevention-injectable-launches" },
+      { "name": "UNFPA Eswatini", "type": "ngo", "note": "Leads family planning, maternal mortality reduction and gender-based violence programming under its country programme", "source": "https://eswatini.unfpa.org/en/unfpa-eswatini" },
+      { "name": "NERCHA (National Emergency Response Council on HIV/AIDS)", "type": "program", "note": "Coordinates the national HIV response and the HIV Prevention 2025 Road Map", "source": "https://hivpreventioncoalition.unaids.org/sites/default/files/attachments/eswatini_hiv_prevention_2025_roadmap.pdf" },
+      { "name": "Ministry of Health, Eswatini", "type": "program", "note": "Runs PMTCT, HPV vaccination, cervical cancer screening and the CBHIS digital rollout", "source": "https://www.afro.who.int/countries/eswatini/news/3-eswatini-mothers-deliver-health-facilities-attended-skilled-personnel" },
+      { "name": "MOSAIC project (USAID/PEPFAR)", "type": "program", "note": "Supports national scale-up of PrEP choice for women, including CAB-LA situation analysis and readiness", "source": "https://www.prepwatch.org/wp-content/uploads/2024/02/MOSAIC-Eswatini-CAB-PrEP-VCSA-FINAL-22Feb2024.pdf" },
+      { "name": "UNICEF Eswatini", "type": "ngo", "note": "Supports youth-friendly SRH services and a social-accountability mobile feedback platform", "source": "https://www.unicef.org/eswatini/stories/youth-voices-improve-access-sexual-and-reproductive-health-services-eswatini" },
+      { "name": "Georgetown Lombardi global cancer researchers", "type": "research", "note": "Partner on cervical cancer screening and prevention research in Eswatini", "source": "https://lombardi.georgetown.edu/lombardi-stories/georgetown-global-health-and-cancer-researchers-tackle-public-health-challenge-in-eswatini/" }
+    ] } },
+    { "id": "funding", "heading": "Notable funding", "narrative": "There is no femtech venture funding; money flows as donor grants for HIV and vaccine programmes.", "visual": { "kind": "funding", "items": [
+      { "company": "Eswatini HPV vaccine introduction", "amount": "USD 1.6M", "amountUsd": 1600000, "stage": "Grant", "date": "2023-01", "investor": "Gavi, the Vaccine Alliance", "purpose": "Introduce and scale HPV vaccination targeting 80,000 schoolgirls against cervical cancer", "source": "https://www.afro.who.int/countries/eswatini/news/eswatini-receives-usd-16m-grant-gavi-support-hpv-vaccine-introduction" },
+      { "company": "CAB-LA injectable PrEP launch (FLAS)", "amount": "Undisclosed", "amountUsd": null, "stage": "Donor-funded program", "date": "2025-06", "investor": "IPPF / donor partners", "purpose": "Launch long-acting injectable HIV PrEP for women amid global aid cuts", "source": "https://www.ippf.org/media-center/amid-devastating-budget-cuts-groundbreaking-hiv-prevention-injectable-launches" }
+    ] } },
+    { "id": "whitepapers", "heading": "White papers & reports", "narrative": "Reference material is public-health, HIV and gender oriented.", "visual": { "kind": "list", "items": [
+      { "text": "Cervical Cancer Elimination Acceleration Plan, Kingdom of Eswatini 2025-2030", "source": "https://www.iccp-portal.org/sites/default/files/2025-07/Eswatini%20Cervical%20Cancer%20Elimination%20Acceleration%20Plan%202025-2030.pdf" },
+      { "text": "HER Voice Fund Country Profile: Eswatini 2024 (adolescent girls and young women, HIV)", "source": "https://www.yplusglobal.org/docs/resources/HER_Voice_Fund_Country_Profiles_2024/HER_Voice_Fund_Country_Profile_Eswatini_2024.pdf" },
+      { "text": "Cervical cancer screening outcomes for HIV-positive women in Lubombo and Manzini regions (2024)", "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11020862/" },
+      { "text": "Kingdom of Eswatini Beijing+30 Country Progress Report, UN Women (2024)", "source": "https://www.unwomen.org/sites/default/files/2024-09/b30_report_eswatini_en.pdf" }
+    ] } }
+  ],
+  "sources": [
+    { "label": "Be in the KNOW: HIV in Eswatini", "url": "https://www.beintheknow.org/understanding-hiv-epidemic/data/glance-hiv-eswatini" },
+    { "label": "Gavi: Eswatini HIV and cervical cancer double burden", "url": "https://www.gavi.org/vaccineswork/eswatini-burdened-doubly-hiv-and-cervical-cancer-targets-safety-next-generation" },
+    { "label": "WHO Afro: 93% skilled birth attendance, maternal mortality", "url": "https://www.afro.who.int/countries/eswatini/news/3-eswatini-mothers-deliver-health-facilities-attended-skilled-personnel" },
+    { "label": "UNFPA Eswatini: ending unmet need for family planning", "url": "https://eswatini.unfpa.org/en/topics/ending-unment-need-family-planning" },
+    { "label": "IPPF: injectable PrEP launch in Eswatini", "url": "https://www.ippf.org/media-center/amid-devastating-budget-cuts-groundbreaking-hiv-prevention-injectable-launches" },
+    { "label": "HRW: Eswatini address violence against women", "url": "https://www.hrw.org/news/2024/01/29/eswatini-address-violence-against-women" },
+    { "label": "Eswatini Cervical Cancer Elimination Acceleration Plan 2025-2030", "url": "https://www.iccp-portal.org/sites/default/files/2025-07/Eswatini%20Cervical%20Cancer%20Elimination%20Acceleration%20Plan%202025-2030.pdf" },
+    { "label": "UNFPA: revised National Family Planning Guidelines", "url": "https://eswatini.unfpa.org/en/news/unfpa-ministry-health-launches-revised-eswatini-national-family-planning-services" },
+    { "label": "UN Eswatini: National Gender Policy and Strategy on Ending Violence", "url": "https://eswatini.un.org/en/261260-eswatini-gender-policy-and-strategy-ending-violence" },
+    { "label": "UNAIDS: Eswatini HIV Prevention 2025 Road Map", "url": "https://hivpreventioncoalition.unaids.org/sites/default/files/attachments/eswatini_hiv_prevention_2025_roadmap.pdf" },
+    { "label": "World Bank: digital transformation of community health", "url": "https://www.worldbank.org/en/news/feature/2026/02/23/from-paper-to-pixels-driving-the-digital-transformation-of-community-health-services-in-eswatini" },
+    { "label": "Gavi: digital handheld devices close immunisation gap", "url": "https://www.gavi.org/vaccineswork/rural-health-monitors-wield-digital-handheld-devices-help-close-eswatinis" },
+    { "label": "Tech Review Africa: MTN digital platforms including TruMD", "url": "https://techreviewafrica.com/news/5994/eswatini-rolls-out-digital-platforms-to-expand-access-to-health-agriculture-and-creative-economy" },
+    { "label": "UNICEF Eswatini: youth voices improve SRH access", "url": "https://www.unicef.org/eswatini/stories/youth-voices-improve-access-sexual-and-reproductive-health-services-eswatini" },
+    { "label": "JIAS: PrEP ring introduction in Eswatini", "url": "https://onlinelibrary.wiley.com/doi/10.1002/jia2.26490" },
+    { "label": "WHO Afro: Gavi USD 1.6M grant for HPV vaccine", "url": "https://www.afro.who.int/countries/eswatini/news/eswatini-receives-usd-16m-grant-gavi-support-hpv-vaccine-introduction" },
+    { "label": "MOSAIC Eswatini CAB PrEP situation analysis", "url": "https://www.prepwatch.org/wp-content/uploads/2024/02/MOSAIC-Eswatini-CAB-PrEP-VCSA-FINAL-22Feb2024.pdf" },
+    { "label": "Georgetown Lombardi: cancer research in Eswatini", "url": "https://lombardi.georgetown.edu/lombardi-stories/georgetown-global-health-and-cancer-researchers-tackle-public-health-challenge-in-eswatini/" },
+    { "label": "HER Voice Fund Country Profile Eswatini 2024", "url": "https://www.yplusglobal.org/docs/resources/HER_Voice_Fund_Country_Profiles_2024/HER_Voice_Fund_Country_Profile_Eswatini_2024.pdf" },
+    { "label": "PMC: cervical cancer screening HIV-positive women", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11020862/" },
+    { "label": "UN Women: Eswatini Beijing+30 Country Progress Report", "url": "https://www.unwomen.org/sites/default/files/2024-09/b30_report_eswatini_en.pdf" }
+  ]
+}

@@ -279,8 +279,8 @@ export function renderRelatedStrip(related) {
 // Grouped by region for a spread across underrepresented places; each has real
 // femtech / women's-health-tech or strong maternal/SRH programme activity.
 export const PLANNED = [
-  // Africa (beyond the 27 already published)
-  "Algeria", "Sudan", "Somalia", "Togo", "Guinea", "Mauritius", "Eswatini", "Lesotho",
+  // Africa (beyond the 35 already published)
+  "Somalia", "Guinea", "Lesotho", "Gambia", "Mauritania",
   // Asia
   "India", "Bangladesh", "Indonesia", "Pakistan", "Philippines", "Vietnam", "Nepal", "Sri Lanka", "Thailand", "Kazakhstan",
   // Middle East

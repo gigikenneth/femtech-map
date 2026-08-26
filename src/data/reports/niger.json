@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "country": "Niger",
+    "slug": "niger",
+    "flag": "🇳🇪",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal health", "Family planning", "Child marriage", "Adolescent SRH", "Humanitarian health"],
+    "stats": [
+      {
+        "value": "~6-7 births/woman",
+        "label": "Total fertility rate, among the highest in the world",
+        "source": "https://www.unfpa.org/data/world-population/NE"
+      },
+      {
+        "value": "~441 per 100,000",
+        "label": "Maternal mortality ratio (UNFPA modelled estimate)",
+        "source": "https://www.unfpa.org/data/world-population/NE"
+      },
+      {
+        "value": "3 in 4 girls",
+        "label": "Married before age 18, the world's highest child-marriage rate",
+        "source": "https://www.unfpa.org/sites/default/files/portal-document/DP.FPA_.CPD_.NER_.10%20-%20Niger%20CPD%20-%20Final%20-%205Jul22_ENG_0.pdf"
+      },
+      {
+        "value": "145 per 1,000",
+        "label": "Adolescent fertility rate, ages 15-19 (World Bank, 2023)",
+        "source": "https://data.worldbank.org/indicator/SP.ADO.TFRT?locations=NE"
+      },
+      {
+        "value": "~32.6%",
+        "label": "Births with skilled attendance (DHS analysis)",
+        "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6998232/"
+      }
+    ]
+  },
+  "overview": "Niger has one of the world's highest fertility rates and the highest recorded rate of child marriage, with roughly three in four girls married before 18. Women's health here is a public-health and humanitarian story rather than a startup story: there is essentially no commercial femtech sector. The active work sits with UNFPA, the World Bank's SWEDD programme, and research trials focused on maternal mortality, obstetric fistula, midwifery, and expanding modern contraception in a context of insecurity across the Sahel.",
+  "sections": [
+    {
+      "id": "policy",
+      "heading": "Policy and national commitments",
+      "narrative": "Niger's reproductive-health agenda is driven by national plans tied to FP2030 and the Ouagadougou Partnership. Targets are modest and realistic given the starting point, and domestic budget lines for contraceptives remain small relative to need.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "National Family Planning Costed Implementation Plan aims to raise modern contraceptive prevalence from 21.8% (2020) to 29.3% by 2025 and 36.8% by 2030.",
+            "source": "https://www.fp2030.org/commitment-maker/niger/"
+          },
+          {
+            "text": "FP2030 commitments include scaling up postpartum/post-abortion family planning and increasing the domestic budget line for contraceptive procurement by 10% each year.",
+            "source": "https://www.fp2030.org/commitment-maker/niger/"
+          },
+          {
+            "text": "UNFPA's country programme (adopted for Niger through the Executive Board) frames child marriage and high maternal mortality as central challenges.",
+            "source": "https://www.unfpa.org/sites/default/files/portal-document/DP.FPA_.CPD_.NER_.10%20-%20Niger%20CPD%20-%20Final%20-%205Jul22_ENG_0.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "The women's-health ecosystem",
+      "narrative": "There is no meaningful commercial femtech market in Niger. The operational actors are multilateral agencies, the government health system, and research programmes. Digital-health tools are mostly regional pilots (dashboards, pregnancy tracking) rather than Niger-built products.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          {
+            "name": "UNFPA Niger",
+            "type": "ngo",
+            "note": "Lead agency on reproductive health since 1983; supports fistula repair, humanitarian midwifery, and reproductive-health kits.",
+            "source": "https://www.unfpa.org/data/transparency-portal/unfpa-niger"
+          },
+          {
+            "name": "SWEDD (Sahel Women's Empowerment and Demographic Dividend)",
+            "type": "program",
+            "note": "World Bank-financed regional programme; runs the Illimin safe-spaces model and midwifery training centres in Niger.",
+            "source": "https://popcouncil.org/project/sahel-womens-empowerment-and-demographic-dividend-swedd/"
+          },
+          {
+            "name": "Illimin safe spaces",
+            "type": "program",
+            "note": "Girl-centred programme reaching adolescent girls with SRH knowledge; over 218,000 girls reached since 2013.",
+            "source": "https://popcouncil.org/project/sahel-womens-empowerment-and-demographic-dividend-swedd/"
+          },
+          {
+            "name": "Schools for Husbands (Ecoles des Maris)",
+            "type": "program",
+            "note": "Male-engagement model shown to raise contraceptive discussion and use; basis for later trials in Dosso.",
+            "source": "https://reproductive-health-journal.biomedcentral.com/articles/10.1186/s12978-023-01609-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "news",
+      "heading": "Recent developments",
+      "narrative": "The most concrete recent activity is humanitarian and clinical: fistula surgeries, deployment of midwives, and Sahel partnerships that include Niger. Insecurity across the Sahelian strip continues to restrict women's access to services.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          {
+            "date": "2024-01",
+            "text": "In Niger, over 1,100 women received obstetric fistula treatment (1,029 surgical repairs, 72 by catheter) with UNFPA support.",
+            "source": "https://www.unfpa.org/data/transparency-portal/unfpa-niger"
+          },
+          {
+            "date": "2024-06",
+            "text": "79 of 112 most-affected health facilities implemented the Minimum Initial Service Package for SRH in crisis, with reproductive-health kits and humanitarian midwives deployed.",
+            "source": "https://www.unfpa.org/data/transparency-portal/unfpa-niger"
+          },
+          {
+            "date": "2024-06",
+            "text": "Over 19,000 girls completed all four Illimin modules during the programme's Cycle 9 in 2024.",
+            "source": "https://popcouncil.org/project/sahel-womens-empowerment-and-demographic-dividend-swedd/"
+          },
+          {
+            "date": "2025-04",
+            "text": "UNFPA and partners launched a Midwifery Accelerator to reduce preventable maternal deaths by expanding midwife-provided care, relevant to Sahel countries including Niger.",
+            "source": "https://www.unfpa.org/press/unfpa-and-partners-launch-midwifery-accelerator-confront-maternal-health-crisis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Funding and financing",
+      "narrative": "Financing is donor and multilateral, not venture capital. The relevant flows are World Bank regional projects and bilateral grants channelled through UNFPA, plus small domestic budget lines for contraceptives.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          {
+            "company": "SWEDD (Sahel regional, incl. Niger)",
+            "amount": "$200M",
+            "amountUsd": 200000000,
+            "stage": "World Bank project",
+            "date": "2020-05",
+            "investor": "World Bank Group",
+            "purpose": "Reproductive-health commodities, midwifery training centres, and adolescent-girl initiatives across the Sahel.",
+            "source": "https://www.worldbank.org/en/news/press-release/2020/05/28/investing-in-girls-and-womens-empowerment-in-and-beyond-the-sahel"
+          },
+          {
+            "company": "SRHR and anti-GBV project (Mali and Niger)",
+            "amount": "20M NOK (~$1.8M)",
+            "amountUsd": 1800000,
+            "stage": "Bilateral grant extension",
+            "date": "2024-01",
+            "investor": "Norway via UNFPA",
+            "purpose": "Promote SRHR, tackle gender-based violence, and reduce female genital mutilation in Mali and Niger.",
+            "source": "https://wcaro.unfpa.org/en/news/unfpa-and-norway-reinforce-partnership-women-and-girls-health-and-protection-sahel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "Research and evidence",
+      "narrative": "Niger is a site for rigorous SRH research, especially around married adolescent girls, where trials have tested community health workers and male engagement to raise contraceptive use and reduce intimate-partner violence.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "A cluster-randomized trial in Dosso found home visits by community health workers roughly tripled modern contraceptive use among married adolescent girls; group sessions reduced past-year intimate-partner violence.",
+            "source": "https://reproductive-health-journal.biomedcentral.com/articles/10.1186/s12978-023-01609-9"
+          },
+          {
+            "text": "Fewer than 6% of married 15-19-year-old girls use modern contraception, with over one in five married adolescents reporting unmet need for spacing.",
+            "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11846465/"
+          },
+          {
+            "text": "DHS analysis places skilled birth attendance in Niger at about 32.6%, the lowest among Niger, Mali, and Sierra Leone.",
+            "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6998232/"
+          },
+          {
+            "text": "World Bank analysis frames Niger's demographic trajectory as a potential trap, with population growth near 3.8% driven by early marriage and childbearing.",
+            "source": "https://blogs.worldbank.org/en/africacan/can-niger-escape-demographic-trap"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {"label": "UNFPA World Population Dashboard - Niger", "url": "https://www.unfpa.org/data/world-population/NE"},
+    {"label": "UNFPA Niger transparency portal", "url": "https://www.unfpa.org/data/transparency-portal/unfpa-niger"},
+    {"label": "UNFPA Niger Country Programme Document (DP/FPA/CPD/NER/10)", "url": "https://www.unfpa.org/sites/default/files/portal-document/DP.FPA_.CPD_.NER_.10%20-%20Niger%20CPD%20-%20Final%20-%205Jul22_ENG_0.pdf"},
+    {"label": "World Bank - Adolescent fertility rate, Niger", "url": "https://data.worldbank.org/indicator/SP.ADO.TFRT?locations=NE"},
+    {"label": "World Bank - Maternal mortality ratio, Niger", "url": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=NE"},
+    {"label": "World Bank blog - Can Niger escape the demographic trap?", "url": "https://blogs.worldbank.org/en/africacan/can-niger-escape-demographic-trap"},
+    {"label": "World Bank - Investing in girls' and women's empowerment in the Sahel (SWEDD $200M)", "url": "https://www.worldbank.org/en/news/press-release/2020/05/28/investing-in-girls-and-womens-empowerment-in-and-beyond-the-sahel"},
+    {"label": "FP2030 - Niger commitment maker", "url": "https://www.fp2030.org/commitment-maker/niger/"},
+    {"label": "Population Council - SWEDD project", "url": "https://popcouncil.org/project/sahel-womens-empowerment-and-demographic-dividend-swedd/"},
+    {"label": "Reaching Married Adolescents RCT, Dosso (Reproductive Health journal)", "url": "https://reproductive-health-journal.biomedcentral.com/articles/10.1186/s12978-023-01609-9"},
+    {"label": "Contraceptive decision-making among married adolescent girls in Niger (PMC)", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11846465/"},
+    {"label": "Skilled birth attendance in Sierra Leone, Niger, and Mali (PMC)", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6998232/"},
+    {"label": "UNFPA WCARO - Norway partnership for Sahel women and girls", "url": "https://wcaro.unfpa.org/en/news/unfpa-and-norway-reinforce-partnership-women-and-girls-health-and-protection-sahel"},
+    {"label": "UNFPA - Midwifery Accelerator launch", "url": "https://www.unfpa.org/press/unfpa-and-partners-launch-midwifery-accelerator-confront-maternal-health-crisis"},
+    {"label": "UNFPA - Maternal and Newborn Health Fund Annual Impact Report 2024", "url": "https://www.unfpa.org/publications/maternal-and-newborn-health-fund-annual-impact-report-2024"}
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "country": "Mauritius",
+    "slug": "mauritius",
+    "flag": "🇲🇺",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Cervical cancer & HPV", "Breast cancer", "SRH & maternal health", "Digital health", "Women in tech"],
+    "stats": [
+      {
+        "value": "55.8%",
+        "label": "Fall in maternal mortality ratio, 2000-2023, driven mainly by fertility decline",
+        "source": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(25)00409-7/fulltext"
+      },
+      {
+        "value": "~1,500",
+        "label": "New breast cancer cases each year, with roughly 350 deaths",
+        "source": "https://linktolife.info/breast-cancer-screening/"
+      },
+      {
+        "value": "Since 2016",
+        "label": "Free HPV vaccination for girls aged 9-15, extended to boys from 2023",
+        "source": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-reducing-barriers-life-saving-preventive-services-and-awareness-raising-fight"
+      },
+      {
+        "value": "~$13M",
+        "label": "Budget for the national One Patient, One Record e-health rollout",
+        "source": "https://www.wearetech.africa/en/fils-uk/news/tech/mauritius-launches-13m-e-health-project-to-digitize-national-medical-records"
+      }
+    ]
+  },
+  "overview": "Mauritius is a small upper-middle-income island state with universal free public healthcare and health indicators well above the African average, so its women's-health story is more about strengthening existing services than building them from scratch. There is a genuine, active women's-health field: a long-running national cancer control programme covering HPV vaccination and cervical and breast screening, a UNDP-backed national e-health rollout, and a compact startup ecosystem around Turbine and the Mauritius Research and Innovation Council. Dedicated femtech companies are, however, scarce; most women's-health work sits inside the public system and long-standing NGOs rather than in venture-backed products.",
+  "sections": [
+    {
+      "id": "policy",
+      "heading": "Policy and public programmes",
+      "narrative": "Women's health in Mauritius is anchored in national policy: the National Cancer Control Programme 2022-2025, a National Sexual and Reproductive Health Policy, and ICPD25 commitments on family planning and safe abortion within the law. HPV vaccination and screening are delivered free through the public system, and the government has committed to a maternal and perinatal death surveillance system with WHO support.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          {
+            "date": "2016-01",
+            "text": "Free HPV vaccination introduced for girls aged 9-15 as part of the national cervical cancer strategy.",
+            "source": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-reducing-barriers-life-saving-preventive-services-and-awareness-raising-fight"
+          },
+          {
+            "date": "2023-01",
+            "text": "National HPV communication campaign launched by the Ministry of Health and WHO, with HPV vaccination extended to boys aged 9-15.",
+            "source": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-reducing-barriers-life-saving-preventive-services-and-awareness-raising-fight"
+          },
+          {
+            "date": "2023-03",
+            "text": "National Cancer Control Programme 2022-2025 published, setting out HPV vaccination plus cervical and breast screening targets.",
+            "source": "https://health.govmu.org/health/wp-content/uploads/2023/03/National-Cancer-Control-Programme-2022-2025.pdf"
+          },
+          {
+            "date": "2023-10",
+            "text": "Five-day training on Maternal and Perinatal Death Surveillance and Response (MPDSR) conducted with WHO toward a zero-maternal-death goal.",
+            "source": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-zero-maternal-perinatal-and-neonatal-mortality-through-strengthening-its"
+          },
+          {
+            "date": "2024-01",
+            "text": "One Patient, One Record e-health project launched with UNDP to give every citizen a single electronic medical record.",
+            "source": "https://www.undp.org/mauritius-seychelles/news/undp-supports-launch-one-patient-one-record-ehealth-project-enhanced-public-healthcare"
+          },
+          {
+            "date": "2025-03",
+            "text": "Digital Health Architecture Blueprint launched by UNDP and the Ministry of Health to guide a National Patient Database and interoperability.",
+            "source": "https://www.undp.org/mauritius-seychelles/news/launch-digital-health-architecture-blueprint"
+          }
+        ]
+      }
+    },
+    {
+      "id": "news",
+      "heading": "Women's-health landscape",
+      "narrative": "Cervical and breast cancer dominate the women's-health conversation. Mauritius has one of the few declining cervical cancer trends in the region, helped by early adoption of HPV vaccination, while breast cancer remains the leading cancer in women and the focus of most NGO screening work. Reproductive-health gains have come largely through falling fertility rather than dramatic service change.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "Breast cancer accounts for roughly 1,500 new cases and about 350 deaths a year, making it the leading cancer among Mauritian women.",
+            "source": "https://linktolife.info/breast-cancer-screening/"
+          },
+          {
+            "text": "Cervical cancer incidence has been declining at about 2.5% a year, an unusual downward trend for sub-Saharan Africa.",
+            "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7341858/"
+          },
+          {
+            "text": "The maternal mortality ratio fell about 55.8% between 2000 and 2023, driven mainly by fertility decline and contraceptive use rather than by expanded maternity care alone.",
+            "source": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(25)00409-7/fulltext"
+          },
+          {
+            "text": "Mauritius committed under ICPD25 to comprehensive SRH information and services, including safe abortion to the full extent of the law and post-abortion care.",
+            "source": "https://www.nairobisummiticpd.org/commitment/commitments-republic-mauritius-accelerate-promises-icpd-25"
+          },
+          {
+            "text": "Population and reproductive-health indicators are tracked in the UNFPA country profile for Mauritius.",
+            "source": "https://www.unfpa.org/data/world-population/MU"
+          }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Organisations and services",
+      "narrative": "Most women's-health delivery outside the public hospitals comes from long-established NGOs and private clinics offering screening and support, plus a growing private cancer-care sector. There is no cluster of dedicated femtech startups; the closest analogues are digital-health and telemedicine efforts sitting inside the broader health system.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          {
+            "name": "Link to Life",
+            "type": "ngo",
+            "note": "Cancer-support NGO founded 2002; offers breast screening by palpation and ultrasound plus cervical Pap-smear screening and counselling.",
+            "source": "https://linktolife.info/breast-cancer-screening/"
+          },
+          {
+            "name": "Breast Cancer Care Mauritius",
+            "type": "ngo",
+            "note": "NGO focused on informing and sensitising the public about breast cancer awareness and early detection.",
+            "source": "https://bccmauritius.org/"
+          },
+          {
+            "name": "C-Care Cancer Centre",
+            "type": "clinic",
+            "note": "Private oncology centre providing cancer diagnosis and treatment, part of the C-Care hospital group.",
+            "source": "https://c-care.com/mu/business_unit/c-care-cancer-centre/"
+          },
+          {
+            "name": "National HPV vaccination and cervical screening programme",
+            "type": "program",
+            "note": "Public programme delivering free HPV vaccination and cervical screening under the National Cancer Control Programme.",
+            "source": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-reducing-barriers-life-saving-preventive-services-and-awareness-raising-fight"
+          },
+          {
+            "name": "One Patient, One Record e-health project",
+            "type": "program",
+            "note": "UNDP-supported national electronic medical record system, foundational infrastructure for future digital women's-health services.",
+            "source": "https://www.undp.org/mauritius-seychelles/news/undp-supports-launch-one-patient-one-record-ehealth-project-enhanced-public-healthcare"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Startup and women-in-tech ecosystem",
+      "narrative": "Mauritius positions itself as an African tech and fintech hub, and its innovation ecosystem is real if small. Turbine, the ENL-backed incubator, and the state Mauritius Research and Innovation Council provide grants, seed capital and accreditation, while several women-in-tech networks are active. Health-tech shows up in this ecosystem more as diabetes and clinical tools than as dedicated women's-health products, so femtech remains a gap rather than a scene.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          {
+            "name": "Turbine Incubator",
+            "type": "program",
+            "note": "Leading Mauritian incubator and accelerator, launched 2015 by ENL Group; invests up to Rs 5M seed capital and is MRIC-accredited and part of AfriLabs.",
+            "source": "https://turbine.mu/"
+          },
+          {
+            "name": "Mauritius Research and Innovation Council (MRIC)",
+            "type": "program",
+            "note": "State apex body funding research and innovation, including health, with grants such as the Collaborative R&I Grant Scheme (up to Rs 5M per project) and Innovation Boost Grant.",
+            "source": "https://www.mric.mu/"
+          },
+          {
+            "name": "Women in Tech Mauritius",
+            "type": "program",
+            "note": "Community and chapter promoting women in the technology sector; launched its first WIT Talks in October 2025.",
+            "source": "https://platformafrica.com/2025/10/23/women-in-tech-mauritius-launches-the-first-edition-of-wit-talks/"
+          },
+          {
+            "name": "Girls in ICT boot camps (MDPA)",
+            "type": "program",
+            "note": "Mauritius Digital Promotion Agency initiative; the 2024 3D design and printing boot camp drew about 130 girls into STEM.",
+            "source": "https://allafrica.com/stories/202408200454.html"
+          },
+          {
+            "name": "EDB Mauritius healthcare and pharma",
+            "type": "program",
+            "note": "Economic Development Board promotes Mauritius as a medical hub, including telemedicine and health-tech investment.",
+            "source": "https://edbmauritius.org/healthcare"
+          }
+        ]
+      }
+    },
+    {
+      "id": "funding",
+      "heading": "Funding and grants",
+      "narrative": "There is little dedicated femtech venture funding in Mauritius. Public grant schemes and government e-health budgets are the main money moving through health innovation, alongside incubator seed capital that is sector-agnostic. Any femtech founder would most likely tap MRIC grants or Turbine seed capital rather than a specialist women's-health fund.",
+      "visual": {
+        "kind": "funding",
+        "items": [
+          {
+            "company": "National e-health programme (One Patient, One Record)",
+            "amount": "~$13M",
+            "amountUsd": 13000000,
+            "stage": "Government programme",
+            "date": "2024-01",
+            "investor": "Government of Mauritius with UNDP",
+            "purpose": "Digitise national medical records and build interoperable digital-health infrastructure.",
+            "source": "https://www.wearetech.africa/en/fils-uk/news/tech/mauritius-launches-13m-e-health-project-to-digitize-national-medical-records"
+          },
+          {
+            "company": "MRIC Collaborative R&I Grant Scheme",
+            "amount": "Up to Rs 5M per project",
+            "amountUsd": null,
+            "stage": "Public matching grant",
+            "date": "2026-01",
+            "investor": "Mauritius Research and Innovation Council",
+            "purpose": "Matching grants for industry-academia R&D with commercial potential, open to health-tech projects.",
+            "source": "https://www.mric.mu/collaborative-research-and-innovation-grant-scheme"
+          },
+          {
+            "company": "Turbine acceleration programme",
+            "amount": "Up to Rs 5M seed",
+            "amountUsd": null,
+            "stage": "Seed",
+            "date": "2024-01",
+            "investor": "Turbine / ENL Group",
+            "purpose": "Seed capital and acceleration for startups, sector-agnostic including health.",
+            "source": "https://turbine.mu/programme/incubation/"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "WHO Africa - Mauritius cancer prevention and HPV vaccination",
+      "url": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-reducing-barriers-life-saving-preventive-services-and-awareness-raising-fight"
+    },
+    {
+      "label": "Mauritius National Cancer Control Programme 2022-2025",
+      "url": "https://health.govmu.org/health/wp-content/uploads/2023/03/National-Cancer-Control-Programme-2022-2025.pdf"
+    },
+    {
+      "label": "WHO Africa - Mauritius maternal and perinatal death surveillance",
+      "url": "https://www.afro.who.int/countries/mauritius/news/mauritius-strives-zero-maternal-perinatal-and-neonatal-mortality-through-strengthening-its"
+    },
+    {
+      "label": "The Lancet Global Health - maternal mortality decomposition, 2000-2023",
+      "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(25)00409-7/fulltext"
+    },
+    {
+      "label": "ICPD25 - Republic of Mauritius commitments",
+      "url": "https://www.nairobisummiticpd.org/commitment/commitments-republic-mauritius-accelerate-promises-icpd-25"
+    },
+    {
+      "label": "UNFPA - Mauritius population and reproductive-health data",
+      "url": "https://www.unfpa.org/data/world-population/MU"
+    },
+    {
+      "label": "Link to Life - breast cancer screening",
+      "url": "https://linktolife.info/breast-cancer-screening/"
+    },
+    {
+      "label": "Breast Cancer Care Mauritius",
+      "url": "https://bccmauritius.org/"
+    },
+    {
+      "label": "C-Care Cancer Centre Mauritius",
+      "url": "https://c-care.com/mu/business_unit/c-care-cancer-centre/"
+    },
+    {
+      "label": "Trends in cervical cancer incidence in sub-Saharan Africa (PMC)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7341858/"
+    },
+    {
+      "label": "UNDP - One Patient, One Record e-health project",
+      "url": "https://www.undp.org/mauritius-seychelles/news/undp-supports-launch-one-patient-one-record-ehealth-project-enhanced-public-healthcare"
+    },
+    {
+      "label": "UNDP - Digital Health Architecture Blueprint launch",
+      "url": "https://www.undp.org/mauritius-seychelles/news/launch-digital-health-architecture-blueprint"
+    },
+    {
+      "label": "We Are Tech Africa - Mauritius $13M e-health project",
+      "url": "https://www.wearetech.africa/en/fils-uk/news/tech/mauritius-launches-13m-e-health-project-to-digitize-national-medical-records"
+    },
+    {
+      "label": "Turbine Incubator",
+      "url": "https://turbine.mu/"
+    },
+    {
+      "label": "MRIC - Mauritius Research and Innovation Council",
+      "url": "https://www.mric.mu/"
+    },
+    {
+      "label": "MRIC Collaborative R&I Grant Scheme",
+      "url": "https://www.mric.mu/collaborative-research-and-innovation-grant-scheme"
+    },
+    {
+      "label": "Women in Tech Mauritius launches WIT Talks",
+      "url": "https://platformafrica.com/2025/10/23/women-in-tech-mauritius-launches-the-first-edition-of-wit-talks/"
+    },
+    {
+      "label": "allAfrica - Girls in ICT boot camp Mauritius 2024",
+      "url": "https://allafrica.com/stories/202408200454.html"
+    },
+    {
+      "label": "EDB Mauritius - healthcare and pharma",
+      "url": "https://edbmauritius.org/healthcare"
+    }
+  ]
+}

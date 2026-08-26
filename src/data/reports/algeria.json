@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "country": "Algeria",
+    "slug": "algeria",
+    "flag": "🇩🇿",
+    "lastUpdated": "2026-08",
+    "focusAreas": [
+      "Maternal health",
+      "Cervical and breast cancer",
+      "Family planning and SRH",
+      "Menstrual health",
+      "Digital health policy",
+      "Women in tech"
+    ],
+    "stats": [
+      {
+        "value": "62 per 100,000 (2023)",
+        "label": "Maternal mortality ratio",
+        "source": "https://www.unfpa.org/publications/trends-maternal-mortality-2000-2023"
+      },
+      {
+        "value": "13,161 new cases (2022)",
+        "label": "Breast cancer, the most common cancer in Algerian women (46% of female malignancies)",
+        "source": "https://aacrjournals.org/clincancerres/article/32/4_Supplement/PS2-02-18/774031"
+      },
+      {
+        "value": "57.1% (2012/13)",
+        "label": "Contraceptive prevalence rate, latest widely cited figure",
+        "source": "https://algeria.unfpa.org/en/topics/family-planning-sexual-and-reproductive-health"
+      },
+      {
+        "value": "40% of women and girls",
+        "label": "Arab-region respondents (incl. Algeria) with no information before their first period",
+        "source": "https://www.unfpa.org/news/first-menstruation-often-accompanied-fear-shame-lack-information-women-and-girls-arab-states"
+      }
+    ]
+  },
+  "overview": "Algeria has no visible dedicated femtech startup scene, so the women's-health picture is driven by public health and policy rather than private products. Maternal mortality has fallen to around 62 per 100,000, but screening gaps remain stark: most breast cancers are still found by self-examination and Algeria has not introduced HPV vaccination. A 2023-2027 national digital health strategy and a small but growing women-in-tech accelerator pipeline are the most plausible foundations for future femtech, though neither yet targets women's health specifically.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Recent developments",
+      "narrative": "Coverage centres on cancer epidemiology and menstrual-health awareness rather than product launches, reflecting a public-health rather than commercial femtech landscape.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          {
+            "date": "2023-11",
+            "text": "Algeria adopted its Stratégie Nationale de Santé Numérique (National Digital Health Strategy) 2023-2027, covering electronic health records and telemedicine to reach remote areas.",
+            "source": "https://www.ictworks.org/updated-every-african-countrys-national-digital-health-strategy-in-2026/"
+          },
+          {
+            "date": "2024-04",
+            "text": "UNFPA reported that in an Arab-region survey including Algeria, 40% of women and girls had no information about menstruation before their first period, with many reporting shame and fear.",
+            "source": "https://www.unfpa.org/news/first-menstruation-often-accompanied-fear-shame-lack-information-women-and-girls-arab-states"
+          },
+          {
+            "date": "2024-12",
+            "text": "A multicentre real-world study of 6,044 Algerian breast-cancer patients across 23 oncology centres found 67.7% of tumours were detected by self-examination and only 4.2% via screening.",
+            "source": "https://aacrjournals.org/clincancerres/article/32/4_Supplement/PS2-02-18/774031"
+          },
+          {
+            "date": "2023-06",
+            "text": "Trends in Maternal Mortality 2000-2023 (WHO, UNICEF, UNFPA, World Bank, UNDESA) placed Algeria's maternal mortality ratio at roughly 62 per 100,000 live births.",
+            "source": "https://www.unfpa.org/publications/trends-maternal-mortality-2000-2023"
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy and public health",
+      "narrative": "Women's-health policy in Algeria runs through the health ministry, UNFPA cooperation and national cancer control, with digital health still at an early framework stage.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "The 2023-2027 National Digital Health Strategy prioritises electronic health records and telemedicine, but the primary text is not published on the health ministry portal and implementation detail is thin.",
+            "source": "https://www.ictworks.org/updated-every-african-countrys-national-digital-health-strategy-in-2026/"
+          },
+          {
+            "text": "UNFPA works with the Algerian government on voluntary family planning, safe motherhood and comprehensive sexuality education delivered through community, parental and religious-leader outreach.",
+            "source": "https://algeria.unfpa.org/en/topics/family-planning-sexual-and-reproductive-health"
+          },
+          {
+            "text": "HPV vaccination is still not part of Algeria's national programme, unlike neighbouring Tunisia which is introducing a school-based HPV vaccine, leaving cervical-cancer prevention reliant on screening.",
+            "source": "https://pubmed.ncbi.nlm.nih.gov/36146498/"
+          },
+          {
+            "text": "Contraceptive prevalence is most recently reported at 57.1% (2012/13); across two-thirds of Arab states prevalence sits below 60%, indicating unmet need for modern family planning.",
+            "source": "https://algeria.unfpa.org/en/topics/family-planning-sexual-and-reproductive-health"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Women's-health and women-in-tech ecosystem",
+      "narrative": "There is no identifiable Algeria-based femtech company; the nearest relevant infrastructure is a general startup and women-in-tech accelerator ecosystem plus UN and research actors working on women's health.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          {
+            "name": "UNFPA Algeria",
+            "type": "program",
+            "note": "UN Population Fund country office leading family planning, safe motherhood and comprehensive sexuality education work with the government.",
+            "source": "https://algeria.unfpa.org/en/unfpa-algeria"
+          },
+          {
+            "name": "Womentum (Womena)",
+            "type": "program",
+            "note": "MENA accelerator for female-founded post-MVP startups; eligibility explicitly includes Algeria-based companies with at least one female founder holding equity.",
+            "source": "https://www.menabytes.com/womena-womentum/"
+          },
+          {
+            "name": "Algerian National Network of Cancer Registries",
+            "type": "research",
+            "note": "Source of national cancer-incidence data showing breast cancer as 46% of female malignancies with 13,161 new cases in 2022.",
+            "source": "https://aacrjournals.org/clincancerres/article/32/4_Supplement/PS2-02-18/774031"
+          },
+          {
+            "name": "Algeria startup accelerator ecosystem",
+            "type": "program",
+            "note": "A domestic accelerator and incubator scene exists but is general-purpose; no women's-health vertical has emerged from it to date.",
+            "source": "https://www.sramanamitra.com/2025/09/17/startup-africa-algerias-startup-accelerator-ecosystem-a-deep-dive/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "Research and evidence",
+      "narrative": "Peer-reviewed studies and UN reports are the strongest evidence base for Algerian women's health, particularly on cancer, maternal mortality and menstrual awareness.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "Real-world epidemiologic study of 6,044 Algerian breast-cancer patients (2024): median age at diagnosis 52, most tumours found by self-examination, screening under 5%.",
+            "source": "https://aacrjournals.org/clincancerres/article/32/4_Supplement/PS2-02-18/774031"
+          },
+          {
+            "text": "Breast cancer knowledge and practices among women in Algeria, a peer-reviewed study highlighting awareness and early-detection gaps.",
+            "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11797238/"
+          },
+          {
+            "text": "Cross-sectional study of Algerian students on cervical cancer, HPV and HPV-vaccine awareness, noting the vaccine is not yet approved nationally.",
+            "source": "https://pubmed.ncbi.nlm.nih.gov/36146498/"
+          },
+          {
+            "text": "UNFPA qualitative testimony from Algerian women and girls on first-menstruation experiences, documenting fear, shame and information gaps.",
+            "source": "https://algeria.unfpa.org/en/news/women-and-girls-share-their-first-experiences-menstruation-1"
+          },
+          {
+            "text": "Female breast cancer in Annaba Province, Algeria, 2004-2024: temporal trends and characteristics from a regional cancer registry.",
+            "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6338625"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "Trends in Maternal Mortality 2000-2023 (WHO, UNICEF, UNFPA, World Bank, UNDESA)",
+      "url": "https://www.unfpa.org/publications/trends-maternal-mortality-2000-2023"
+    },
+    {
+      "label": "Real-world characterisation of breast cancer in Algeria, 6,044 patients (AACR, 2024)",
+      "url": "https://aacrjournals.org/clincancerres/article/32/4_Supplement/PS2-02-18/774031"
+    },
+    {
+      "label": "UNFPA Algeria - family planning and sexual and reproductive health",
+      "url": "https://algeria.unfpa.org/en/topics/family-planning-sexual-and-reproductive-health"
+    },
+    {
+      "label": "UNFPA - first menstruation accompanied by fear and lack of information, Arab states",
+      "url": "https://www.unfpa.org/news/first-menstruation-often-accompanied-fear-shame-lack-information-women-and-girls-arab-states"
+    },
+    {
+      "label": "UNFPA Algeria - women and girls share first experiences with menstruation",
+      "url": "https://algeria.unfpa.org/en/news/women-and-girls-share-their-first-experiences-menstruation-1"
+    },
+    {
+      "label": "ICTworks - Every African country's national digital health strategy 2026",
+      "url": "https://www.ictworks.org/updated-every-african-countrys-national-digital-health-strategy-in-2026/"
+    },
+    {
+      "label": "Knowledge and awareness of Algerian students about cervical cancer, HPV and HPV vaccines (PubMed)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36146498/"
+    },
+    {
+      "label": "Breast cancer knowledge and practices amongst women in Algeria (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11797238/"
+    },
+    {
+      "label": "Female breast cancer in Annaba Province, Algeria, 2004-2024 (SSRN)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6338625"
+    },
+    {
+      "label": "UNFPA Algeria country office",
+      "url": "https://algeria.unfpa.org/en/unfpa-algeria"
+    },
+    {
+      "label": "MENAbytes - Womena launches Womentum accelerator for female-led startups",
+      "url": "https://www.menabytes.com/womena-womentum/"
+    },
+    {
+      "label": "Sramana Mitra - Algeria's startup accelerator ecosystem deep dive",
+      "url": "https://www.sramanamitra.com/2025/09/17/startup-africa-algerias-startup-accelerator-ecosystem-a-deep-dive/"
+    },
+    {
+      "label": "UNFPA world population data - Algeria",
+      "url": "https://www.unfpa.org/data/world-population/DZ"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "country": "Gabon",
+    "slug": "gabon",
+    "flag": "🇬🇦",
+    "lastUpdated": "2026-08",
+    "focusAreas": [
+      "Maternal health",
+      "Cervical cancer & HPV",
+      "HIV & PMTCT",
+      "Family planning",
+      "Gender-based violence",
+      "Digital health"
+    ],
+    "stats": [
+      {
+        "value": "227",
+        "label": "Maternal deaths per 100,000 live births (2020, modeled estimate)",
+        "source": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=GA"
+      },
+      {
+        "value": "17%",
+        "label": "Modern contraceptive prevalence, down from 24% in 2012 (EDSG 2019-2021)",
+        "source": "https://gabon.unfpa.org/fr/news/acquisition-et-livraison-de-25-millions-de-pr%C3%A9servatifs-par-lunfpa-au-minist%C3%A8re-de-la-sant%C3%A9"
+      },
+      {
+        "value": "21.0%",
+        "label": "HPV prevalence among 1,524 women screened in Libreville Octobre Rose campaigns 2022-2024",
+        "source": "https://www.nature.com/articles/s41467-025-67777-3"
+      },
+      {
+        "value": "236 / 118",
+        "label": "New cervical cancer cases and deaths in Gabon in 2023",
+        "source": "https://www.nature.com/articles/s41467-025-67777-3"
+      }
+    ]
+  },
+  "overview": "Gabon is a small, oil-dependent Central African economy with relatively high per-capita income but weak health outcomes for women. There is effectively no femtech startup sector, so this report centers on women's public health: maternal mortality remains around 227 per 100,000 live births, modern contraceptive use has fallen rather than risen, cervical cancer stays largely unaddressed because HPV vaccine is not in the national schedule, and HIV prevalence is comparatively high for the region. Recent movement is driven mostly by UNFPA, the World Bank-funded e-Gabon health information system, and academic screening research, not by private innovation.",
+  "sections": [
+    {
+      "id": "news",
+      "heading": "Recent developments",
+      "narrative": "The most concrete recent activity sits in cervical cancer screening research, maternal care protocols, and the launch of a national digital health information system. Coverage is honest about gaps: HPV vaccine is still absent from routine immunization, and gender-based violence remains widely reported despite a 2021 law.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          {
+            "date": "2024-02",
+            "text": "e-Gabon health information system (e-Gabon/SIS) officially launched with World Bank support to modernize medical records, telemedicine and health data governance.",
+            "source": "https://gabonmediatime.com/gabon-e-gabon-sis-accelere-la-transformation-numerique-du-systeme-de-sante/"
+          },
+          {
+            "date": "2024-09",
+            "text": "UNFPA and the Directorate of Family Health validated updated obstetric and neonatal emergency care protocols, algorithms and registers after workshops in Lambarene and Libreville.",
+            "source": "https://gabon.unfpa.org/fr/news/am%C3%A9lioration-des-soins-obst%C3%A9tricaux-et-n%C3%A9onataux-%C3%A9laboration-et-validation-des-protocoles-au"
+          },
+          {
+            "date": "2024-10",
+            "text": "Octobre Rose 2024 launched under the theme 'Transition vers un depistage organise', aiming to move breast and cervical screening toward an organized national program.",
+            "source": "https://www.gabonews.com/fr/actus/societe/article/lancement-de-la-campagne-octobre-rose-2024-une"
+          },
+          {
+            "date": "2025-07",
+            "text": "Ministry of Digital Economy handed over computing and technical equipment to health facilities for Phase 2 of the health information system rollout.",
+            "source": "https://techafricanews.com/2025/07/29/gabon-advances-digital-health-strategy-with-tech-deployment-to-hospitals/"
+          },
+          {
+            "date": "2025-10",
+            "text": "About 80 health professionals from Gabon's 25 departments trained on telemedicine under the World Bank-financed e-Gabon/SIS project.",
+            "source": "https://gabonactu.com/blog/2025/10/10/projet-egabon-sis-formation-des-professionnels-de-sante-sur-la-telemedecine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "heading": "Policy and public health context",
+      "narrative": "Women's health policy is shaped by UNFPA's 8th Country Programme, a 2021 law on violence against women, and the 2024-2028 national health development plan. The recurring theme is a gap between framework and delivery: strong stated goals, thin implementation and under-resourced services.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "UNFPA's 8th Country Programme targets three zeros: zero unmet family planning need, zero preventable maternal death, and zero gender-based violence and harmful practices.",
+            "source": "https://www.unfpa.org/sites/default/files/board-documents/DP.FPA_.CPD_.GAB_.8%20-%20Gabon%20CPD%20-%20DRAFT%20final%20-%207Nov22.pdf"
+          },
+          {
+            "text": "Modern contraceptive prevalence fell from 24% (2012) to 17% (2021) and 33% of married women report unmet family planning need, per the EDSG 2019-2021 survey cited by UNFPA.",
+            "source": "https://gabon.unfpa.org/fr/news/acquisition-et-livraison-de-25-millions-de-pr%C3%A9servatifs-par-lunfpa-au-minist%C3%A8re-de-la-sant%C3%A9"
+          },
+          {
+            "text": "Law No. 006/2021 on eliminating violence against women criminalizes marital rape and recognizes psychological and economic violence, but rollout and enforcement remain limited.",
+            "source": "https://www.gabonreview.com/violences-basees-sur-le-genre-quand-la-loi-se-heurte-aux-realites-du-terrain/"
+          },
+          {
+            "text": "HPV vaccine is absent from Gabon's national immunization schedule despite persistently high cervical cancer incidence and mortality.",
+            "source": "https://www.nature.com/articles/s41467-025-67777-3"
+          },
+          {
+            "text": "The third Demographic and Health Survey (EDSG 2019-2021) interviewed 9,507 women aged 15-49 and is the main national data source on maternal, reproductive and HIV indicators.",
+            "source": "https://dhsprogram.com/pubs/pdf/PR137/PR137.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Ecosystem and organizations",
+      "narrative": "There is no dedicated femtech industry in Gabon. The active players are UN agencies, government programs, academic research groups running cervical screening, and a small digital-entrepreneurship scene where women's initiatives appear mainly through the Ogooue Labs incubator rather than health-specific ventures.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          {
+            "name": "UNFPA Gabon",
+            "type": "ngo",
+            "note": "Lead UN agency on reproductive health and family planning; supplies contraceptives, supports obstetric protocols and gender programs.",
+            "source": "https://gabon.unfpa.org/fr/unfpa-gabon"
+          },
+          {
+            "name": "Octobre Rose Libreville screening program",
+            "type": "program",
+            "note": "Annual campaign running since 2013 offering HPV testing and VIA/VILI cervical screening; source of recent national HPV epidemiology.",
+            "source": "https://www.nature.com/articles/s41467-025-67777-3"
+          },
+          {
+            "name": "e-Gabon / Systeme d'Information Sanitaire (SIS)",
+            "type": "program",
+            "note": "World Bank-funded national health information system deploying electronic records and telemedicine across facilities.",
+            "source": "https://gabonmediatime.com/gabon-e-gabon-sis-accelere-la-transformation-numerique-du-systeme-de-sante/"
+          },
+          {
+            "name": "Ogooue Labs",
+            "type": "ngo",
+            "note": "Libreville incubator/school (founded 2013) supporting the digital economy; host to the Digi Women initiative promoting women in tech.",
+            "source": "https://ogoouelabs.com/"
+          },
+          {
+            "name": "Digi Women (Femme belle x Ogooue Labs)",
+            "type": "program",
+            "note": "Initiative running workshops and awards to bring more women into digital and AI-related careers in Gabon.",
+            "source": "https://gabonactu.com/blog/2024/12/12/les-digi-women-awards-2024-a-lere-de-lintelligence-artificielle-ia/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "Research and evidence",
+      "narrative": "The strongest recent evidence base is academic: HPV burden studies from Libreville quantify cervical cancer risk and make the case for vaccination, especially among HIV-positive women. National survey and modeled estimates anchor the maternal and reproductive picture.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "Nature Communications (2025): among 1,524 women in the 2022-2024 Octobre Rose campaigns, HPV prevalence was 21.0% (18.5% carcinogenic types); Gardasil-9 genotypes drove 63% of carcinogenic infections, supporting nonavalent vaccination.",
+            "source": "https://www.nature.com/articles/s41467-025-67777-3"
+          },
+          {
+            "text": "Diseases (2024): high prevalence of oncogenic HPV genotypes targeted by the nonavalent vaccine in HIV-infected women in Gabon reinforces urgent need for prophylactic vaccination in key female populations.",
+            "source": "https://doi.org/10.3390/diseases13080260"
+          },
+          {
+            "text": "World Bank / MMEIG modeled estimate: Gabon's maternal mortality ratio was about 227 deaths per 100,000 live births in 2020.",
+            "source": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=GA"
+          },
+          {
+            "text": "WHO/UNICEF/UNFPA Trends in Maternal Mortality 2000-2023 is the reference source for Gabon's latest inter-agency maternal mortality estimates.",
+            "source": "https://www.who.int/publications/i/item/9789240108462"
+          },
+          {
+            "text": "UNAIDS 2024 Western and Central Africa regional profile situates Gabon among the higher-HIV-burden countries in the region, with gaps in key-population testing uptake.",
+            "source": "https://www.unaids.org/sites/default/files/2025-07/2025-global-aids-update-wca.pdf"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "World Bank - Maternal mortality ratio, Gabon",
+      "url": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=GA"
+    },
+    {
+      "label": "WHO/UNICEF/UNFPA - Trends in Maternal Mortality 2000-2023",
+      "url": "https://www.who.int/publications/i/item/9789240108462"
+    },
+    {
+      "label": "UNFPA Gabon - contraceptives delivery and EDSG family planning figures",
+      "url": "https://gabon.unfpa.org/fr/news/acquisition-et-livraison-de-25-millions-de-pr%C3%A9servatifs-par-lunfpa-au-minist%C3%A8re-de-la-sant%C3%A9"
+    },
+    {
+      "label": "UNFPA Gabon - obstetric and neonatal care protocols (2024)",
+      "url": "https://gabon.unfpa.org/fr/news/am%C3%A9lioration-des-soins-obst%C3%A9tricaux-et-n%C3%A9onataux-%C3%A9laboration-et-validation-des-protocoles-au"
+    },
+    {
+      "label": "UNFPA Gabon - 8th Country Programme document",
+      "url": "https://www.unfpa.org/sites/default/files/board-documents/DP.FPA_.CPD_.GAB_.8%20-%20Gabon%20CPD%20-%20DRAFT%20final%20-%207Nov22.pdf"
+    },
+    {
+      "label": "UNFPA Gabon - main country page",
+      "url": "https://gabon.unfpa.org/fr/unfpa-gabon"
+    },
+    {
+      "label": "Nature Communications - HPV burden in Libreville Octobre Rose 2022-2024",
+      "url": "https://www.nature.com/articles/s41467-025-67777-3"
+    },
+    {
+      "label": "Diseases journal - oncogenic HPV in HIV-infected women in Gabon",
+      "url": "https://doi.org/10.3390/diseases13080260"
+    },
+    {
+      "label": "Gabonews - Octobre Rose 2024 launch",
+      "url": "https://www.gabonews.com/fr/actus/societe/article/lancement-de-la-campagne-octobre-rose-2024-une"
+    },
+    {
+      "label": "UNAIDS 2025 Global AIDS Update - Western and Central Africa profile (2024 data)",
+      "url": "https://www.unaids.org/sites/default/files/2025-07/2025-global-aids-update-wca.pdf"
+    },
+    {
+      "label": "DHS Program - Gabon EDSG 2019-2021 report",
+      "url": "https://dhsprogram.com/pubs/pdf/PR137/PR137.pdf"
+    },
+    {
+      "label": "GabonMediaTime - e-Gabon/SIS digital health launch",
+      "url": "https://gabonmediatime.com/gabon-e-gabon-sis-accelere-la-transformation-numerique-du-systeme-de-sante/"
+    },
+    {
+      "label": "TechAfrica News - Gabon digital health tech deployment (2025)",
+      "url": "https://techafricanews.com/2025/07/29/gabon-advances-digital-health-strategy-with-tech-deployment-to-hospitals/"
+    },
+    {
+      "label": "GabonActu - e-Gabon/SIS telemedicine training (2025)",
+      "url": "https://gabonactu.com/blog/2025/10/10/projet-egabon-sis-formation-des-professionnels-de-sante-sur-la-telemedecine"
+    },
+    {
+      "label": "GabonReview - Law 006/2021 on violence against women, enforcement gaps",
+      "url": "https://www.gabonreview.com/violences-basees-sur-le-genre-quand-la-loi-se-heurte-aux-realites-du-terrain/"
+    },
+    {
+      "label": "Ogooue Labs - digital entrepreneurship incubator",
+      "url": "https://ogoouelabs.com/"
+    },
+    {
+      "label": "GabonActu - Digi Women Awards 2024",
+      "url": "https://gabonactu.com/blog/2024/12/12/les-digi-women-awards-2024-a-lere-de-lintelligence-artificielle-ia/"
+    }
+  ]
+}

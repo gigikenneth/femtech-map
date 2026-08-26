@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "country": "Libya",
+    "slug": "libya",
+    "flag": "🇱🇾",
+    "lastUpdated": "2026-08",
+    "focusAreas": ["Maternal health", "Sexual & reproductive health", "Gender-based violence", "Health-system reconstruction"],
+    "stats": [
+      {
+        "value": "72",
+        "label": "Maternal deaths per 100,000 live births (2020, modeled)",
+        "source": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=LY"
+      },
+      {
+        "value": "2.1",
+        "label": "Total fertility rate, births per woman (2024)",
+        "source": "https://www.macrotrends.net/global-metrics/countries/lby/libya/fertility-rate"
+      },
+      {
+        "value": "84%",
+        "label": "Health facilities partially or non-functional in flood-hit areas after Storm Daniel",
+        "source": "https://reliefweb.int/report/libya/saving-lives-preventing-health-risks-and-restoring-health-care-services-aftermath-libya-floods"
+      },
+      {
+        "value": "4",
+        "label": "UNFPA-supported women safe spaces across east, west and south Libya",
+        "source": "https://libya.unfpa.org/en/topics/gender-based-violence-9"
+      }
+    ]
+  },
+  "overview": "Libya has no meaningful femtech sector. Women's health here is a public-health and humanitarian story shaped by more than a decade of conflict, institutional fragmentation between rival governments, and the 2023 Storm Daniel floods that destroyed hospitals in the east. Maternal mortality is comparatively low for the region, but services are uneven, midwife shortages are acute, and gender-based violence support remains thin. What digital-health and women-in-tech activity exists is early-stage entrepreneurship and donor-backed hubs, not dedicated women's-health technology.",
+  "sections": [
+    {
+      "id": "policy",
+      "heading": "Maternal and reproductive health system",
+      "narrative": "Libya's maternal mortality ratio was around 72 per 100,000 live births in 2020, low relative to much of the region, and fertility has fallen to roughly replacement level. The system's weakness is not headline mortality but fragmentation, workforce shortages and uneven service quality across a divided country. UNFPA, working with the Ministry of Health and EU funding, has focused on the midwifery and nursing workforce, helping develop Libya's first Midwifery and Nursing Policy and costed strategic plan.",
+      "visual": {
+        "kind": "timeline",
+        "items": [
+          {
+            "date": "2020-01",
+            "text": "Libya's modeled maternal mortality ratio stands at about 72 deaths per 100,000 live births.",
+            "source": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=LY"
+          },
+          {
+            "date": "2023-05",
+            "text": "UNFPA's Libya Country Programme document (2024 onward) centers midwifery, SRH and GBV within a humanitarian-development-peace framing.",
+            "source": "https://www.unfpa.org/sites/default/files/board-documents/DP.FPA_.CPD_.LBY_.2%20-%20Libya%20CPD%20-%20DRAFT%20final%20-%2031May23.pdf"
+          },
+          {
+            "date": "2024-06",
+            "text": "Total fertility rate reported at roughly 2.1 births per woman, near replacement level.",
+            "source": "https://www.macrotrends.net/global-metrics/countries/lby/libya/fertility-rate"
+          },
+          {
+            "date": "2025-01",
+            "text": "UNFPA, with EU support and the Ministry of Health, develops Libya's first Midwifery and Nursing Policy and costed strategic plan.",
+            "source": "https://libya.unfpa.org/en/news/midwives-unsung-heroes-reproductive-health-response-libya"
+          }
+        ]
+      }
+    },
+    {
+      "id": "news",
+      "heading": "Health-system reconstruction after Storm Daniel",
+      "narrative": "In September 2023 Tropical Storm Daniel burst two dams and devastated Derna and the eastern Jabal al-Akhdar region, killing thousands and wrecking hospitals. Assessments found 84% of health facilities in affected areas partially or non-functional, with cultural and access barriers making it especially hard to reach women and girls with protection and reproductive-health services. WHO and the Ministry of Health worked to restore facilities and stand up field hospitals, including a 100-bed field hospital in Derna with an obstetrics and gynecology department.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "Storm Daniel (Sept 2023) collapsed two dams and destroyed homes, hospitals and roads across Derna, Al-Jabal Al-Akhdar and Al-Marj.",
+            "source": "https://www.emro.who.int/media/news/saving-lives-preventing-health-risks-and-restoring-health-care-services-in-the-aftermath-of-the-libya-floods.html"
+          },
+          {
+            "text": "84% of public hospitals and primary care facilities in affected areas were partially or non-functional, per HeRAMS assessment.",
+            "source": "https://reliefweb.int/report/libya/saving-lives-preventing-health-risks-and-restoring-health-care-services-aftermath-libya-floods"
+          },
+          {
+            "text": "WHO and the Ministry of Health set up a 100-bed field hospital in Derna with 10 ICU beds, radiology and an obstetrics and gynecology department.",
+            "source": "https://reliefweb.int/report/libya/saving-lives-preventing-health-risks-and-restoring-health-care-services-aftermath-libya-floods"
+          },
+          {
+            "text": "Access issues and cultural sensitivities made it particularly difficult to deliver protection services to women, girls and marginalized groups.",
+            "source": "https://www.thinkglobalhealth.org/article/rebuilding-libyas-health-care-system"
+          },
+          {
+            "text": "WHO's 2025 Public Health Situation Analysis documents the ongoing fragility of Libya's divided health system.",
+            "source": "https://cdn.who.int/media/docs/default-source/2021-dha-docs/who-libya-phsa-2025.pdf?sfvrsn=dbf176f8_3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecosystem",
+      "heading": "Gender-based violence response",
+      "narrative": "GBV support in Libya is nascent and donor-driven. UNFPA conducted the country's first GBV situation analysis and has supported a GBV Information Management System, four women safe spaces spanning the east, west and south, psychosocial support, dignity kits and awareness campaigns. With UN Women and UNSMIL, it has backed the Ministry of Women and women activists in drafting a bill to prevent violence against women and to build a multisectoral chain of services for survivors. This remains a fragile, partial infrastructure rather than a national system.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "UNFPA carried out the first-ever GBV situation analysis in Libya and supported establishing a GBV Information Management System.",
+            "source": "https://libya.unfpa.org/en/topics/gender-based-violence-9"
+          },
+          {
+            "text": "Four women safe spaces operate across east, west and south Libya, offering livelihood skills, SRH and GBV sensitization.",
+            "source": "https://libya.unfpa.org/en/topics/gender-based-violence-9"
+          },
+          {
+            "text": "UNFPA, UN Women and UNSMIL supported the Ministry of Women and activists in drafting a law to prevent violence against women.",
+            "source": "https://libya.unfpa.org/en/topics/gender-based-violence-9"
+          },
+          {
+            "text": "Progress on SDG 5 (gender equality) in Libya remains constrained by conflict and institutional division.",
+            "source": "https://libya.un.org/en/sdgs/5/progress"
+          }
+        ]
+      }
+    },
+    {
+      "id": "players",
+      "heading": "Actors on the ground",
+      "narrative": "Women's health provision in Libya is carried mainly by UN agencies, the Ministry of Health and Ministry of Women, and donor-funded programmes rather than by any femtech company. The most relevant players are humanitarian and workforce-development actors. Separately, a thin layer of donor-backed entrepreneurship hubs is beginning to include women-led ventures, though none is women's-health specific.",
+      "visual": {
+        "kind": "players",
+        "items": [
+          {
+            "name": "UNFPA Libya",
+            "type": "ngo",
+            "note": "Lead UN agency on SRH, maternal health, midwifery workforce and GBV; runs women safe spaces and supports Ministry of Health policy.",
+            "source": "https://libya.unfpa.org/en/what-we-do"
+          },
+          {
+            "name": "WHO Libya",
+            "type": "ngo",
+            "note": "Coordinated flood-response health restoration including obstetric services and field hospitals; publishes public health situation analyses.",
+            "source": "https://www.emro.who.int/lby/floods/index.html"
+          },
+          {
+            "name": "Libyan Ministry of Health",
+            "type": "program",
+            "note": "National health authority co-leading facility restoration and adopting the first Midwifery and Nursing Policy with UNFPA support.",
+            "source": "https://libya.unfpa.org/en/news/midwives-unsung-heroes-reproductive-health-response-libya"
+          },
+          {
+            "name": "Tripoli Business Hub",
+            "type": "program",
+            "note": "Libya's first municipality-led business hub (opened Aug 2025, EU/Italy/UNDP-backed), prioritizing youth, women and returnees with training and digital skills.",
+            "source": "https://libyaherald.com/2025/08/tripoli-business-hub-libyas-first-municipality%E2%80%91led-business-hub-opened/"
+          },
+          {
+            "name": "Innovation Sahara (UNDP)",
+            "type": "program",
+            "note": "Southern Libya entrepreneurship programme; in late 2024 trained 110+ participants including 53 women-led ventures, with grants to 23 women-led startups.",
+            "source": "https://www.undp.org/libya/stories/innovation-sahara-success-stories-south"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whitepapers",
+      "heading": "Digital health and women in tech: an honest read",
+      "narrative": "There is no identifiable women's-health technology sector in Libya. Regional healthtech investment is concentrated in the Gulf and North Africa's more stable markets, and Libya does not appear in MENA healthtech funding or cohort listings. What exists is early-stage, broad-purpose entrepreneurship: donor-backed hubs, a nascent Tripoli startup scene, and isolated AI ventures unrelated to health. Any femtech or digital women's-health activity would build on this thin base, not an existing pipeline.",
+      "visual": {
+        "kind": "list",
+        "items": [
+          {
+            "text": "MENA healthtech raised about $269M across 34 rounds in 2025, concentrated in Gulf and stable North African markets; Libya is not represented.",
+            "source": "https://accretiveedge.com/articles/healthtech-startups-middle-east/"
+          },
+          {
+            "text": "Libya's startup scene is young and emerging, driven by youth entrepreneurs rather than an established VC or healthtech ecosystem.",
+            "source": "https://www.eumedbridge.eu/story/young-bold-and-building-libyas-startup-revolution/"
+          },
+          {
+            "text": "The Tripoli Entrepreneurship and Innovation Summit 2025 (Dec 15-18) features expos, hackathons and mentorship, signaling early ecosystem building.",
+            "source": "https://tripolisummit.com/"
+          },
+          {
+            "text": "UNFPA's global 2024 response context: reproductive-health services reached over 10 million people and 1,600+ safe spaces were established across crisis settings, underscoring how Libya sits within a donor-dependent model.",
+            "source": "https://news.un.org/en/story/2024/12/1157791"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "UNFPA Libya country office",
+      "url": "https://libya.unfpa.org/en/unfpa-libya"
+    },
+    {
+      "label": "UNFPA Libya: What we do",
+      "url": "https://libya.unfpa.org/en/what-we-do"
+    },
+    {
+      "label": "UNFPA Libya: Gender-Based Violence",
+      "url": "https://libya.unfpa.org/en/topics/gender-based-violence-9"
+    },
+    {
+      "label": "UNFPA Libya: Midwives, unsung heroes of the reproductive health response",
+      "url": "https://libya.unfpa.org/en/news/midwives-unsung-heroes-reproductive-health-response-libya"
+    },
+    {
+      "label": "UNFPA Libya Country Programme Document (Executive Board, 2023)",
+      "url": "https://www.unfpa.org/sites/default/files/board-documents/DP.FPA_.CPD_.LBY_.2%20-%20Libya%20CPD%20-%20DRAFT%20final%20-%2031May23.pdf"
+    },
+    {
+      "label": "World Bank: Maternal mortality ratio, Libya",
+      "url": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=LY"
+    },
+    {
+      "label": "Macrotrends: Libya fertility rate",
+      "url": "https://www.macrotrends.net/global-metrics/countries/lby/libya/fertility-rate"
+    },
+    {
+      "label": "ReliefWeb: Restoring health care after the Libya floods",
+      "url": "https://reliefweb.int/report/libya/saving-lives-preventing-health-risks-and-restoring-health-care-services-aftermath-libya-floods"
+    },
+    {
+      "label": "WHO EMRO: Saving lives after the Libya floods",
+      "url": "https://www.emro.who.int/media/news/saving-lives-preventing-health-risks-and-restoring-health-care-services-in-the-aftermath-of-the-libya-floods.html"
+    },
+    {
+      "label": "WHO EMRO: Libya floods hub",
+      "url": "https://www.emro.who.int/lby/floods/index.html"
+    },
+    {
+      "label": "WHO Libya Public Health Situation Analysis 2025",
+      "url": "https://cdn.who.int/media/docs/default-source/2021-dha-docs/who-libya-phsa-2025.pdf?sfvrsn=dbf176f8_3"
+    },
+    {
+      "label": "Think Global Health: Rebuilding Libya's health-care system",
+      "url": "https://www.thinkglobalhealth.org/article/rebuilding-libyas-health-care-system"
+    },
+    {
+      "label": "UN in Libya: SDG 5 gender equality progress",
+      "url": "https://libya.un.org/en/sdgs/5/progress"
+    },
+    {
+      "label": "UN News: $1.4 billion needed for SRH services in crisis-hit countries",
+      "url": "https://news.un.org/en/story/2024/12/1157791"
+    },
+    {
+      "label": "UNDP Libya: Tripoli Business Hub opens",
+      "url": "https://www.undp.org/libya/press-releases/municipality-led-tripoli-business-hub-open-fuel-local-economic-growth"
+    },
+    {
+      "label": "Libya Herald: Tripoli Business Hub opened (Aug 2025)",
+      "url": "https://libyaherald.com/2025/08/tripoli-business-hub-libyas-first-municipality%E2%80%91led-business-hub-opened/"
+    },
+    {
+      "label": "UNDP Libya: Innovation Sahara success stories",
+      "url": "https://www.undp.org/libya/stories/innovation-sahara-success-stories-south"
+    },
+    {
+      "label": "AccretiveEdge: MENA healthtech startups 2025",
+      "url": "https://accretiveedge.com/articles/healthtech-startups-middle-east/"
+    },
+    {
+      "label": "EU Neighbours: Libya's startup revolution",
+      "url": "https://www.eumedbridge.eu/story/young-bold-and-building-libyas-startup-revolution/"
+    },
+    {
+      "label": "Tripoli Entrepreneurship and Innovation Summit 2025",
+      "url": "https://tripolisummit.com/"
+    }
+  ]
+}
