@@ -51,6 +51,7 @@ const DICT = {
     "tt.heard": "🎙 As heard on Blush & Bloom",
     "regional": "regional network",
     "empty": "Nothing mapped in {country} yet. This map is community-sourced, so add one.",
+    "updated": "Last updated {date}",
     "disclaimer": "A living, community-sourced map. Spotted a missing initiative or an error? It's meant to be edited, open a PR.",
   },
   fr: {
@@ -101,6 +102,7 @@ const DICT = {
     "tt.heard": "🎙 Entendu sur Blush & Bloom",
     "regional": "réseau régional",
     "empty": "Rien de cartographié en {country} pour l'instant. Cette carte est communautaire : ajoutez-en une.",
+    "updated": "Dernière mise à jour : {date}",
     "disclaimer": "Une carte vivante et communautaire. Une initiative manquante ou une erreur ? Elle est faite pour être corrigée : ouvrez une PR.",
   },
 };

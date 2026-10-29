@@ -462,6 +462,11 @@ function updateCounts(shown, countryCount) {
 
 // disclaimer / meta
 document.getElementById("disclaimer").textContent = t("disclaimer");
+const updated = t("updated", {
+  date: new Date(__BUILD_DATE__).toLocaleDateString(LANG, { day: "numeric", month: "long", year: "numeric" }),
+});
+document.getElementById("updated").textContent = updated;
+document.getElementById("hero-updated").textContent = updated;
 
 // ---------- hero ----------
 const heroStats = [
