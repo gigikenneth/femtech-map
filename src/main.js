@@ -20,6 +20,7 @@ import programs from "./data/programs.json";
 import latam from "./data/latam.json";
 import landscapeGlobal from "./data/landscape-global.json";
 import reportCompanies from "./data/report-companies.json";
+import africaScan from "./data/africa-scan.json";
 import { CONTINENT_OF } from "./data/continents.js";
 import { meta } from "./data/meta.js";
 import { t, LANG, LANGS, setLang, applyStatic } from "./i18n.js";
@@ -64,7 +65,7 @@ if (SUBMISSIONS_URL) {
 const seen = new Set();
 const initiatives = [];
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-for (const d of [...seed, ...more, ...podcast, ...communities, ...programs, ...latam, ...landscapeGlobal, ...reportCompanies, ...submissions]) {
+for (const d of [...seed, ...more, ...podcast, ...communities, ...programs, ...latam, ...landscapeGlobal, ...reportCompanies, ...africaScan, ...submissions]) {
   const k = norm(d.name);
   if (seen.has(k)) continue;
   seen.add(k);

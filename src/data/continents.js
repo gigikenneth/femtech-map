@@ -8,7 +8,7 @@ const BY_CONTINENT = {
     "Côte d'Ivoire", "DRC", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini",
     "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Kenya", "Lesotho",
     "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco",
-    "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Senegal", "Sierra Leone",
+    "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "São Tomé and Príncipe", "Senegal", "Sierra Leone",
     "Somalia", "Somaliland", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo",
     "Tunisia", "Uganda", "W. Sahara", "Zambia", "Zimbabwe",
   ],
